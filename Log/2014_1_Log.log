@@ -1,0 +1,17 @@
+3.10.59.	Deer Load txt Finish
+3.10.59.	Deer Load Motor Finish
+3.11.3.	Deer LoadFile Finish
+3.11.3.	Deer OnInitDialog
+3.11.3.	Deer OnInitDialog Menu OK
+3.11.4.	Deer Create Thread Finish
+3.11.16.	Servo Off All Finish
+3.11.16.	Close All IO Finish
+3.11.16.	Thread Inserter Finish
+3.11.16.	Thread Initial Arm Finish
+3.11.16.	Thread Inspect Finish
+3.11.16.	Thread IOReadWrite Finish
+3.11.16.	Thread ErrorCtrl Finish
+3.11.16.	Thread Arm Finish
+3.11.16.	Thread Manual Finish
+3.11.16.	Thread Tester Finish
+3.11.16.	Shut Down Finish

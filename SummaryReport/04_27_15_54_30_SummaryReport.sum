@@ -1,0 +1,23 @@
+**************************** Summary ****************************
+Lot Start Time: Modth:04 Day:27 Hours:15 Min:46 Sec:39
+Lot Number : LotNo
+Lot Operationer ID : Operator
+Lot Operationer ID : ProgramID
+Lot Device ID : DeviceID
+Total Tested IC : 0
+Hardware Bin 1: 0 (-1.#J%)
+**************************** Test Log ****************************
+ID	Code	Bin	Booking		TestTime
+1	2	None	0		 0.00	
+2	2	None	1		 0.00	
+3	3	None	2		 0.00	
+4	3	None	3		 0.00	
+5	3	None	4		 0.00	
+6	4	None	5		 0.00	
+7	4	None	0		 0.00	
+8	4	None	1		 0.00	
+9	6	None	2		 0.00	
+10	6	None	3		 0.00	
+11	6	None	4		 0.00	
+12	1	None	5		 0.00	
+13	1	None	0		 0.00	

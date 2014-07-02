@@ -1,0 +1,312 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Interface.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.cht\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Interface.ico"
+IDI_CLEAR               ICON    DISCARDABLE     "res\\ico00008.ico"
+IDI_DISCONNECT          ICON    DISCARDABLE     "res\\off_line.ico"
+IDI_CONNECT             ICON    DISCARDABLE     "res\\connect.ico"
+IDI_SEND                ICON    DISCARDABLE     "res\\ico00010.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 Interface"
+FONT 9, "新細明體"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Interface Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "確定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_INTERFACE_DIALOG DIALOGEX 0, 0, 290, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Interface V2.0"
+FONT 12, "Arial"
+BEGIN
+    RTEXT           "Port:",IDC_STATIC,7,8,17,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    COMBOBOX        IDC_COM_PORT,24,8,35,106,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Baud Rate:",IDC_STATIC,7,23,37,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    RTEXT           "Data Bit:",IDC_STATIC,62,8,29,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    COMBOBOX        IDC_BAUD_RATE,44,22,46,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DATA_BIT,91,7,23,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Parity:",IDC_STATIC,115,8,21,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    RTEXT           "Stop Bit:",IDC_STATIC,170,8,29,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    COMBOBOX        IDC_PARITY_CHECK,137,7,32,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STOP_BIT,199,7,37,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Connect",IDC_CONNECT,242,7,41,24
+    EDITTEXT        IDC_SEND_TEXT,67,39,169,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_SEND,242,35,41,14
+    LISTBOX         IDC_SHOW_TEXT,7,77,229,106,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Clear",IDC_CLEAR,242,77,41,24
+    CONTROL         "Code",IDC_SHOW_CODE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,251,142,26,16
+    CONTROL         "Num",IDC_SHOW_NUMERIC,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,251,160,26,16
+    GROUPBOX        "Show",IDC_STATIC,243,131,40,52,BS_CENTER
+    CONTROL         "Code",IDC_CODE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP,7,39,21,14
+    CONTROL         "Num",IDC_CODE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,33,39,21,14
+    EDITTEXT        IDC_SEND_TEXT2,67,58,169,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_SEND2,242,53,41,14
+    PUSHBUTTON      "Send",IDC_SEND3,242,103,41,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_CODE_COUNT,41,193,22,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_VALUE,7,193,20,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_SET,28,193,12,14,NOT WS_VISIBLE
+    LTEXT           "Bin Val",IDC_STATIC,7,184,23,8,NOT WS_VISIBLE
+    LTEXT           "Counter",IDC_STATIC,41,184,25,8,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Interface MFC Application\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "Interface\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Interface.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Interface Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_INTERFACE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INTERFACE_DIALOG DLGINIT
+BEGIN
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COM_PORT, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COM_PORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_DATA_BIT, 0x403, 2, 0
+0x0037, 
+    IDC_DATA_BIT, 0x403, 2, 0
+0x0038, 
+    IDC_PARITY_CHECK, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_PARITY_CHECK, 0x403, 4, 0
+0x4441, 0x0044, 
+    IDC_PARITY_CHECK, 0x403, 5, 0
+0x5645, 0x4e45, "\000" 
+    IDC_STOP_BIT, 0x403, 2, 0
+0x0031, 
+    IDC_STOP_BIT, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_STOP_BIT, 0x403, 2, 0
+0x0032, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "關於 Interface(&A)..."
+    ID_TIME_STATUS          "Timer for updata status."
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE 4, 1
+#pragma code_page(950)
+#endif //_WIN32
+#include "res\Interface.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.cht\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

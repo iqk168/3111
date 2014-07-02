@@ -1,0 +1,28 @@
+[Rotator]
+X=
+Y=
+Z=
+Z(Place)=
+[Arm In Shuttle Input]
+X=
+Y=
+Z=
+Z(Place)=
+[Arm In Shuttle Output]
+X=
+Y=
+Z=
+[Input Tray]
+X=
+Y=
+Z=
+Z(Place)=
+[Output Tray]
+X=
+Y=
+Z=
+Z(Place)=
+[Test Site]
+Pick=
+Place=
+Contact=

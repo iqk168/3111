@@ -1,0 +1,12 @@
+[Handler Comn Port]
+ATC Module=7
+Tester=3
+PID Port=1
+PID ID=1
+IO Port=1
+IO ID=2
+West Port=2
+IO ID Out=3
+Heater ID=1
+Torque Port=4
+Remote Port=0

@@ -1,0 +1,14 @@
+[Test Type]
+Type=2
+[Test Extend]
+CCD=0
+ROTATOR=0
+Angle=1
+CCD Socket=0
+[Interface]
+GPIB=14X20-Heater.GPIB
+RS22=14X20-Heater.RS232
+TCP=14X20-Heater.TCP
+TTL=14X20-Heater.TTL
+[Interface Selected]
+Selected=0

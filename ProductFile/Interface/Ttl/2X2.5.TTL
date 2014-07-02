@@ -1,0 +1,21 @@
+[信號 Active High(1), Low(0)]
+EOT=0
+RDY=0
+BIN=0
+Level(0),Pulse(1)=0
+[Bin 信號]
+LINE(0), BCD(1)=0
+[Other]
+Send Start Delay (sec)=2.000000000000000
+Timeout (sec)=15.000000000000000
+Power Mode(1)Tester(0)Handler=0
+[Address (pin31:0x260, pin32:0x262, pin33:0x266, pin34:0x268)]
+Site 1=0x260
+Site 2=0x262
+Site 3=0x266
+Site 4=0x268
+[MASK (接線寫 1, 沒接寫 0, pin1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16)]
+Site 1=1111111111111111
+Site 2=0000000000000000
+Site 3=1111111111111111
+Site 4=0000000000000000

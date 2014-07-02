@@ -1,0 +1,18 @@
+[CCD Socket Control]
+Use ID=0
+Def ROI X=160
+Def ROI Y=120
+Def ROI W=320
+Def ROI H=240
+[CCD Control]
+Use ID=0
+Def ROI X=160
+Def ROI Y=120
+Def ROI W=320
+Def ROI H=240
+[CCD Control Socket]
+Use ID=1
+Def ROI X=160
+Def ROI Y=120
+Def ROI W=320
+Def ROI H=240

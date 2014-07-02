@@ -1,0 +1,14 @@
+[Multi SV]
+Program Excel Path=D:\\
+Test Path=D:\\
+TrayMap Path=D:\\
+[Loop Test]
+Test Result Path=D:\\
+[Event Log]
+Event Log Path=D:\\
+[TrayMap Log]
+Tray Map Path=D:\\
+[UPH]
+UPH Report=D:\\
+[SLT Protocol Log]
+SLT Log=C:\\Users\\SONY\\Desktop\\

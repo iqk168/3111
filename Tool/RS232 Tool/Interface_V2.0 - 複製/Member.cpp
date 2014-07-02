@@ -1,0 +1,28 @@
+// Member.cpp: implementation of the CMember class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "interface.h"
+#include "Member.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CMember::CMember()
+{
+	Count = 0;
+	iValue = 1;
+}
+
+CMember::~CMember()
+{
+
+}

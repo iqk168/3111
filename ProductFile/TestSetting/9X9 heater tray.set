@@ -1,0 +1,12 @@
+[Test Extend]
+CCD Socket=0
+CCD=0
+ROTATOR=0
+Angle=0
+[Interface]
+GPIB=9X9 heater tray.GPIB
+RS22=9X9 heater tray.RS232
+TCP=9X9 heater tray.TCP
+TTL=9X9 heater tray.TTL
+[Interface Selected]
+Selected=0

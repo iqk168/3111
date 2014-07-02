@@ -1,0 +1,7 @@
+[GPIB]
+Bin Base=1
+Addr=9
+Port=5
+Delay=1.100000000000000
+Timeout=2.200000000000000
+Site=6

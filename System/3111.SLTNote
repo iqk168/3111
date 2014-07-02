@@ -1,0 +1,143 @@
+<<GetHelp?:>>
+<<GetVersion?:>>
+<<GetState?:>>
+<<GetStatus?:>>
+<<GetTraySpec?:>>
+<<EnableTemp: 1>>
+<<SetSiteTemp: 85.0>>
+<<GetSiteSetTemp?:>>
+<<GetSiteTemp?:>>
+<<EnableRotator: 1>>
+<<SetRotatorDegree: 1>>
+<<GetRotatorDegree?:>>
+<<EnableCCDLog: 1>>
+<<SetCoordinates: 0,1,2>>
+<<GetCoordinates?:>>
+<<SetCoordinatesGo:>>
+<<SetCoordinatesReturn:>>
+<<SetPressure: 8>>
+<<GetPressure?:>>
+<<GetAutoSkip?:>>
+<<SetAutoSkip:1>>
+<<SetState: INITIALIZE>>
+<<SetState: START>>
+<<SetState: STOP>>
+<<SetState: RETRY>>
+<<SetState: SKIP>>
+<<SetState: RESET>>
+<<SetState: ONECYCLE>>
+<<SetCoordinatesClearGo:>>
+<<SetRunMode: 1>>
+<<GetRunMode?:>>
+
+// Basic setting
+11:44:08 TX: <<GetVersion?:>>
+11:44:08 RX: <<GETVERSION?: CHROMA,3111,REV1,V0.1Al>>
+11:44:26 TX: <<GetState?:>>
+11:44:27 RX: <<GETSTATE?:UNINITIAL>>
+11:44:33 TX: <<GetStatus?:>>
+11:44:33 RX: <<GETSTATUS?:0,0, OK>>
+11:44:39 TX: <<GetTraySpec?:>>
+11:44:39 RX: <<GETTRAYSPEC?:6,7>>
+11:44:49 TX: <<EnableTemp: 0>>
+11:44:50 RX: <<ENABLETEMP: DONE>>
+11:45:08 TX: <<SetSiteTemp:35.0>>
+11:45:08 RX: <<SETSITETEMP: DONE>>
+11:45:15 TX: <<GetSiteSetTemp?:>>
+11:45:15 RX: <<GETSITESETTEMP?:35.00>>
+11:45:25 TX: <<GetSiteTemp?:>>
+11:45:25 RX: <<GETSITETEMP?:22.80>>
+11:45:31 TX: <<SetRotatorDegree: 1>>
+11:45:32 RX: <<SETROTATORDEGREE: DONE>>
+11:45:55 TX: <<GetRotatorDegree?:>>
+11:45:55 RX: <<GETROTATORDEGREE?:1>>
+11:46:03 TX: <<EnableCCDLog: 0>>
+11:46:04 RX: <<ENABLECCDLOG: DONE>>
+11:46:17 TX: <<SetPressure: 12>>
+11:46:17 RX: <<SETPRESSURE?: DONE>>
+11:46:23 TX: <<GetPressure?:>>
+11:46:23 RX: <<GETPRESSURE?:12>>
+11:46:30 TX: <<SetRunMode: 2>>
+11:46:31 RX: <<SETRUNMODE: DONE>>
+
+// Normal
+11:47:07 TX: <<SetState: INITIALIZE>>
+11:48:09 RX: <<SETSTATE: DONE>>
+11:48:20 TX: <<GetCoordinates?:>>
+11:48:20 RX: <<GETCOORDINATES?:-1,-1,-1>>
+11:48:28 TX: <<SetCoordinates: 0,1,2>>
+11:48:28 RX: <<SETCOORDINATES: DONE>>
+11:48:30 TX: <<GetCoordinates?:>>
+11:48:30 RX: <<GETCOORDINATES?:0,1,2>>
+11:48:39 TX: <<SetCoordinatesGo:>>
+11:48:50 RX: <<SETCOORDINATESGO: DONE>>
+11:49:09 TX: <<SetCoordinatesReturn:>>
+11:49:19 RX: <<SETCOORDNATIONRETURN: DONE>>
+
+// Door open and recover
+11:50:01 TX: <<SetCoordinates: 1,1,2>>
+11:50:01 RX: <<SETCOORDINATES: DONE>>
+11:50:12 TX: <<GetCoordinates?:>>
+11:50:12 RX: <<GETCOORDINATES?:1,1,2>>
+11:50:29 TX: <<SetCoordinatesGo:>>
+11:50:32 RX: <<SETSTATE: ERROR>>
+11:50:43 TX: <<GetStatus?:>>
+11:50:44 RX: <<GETSTATUS?:1,4,Door Open>>
+11:50:56 TX: <<SetState: RESET>>
+11:50:56 RX: <<SETSTATE: DONE>>
+11:51:11 TX: <<SetState: START>>
+11:51:19 RX: <<SETCOORDINATESGO: DONE>>
+11:51:29 TX: <<SetCoordinatesReturn:>>
+11:51:39 RX: <<SETCOORDNATIONRETURN: DONE>>
+
+// Pick Fail and back to standby
+11:52:50 TX: <<SetCoordinates: 0,1,2>>
+11:52:50 RX: <<SETCOORDINATES: DONE>>
+11:52:51 TX: <<GetCoordinates?:>>
+11:52:52 RX: <<GETCOORDINATES?:0,1,2>>
+11:53:02 TX: <<SetCoordinatesGo:>>
+11:53:04 RX: <<SETSTATE: ERROR>>
+11:53:25 TX: <<GetStatus?:>>
+11:53:25 RX: <<GETSTATUS?:1,500,Arm Z Pick IC Fail>>
+11:53:45 TX: <<SetState: SKIP>>
+11:53:45 RX: <<SETSTATE: DONE>>
+11:53:52 TX: <<SetState: START>>
+11:53:53 RX: <<SETCOORDNATIONRETURN: DONE>>
+
+// Pick Fail and try again
+11:55:24 TX: <<SetCoordinates: 1,1,2>>
+11:55:25 RX: <<SETCOORDINATES: DONE>>
+11:56:40 TX: <<GetCoordinates?:>>
+11:56:40 RX: <<GETCOORDINATES?:1,1,2>>
+11:56:56 TX: <<SetCoordinatesGo:>>
+11:56:59 RX: <<SETSTATE: ERROR>>
+11:57:33 TX: <<GetStatus?:>>
+11:57:33 RX: <<GETSTATUS?:1,500,Arm Z Pick IC Fail>>
+11:58:17 TX: <<SetState: RETRY>>
+11:58:17 RX: <<SETSTATE: DONE>>
+11:58:38 TX: <<SetState: START>>
+11:58:40 RX: <<SETSTATE: ERROR>>
+11:59:20 TX: <<GetStatus?:>>
+11:59:20 RX: <<GETSTATUS?:1,500,Arm Z Pick IC Fail>>
+11:59:23 TX: <<SetState: SKIP>>
+11:59:23 RX: <<SETSTATE: DONE>>
+11:59:25 TX: <<SetState: START>>
+11:59:27 RX: <<SETCOORDNATIONRETURN: DONE>>
+
+// In Socket Error, Wait for next command, then report error
+12:01:53 TX: <<SetRunMode: 2>>
+12:01:53 RX: <<SETRUNMODE: DONE>>
+12:02:07 TX: <<SetCoordinates: 0,1,2>>
+12:02:08 RX: <<SETCOORDINATES: DONE>>
+12:02:16 TX: <<GetCoordinates?:>>
+12:02:16 RX: <<GETCOORDINATES?:0,1,2>>
+12:02:24 TX: <<SetCoordinatesGo:>>
+12:02:34 RX: <<SETCOORDINATESGO: DONE>>
+12:02:46 TX: <<SetCoordinatesReturn:>>
+12:02:46 RX: <<SETCORDNATIONRETURN: ERROR>>
+12:02:55 TX: <<GetStatus?:>>
+12:02:55 RX: <<GETSTATUS?:1,4,Door Open>>
+12:03:08 TX: <<SetState: RESET>>
+12:03:08 RX: <<SETSTATE: DONE>>
+12:03:22 TX: <<SetState: START>>
+12:03:32 RX: <<SETCOORDNATIONRETURN: DONE>>

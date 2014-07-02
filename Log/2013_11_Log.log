@@ -1,0 +1,4527 @@
+11.46.7.	Deer Load txt Finish
+11.46.7.	Deer Load Motor Finish
+11.46.8.	Deer Load MDB Finish
+11.46.11.	Deer LoadFile Finish
+11.46.11.	Deer OnInitDialog
+11.46.11.	Deer OnInitDialog Menu OK
+11.46.11.	Deer Create Thread Finish
+11.47.34.	Servo Off All Finish
+11.47.34.	Close All IO Finish
+11.47.34.	Thread Tester Finish
+11.47.34.	Thread IOReadWrite Finish
+11.47.34.	Thread Initial Arm Finish
+11.47.34.	Thread Inserter Finish
+11.47.34.	Thread Inspect Finish
+11.47.34.	Thread ErrorCtrl Finish
+11.47.34.	Thread Manual Finish
+11.47.34.	Thread Arm Finish
+11.47.34.	Shut Down Finish
+11.58.37.	Deer Load txt Finish
+11.58.37.	Deer Load Motor Finish
+11.58.37.	Deer Load MDB Finish
+11.58.37.	Deer LoadFile Finish
+11.58.37.	Deer OnInitDialog
+11.58.37.	Deer OnInitDialog Menu OK
+11.58.37.	Deer Create Thread Finish
+12.5.16.	Servo Off All Finish
+12.5.16.	Close All IO Finish
+12.5.16.	Thread Arm Finish
+12.5.16.	Thread Inspect Finish
+12.5.16.	Thread IOReadWrite Finish
+12.5.16.	Thread Inserter Finish
+12.5.16.	Thread Initial Arm Finish
+12.5.16.	Thread Tester Finish
+12.5.16.	Thread Manual Finish
+12.5.16.	Thread ErrorCtrl Finish
+12.5.16.	Shut Down Finish
+12.22.48.	Deer Load txt Finish
+12.22.48.	Deer Load Motor Finish
+12.22.48.	Deer Load MDB Finish
+12.22.49.	Deer LoadFile Finish
+12.22.49.	Deer OnInitDialog
+12.22.49.	Deer OnInitDialog Menu OK
+12.22.49.	Deer Create Thread Finish
+12.23.30.	Servo Off All Finish
+12.23.30.	Close All IO Finish
+12.23.31.	Thread ErrorCtrl Finish
+12.23.31.	Thread Arm Finish
+12.23.31.	Thread Initial Arm Finish
+12.23.31.	Thread Manual Finish
+12.23.31.	Thread Tester Finish
+12.23.31.	Thread Inserter Finish
+12.23.31.	Thread Inspect Finish
+12.23.31.	Thread IOReadWrite Finish
+12.23.31.	Shut Down Finish
+11.14.36.	Deer Load txt Finish
+11.14.36.	Deer Load Motor Finish
+11.14.36.	Deer Load MDB Finish
+11.14.39.	Deer LoadFile Finish
+11.14.39.	Deer OnInitDialog
+11.14.39.	Deer OnInitDialog Menu OK
+11.14.39.	Deer Create Thread Finish
+11.15.50.	Servo Off All Finish
+11.15.50.	Close All IO Finish
+11.15.50.	Thread Arm Finish
+11.15.50.	Thread Inspect Finish
+11.15.50.	Thread Initial Arm Finish
+11.15.50.	Thread IOReadWrite Finish
+11.15.50.	Thread Inserter Finish
+11.15.50.	Thread Tester Finish
+11.15.50.	Thread ErrorCtrl Finish
+11.15.50.	Thread Manual Finish
+11.15.50.	Shut Down Finish
+11.24.35.	Deer Load txt Finish
+11.24.35.	Deer Load Motor Finish
+11.24.35.	Deer Load MDB Finish
+11.24.38.	Deer LoadFile Finish
+11.24.38.	Deer OnInitDialog
+11.24.38.	Deer OnInitDialog Menu OK
+11.24.38.	Deer Create Thread Finish
+11.26.9.	Servo Off All Finish
+11.26.9.	Close All IO Finish
+11.26.9.	Thread ErrorCtrl Finish
+11.26.9.	Thread Inspect Finish
+11.26.9.	Thread Initial Arm Finish
+11.26.9.	Thread Inserter Finish
+11.26.9.	Thread Manual Finish
+11.26.9.	Thread Tester Finish
+11.26.9.	Thread Arm Finish
+11.26.9.	Thread IOReadWrite Finish
+11.26.9.	Shut Down Finish
+13.34.52.	Deer Load txt Finish
+13.34.52.	Deer Load Motor Finish
+13.34.52.	Deer Load MDB Finish
+13.34.56.	Deer LoadFile Finish
+13.34.56.	Deer OnInitDialog
+13.34.56.	Deer OnInitDialog Menu OK
+13.34.57.	Deer Create Thread Finish
+13.35.21.	Servo Off All Finish
+13.35.21.	Close All IO Finish
+13.35.21.	Thread Manual Finish
+13.35.22.	Thread IOReadWrite Finish
+13.35.22.	Thread Initial Arm Finish
+13.35.22.	Thread Inserter Finish
+13.35.22.	Thread Inspect Finish
+13.35.22.	Shut Down Finish
+13.35.22.	Thread ErrorCtrl Finish
+13.35.22.	Thread Tester Finish
+13.35.22.	Thread Arm Finish
+13.38.9.	Deer Load txt Finish
+13.38.9.	Deer Load Motor Finish
+13.38.9.	Deer Load MDB Finish
+13.38.10.	Deer LoadFile Finish
+13.38.10.	Deer OnInitDialog
+13.38.10.	Deer OnInitDialog Menu OK
+13.38.10.	Deer Create Thread Finish
+13.38.20.	Servo Off All Finish
+13.38.20.	Close All IO Finish
+13.38.20.	Thread Initial Arm Finish
+13.38.20.	Thread Tester Finish
+13.38.20.	Thread Inserter Finish
+13.38.20.	Thread Inspect Finish
+13.38.20.	Thread IOReadWrite Finish
+13.38.20.	Thread ErrorCtrl Finish
+13.38.20.	Thread Manual Finish
+13.38.20.	Thread Arm Finish
+13.38.20.	Shut Down Finish
+13.58.54.	Deer Load txt Finish
+13.58.54.	Deer Load Motor Finish
+13.58.54.	Deer Load MDB Finish
+13.58.55.	Deer LoadFile Finish
+13.58.55.	Deer OnInitDialog
+13.58.55.	Deer OnInitDialog Menu OK
+13.58.55.	Deer Create Thread Finish
+13.58.58.	Servo Off All Finish
+13.58.58.	Close All IO Finish
+13.58.58.	Thread Initial Arm Finish
+13.58.58.	Thread Inspect Finish
+13.58.58.	Thread IOReadWrite Finish
+13.58.58.	Thread Inserter Finish
+13.58.58.	Thread ErrorCtrl Finish
+13.58.58.	Thread Arm Finish
+13.58.58.	Thread Manual Finish
+13.59.0.	Shut Down Finish
+13.59.0.	Thread Tester Finish
+13.59.21.	Deer Load txt Finish
+13.59.21.	Deer Load Motor Finish
+13.59.21.	Deer Load MDB Finish
+13.59.22.	Deer LoadFile Finish
+13.59.22.	Deer OnInitDialog
+13.59.22.	Deer OnInitDialog Menu OK
+13.59.22.	Deer Create Thread Finish
+14.0.10.	Servo Off All Finish
+14.0.10.	Close All IO Finish
+14.0.10.	Thread Inspect Finish
+14.0.10.	Thread Manual Finish
+14.0.10.	Thread Tester Finish
+14.0.10.	Thread ErrorCtrl Finish
+14.0.10.	Thread Initial Arm Finish
+14.0.10.	Thread Arm Finish
+14.0.10.	Thread Inserter Finish
+14.0.10.	Thread IOReadWrite Finish
+14.0.10.	Shut Down Finish
+14.16.51.	Deer Load txt Finish
+14.16.51.	Deer Load Motor Finish
+14.16.52.	Deer Load MDB Finish
+14.16.53.	Deer LoadFile Finish
+14.16.53.	Deer OnInitDialog
+14.16.53.	Deer OnInitDialog Menu OK
+14.16.53.	Deer Create Thread Finish
+14.17.12.	Servo Off All Finish
+14.17.12.	Close All IO Finish
+14.17.12.	Thread Arm Finish
+14.17.12.	Thread ErrorCtrl Finish
+14.17.12.	Thread Tester Finish
+14.17.12.	Thread Manual Finish
+14.17.12.	Thread Initial Arm Finish
+14.17.12.	Thread Inserter Finish
+14.17.12.	Thread Inspect Finish
+14.17.12.	Thread IOReadWrite Finish
+14.17.12.	Shut Down Finish
+14.17.49.	Deer Load txt Finish
+14.17.49.	Deer Load Motor Finish
+14.17.50.	Deer Load MDB Finish
+14.17.50.	Deer LoadFile Finish
+14.17.50.	Deer OnInitDialog
+14.17.50.	Deer OnInitDialog Menu OK
+14.17.51.	Deer Create Thread Finish
+14.18.1.	Servo Off All Finish
+14.18.1.	Close All IO Finish
+14.18.1.	Thread Arm Finish
+14.18.1.	Thread Manual Finish
+14.18.1.	Thread Initial Arm Finish
+14.18.1.	Thread ErrorCtrl Finish
+14.18.1.	Thread Tester Finish
+14.18.1.	Thread Inserter Finish
+14.18.1.	Thread Inspect Finish
+14.18.1.	Thread IOReadWrite Finish
+14.18.2.	Shut Down Finish
+14.18.9.	Deer Load txt Finish
+14.18.9.	Deer Load Motor Finish
+14.18.10.	Deer Load MDB Finish
+14.18.10.	Deer LoadFile Finish
+14.18.10.	Deer OnInitDialog
+14.18.10.	Deer OnInitDialog Menu OK
+14.18.11.	Deer Create Thread Finish
+14.18.31.	Servo Off All Finish
+14.18.31.	Close All IO Finish
+14.18.31.	Thread ErrorCtrl Finish
+14.18.31.	Thread Inspect Finish
+14.18.31.	Thread Inserter Finish
+14.18.31.	Thread IOReadWrite Finish
+14.18.31.	Thread Initial Arm Finish
+14.18.31.	Thread Manual Finish
+14.18.31.	Thread Tester Finish
+14.18.31.	Thread Arm Finish
+14.18.31.	Shut Down Finish
+13.49.48.	Deer Load txt Finish
+13.49.48.	Deer Load Motor Finish
+13.49.48.	Deer Load MDB Finish
+13.49.50.	Deer LoadFile Finish
+13.49.50.	Deer OnInitDialog
+13.49.50.	Deer OnInitDialog Menu OK
+13.49.50.	Deer Create Thread Finish
+13.50.0.	Servo Off All Finish
+13.50.0.	Close All IO Finish
+13.50.1.	Thread Arm Finish
+13.50.1.	Thread Tester Finish
+13.50.1.	Thread Initial Arm Finish
+13.50.1.	Thread Inserter Finish
+13.50.1.	Thread Inspect Finish
+13.50.1.	Thread IOReadWrite Finish
+13.50.1.	Thread ErrorCtrl Finish
+13.50.1.	Thread Manual Finish
+13.50.1.	Shut Down Finish
+14.22.25.	Deer Load txt Finish
+14.22.25.	Deer Load Motor Finish
+14.22.26.	Deer Load MDB Finish
+14.22.26.	Deer LoadFile Finish
+14.22.26.	Deer OnInitDialog
+14.22.26.	Deer OnInitDialog Menu OK
+14.22.27.	Deer Create Thread Finish
+14.22.35.	Servo Off All Finish
+14.22.35.	Close All IO Finish
+14.22.35.	Thread Inserter Finish
+14.22.35.	Thread Initial Arm Finish
+14.22.35.	Thread IOReadWrite Finish
+14.22.35.	Thread ErrorCtrl Finish
+14.22.35.	Thread Inspect Finish
+14.22.35.	Thread Tester Finish
+14.22.35.	Thread Manual Finish
+14.22.35.	Thread Arm Finish
+14.22.35.	Shut Down Finish
+14.22.38.	Deer Load txt Finish
+14.22.38.	Deer Load Motor Finish
+14.22.39.	Deer Load MDB Finish
+14.22.40.	Deer LoadFile Finish
+14.22.40.	Deer OnInitDialog
+14.22.40.	Deer OnInitDialog Menu OK
+14.22.40.	Deer Create Thread Finish
+14.23.3.	Deer Load txt Finish
+14.23.3.	Deer Load Motor Finish
+14.23.3.	Deer Load MDB Finish
+14.23.4.	Deer LoadFile Finish
+14.23.4.	Deer OnInitDialog
+14.23.4.	Deer OnInitDialog Menu OK
+14.23.5.	Deer Create Thread Finish
+14.23.21.	Servo Off All Finish
+14.23.21.	Close All IO Finish
+14.23.21.	Thread Manual Finish
+14.23.21.	Thread Inserter Finish
+14.23.21.	Thread IOReadWrite Finish
+14.23.21.	Thread Initial Arm Finish
+14.23.21.	Thread Inspect Finish
+14.23.21.	Thread Arm Finish
+14.23.21.	Thread ErrorCtrl Finish
+14.23.21.	Thread Tester Finish
+14.23.21.	Shut Down Finish
+14.23.30.	Deer Load txt Finish
+14.23.30.	Deer Load Motor Finish
+14.23.31.	Deer Load MDB Finish
+14.23.32.	Deer LoadFile Finish
+14.23.32.	Deer OnInitDialog
+14.23.32.	Deer OnInitDialog Menu OK
+14.23.32.	Deer Create Thread Finish
+14.23.47.	Servo Off All Finish
+14.23.47.	Close All IO Finish
+14.23.47.	Thread Tester Finish
+14.23.47.	Thread Initial Arm Finish
+14.23.47.	Thread Inserter Finish
+14.23.47.	Thread Inspect Finish
+14.23.47.	Thread IOReadWrite Finish
+14.23.47.	Thread ErrorCtrl Finish
+14.23.47.	Thread Manual Finish
+14.23.47.	Thread Arm Finish
+14.23.47.	Shut Down Finish
+14.23.51.	Deer Load txt Finish
+14.23.51.	Deer Load Motor Finish
+14.23.51.	Deer Load MDB Finish
+14.23.52.	Deer LoadFile Finish
+14.23.52.	Deer OnInitDialog
+14.23.52.	Deer OnInitDialog Menu OK
+14.23.53.	Deer Create Thread Finish
+14.24.13.	Servo Off All Finish
+14.24.13.	Close All IO Finish
+14.24.13.	Thread Inserter Finish
+14.24.13.	Thread Inspect Finish
+14.24.13.	Thread Initial Arm Finish
+14.24.13.	Thread IOReadWrite Finish
+14.24.13.	Thread ErrorCtrl Finish
+14.24.13.	Thread Tester Finish
+14.24.13.	Thread Manual Finish
+14.24.13.	Thread Arm Finish
+14.24.13.	Shut Down Finish
+14.24.38.	Deer Load txt Finish
+14.24.38.	Deer Load Motor Finish
+14.24.39.	Deer Load MDB Finish
+14.24.40.	Deer LoadFile Finish
+14.24.40.	Deer OnInitDialog
+14.24.40.	Deer OnInitDialog Menu OK
+14.24.40.	Deer Create Thread Finish
+14.24.49.	Servo Off All Finish
+14.24.49.	Close All IO Finish
+14.24.49.	Thread Manual Finish
+14.24.49.	Thread Inspect Finish
+14.24.49.	Thread Inserter Finish
+14.24.49.	Thread IOReadWrite Finish
+14.24.49.	Thread Initial Arm Finish
+14.24.49.	Thread Tester Finish
+14.24.49.	Thread ErrorCtrl Finish
+14.24.49.	Thread Arm Finish
+14.24.49.	Shut Down Finish
+14.25.18.	Deer Load txt Finish
+14.25.18.	Deer Load Motor Finish
+14.25.18.	Deer Load MDB Finish
+14.25.20.	Deer LoadFile Finish
+14.25.20.	Deer OnInitDialog
+14.25.20.	Deer OnInitDialog Menu OK
+14.25.20.	Deer Create Thread Finish
+14.25.30.	Servo Off All Finish
+14.25.30.	Close All IO Finish
+14.25.30.	Thread ErrorCtrl Finish
+14.25.30.	Thread Manual Finish
+14.25.30.	Thread Tester Finish
+14.25.30.	Thread Arm Finish
+14.25.30.	Thread Initial Arm Finish
+14.25.30.	Thread Inserter Finish
+14.25.30.	Thread Inspect Finish
+14.25.30.	Thread IOReadWrite Finish
+14.25.30.	Shut Down Finish
+14.29.9.	Deer Load txt Finish
+14.29.9.	Deer Load Motor Finish
+14.29.10.	Deer Load MDB Finish
+14.29.11.	Deer LoadFile Finish
+14.29.11.	Deer OnInitDialog
+14.29.11.	Deer OnInitDialog Menu OK
+14.29.11.	Deer Create Thread Finish
+14.29.20.	Servo Off All Finish
+14.29.20.	Close All IO Finish
+14.29.20.	Thread ErrorCtrl Finish
+14.29.20.	Thread Manual Finish
+14.29.20.	Thread Inspect Finish
+14.29.20.	Thread Tester Finish
+14.29.20.	Thread Arm Finish
+14.29.20.	Thread Initial Arm Finish
+14.29.20.	Thread Inserter Finish
+14.29.20.	Thread IOReadWrite Finish
+14.29.20.	Shut Down Finish
+14.30.46.	Deer Load txt Finish
+14.30.46.	Deer Load Motor Finish
+14.30.46.	Deer Load MDB Finish
+14.30.47.	Deer LoadFile Finish
+14.30.47.	Deer OnInitDialog
+14.30.47.	Deer OnInitDialog Menu OK
+14.30.47.	Deer Create Thread Finish
+14.30.55.	Servo Off All Finish
+14.30.55.	Close All IO Finish
+14.30.55.	Thread Arm Finish
+14.30.55.	Thread Initial Arm Finish
+14.30.55.	Thread Inserter Finish
+14.30.55.	Thread Manual Finish
+14.30.55.	Thread ErrorCtrl Finish
+14.30.55.	Shut Down Finish
+14.30.55.	Thread Tester Finish
+14.30.55.	Thread Inspect Finish
+14.30.55.	Thread IOReadWrite Finish
+14.31.39.	Deer Load txt Finish
+14.31.39.	Deer Load Motor Finish
+14.31.39.	Deer Load MDB Finish
+14.31.39.	Deer LoadFile Finish
+14.31.39.	Deer OnInitDialog
+14.31.39.	Deer OnInitDialog Menu OK
+14.31.39.	Deer Create Thread Finish
+14.31.47.	Servo Off All Finish
+14.31.47.	Close All IO Finish
+14.31.47.	Thread Arm Finish
+14.31.47.	Thread IOReadWrite Finish
+14.31.47.	Thread Initial Arm Finish
+14.31.47.	Thread Inspect Finish
+14.31.47.	Thread Inserter Finish
+14.31.47.	Thread ErrorCtrl Finish
+14.31.47.	Thread Tester Finish
+14.31.47.	Thread Manual Finish
+14.31.47.	Shut Down Finish
+14.32.30.	Deer Load txt Finish
+14.32.30.	Deer Load Motor Finish
+14.32.31.	Deer Load MDB Finish
+14.32.32.	Deer LoadFile Finish
+14.32.32.	Deer OnInitDialog
+14.32.32.	Deer OnInitDialog Menu OK
+14.32.32.	Deer Create Thread Finish
+14.32.41.	Servo Off All Finish
+14.32.41.	Close All IO Finish
+14.32.41.	Thread Inserter Finish
+14.32.41.	Thread Arm Finish
+14.32.41.	Thread ErrorCtrl Finish
+14.32.41.	Thread Manual Finish
+14.32.41.	Thread Tester Finish
+14.32.41.	Shut Down Finish
+14.32.41.	Thread Initial Arm Finish
+14.32.41.	Thread Inspect Finish
+14.32.41.	Thread IOReadWrite Finish
+14.32.48.	Deer Load txt Finish
+14.32.48.	Deer Load Motor Finish
+14.32.48.	Deer Load MDB Finish
+14.32.49.	Deer LoadFile Finish
+14.32.50.	Deer OnInitDialog
+14.32.50.	Deer OnInitDialog Menu OK
+14.32.50.	Deer Create Thread Finish
+14.32.59.	Servo Off All Finish
+14.32.59.	Close All IO Finish
+14.32.59.	Thread Tester Finish
+14.32.59.	Thread IOReadWrite Finish
+14.32.59.	Thread Inserter Finish
+14.32.59.	Thread Inspect Finish
+14.32.59.	Thread Initial Arm Finish
+14.32.59.	Thread ErrorCtrl Finish
+14.32.59.	Thread Manual Finish
+14.32.59.	Thread Arm Finish
+14.32.59.	Shut Down Finish
+14.33.5.	Deer Load txt Finish
+14.33.5.	Deer Load Motor Finish
+14.33.5.	Deer Load MDB Finish
+14.33.6.	Deer LoadFile Finish
+14.33.6.	Deer OnInitDialog
+14.33.6.	Deer OnInitDialog Menu OK
+14.33.6.	Deer Create Thread Finish
+14.33.11.	Servo Off All Finish
+14.33.11.	Close All IO Finish
+14.33.11.	Thread Initial Arm Finish
+14.33.11.	Thread Tester Finish
+14.33.11.	Thread ErrorCtrl Finish
+14.33.11.	Thread Inserter Finish
+14.33.11.	Thread Inspect Finish
+14.33.11.	Thread IOReadWrite Finish
+14.33.11.	Thread Manual Finish
+14.33.11.	Thread Arm Finish
+14.33.11.	Shut Down Finish
+21.55.36.	Deer Load txt Finish
+21.55.36.	Deer Load Motor Finish
+21.55.36.	Deer Load MDB Finish
+21.55.37.	Deer LoadFile Finish
+21.55.37.	Deer OnInitDialog
+21.55.37.	Deer OnInitDialog Menu OK
+21.55.38.	Deer Create Thread Finish
+21.56.24.	Servo Off All Finish
+21.56.24.	Close All IO Finish
+21.56.24.	Thread Initial Arm Finish
+21.56.24.	Thread Arm Finish
+21.56.24.	Thread Inspect Finish
+21.56.24.	Thread ErrorCtrl Finish
+21.56.24.	Thread Manual Finish
+21.56.24.	Thread Tester Finish
+21.56.24.	Thread Inserter Finish
+21.56.24.	Thread IOReadWrite Finish
+21.56.24.	Shut Down Finish
+21.56.28.	Deer Load txt Finish
+21.56.28.	Deer Load Motor Finish
+21.56.28.	Deer Load MDB Finish
+21.56.29.	Deer LoadFile Finish
+21.56.29.	Deer OnInitDialog
+21.56.29.	Deer OnInitDialog Menu OK
+21.56.30.	Deer Create Thread Finish
+21.56.47.	Servo Off All Finish
+21.56.47.	Close All IO Finish
+21.56.47.	Thread Manual Finish
+21.56.47.	Thread ErrorCtrl Finish
+21.56.47.	Thread Initial Arm Finish
+21.56.47.	Thread Inserter Finish
+21.56.47.	Thread Inspect Finish
+21.56.47.	Thread IOReadWrite Finish
+21.56.47.	Thread Tester Finish
+21.56.47.	Thread Arm Finish
+21.56.47.	Shut Down Finish
+13.29.54.	Deer Load txt Finish
+13.29.54.	Deer Load Motor Finish
+13.29.54.	Deer Load MDB Finish
+13.29.56.	Deer LoadFile Finish
+13.29.56.	Deer OnInitDialog
+13.29.56.	Deer OnInitDialog Menu OK
+13.29.56.	Deer Create Thread Finish
+13.31.33.	Servo Off All Finish
+13.31.33.	Close All IO Finish
+13.31.33.	Thread Arm Finish
+13.31.33.	Thread IOReadWrite Finish
+13.31.33.	Thread ErrorCtrl Finish
+13.31.33.	Thread Manual Finish
+13.31.33.	Thread Tester Finish
+13.31.33.	Thread Initial Arm Finish
+13.31.33.	Thread Inserter Finish
+13.31.33.	Thread Inspect Finish
+13.31.33.	Shut Down Finish
+13.32.17.	Deer Load txt Finish
+13.32.17.	Deer Load Motor Finish
+13.32.17.	Deer Load MDB Finish
+13.32.19.	Deer LoadFile Finish
+13.32.19.	Deer OnInitDialog
+13.32.19.	Deer OnInitDialog Menu OK
+13.32.19.	Deer Create Thread Finish
+13.33.33.	Servo Off All Finish
+13.33.33.	Close All IO Finish
+13.33.33.	Thread Inspect Finish
+13.33.33.	Thread Initial Arm Finish
+13.33.33.	Thread Inserter Finish
+13.33.33.	Thread IOReadWrite Finish
+13.33.33.	Thread ErrorCtrl Finish
+13.33.33.	Thread Manual Finish
+13.33.33.	Thread Arm Finish
+13.33.34.	Thread Tester Finish
+13.33.34.	Shut Down Finish
+13.36.0.	Deer Load txt Finish
+13.36.0.	Deer Load Motor Finish
+13.36.1.	Deer Load MDB Finish
+13.36.2.	Deer LoadFile Finish
+13.36.2.	Deer OnInitDialog
+13.36.2.	Deer OnInitDialog Menu OK
+13.36.2.	Deer Create Thread Finish
+13.36.14.	Servo Off All Finish
+13.36.14.	Close All IO Finish
+13.36.14.	Thread Tester Finish
+13.36.14.	Thread ErrorCtrl Finish
+13.36.14.	Thread Arm Finish
+13.36.14.	Thread Manual Finish
+13.36.14.	Thread Initial Arm Finish
+13.36.14.	Thread IOReadWrite Finish
+13.36.14.	Thread Inserter Finish
+13.36.14.	Thread Inspect Finish
+13.36.14.	Shut Down Finish
+14.34.15.	Deer Load txt Finish
+14.34.15.	Deer Load Motor Finish
+14.34.15.	Deer Load MDB Finish
+14.34.24.	Deer LoadFile Finish
+14.34.25.	Deer OnInitDialog
+14.34.25.	Deer OnInitDialog Menu OK
+14.34.25.	Deer Create Thread Finish
+14.36.22.	Servo Off All Finish
+14.36.22.	Close All IO Finish
+14.36.23.	Thread Initial Arm Finish
+14.36.23.	Thread Inserter Finish
+14.36.23.	Thread Inspect Finish
+14.36.23.	Thread IOReadWrite Finish
+14.36.23.	Shut Down Finish
+14.36.23.	Thread ErrorCtrl Finish
+14.36.23.	Thread Manual Finish
+14.36.23.	Thread Tester Finish
+14.36.23.	Thread Arm Finish
+14.40.35.	Deer Load txt Finish
+14.40.35.	Deer Load Motor Finish
+14.40.36.	Deer Load MDB Finish
+14.40.37.	Deer LoadFile Finish
+14.40.37.	Deer OnInitDialog
+14.40.37.	Deer OnInitDialog Menu OK
+14.40.38.	Deer Create Thread Finish
+14.59.53.	Deer Load txt Finish
+14.59.53.	Deer Load Motor Finish
+14.59.54.	Deer Load MDB Finish
+14.59.55.	Deer LoadFile Finish
+14.59.55.	Deer OnInitDialog
+14.59.55.	Deer OnInitDialog Menu OK
+14.59.55.	Deer Create Thread Finish
+15.0.3.	Servo Off All Finish
+15.0.3.	Close All IO Finish
+15.0.3.	Thread ErrorCtrl Finish
+15.0.3.	Thread Inspect Finish
+15.0.3.	Thread Initial Arm Finish
+15.0.3.	Thread Inserter Finish
+15.0.3.	Thread Manual Finish
+15.0.3.	Thread Tester Finish
+15.0.3.	Thread Arm Finish
+15.0.3.	Thread IOReadWrite Finish
+15.0.3.	Shut Down Finish
+15.0.28.	Deer Load txt Finish
+15.0.28.	Deer Load Motor Finish
+15.0.29.	Deer Load MDB Finish
+15.0.30.	Deer LoadFile Finish
+15.0.30.	Deer OnInitDialog
+15.0.30.	Deer OnInitDialog Menu OK
+15.0.30.	Deer Create Thread Finish
+15.1.38.	Servo Off All Finish
+15.1.38.	Close All IO Finish
+15.1.39.	Thread Tester Finish
+15.1.39.	Thread ErrorCtrl Finish
+15.1.39.	Thread Arm Finish
+15.1.39.	Thread Initial Arm Finish
+15.1.39.	Thread Inserter Finish
+15.1.39.	Thread Inspect Finish
+15.1.39.	Thread IOReadWrite Finish
+15.1.39.	Thread Manual Finish
+15.1.39.	Shut Down Finish
+15.2.9.	Deer Load txt Finish
+15.2.9.	Deer Load Motor Finish
+15.2.9.	Deer Load MDB Finish
+15.2.10.	Deer LoadFile Finish
+15.2.10.	Deer OnInitDialog
+15.2.10.	Deer OnInitDialog Menu OK
+15.2.11.	Deer Create Thread Finish
+15.3.49.	Servo Off All Finish
+15.3.49.	Close All IO Finish
+15.3.49.	Thread Manual Finish
+15.3.49.	Thread Tester Finish
+15.3.49.	Thread Arm Finish
+15.3.49.	Thread ErrorCtrl Finish
+15.3.49.	Thread Initial Arm Finish
+15.3.49.	Thread Inserter Finish
+15.3.49.	Thread Inspect Finish
+15.3.49.	Thread IOReadWrite Finish
+15.3.49.	Shut Down Finish
+15.12.33.	Deer Load txt Finish
+15.12.33.	Deer Load Motor Finish
+15.12.33.	Deer Load MDB Finish
+15.12.35.	Deer LoadFile Finish
+15.12.35.	Deer OnInitDialog
+15.12.35.	Deer OnInitDialog Menu OK
+15.12.35.	Deer Create Thread Finish
+15.13.21.	Servo Off All Finish
+15.13.21.	Close All IO Finish
+15.13.21.	Thread IOReadWrite Finish
+15.13.21.	Thread Inserter Finish
+15.13.21.	Thread Manual Finish
+15.13.21.	Thread Initial Arm Finish
+15.13.21.	Thread Inspect Finish
+15.13.21.	Shut Down Finish
+15.13.21.	Thread ErrorCtrl Finish
+15.13.21.	Thread Tester Finish
+15.13.21.	Thread Arm Finish
+15.14.2.	Deer Load txt Finish
+15.14.2.	Deer Load Motor Finish
+15.14.2.	Deer Load MDB Finish
+15.14.3.	Deer LoadFile Finish
+15.14.3.	Deer OnInitDialog
+15.14.3.	Deer OnInitDialog Menu OK
+15.14.4.	Deer Create Thread Finish
+15.15.31.	Servo Off All Finish
+15.15.31.	Close All IO Finish
+15.15.31.	Thread Initial Arm Finish
+15.15.31.	Thread Inspect Finish
+15.15.31.	Thread IOReadWrite Finish
+15.15.31.	Thread Inserter Finish
+15.15.31.	Thread ErrorCtrl Finish
+15.15.31.	Thread Tester Finish
+15.15.31.	Thread Arm Finish
+15.15.31.	Thread Manual Finish
+15.15.31.	Shut Down Finish
+15.17.36.	Deer Load txt Finish
+15.17.36.	Deer Load Motor Finish
+15.17.36.	Deer Load MDB Finish
+15.17.37.	Deer LoadFile Finish
+15.17.37.	Deer OnInitDialog
+15.17.37.	Deer OnInitDialog Menu OK
+15.17.38.	Deer Create Thread Finish
+15.18.32.	Servo Off All Finish
+15.18.32.	Close All IO Finish
+15.18.32.	Thread Tester Finish
+15.18.32.	Thread Arm Finish
+15.18.32.	Thread Initial Arm Finish
+15.18.32.	Thread Inserter Finish
+15.18.32.	Thread Inspect Finish
+15.18.32.	Thread IOReadWrite Finish
+15.18.32.	Thread ErrorCtrl Finish
+15.18.32.	Thread Manual Finish
+15.18.32.	Shut Down Finish
+15.26.8.	Deer Load txt Finish
+15.26.8.	Deer Load Motor Finish
+15.26.8.	Deer Load MDB Finish
+15.26.10.	Deer LoadFile Finish
+15.26.10.	Deer OnInitDialog
+15.26.10.	Deer OnInitDialog Menu OK
+15.26.11.	Deer Create Thread Finish
+15.26.18.	Servo Off All Finish
+15.26.18.	Close All IO Finish
+15.26.18.	Thread Tester Finish
+15.26.18.	Thread Inserter Finish
+15.26.18.	Thread Initial Arm Finish
+15.26.18.	Thread Inspect Finish
+15.26.18.	Thread IOReadWrite Finish
+15.26.18.	Thread ErrorCtrl Finish
+15.26.18.	Thread Manual Finish
+15.26.18.	Thread Arm Finish
+15.26.18.	Shut Down Finish
+15.26.24.	Deer Load txt Finish
+15.26.24.	Deer Load Motor Finish
+15.26.24.	Deer Load MDB Finish
+15.26.25.	Deer LoadFile Finish
+15.26.25.	Deer OnInitDialog
+15.26.25.	Deer OnInitDialog Menu OK
+15.26.26.	Deer Create Thread Finish
+15.26.30.	Servo Off All Finish
+15.26.30.	Close All IO Finish
+15.26.30.	Thread Arm Finish
+15.26.30.	Thread Manual Finish
+15.26.30.	Thread ErrorCtrl Finish
+15.26.30.	Thread Initial Arm Finish
+15.26.30.	Thread Inserter Finish
+15.26.30.	Thread Inspect Finish
+15.26.30.	Thread IOReadWrite Finish
+15.26.30.	Thread Tester Finish
+15.26.30.	Shut Down Finish
+15.27.7.	Deer Load txt Finish
+15.27.7.	Deer Load Motor Finish
+15.27.7.	Deer Load MDB Finish
+15.27.8.	Deer LoadFile Finish
+15.27.8.	Deer OnInitDialog
+15.27.8.	Deer OnInitDialog Menu OK
+15.27.8.	Deer Create Thread Finish
+15.27.16.	Servo Off All Finish
+15.27.16.	Close All IO Finish
+15.27.16.	Thread ErrorCtrl Finish
+15.27.16.	Thread Initial Arm Finish
+15.27.16.	Thread IOReadWrite Finish
+15.27.16.	Thread Inserter Finish
+15.27.16.	Thread Inspect Finish
+15.27.16.	Thread Manual Finish
+15.27.16.	Thread Tester Finish
+15.27.16.	Thread Arm Finish
+15.27.16.	Shut Down Finish
+15.27.31.	Deer Load txt Finish
+15.27.31.	Deer Load Motor Finish
+15.27.32.	Deer Load MDB Finish
+15.27.33.	Deer LoadFile Finish
+15.27.33.	Deer OnInitDialog
+15.27.33.	Deer OnInitDialog Menu OK
+15.27.33.	Deer Create Thread Finish
+15.27.39.	Servo Off All Finish
+15.27.39.	Close All IO Finish
+15.27.39.	Thread Initial Arm Finish
+15.27.39.	Thread ErrorCtrl Finish
+15.27.39.	Thread Manual Finish
+15.27.39.	Thread Inspect Finish
+15.27.39.	Thread Inserter Finish
+15.27.39.	Thread Tester Finish
+15.27.39.	Thread Arm Finish
+15.27.39.	Thread IOReadWrite Finish
+15.27.39.	Shut Down Finish
+15.28.28.	Deer Load txt Finish
+15.28.28.	Deer Load Motor Finish
+15.28.28.	Deer Load MDB Finish
+15.28.29.	Deer LoadFile Finish
+15.28.29.	Deer OnInitDialog
+15.28.29.	Deer OnInitDialog Menu OK
+15.28.29.	Deer Create Thread Finish
+15.28.43.	Servo Off All Finish
+15.28.43.	Close All IO Finish
+15.28.43.	Thread Inserter Finish
+15.28.43.	Thread ErrorCtrl Finish
+15.28.43.	Thread Tester Finish
+15.28.43.	Thread Manual Finish
+15.28.43.	Thread Initial Arm Finish
+15.28.43.	Thread Inspect Finish
+15.28.43.	Thread IOReadWrite Finish
+15.28.43.	Thread Arm Finish
+15.28.43.	Shut Down Finish
+15.35.1.	Deer Load txt Finish
+15.35.1.	Deer Load Motor Finish
+15.35.2.	Deer Load MDB Finish
+15.35.4.	Deer LoadFile Finish
+15.35.4.	Deer OnInitDialog
+15.35.4.	Deer OnInitDialog Menu OK
+15.35.4.	Deer Create Thread Finish
+15.35.17.	Servo Off All Finish
+15.35.17.	Close All IO Finish
+15.35.17.	Thread ErrorCtrl Finish
+15.35.17.	Thread Initial Arm Finish
+15.35.17.	Thread Inserter Finish
+15.35.17.	Thread IOReadWrite Finish
+15.35.17.	Thread Manual Finish
+15.35.17.	Thread Arm Finish
+15.35.17.	Thread Tester Finish
+15.35.17.	Thread Inspect Finish
+15.35.17.	Shut Down Finish
+15.44.10.	Deer Load txt Finish
+15.44.10.	Deer Load Motor Finish
+15.44.10.	Deer Load MDB Finish
+15.44.11.	Deer LoadFile Finish
+15.44.11.	Deer OnInitDialog
+15.44.11.	Deer OnInitDialog Menu OK
+15.44.12.	Deer Create Thread Finish
+15.44.29.	Servo Off All Finish
+15.44.29.	Close All IO Finish
+15.44.30.	Thread Arm Finish
+15.44.30.	Thread ErrorCtrl Finish
+15.44.30.	Thread Manual Finish
+15.44.30.	Thread Tester Finish
+15.44.30.	Thread Initial Arm Finish
+15.44.30.	Thread Inspect Finish
+15.44.30.	Thread IOReadWrite Finish
+15.44.30.	Thread Inserter Finish
+15.44.30.	Shut Down Finish
+15.53.8.	Deer Load txt Finish
+15.53.8.	Deer Load Motor Finish
+15.53.8.	Deer Load MDB Finish
+15.53.10.	Deer LoadFile Finish
+15.53.10.	Deer OnInitDialog
+15.53.10.	Deer OnInitDialog Menu OK
+15.53.10.	Deer Create Thread Finish
+15.56.15.	Servo Off All Finish
+15.56.15.	Close All IO Finish
+15.56.15.	Thread ErrorCtrl Finish
+15.56.15.	Thread Manual Finish
+15.56.15.	Thread Arm Finish
+15.56.15.	Thread Tester Finish
+15.56.15.	Thread Initial Arm Finish
+15.56.15.	Thread Inserter Finish
+15.56.15.	Thread Inspect Finish
+15.56.15.	Thread IOReadWrite Finish
+15.56.15.	Shut Down Finish
+15.56.19.	Deer Load txt Finish
+15.56.19.	Deer Load Motor Finish
+15.56.20.	Deer Load MDB Finish
+15.56.21.	Deer LoadFile Finish
+15.56.21.	Deer OnInitDialog
+15.56.21.	Deer OnInitDialog Menu OK
+15.56.21.	Deer Create Thread Finish
+15.56.28.	Servo Off All Finish
+15.56.28.	Close All IO Finish
+15.56.28.	Thread Manual Finish
+15.56.28.	Thread Inspect Finish
+15.56.28.	Thread Initial Arm Finish
+15.56.28.	Thread Inserter Finish
+15.56.28.	Thread ErrorCtrl Finish
+15.56.28.	Thread Tester Finish
+15.56.28.	Thread Arm Finish
+15.56.28.	Thread IOReadWrite Finish
+15.56.28.	Shut Down Finish
+15.57.31.	Deer Load txt Finish
+15.57.31.	Deer Load Motor Finish
+15.57.31.	Deer Load MDB Finish
+15.57.32.	Deer LoadFile Finish
+15.57.32.	Deer OnInitDialog
+15.57.32.	Deer OnInitDialog Menu OK
+15.57.32.	Deer Create Thread Finish
+15.58.50.	Servo Off All Finish
+15.58.50.	Close All IO Finish
+15.58.50.	Thread Arm Finish
+15.58.50.	Thread Initial Arm Finish
+15.58.50.	Thread Tester Finish
+15.58.50.	Thread Inspect Finish
+15.58.50.	Thread Inserter Finish
+15.58.50.	Thread ErrorCtrl Finish
+15.58.50.	Thread Manual Finish
+15.58.50.	Thread IOReadWrite Finish
+15.58.50.	Shut Down Finish
+16.3.0.	Deer Load txt Finish
+16.3.0.	Deer Load Motor Finish
+16.3.1.	Deer Load MDB Finish
+16.3.2.	Deer LoadFile Finish
+16.3.2.	Deer OnInitDialog
+16.3.2.	Deer OnInitDialog Menu OK
+16.3.2.	Deer Create Thread Finish
+16.4.9.	Servo Off All Finish
+16.4.9.	Close All IO Finish
+16.4.9.	Thread Inserter Finish
+16.4.9.	Thread Inspect Finish
+16.4.9.	Thread Initial Arm Finish
+16.4.9.	Thread IOReadWrite Finish
+16.4.9.	Thread ErrorCtrl Finish
+16.4.9.	Thread Manual Finish
+16.4.9.	Thread Tester Finish
+16.4.9.	Thread Arm Finish
+16.4.9.	Shut Down Finish
+16.17.11.	Deer Load txt Finish
+16.17.11.	Deer Load Motor Finish
+16.17.11.	Deer Load MDB Finish
+16.17.12.	Deer LoadFile Finish
+16.17.13.	Deer OnInitDialog
+16.17.13.	Deer OnInitDialog Menu OK
+16.17.13.	Deer Create Thread Finish
+16.19.15.	Servo Off All Finish
+16.19.15.	Close All IO Finish
+16.19.15.	Thread IOReadWrite Finish
+16.19.15.	Thread Manual Finish
+16.19.15.	Thread ErrorCtrl Finish
+16.19.15.	Thread Initial Arm Finish
+16.19.15.	Thread Inserter Finish
+16.19.15.	Thread Inspect Finish
+16.19.15.	Thread Tester Finish
+16.19.15.	Thread Arm Finish
+16.19.15.	Shut Down Finish
+16.22.26.	Deer Load txt Finish
+16.22.26.	Deer Load Motor Finish
+16.22.26.	Deer Load MDB Finish
+16.22.28.	Deer LoadFile Finish
+16.22.28.	Deer OnInitDialog
+16.22.28.	Deer OnInitDialog Menu OK
+16.22.28.	Deer Create Thread Finish
+16.24.7.	Servo Off All Finish
+16.24.7.	Close All IO Finish
+16.24.7.	Thread ErrorCtrl Finish
+16.24.7.	Thread Inserter Finish
+16.24.7.	Thread Manual Finish
+16.24.7.	Thread Tester Finish
+16.24.7.	Thread Arm Finish
+16.24.7.	Thread Initial Arm Finish
+16.24.7.	Thread Inspect Finish
+16.24.7.	Thread IOReadWrite Finish
+16.24.7.	Shut Down Finish
+16.29.9.	Deer Load txt Finish
+16.29.9.	Deer Load Motor Finish
+16.29.10.	Deer Load MDB Finish
+16.29.11.	Deer LoadFile Finish
+16.29.11.	Deer OnInitDialog
+16.29.11.	Deer OnInitDialog Menu OK
+16.29.11.	Deer Create Thread Finish
+16.32.22.	Servo Off All Finish
+16.32.22.	Close All IO Finish
+16.32.22.	Thread Tester Finish
+16.32.22.	Thread Initial Arm Finish
+16.32.22.	Thread ErrorCtrl Finish
+16.32.22.	Thread Inserter Finish
+16.32.22.	Thread Inspect Finish
+16.32.22.	Thread IOReadWrite Finish
+16.32.22.	Thread Manual Finish
+16.32.22.	Thread Arm Finish
+16.32.22.	Shut Down Finish
+16.39.1.	Deer Load txt Finish
+16.39.1.	Deer Load Motor Finish
+16.39.1.	Deer Load MDB Finish
+16.39.2.	Deer LoadFile Finish
+16.39.2.	Deer OnInitDialog
+16.39.2.	Deer OnInitDialog Menu OK
+16.39.3.	Deer Create Thread Finish
+16.39.7.	Servo Off All Finish
+16.39.7.	Close All IO Finish
+16.39.7.	Thread Arm Finish
+16.39.7.	Thread Inserter Finish
+16.39.7.	Thread Initial Arm Finish
+16.39.8.	Thread ErrorCtrl Finish
+16.39.8.	Thread Inspect Finish
+16.39.8.	Thread IOReadWrite Finish
+16.39.8.	Thread Manual Finish
+16.39.8.	Thread Tester Finish
+16.39.8.	Shut Down Finish
+16.40.4.	Deer Load txt Finish
+16.40.4.	Deer Load Motor Finish
+16.40.4.	Deer Load MDB Finish
+16.40.5.	Deer LoadFile Finish
+16.40.5.	Deer OnInitDialog
+16.40.5.	Deer OnInitDialog Menu OK
+16.40.5.	Deer Create Thread Finish
+16.43.28.	Deer Load txt Finish
+16.43.28.	Deer Load Motor Finish
+16.43.29.	Deer Load MDB Finish
+16.43.30.	Deer LoadFile Finish
+16.43.30.	Deer OnInitDialog
+16.43.30.	Deer OnInitDialog Menu OK
+16.43.30.	Deer Create Thread Finish
+16.46.55.	Deer Load txt Finish
+16.46.55.	Deer Load Motor Finish
+16.46.56.	Deer Load MDB Finish
+16.46.57.	Deer LoadFile Finish
+16.46.57.	Deer OnInitDialog
+16.46.57.	Deer OnInitDialog Menu OK
+16.46.57.	Deer Create Thread Finish
+16.48.18.	Deer Load txt Finish
+16.48.18.	Deer Load Motor Finish
+16.48.18.	Deer Load MDB Finish
+16.48.19.	Deer LoadFile Finish
+16.48.19.	Deer OnInitDialog
+16.48.19.	Deer OnInitDialog Menu OK
+16.48.19.	Deer Create Thread Finish
+16.49.13.	Servo Off All Finish
+16.49.13.	Close All IO Finish
+16.49.13.	Thread Arm Finish
+16.49.13.	Thread ErrorCtrl Finish
+16.49.13.	Thread Initial Arm Finish
+16.49.13.	Thread Inserter Finish
+16.49.13.	Thread Inspect Finish
+16.49.13.	Thread IOReadWrite Finish
+16.49.13.	Thread Manual Finish
+16.49.13.	Thread Tester Finish
+16.49.13.	Shut Down Finish
+16.50.54.	Deer Load txt Finish
+16.50.54.	Deer Load Motor Finish
+16.50.54.	Deer Load MDB Finish
+16.50.55.	Deer LoadFile Finish
+16.50.55.	Deer OnInitDialog
+16.50.55.	Deer OnInitDialog Menu OK
+16.50.55.	Deer Create Thread Finish
+16.51.56.	Servo Off All Finish
+16.51.56.	Close All IO Finish
+16.51.56.	Thread Arm Finish
+16.51.56.	Thread Inserter Finish
+16.51.56.	Thread Inspect Finish
+16.51.56.	Thread Initial Arm Finish
+16.51.56.	Thread IOReadWrite Finish
+16.51.56.	Thread Tester Finish
+16.51.56.	Thread Manual Finish
+16.51.56.	Thread ErrorCtrl Finish
+16.51.56.	Shut Down Finish
+16.52.45.	Deer Load txt Finish
+16.52.45.	Deer Load Motor Finish
+16.52.45.	Deer Load MDB Finish
+16.52.46.	Deer LoadFile Finish
+16.52.46.	Deer OnInitDialog
+16.52.46.	Deer OnInitDialog Menu OK
+16.52.46.	Deer Create Thread Finish
+16.55.55.	Servo Off All Finish
+16.55.55.	Close All IO Finish
+16.55.55.	Thread Inspect Finish
+16.55.55.	Thread Initial Arm Finish
+16.55.55.	Thread Inserter Finish
+16.55.55.	Thread IOReadWrite Finish
+16.55.55.	Thread Tester Finish
+16.55.55.	Thread Arm Finish
+16.55.55.	Thread ErrorCtrl Finish
+16.55.55.	Thread Manual Finish
+16.55.55.	Shut Down Finish
+17.17.10.	Deer Load txt Finish
+17.17.10.	Deer Load Motor Finish
+17.17.10.	Deer Load MDB Finish
+17.17.12.	Deer LoadFile Finish
+17.17.12.	Deer OnInitDialog
+17.17.12.	Deer OnInitDialog Menu OK
+17.17.12.	Deer Create Thread Finish
+17.17.50.	Servo Off All Finish
+17.17.50.	Close All IO Finish
+17.17.50.	Thread Arm Finish
+17.17.50.	Thread Manual Finish
+17.17.50.	Thread ErrorCtrl Finish
+17.17.50.	Thread Tester Finish
+17.17.50.	Thread Initial Arm Finish
+17.17.50.	Thread Inserter Finish
+17.17.50.	Thread Inspect Finish
+17.17.50.	Thread IOReadWrite Finish
+17.17.50.	Shut Down Finish
+17.17.54.	Deer Load txt Finish
+17.17.54.	Deer Load Motor Finish
+17.17.55.	Deer Load MDB Finish
+17.17.56.	Deer LoadFile Finish
+17.17.56.	Deer OnInitDialog
+17.17.56.	Deer OnInitDialog Menu OK
+17.17.56.	Deer Create Thread Finish
+17.19.3.	Servo Off All Finish
+17.19.3.	Close All IO Finish
+17.19.3.	Thread Inserter Finish
+17.19.3.	Thread Arm Finish
+17.19.3.	Thread ErrorCtrl Finish
+17.19.3.	Thread Manual Finish
+17.19.3.	Thread Tester Finish
+17.19.3.	Thread Initial Arm Finish
+17.19.3.	Thread Inspect Finish
+17.19.3.	Thread IOReadWrite Finish
+17.19.3.	Shut Down Finish
+17.19.52.	Deer Load txt Finish
+17.19.52.	Deer Load Motor Finish
+17.19.52.	Deer Load MDB Finish
+17.19.53.	Deer LoadFile Finish
+17.19.53.	Deer OnInitDialog
+17.19.53.	Deer OnInitDialog Menu OK
+17.19.53.	Deer Create Thread Finish
+17.20.23.	Servo Off All Finish
+17.20.23.	Close All IO Finish
+17.20.23.	Thread Tester Finish
+17.20.23.	Thread Inserter Finish
+17.20.23.	Thread Initial Arm Finish
+17.20.23.	Thread ErrorCtrl Finish
+17.20.23.	Thread Manual Finish
+17.20.23.	Thread Arm Finish
+17.20.23.	Thread Inspect Finish
+17.20.23.	Thread IOReadWrite Finish
+17.20.23.	Shut Down Finish
+10.51.2.	Deer Load txt Finish
+10.51.2.	Deer Load Motor Finish
+10.51.2.	Deer Load MDB Finish
+10.53.11.	Deer Load txt Finish
+10.53.11.	Deer Load Motor Finish
+10.53.11.	Deer Load MDB Finish
+10.54.8.	Deer Load txt Finish
+10.54.8.	Deer Load Motor Finish
+10.54.9.	Deer Load MDB Finish
+10.54.10.	Deer LoadFile Finish
+10.54.10.	Deer OnInitDialog
+10.54.10.	Deer OnInitDialog Menu OK
+10.54.11.	Deer Create Thread Finish
+10.54.55.	Servo Off All Finish
+10.54.55.	Close All IO Finish
+10.54.55.	Thread ErrorCtrl Finish
+10.54.55.	Thread Inserter Finish
+10.54.55.	Thread Initial Arm Finish
+10.54.55.	Thread Inspect Finish
+10.54.55.	Thread Manual Finish
+10.54.55.	Thread Tester Finish
+10.54.55.	Thread Arm Finish
+10.54.55.	Thread IOReadWrite Finish
+10.54.55.	Shut Down Finish
+11.4.56.	Deer Load txt Finish
+11.4.56.	Deer Load Motor Finish
+11.4.57.	Deer Load MDB Finish
+11.4.58.	Deer LoadFile Finish
+11.4.58.	Deer OnInitDialog
+11.4.58.	Deer OnInitDialog Menu OK
+11.4.58.	Deer Create Thread Finish
+11.5.15.	Servo Off All Finish
+11.5.15.	Close All IO Finish
+11.5.15.	Thread ErrorCtrl Finish
+11.5.15.	Thread Inserter Finish
+11.5.15.	Thread Inspect Finish
+11.5.15.	Thread IOReadWrite Finish
+11.5.15.	Thread Initial Arm Finish
+11.5.15.	Thread Manual Finish
+11.5.15.	Thread Arm Finish
+11.5.15.	Thread Tester Finish
+11.5.15.	Shut Down Finish
+9.59.20.	Deer Load txt Finish
+9.59.20.	Deer Load Motor Finish
+9.59.20.	Deer Load MDB Finish
+10.20.41.	Deer Load txt Finish
+10.20.41.	Deer Load Motor Finish
+10.20.41.	Deer Load MDB Finish
+10.22.0.	Deer Load txt Finish
+10.22.0.	Deer Load Motor Finish
+10.22.1.	Deer Load MDB Finish
+10.22.5.	Deer LoadFile Finish
+10.22.6.	Deer OnInitDialog
+10.22.6.	Deer OnInitDialog Menu OK
+10.22.11.	Deer Create Thread Finish
+10.22.41.	Servo Off All Finish
+10.22.41.	Close All IO Finish
+10.22.41.	Thread Initial Arm Finish
+10.22.41.	Thread ErrorCtrl Finish
+10.22.41.	Thread Manual Finish
+10.22.41.	Thread Tester Finish
+10.22.41.	Thread Arm Finish
+10.22.41.	Thread Inserter Finish
+10.22.41.	Thread Inspect Finish
+10.22.41.	Thread IOReadWrite Finish
+10.22.41.	Shut Down Finish
+13.51.28.	Deer Load txt Finish
+13.51.28.	Deer Load Motor Finish
+13.51.28.	Deer Load MDB Finish
+13.51.30.	Deer LoadFile Finish
+13.51.31.	Deer OnInitDialog
+13.51.31.	Deer OnInitDialog Menu OK
+13.51.36.	Deer Create Thread Finish
+13.51.55.	Servo Off All Finish
+13.51.55.	Close All IO Finish
+13.51.55.	Thread Manual Finish
+13.51.55.	Thread Inserter Finish
+13.51.55.	Thread Initial Arm Finish
+13.51.55.	Thread Inspect Finish
+13.51.55.	Thread IOReadWrite Finish
+13.51.55.	Thread Arm Finish
+13.51.55.	Thread ErrorCtrl Finish
+13.51.55.	Thread Tester Finish
+13.51.55.	Shut Down Finish
+13.55.20.	Deer Load txt Finish
+13.55.20.	Deer Load Motor Finish
+13.55.20.	Deer Load MDB Finish
+13.55.21.	Deer LoadFile Finish
+13.55.21.	Deer OnInitDialog
+13.55.21.	Deer OnInitDialog Menu OK
+13.55.27.	Deer Create Thread Finish
+13.59.48.	Servo Off All Finish
+13.59.48.	Close All IO Finish
+13.59.48.	Thread Arm Finish
+13.59.48.	Thread Initial Arm Finish
+13.59.48.	Thread ErrorCtrl Finish
+13.59.48.	Thread Manual Finish
+13.59.48.	Thread Tester Finish
+13.59.48.	Thread Inserter Finish
+13.59.48.	Thread Inspect Finish
+13.59.48.	Thread IOReadWrite Finish
+13.59.48.	Shut Down Finish
+14.4.43.	Deer Load txt Finish
+14.4.43.	Deer Load Motor Finish
+14.4.43.	Deer Load MDB Finish
+14.4.45.	Deer LoadFile Finish
+14.4.45.	Deer OnInitDialog
+14.4.45.	Deer OnInitDialog Menu OK
+14.4.50.	Deer Create Thread Finish
+14.7.4.	Servo Off All Finish
+14.7.4.	Close All IO Finish
+14.7.4.	Thread Tester Finish
+14.7.4.	Thread ErrorCtrl Finish
+14.7.4.	Thread Initial Arm Finish
+14.7.4.	Thread Manual Finish
+14.7.4.	Thread Arm Finish
+14.7.4.	Thread Inserter Finish
+14.7.4.	Thread Inspect Finish
+14.7.4.	Thread IOReadWrite Finish
+14.7.4.	Shut Down Finish
+14.9.6.	Deer Load txt Finish
+14.9.6.	Deer Load Motor Finish
+14.9.7.	Deer Load MDB Finish
+14.9.8.	Deer LoadFile Finish
+14.9.8.	Deer OnInitDialog
+14.9.8.	Deer OnInitDialog Menu OK
+14.9.14.	Deer Create Thread Finish
+14.9.36.	Servo Off All Finish
+14.9.36.	Close All IO Finish
+14.9.36.	Thread ErrorCtrl Finish
+14.9.36.	Thread Initial Arm Finish
+14.9.36.	Thread Inserter Finish
+14.9.36.	Thread Inspect Finish
+14.9.36.	Thread IOReadWrite Finish
+14.9.36.	Thread Tester Finish
+14.9.36.	Thread Manual Finish
+14.9.36.	Thread Arm Finish
+14.9.36.	Shut Down Finish
+14.27.28.	Deer Load txt Finish
+14.27.28.	Deer Load Motor Finish
+14.27.41.	Deer Load txt Finish
+14.27.41.	Deer Load Motor Finish
+14.29.0.	Deer Load txt Finish
+14.29.0.	Deer Load Motor Finish
+14.29.1.	Deer Load MDB Finish
+14.29.2.	Deer LoadFile Finish
+14.29.2.	Deer OnInitDialog
+14.29.2.	Deer OnInitDialog Menu OK
+14.29.7.	Deer Create Thread Finish
+14.29.24.	Servo Off All Finish
+14.29.24.	Close All IO Finish
+14.29.24.	Thread Tester Finish
+14.29.24.	Thread Arm Finish
+14.29.24.	Thread ErrorCtrl Finish
+14.29.24.	Thread Initial Arm Finish
+14.29.24.	Thread Inserter Finish
+14.29.24.	Thread Inspect Finish
+14.29.24.	Thread IOReadWrite Finish
+14.29.24.	Thread Manual Finish
+14.29.24.	Shut Down Finish
+14.29.36.	Deer Load txt Finish
+14.29.36.	Deer Load Motor Finish
+14.29.36.	Deer Load MDB Finish
+14.29.37.	Deer LoadFile Finish
+14.29.37.	Deer OnInitDialog
+14.29.37.	Deer OnInitDialog Menu OK
+14.29.43.	Deer Create Thread Finish
+14.29.46.	Servo Off All Finish
+14.29.46.	Close All IO Finish
+14.29.46.	Thread IOReadWrite Finish
+14.29.46.	Thread Inserter Finish
+14.29.46.	Thread Inspect Finish
+14.29.46.	Thread Initial Arm Finish
+14.29.46.	Thread Tester Finish
+14.29.46.	Thread Arm Finish
+14.29.46.	Thread ErrorCtrl Finish
+14.29.46.	Thread Manual Finish
+14.29.46.	Shut Down Finish
+14.32.25.	Deer Load txt Finish
+14.32.25.	Deer Load Motor Finish
+14.32.25.	Deer Load MDB Finish
+14.32.27.	Deer LoadFile Finish
+14.32.27.	Deer OnInitDialog
+14.32.27.	Deer OnInitDialog Menu OK
+14.32.32.	Deer Create Thread Finish
+14.32.47.	Servo Off All Finish
+14.32.47.	Close All IO Finish
+14.32.47.	Thread Manual Finish
+14.32.47.	Thread Inspect Finish
+14.32.47.	Thread Initial Arm Finish
+14.32.47.	Thread IOReadWrite Finish
+14.32.47.	Thread Inserter Finish
+14.32.47.	Thread ErrorCtrl Finish
+14.32.47.	Thread Tester Finish
+14.32.47.	Thread Arm Finish
+14.32.47.	Shut Down Finish
+14.35.23.	Deer Load txt Finish
+14.35.23.	Deer Load Motor Finish
+14.35.24.	Deer Load MDB Finish
+14.35.25.	Deer LoadFile Finish
+14.35.25.	Deer OnInitDialog
+14.35.25.	Deer OnInitDialog Menu OK
+14.35.30.	Deer Create Thread Finish
+14.35.43.	Servo Off All Finish
+14.35.43.	Close All IO Finish
+14.35.43.	Thread ErrorCtrl Finish
+14.35.43.	Thread Inserter Finish
+14.35.43.	Thread Initial Arm Finish
+14.35.43.	Thread Inspect Finish
+14.35.43.	Thread IOReadWrite Finish
+14.35.43.	Thread Manual Finish
+14.35.43.	Thread Tester Finish
+14.35.43.	Thread Arm Finish
+14.35.43.	Shut Down Finish
+14.35.46.	Deer Load txt Finish
+14.35.46.	Deer Load Motor Finish
+14.35.47.	Deer Load MDB Finish
+14.35.48.	Deer LoadFile Finish
+14.35.48.	Deer OnInitDialog
+14.35.48.	Deer OnInitDialog Menu OK
+14.35.53.	Deer Create Thread Finish
+14.35.57.	Servo Off All Finish
+14.35.57.	Close All IO Finish
+14.35.57.	Thread Inserter Finish
+14.35.57.	Thread Inspect Finish
+14.35.57.	Thread ErrorCtrl Finish
+14.35.57.	Thread Manual Finish
+14.35.57.	Thread Tester Finish
+14.35.57.	Thread Arm Finish
+14.35.57.	Thread Initial Arm Finish
+14.35.57.	Thread IOReadWrite Finish
+14.35.57.	Shut Down Finish
+14.42.23.	Deer Load txt Finish
+14.42.23.	Deer Load Motor Finish
+14.42.24.	Deer Load MDB Finish
+14.42.25.	Deer LoadFile Finish
+14.42.25.	Deer OnInitDialog
+14.42.25.	Deer OnInitDialog Menu OK
+14.42.26.	Deer Create Thread Finish
+14.44.33.	Servo Off All Finish
+14.44.33.	Close All IO Finish
+14.44.33.	Thread Manual Finish
+14.44.33.	Thread Initial Arm Finish
+14.44.33.	Thread ErrorCtrl Finish
+14.44.33.	Thread Tester Finish
+14.44.33.	Thread Arm Finish
+14.44.33.	Thread Inserter Finish
+14.44.33.	Thread Inspect Finish
+14.44.33.	Thread IOReadWrite Finish
+14.44.33.	Shut Down Finish
+14.45.13.	Deer Load txt Finish
+14.45.13.	Deer Load Motor Finish
+14.45.14.	Deer Load MDB Finish
+14.45.15.	Deer LoadFile Finish
+14.45.15.	Deer OnInitDialog
+14.45.15.	Deer OnInitDialog Menu OK
+14.45.16.	Deer Create Thread Finish
+14.46.17.	Servo Off All Finish
+14.46.17.	Close All IO Finish
+14.46.17.	Thread Inserter Finish
+14.46.17.	Thread Inspect Finish
+14.46.17.	Thread Initial Arm Finish
+14.46.17.	Thread IOReadWrite Finish
+14.46.17.	Thread Arm Finish
+14.46.17.	Thread Manual Finish
+14.46.17.	Thread ErrorCtrl Finish
+14.46.17.	Thread Tester Finish
+14.46.17.	Shut Down Finish
+14.46.33.	Deer Load txt Finish
+14.46.33.	Deer Load Motor Finish
+14.46.34.	Deer Load MDB Finish
+14.46.35.	Deer LoadFile Finish
+14.46.35.	Deer OnInitDialog
+14.46.35.	Deer OnInitDialog Menu OK
+14.46.36.	Deer Create Thread Finish
+14.48.7.	Servo Off All Finish
+14.48.7.	Close All IO Finish
+14.48.7.	Thread Initial Arm Finish
+14.48.7.	Thread Arm Finish
+14.48.7.	Thread IOReadWrite Finish
+14.48.7.	Thread Inspect Finish
+14.48.7.	Thread Inserter Finish
+14.48.7.	Thread ErrorCtrl Finish
+14.48.7.	Thread Manual Finish
+14.48.7.	Thread Tester Finish
+14.48.7.	Shut Down Finish
+14.51.34.	Deer Load txt Finish
+14.51.34.	Deer Load Motor Finish
+14.51.34.	Deer Load MDB Finish
+14.51.35.	Deer LoadFile Finish
+14.51.35.	Deer OnInitDialog
+14.51.35.	Deer OnInitDialog Menu OK
+14.51.37.	Deer Create Thread Finish
+14.52.13.	Servo Off All Finish
+14.52.13.	Close All IO Finish
+14.52.14.	Thread ErrorCtrl Finish
+14.52.14.	Thread Manual Finish
+14.52.14.	Thread Tester Finish
+14.52.14.	Thread Arm Finish
+14.52.14.	Thread Initial Arm Finish
+14.52.14.	Thread Inserter Finish
+14.52.14.	Thread Inspect Finish
+14.52.14.	Thread IOReadWrite Finish
+14.52.14.	Shut Down Finish
+14.56.36.	Deer Load txt Finish
+14.56.36.	Deer Load Motor Finish
+14.56.37.	Deer Load MDB Finish
+14.56.38.	Deer LoadFile Finish
+14.56.38.	Deer OnInitDialog
+14.56.38.	Deer OnInitDialog Menu OK
+14.56.39.	Deer Create Thread Finish
+14.57.28.	Servo Off All Finish
+14.57.28.	Close All IO Finish
+14.57.28.	Thread Manual Finish
+14.57.28.	Thread Inspect Finish
+14.57.28.	Thread IOReadWrite Finish
+14.57.28.	Thread Initial Arm Finish
+14.57.28.	Thread Inserter Finish
+14.57.28.	Thread Tester Finish
+14.57.28.	Thread Arm Finish
+14.57.28.	Thread ErrorCtrl Finish
+14.57.28.	Shut Down Finish
+14.58.23.	Deer Load txt Finish
+14.58.23.	Deer Load Motor Finish
+14.58.24.	Deer Load MDB Finish
+14.58.25.	Deer LoadFile Finish
+14.58.25.	Deer OnInitDialog
+14.58.25.	Deer OnInitDialog Menu OK
+14.58.26.	Deer Create Thread Finish
+14.58.29.	Servo Off All Finish
+14.58.29.	Close All IO Finish
+14.58.29.	Thread Manual Finish
+14.58.29.	Thread Arm Finish
+14.58.29.	Thread IOReadWrite Finish
+14.58.29.	Thread Initial Arm Finish
+14.58.29.	Thread ErrorCtrl Finish
+14.58.29.	Thread Tester Finish
+14.58.29.	Thread Inserter Finish
+14.58.29.	Thread Inspect Finish
+14.58.29.	Shut Down Finish
+18.27.0.	Deer Load txt Finish
+18.27.0.	Deer Load Motor Finish
+18.27.0.	Deer Load MDB Finish
+18.27.1.	Deer LoadFile Finish
+18.27.1.	Deer OnInitDialog
+18.27.1.	Deer OnInitDialog Menu OK
+18.27.7.	Deer Create Thread Finish
+18.27.15.	Servo Off All Finish
+18.27.15.	Close All IO Finish
+18.27.15.	Thread ErrorCtrl Finish
+18.27.15.	Thread Initial Arm Finish
+18.27.15.	Thread Inserter Finish
+18.27.15.	Thread Inspect Finish
+18.27.15.	Thread IOReadWrite Finish
+18.27.15.	Thread Manual Finish
+18.27.15.	Thread Tester Finish
+18.27.15.	Thread Arm Finish
+18.27.15.	Shut Down Finish
+18.32.13.	Deer Load txt Finish
+18.32.13.	Deer Load Motor Finish
+18.32.14.	Deer Load MDB Finish
+18.32.15.	Deer LoadFile Finish
+18.32.15.	Deer OnInitDialog
+18.32.15.	Deer OnInitDialog Menu OK
+18.32.20.	Deer Create Thread Finish
+18.32.50.	Servo Off All Finish
+18.32.50.	Close All IO Finish
+18.32.50.	Thread Manual Finish
+18.32.51.	Thread Initial Arm Finish
+18.32.51.	Thread ErrorCtrl Finish
+18.32.51.	Thread Arm Finish
+18.32.51.	Thread Inserter Finish
+18.32.51.	Thread Inspect Finish
+18.32.51.	Thread IOReadWrite Finish
+18.32.51.	Thread Tester Finish
+18.32.51.	Shut Down Finish
+18.35.53.	Deer Load txt Finish
+18.35.53.	Deer Load Motor Finish
+18.35.53.	Deer Load MDB Finish
+18.35.54.	Deer LoadFile Finish
+18.35.54.	Deer OnInitDialog
+18.35.54.	Deer OnInitDialog Menu OK
+18.36.0.	Deer Create Thread Finish
+18.36.8.	Servo Off All Finish
+18.36.8.	Close All IO Finish
+18.36.9.	Thread Tester Finish
+18.36.9.	Thread Manual Finish
+18.36.9.	Thread Arm Finish
+18.36.9.	Thread ErrorCtrl Finish
+18.36.9.	Thread Initial Arm Finish
+18.36.9.	Thread Inserter Finish
+18.36.9.	Thread Inspect Finish
+18.36.9.	Thread IOReadWrite Finish
+18.36.9.	Shut Down Finish
+18.49.5.	Deer Load txt Finish
+18.49.5.	Deer Load Motor Finish
+18.49.6.	Deer Load MDB Finish
+18.49.7.	Deer LoadFile Finish
+18.49.7.	Deer OnInitDialog
+18.49.7.	Deer OnInitDialog Menu OK
+18.49.12.	Deer Create Thread Finish
+18.49.45.	Servo Off All Finish
+18.49.45.	Close All IO Finish
+18.49.45.	Thread Initial Arm Finish
+18.49.45.	Thread Inserter Finish
+18.49.45.	Thread IOReadWrite Finish
+18.49.45.	Thread Inspect Finish
+18.49.45.	Thread Arm Finish
+18.49.45.	Thread ErrorCtrl Finish
+18.49.45.	Thread Tester Finish
+18.49.45.	Thread Manual Finish
+18.49.45.	Shut Down Finish
+18.55.46.	Deer Load txt Finish
+18.55.46.	Deer Load Motor Finish
+18.55.47.	Deer LoadFile Finish
+18.55.47.	Deer OnInitDialog
+18.55.47.	Deer OnInitDialog Menu OK
+18.55.52.	Deer Create Thread Finish
+18.55.55.	Servo Off All Finish
+18.55.55.	Close All IO Finish
+18.55.55.	Thread ErrorCtrl Finish
+18.55.55.	Thread Tester Finish
+18.55.55.	Thread Manual Finish
+18.55.55.	Thread Arm Finish
+18.55.55.	Thread Initial Arm Finish
+18.55.55.	Thread Inserter Finish
+18.55.55.	Thread Inspect Finish
+18.55.55.	Thread IOReadWrite Finish
+18.55.55.	Shut Down Finish
+18.57.21.	Deer Load txt Finish
+18.57.21.	Deer Load Motor Finish
+18.57.22.	Deer LoadFile Finish
+18.57.22.	Deer OnInitDialog
+18.57.22.	Deer OnInitDialog Menu OK
+18.57.27.	Deer Create Thread Finish
+18.57.30.	Servo Off All Finish
+18.57.30.	Close All IO Finish
+18.57.30.	Thread IOReadWrite Finish
+18.57.30.	Thread Inserter Finish
+18.57.30.	Thread Inspect Finish
+18.57.30.	Thread Initial Arm Finish
+18.57.30.	Thread Arm Finish
+18.57.30.	Thread Manual Finish
+18.57.30.	Thread ErrorCtrl Finish
+18.57.30.	Thread Tester Finish
+18.57.30.	Shut Down Finish
+19.2.42.	Deer Load txt Finish
+19.2.42.	Deer Load Motor Finish
+19.2.44.	Deer LoadFile Finish
+19.2.44.	Deer OnInitDialog
+19.2.44.	Deer OnInitDialog Menu OK
+19.2.49.	Deer Create Thread Finish
+19.2.57.	Servo Off All Finish
+19.2.57.	Close All IO Finish
+19.2.57.	Thread Arm Finish
+19.2.58.	Thread Manual Finish
+19.2.58.	Thread Initial Arm Finish
+19.2.58.	Thread Inserter Finish
+19.2.58.	Thread Inspect Finish
+19.2.58.	Thread IOReadWrite Finish
+19.2.58.	Thread ErrorCtrl Finish
+19.2.58.	Thread Tester Finish
+19.2.58.	Shut Down Finish
+19.5.56.	Deer Load txt Finish
+19.5.56.	Deer Load Motor Finish
+19.5.57.	Deer LoadFile Finish
+19.5.57.	Deer OnInitDialog
+19.5.57.	Deer OnInitDialog Menu OK
+19.6.3.	Deer Create Thread Finish
+19.6.24.	Servo Off All Finish
+19.6.24.	Close All IO Finish
+19.6.24.	Thread Arm Finish
+19.6.24.	Thread Manual Finish
+19.6.24.	Thread Tester Finish
+19.6.24.	Thread ErrorCtrl Finish
+19.6.24.	Thread Inspect Finish
+19.6.24.	Thread IOReadWrite Finish
+19.6.24.	Thread Initial Arm Finish
+19.6.24.	Thread Inserter Finish
+19.6.24.	Shut Down Finish
+19.7.25.	Deer Load txt Finish
+19.7.25.	Deer Load Motor Finish
+19.7.26.	Deer LoadFile Finish
+19.7.26.	Deer OnInitDialog
+19.7.26.	Deer OnInitDialog Menu OK
+19.7.31.	Deer Create Thread Finish
+19.7.35.	Servo Off All Finish
+19.7.35.	Close All IO Finish
+19.7.35.	Thread Arm Finish
+19.7.35.	Thread IOReadWrite Finish
+19.7.35.	Thread Inspect Finish
+19.7.35.	Thread Initial Arm Finish
+19.7.35.	Thread Inserter Finish
+19.7.35.	Thread ErrorCtrl Finish
+19.7.35.	Thread Manual Finish
+19.7.35.	Thread Tester Finish
+19.7.35.	Shut Down Finish
+10.12.57.	Deer Load txt Finish
+10.12.57.	Deer Load Motor Finish
+10.15.33.	Deer Load txt Finish
+10.15.33.	Deer Load Motor Finish
+10.17.17.	Deer Load txt Finish
+10.17.17.	Deer Load Motor Finish
+10.18.41.	Deer Load txt Finish
+10.18.41.	Deer Load Motor Finish
+10.20.3.	Deer Load txt Finish
+10.20.3.	Deer Load Motor Finish
+10.23.21.	Deer Load txt Finish
+10.23.21.	Deer Load Motor Finish
+10.23.23.	Deer LoadFile Finish
+10.23.23.	Deer OnInitDialog
+10.23.23.	Deer OnInitDialog Menu OK
+10.23.29.	Deer Create Thread Finish
+10.23.46.	Servo Off All Finish
+10.23.46.	Close All IO Finish
+10.23.47.	Thread Tester Finish
+10.23.47.	Thread Inspect Finish
+10.23.47.	Thread IOReadWrite Finish
+10.23.47.	Thread Inserter Finish
+10.23.47.	Thread Initial Arm Finish
+10.23.47.	Thread ErrorCtrl Finish
+10.23.47.	Thread Manual Finish
+10.23.47.	Thread Arm Finish
+10.23.47.	Shut Down Finish
+10.23.53.	Deer Load txt Finish
+10.23.53.	Deer Load Motor Finish
+10.23.55.	Deer LoadFile Finish
+10.23.55.	Deer OnInitDialog
+10.23.55.	Deer OnInitDialog Menu OK
+10.24.0.	Deer Create Thread Finish
+10.24.53.	Servo Off All Finish
+10.24.53.	Close All IO Finish
+10.24.53.	Thread Inserter Finish
+10.24.53.	Thread Initial Arm Finish
+10.24.53.	Thread Manual Finish
+10.24.53.	Thread Tester Finish
+10.24.53.	Thread ErrorCtrl Finish
+10.24.53.	Thread Inspect Finish
+10.24.53.	Thread IOReadWrite Finish
+10.24.53.	Thread Arm Finish
+10.24.53.	Shut Down Finish
+10.24.56.	Deer Load txt Finish
+10.24.56.	Deer Load Motor Finish
+10.24.57.	Deer LoadFile Finish
+10.24.57.	Deer OnInitDialog
+10.24.57.	Deer OnInitDialog Menu OK
+10.25.3.	Deer Create Thread Finish
+10.25.23.	Servo Off All Finish
+10.25.23.	Close All IO Finish
+10.25.23.	Thread Manual Finish
+10.25.23.	Thread Inserter Finish
+10.25.23.	Thread Initial Arm Finish
+10.25.23.	Thread Inspect Finish
+10.25.23.	Thread IOReadWrite Finish
+10.25.23.	Thread ErrorCtrl Finish
+10.25.23.	Thread Tester Finish
+10.25.23.	Thread Arm Finish
+10.25.23.	Shut Down Finish
+10.32.53.	Deer Load txt Finish
+10.32.53.	Deer Load Motor Finish
+10.32.54.	Deer LoadFile Finish
+10.32.54.	Deer OnInitDialog
+10.32.54.	Deer OnInitDialog Menu OK
+10.32.59.	Deer Create Thread Finish
+10.33.10.	Servo Off All Finish
+10.33.10.	Close All IO Finish
+10.33.10.	Thread Manual Finish
+10.33.10.	Thread Inspect Finish
+10.33.10.	Thread Inserter Finish
+10.33.10.	Thread Initial Arm Finish
+10.33.10.	Thread IOReadWrite Finish
+10.33.10.	Thread Tester Finish
+10.33.10.	Thread Arm Finish
+10.33.10.	Thread ErrorCtrl Finish
+10.33.10.	Shut Down Finish
+10.33.39.	Deer Load txt Finish
+10.33.39.	Deer Load Motor Finish
+10.34.54.	Deer Load txt Finish
+10.34.54.	Deer Load Motor Finish
+10.35.52.	Deer Load txt Finish
+10.35.52.	Deer Load Motor Finish
+10.40.43.	Deer Load txt Finish
+10.40.43.	Deer Load Motor Finish
+10.41.53.	Deer Load txt Finish
+10.41.53.	Deer Load Motor Finish
+10.43.49.	Deer Load txt Finish
+10.43.49.	Deer Load Motor Finish
+10.50.42.	Deer Load txt Finish
+10.50.42.	Deer Load Motor Finish
+10.52.13.	Deer Load txt Finish
+10.52.13.	Deer Load Motor Finish
+10.52.59.	Deer LoadFile Finish
+10.52.59.	Deer OnInitDialog
+10.52.59.	Deer OnInitDialog Menu OK
+10.53.4.	Deer Create Thread Finish
+10.53.20.	Servo Off All Finish
+10.53.20.	Close All IO Finish
+10.53.20.	Thread ErrorCtrl Finish
+10.53.20.	Thread Inspect Finish
+10.53.20.	Thread Initial Arm Finish
+10.53.20.	Thread Inserter Finish
+10.53.20.	Thread Manual Finish
+10.53.20.	Thread Tester Finish
+10.53.20.	Thread Arm Finish
+10.53.20.	Thread IOReadWrite Finish
+10.53.20.	Shut Down Finish
+10.53.31.	Deer Load txt Finish
+10.53.31.	Deer Load Motor Finish
+10.54.12.	Deer LoadFile Finish
+10.54.12.	Deer OnInitDialog
+10.54.12.	Deer OnInitDialog Menu OK
+10.54.18.	Deer Create Thread Finish
+10.54.22.	Servo Off All Finish
+10.54.22.	Close All IO Finish
+10.54.22.	Thread IOReadWrite Finish
+10.54.22.	Thread Inserter Finish
+10.54.22.	Thread Inspect Finish
+10.54.22.	Thread Initial Arm Finish
+10.54.22.	Thread ErrorCtrl Finish
+10.54.22.	Thread Manual Finish
+10.54.22.	Thread Tester Finish
+10.54.22.	Thread Arm Finish
+10.54.22.	Shut Down Finish
+10.55.12.	Deer Load txt Finish
+10.55.12.	Deer Load Motor Finish
+10.55.14.	Deer LoadFile Finish
+10.55.14.	Deer OnInitDialog
+10.55.14.	Deer OnInitDialog Menu OK
+10.55.19.	Deer Create Thread Finish
+10.55.26.	Servo Off All Finish
+10.55.26.	Close All IO Finish
+10.55.27.	Thread IOReadWrite Finish
+10.55.27.	Thread ErrorCtrl Finish
+10.55.27.	Thread Inserter Finish
+10.55.27.	Thread Initial Arm Finish
+10.55.27.	Thread Inspect Finish
+10.55.27.	Thread Manual Finish
+10.55.27.	Thread Tester Finish
+10.55.27.	Thread Arm Finish
+10.55.27.	Shut Down Finish
+11.8.53.	Deer Load txt Finish
+11.8.53.	Deer Load Motor Finish
+11.8.55.	Deer LoadFile Finish
+11.8.55.	Deer OnInitDialog
+11.8.55.	Deer OnInitDialog Menu OK
+11.9.1.	Deer Create Thread Finish
+11.9.20.	Servo Off All Finish
+11.9.20.	Close All IO Finish
+11.9.21.	Thread Tester Finish
+11.9.21.	Thread Inserter Finish
+11.9.21.	Thread IOReadWrite Finish
+11.9.21.	Thread Initial Arm Finish
+11.9.21.	Thread Inspect Finish
+11.9.21.	Thread ErrorCtrl Finish
+11.9.21.	Thread Manual Finish
+11.9.21.	Thread Arm Finish
+11.9.21.	Shut Down Finish
+11.9.33.	Deer Load txt Finish
+11.9.33.	Deer Load Motor Finish
+11.9.34.	Deer LoadFile Finish
+11.9.34.	Deer OnInitDialog
+11.9.34.	Deer OnInitDialog Menu OK
+11.9.40.	Deer Create Thread Finish
+11.10.11.	Servo Off All Finish
+11.10.11.	Close All IO Finish
+11.10.11.	Thread Tester Finish
+11.10.11.	Thread Arm Finish
+11.10.11.	Thread Manual Finish
+11.10.11.	Thread Inserter Finish
+11.10.11.	Thread ErrorCtrl Finish
+11.10.11.	Thread Initial Arm Finish
+11.10.11.	Thread Inspect Finish
+11.10.11.	Thread IOReadWrite Finish
+11.10.11.	Shut Down Finish
+11.15.24.	Deer Load txt Finish
+11.15.24.	Deer Load Motor Finish
+11.15.26.	Deer LoadFile Finish
+11.15.26.	Deer OnInitDialog
+11.15.26.	Deer OnInitDialog Menu OK
+11.15.31.	Deer Create Thread Finish
+11.15.52.	Servo Off All Finish
+11.15.52.	Close All IO Finish
+11.15.52.	Thread Initial Arm Finish
+11.15.52.	Thread ErrorCtrl Finish
+11.15.52.	Thread Manual Finish
+11.15.52.	Thread Tester Finish
+11.15.52.	Thread Arm Finish
+11.15.52.	Thread IOReadWrite Finish
+11.15.52.	Thread Inserter Finish
+11.15.52.	Thread Inspect Finish
+11.15.52.	Shut Down Finish
+11.19.7.	Deer Load txt Finish
+11.19.7.	Deer Load Motor Finish
+11.19.9.	Deer LoadFile Finish
+11.19.9.	Deer OnInitDialog
+11.19.9.	Deer OnInitDialog Menu OK
+11.19.14.	Deer Create Thread Finish
+11.20.25.	Servo Off All Finish
+11.20.25.	Close All IO Finish
+11.20.25.	Thread Manual Finish
+11.20.25.	Thread Inspect Finish
+11.20.25.	Thread Inserter Finish
+11.20.25.	Thread Initial Arm Finish
+11.20.25.	Thread ErrorCtrl Finish
+11.20.25.	Thread Tester Finish
+11.20.25.	Thread Arm Finish
+11.20.25.	Thread IOReadWrite Finish
+11.20.25.	Shut Down Finish
+11.20.36.	Deer Load txt Finish
+11.20.36.	Deer Load Motor Finish
+11.21.18.	Deer LoadFile Finish
+11.21.18.	Deer OnInitDialog
+11.21.18.	Deer OnInitDialog Menu OK
+11.21.23.	Deer Create Thread Finish
+11.21.28.	Servo Off All Finish
+11.21.28.	Close All IO Finish
+11.21.28.	Thread Initial Arm Finish
+11.21.28.	Thread Inserter Finish
+11.21.28.	Thread Inspect Finish
+11.21.28.	Thread IOReadWrite Finish
+11.21.28.	Thread Tester Finish
+11.21.28.	Thread ErrorCtrl Finish
+11.21.28.	Thread Manual Finish
+11.21.28.	Thread Arm Finish
+11.21.29.	Shut Down Finish
+11.21.37.	Deer Load txt Finish
+11.21.37.	Deer Load Motor Finish
+11.22.19.	Deer LoadFile Finish
+11.22.19.	Deer OnInitDialog
+11.22.19.	Deer OnInitDialog Menu OK
+11.22.25.	Deer Create Thread Finish
+11.22.29.	Servo Off All Finish
+11.22.29.	Close All IO Finish
+11.22.29.	Thread ErrorCtrl Finish
+11.22.29.	Thread Inserter Finish
+11.22.29.	Thread Initial Arm Finish
+11.22.29.	Thread Manual Finish
+11.22.29.	Thread Tester Finish
+11.22.29.	Thread Arm Finish
+11.22.29.	Thread IOReadWrite Finish
+11.22.29.	Thread Inspect Finish
+11.22.29.	Shut Down Finish
+11.22.38.	Deer Load txt Finish
+11.22.38.	Deer Load Motor Finish
+11.29.51.	Deer Load txt Finish
+11.29.51.	Deer Load Motor Finish
+11.30.33.	Deer LoadFile Finish
+11.30.33.	Deer OnInitDialog
+11.30.33.	Deer OnInitDialog Menu OK
+11.30.39.	Deer Create Thread Finish
+11.30.52.	Servo Off All Finish
+11.30.52.	Close All IO Finish
+11.30.52.	Thread Initial Arm Finish
+11.30.52.	Thread ErrorCtrl Finish
+11.30.52.	Thread Manual Finish
+11.30.52.	Thread Arm Finish
+11.30.52.	Thread Inspect Finish
+11.30.52.	Thread Inserter Finish
+11.30.52.	Thread Tester Finish
+11.30.52.	Thread IOReadWrite Finish
+11.30.52.	Shut Down Finish
+11.41.19.	Deer Load txt Finish
+11.41.19.	Deer Load Motor Finish
+11.41.20.	Deer LoadFile Finish
+11.41.20.	Deer OnInitDialog
+11.41.20.	Deer OnInitDialog Menu OK
+11.41.25.	Deer Create Thread Finish
+11.43.48.	Deer Load txt Finish
+11.43.48.	Deer Load Motor Finish
+11.43.49.	Deer LoadFile Finish
+11.43.49.	Deer OnInitDialog
+11.43.49.	Deer OnInitDialog Menu OK
+11.43.55.	Deer Create Thread Finish
+11.44.32.	Deer Load txt Finish
+11.44.32.	Deer Load Motor Finish
+11.44.33.	Deer LoadFile Finish
+11.44.33.	Deer OnInitDialog
+11.44.33.	Deer OnInitDialog Menu OK
+11.44.38.	Deer Create Thread Finish
+11.44.50.	Servo Off All Finish
+11.44.50.	Close All IO Finish
+11.44.50.	Thread Manual Finish
+11.44.50.	Thread Inspect Finish
+11.44.50.	Thread Initial Arm Finish
+11.44.50.	Thread Inserter Finish
+11.44.50.	Thread IOReadWrite Finish
+11.44.50.	Thread ErrorCtrl Finish
+11.44.50.	Thread Tester Finish
+11.44.50.	Thread Arm Finish
+11.44.50.	Shut Down Finish
+11.45.18.	Deer Load txt Finish
+11.45.18.	Deer Load Motor Finish
+11.45.19.	Deer LoadFile Finish
+11.45.19.	Deer OnInitDialog
+11.45.19.	Deer OnInitDialog Menu OK
+11.45.24.	Deer Create Thread Finish
+11.45.28.	Servo Off All Finish
+11.45.28.	Close All IO Finish
+11.45.29.	Thread Arm Finish
+11.45.29.	Thread Manual Finish
+11.45.29.	Thread ErrorCtrl Finish
+11.45.29.	Thread Inspect Finish
+11.45.29.	Thread Initial Arm Finish
+11.45.29.	Thread Inserter Finish
+11.45.29.	Thread IOReadWrite Finish
+11.45.29.	Thread Tester Finish
+11.45.29.	Shut Down Finish
+11.51.34.	Deer Load txt Finish
+11.51.34.	Deer Load Motor Finish
+11.51.35.	Deer LoadFile Finish
+11.51.35.	Deer OnInitDialog
+11.51.35.	Deer OnInitDialog Menu OK
+11.51.41.	Deer Create Thread Finish
+11.51.45.	Servo Off All Finish
+11.51.45.	Close All IO Finish
+11.51.45.	Thread Arm Finish
+11.51.45.	Thread ErrorCtrl Finish
+11.51.45.	Thread Manual Finish
+11.51.45.	Thread Tester Finish
+11.51.45.	Thread IOReadWrite Finish
+11.51.45.	Thread Inspect Finish
+11.51.45.	Thread Inserter Finish
+11.51.45.	Thread Initial Arm Finish
+11.51.45.	Shut Down Finish
+11.56.57.	Deer Load txt Finish
+11.56.57.	Deer Load Motor Finish
+11.56.58.	Deer LoadFile Finish
+11.56.58.	Deer OnInitDialog
+11.56.58.	Deer OnInitDialog Menu OK
+11.57.4.	Deer Create Thread Finish
+11.57.7.	Servo Off All Finish
+11.57.7.	Close All IO Finish
+11.57.7.	Thread Manual Finish
+11.57.7.	Thread Arm Finish
+11.57.7.	Thread ErrorCtrl Finish
+11.57.7.	Thread Initial Arm Finish
+11.57.7.	Thread Inserter Finish
+11.57.7.	Thread Tester Finish
+11.57.7.	Thread Inspect Finish
+11.57.7.	Thread IOReadWrite Finish
+11.57.7.	Shut Down Finish
+11.57.32.	Deer Load txt Finish
+11.57.32.	Deer Load Motor Finish
+11.57.33.	Deer LoadFile Finish
+11.57.33.	Deer OnInitDialog
+11.57.33.	Deer OnInitDialog Menu OK
+11.57.38.	Deer Create Thread Finish
+11.57.48.	Servo Off All Finish
+11.57.48.	Close All IO Finish
+11.57.48.	Thread ErrorCtrl Finish
+11.57.48.	Thread Tester Finish
+11.57.48.	Thread Manual Finish
+11.57.48.	Thread Inspect Finish
+11.57.48.	Thread Arm Finish
+11.57.48.	Thread Initial Arm Finish
+11.57.48.	Thread Inserter Finish
+11.57.48.	Thread IOReadWrite Finish
+11.57.48.	Shut Down Finish
+11.58.55.	Deer Load txt Finish
+11.58.55.	Deer Load Motor Finish
+11.58.56.	Deer LoadFile Finish
+11.58.56.	Deer OnInitDialog
+11.58.56.	Deer OnInitDialog Menu OK
+11.59.2.	Deer Create Thread Finish
+11.59.10.	Servo Off All Finish
+11.59.10.	Close All IO Finish
+11.59.10.	Thread Initial Arm Finish
+11.59.10.	Thread Inspect Finish
+11.59.10.	Thread Inserter Finish
+11.59.10.	Thread IOReadWrite Finish
+11.59.10.	Thread Arm Finish
+11.59.10.	Thread Manual Finish
+11.59.10.	Thread Tester Finish
+11.59.10.	Thread ErrorCtrl Finish
+11.59.10.	Shut Down Finish
+12.6.4.	Deer Load txt Finish
+12.6.4.	Deer Load Motor Finish
+12.8.5.	Deer Load txt Finish
+12.8.5.	Deer Load Motor Finish
+12.8.20.	Deer Load txt Finish
+12.8.20.	Deer Load Motor Finish
+12.8.21.	Deer LoadFile Finish
+12.8.21.	Deer OnInitDialog
+12.8.21.	Deer OnInitDialog Menu OK
+12.8.45.	Deer Load txt Finish
+12.8.45.	Deer Load Motor Finish
+12.8.46.	Deer LoadFile Finish
+12.8.46.	Deer OnInitDialog
+12.8.46.	Deer OnInitDialog Menu OK
+12.8.51.	Deer Create Thread Finish
+12.9.2.	Servo Off All Finish
+12.9.2.	Close All IO Finish
+12.9.2.	Thread Arm Finish
+12.9.2.	Thread Tester Finish
+12.9.2.	Thread ErrorCtrl Finish
+12.9.2.	Thread Initial Arm Finish
+12.9.2.	Thread Manual Finish
+12.9.2.	Thread Inserter Finish
+12.9.2.	Thread Inspect Finish
+12.9.2.	Thread IOReadWrite Finish
+12.9.2.	Shut Down Finish
+12.9.13.	Deer Load txt Finish
+12.9.13.	Deer Load Motor Finish
+12.9.14.	Deer LoadFile Finish
+12.9.14.	Deer OnInitDialog
+12.9.14.	Deer OnInitDialog Menu OK
+12.9.19.	Deer Create Thread Finish
+12.9.23.	Servo Off All Finish
+12.9.23.	Close All IO Finish
+12.9.23.	Thread Initial Arm Finish
+12.9.23.	Thread IOReadWrite Finish
+12.9.23.	Thread Inserter Finish
+12.9.23.	Thread Manual Finish
+12.9.23.	Thread Arm Finish
+12.9.23.	Thread Inspect Finish
+12.9.23.	Thread ErrorCtrl Finish
+12.9.23.	Thread Tester Finish
+12.9.23.	Shut Down Finish
+12.11.45.	Deer Load txt Finish
+12.11.45.	Deer Load Motor Finish
+12.11.46.	Deer LoadFile Finish
+12.11.46.	Deer OnInitDialog
+12.11.46.	Deer OnInitDialog Menu OK
+12.12.16.	Deer Load txt Finish
+12.12.16.	Deer Load Motor Finish
+12.12.40.	Deer Load txt Finish
+12.12.40.	Deer Load Motor Finish
+12.12.42.	Deer LoadFile Finish
+12.12.42.	Deer OnInitDialog
+12.12.42.	Deer OnInitDialog Menu OK
+12.12.47.	Deer Create Thread Finish
+12.12.50.	Servo Off All Finish
+12.12.50.	Close All IO Finish
+12.12.50.	Thread Manual Finish
+12.12.50.	Thread Arm Finish
+12.12.50.	Thread ErrorCtrl Finish
+12.12.50.	Thread Inserter Finish
+12.12.50.	Thread Initial Arm Finish
+12.12.50.	Thread Inspect Finish
+12.12.50.	Thread IOReadWrite Finish
+12.12.50.	Thread Tester Finish
+12.12.50.	Shut Down Finish
+12.15.2.	Deer Load txt Finish
+12.15.2.	Deer Load Motor Finish
+12.15.3.	Deer LoadFile Finish
+12.15.4.	Deer OnInitDialog
+12.15.4.	Deer OnInitDialog Menu OK
+12.15.9.	Deer Create Thread Finish
+12.15.20.	Deer Load txt Finish
+12.15.20.	Deer Load Motor Finish
+12.15.50.	Deer Load txt Finish
+12.15.50.	Deer Load Motor Finish
+12.15.51.	Deer LoadFile Finish
+12.15.51.	Deer OnInitDialog
+12.15.51.	Deer OnInitDialog Menu OK
+12.15.56.	Deer Create Thread Finish
+12.16.2.	Servo Off All Finish
+12.16.2.	Close All IO Finish
+12.16.2.	Thread Manual Finish
+12.16.2.	Thread ErrorCtrl Finish
+12.16.2.	Thread Arm Finish
+12.16.2.	Thread Tester Finish
+12.16.2.	Thread Initial Arm Finish
+12.16.2.	Thread Inserter Finish
+12.16.2.	Thread Inspect Finish
+12.16.2.	Thread IOReadWrite Finish
+12.16.2.	Shut Down Finish
+12.16.49.	Deer Load txt Finish
+12.16.49.	Deer Load Motor Finish
+12.16.50.	Deer LoadFile Finish
+12.16.50.	Deer OnInitDialog
+12.16.50.	Deer OnInitDialog Menu OK
+12.16.55.	Deer Create Thread Finish
+12.17.0.	Servo Off All Finish
+12.17.0.	Close All IO Finish
+12.17.0.	Thread Arm Finish
+12.17.0.	Thread Tester Finish
+12.17.0.	Thread ErrorCtrl Finish
+12.17.0.	Thread Manual Finish
+12.17.0.	Thread Initial Arm Finish
+12.17.0.	Thread Inserter Finish
+12.17.0.	Thread Inspect Finish
+12.17.0.	Thread IOReadWrite Finish
+12.17.0.	Shut Down Finish
+12.17.26.	Deer Load txt Finish
+12.17.26.	Deer Load Motor Finish
+12.18.5.	Deer Load txt Finish
+12.18.5.	Deer Load Motor Finish
+12.18.6.	Deer LoadFile Finish
+12.18.6.	Deer OnInitDialog
+12.18.6.	Deer OnInitDialog Menu OK
+12.18.12.	Deer Create Thread Finish
+12.18.15.	Servo Off All Finish
+12.18.15.	Close All IO Finish
+12.18.15.	Thread Inspect Finish
+12.18.15.	Thread Arm Finish
+12.18.15.	Thread ErrorCtrl Finish
+12.18.15.	Thread Manual Finish
+12.18.15.	Thread Tester Finish
+12.18.15.	Thread Initial Arm Finish
+12.18.15.	Thread Inserter Finish
+12.18.15.	Thread IOReadWrite Finish
+12.18.15.	Shut Down Finish
+13.28.53.	Deer Load txt Finish
+13.28.53.	Deer Load Motor Finish
+13.29.30.	Deer Load txt Finish
+13.29.30.	Deer Load Motor Finish
+13.29.37.	Deer LoadFile Finish
+13.29.37.	Deer OnInitDialog
+13.29.37.	Deer OnInitDialog Menu OK
+13.29.43.	Deer Create Thread Finish
+13.29.52.	Servo Off All Finish
+13.29.52.	Close All IO Finish
+13.29.52.	Thread Inserter Finish
+13.29.52.	Thread Manual Finish
+13.29.52.	Thread Arm Finish
+13.29.52.	Thread Tester Finish
+13.29.52.	Thread IOReadWrite Finish
+13.29.52.	Thread Initial Arm Finish
+13.29.52.	Thread Inspect Finish
+13.29.52.	Thread ErrorCtrl Finish
+13.29.52.	Shut Down Finish
+13.30.25.	Deer Load txt Finish
+13.30.25.	Deer Load Motor Finish
+13.30.26.	Deer LoadFile Finish
+13.30.26.	Deer OnInitDialog
+13.30.26.	Deer OnInitDialog Menu OK
+13.30.32.	Deer Create Thread Finish
+13.30.39.	Servo Off All Finish
+13.30.39.	Close All IO Finish
+13.30.39.	Thread Tester Finish
+13.30.39.	Thread Arm Finish
+13.30.39.	Thread ErrorCtrl Finish
+13.30.39.	Thread Manual Finish
+13.30.39.	Thread Initial Arm Finish
+13.30.39.	Thread Inserter Finish
+13.30.39.	Thread Inspect Finish
+13.30.39.	Thread IOReadWrite Finish
+13.30.39.	Shut Down Finish
+13.31.57.	Deer Load txt Finish
+13.31.57.	Deer Load Motor Finish
+13.31.58.	Deer LoadFile Finish
+13.31.58.	Deer OnInitDialog
+13.31.58.	Deer OnInitDialog Menu OK
+13.32.4.	Deer Create Thread Finish
+13.32.7.	Servo Off All Finish
+13.32.7.	Close All IO Finish
+13.32.7.	Thread Manual Finish
+13.32.7.	Thread Arm Finish
+13.32.7.	Thread Tester Finish
+13.32.7.	Thread ErrorCtrl Finish
+13.32.7.	Thread Initial Arm Finish
+13.32.7.	Thread Inserter Finish
+13.32.7.	Thread Inspect Finish
+13.32.7.	Thread IOReadWrite Finish
+13.32.7.	Shut Down Finish
+13.34.3.	Deer Load txt Finish
+13.34.3.	Deer Load Motor Finish
+13.34.4.	Deer LoadFile Finish
+13.34.4.	Deer OnInitDialog
+13.34.4.	Deer OnInitDialog Menu OK
+13.34.9.	Deer Create Thread Finish
+13.34.12.	Servo Off All Finish
+13.34.12.	Close All IO Finish
+13.34.12.	Thread ErrorCtrl Finish
+13.34.12.	Thread Manual Finish
+13.34.12.	Thread Tester Finish
+13.34.12.	Thread Arm Finish
+13.34.12.	Thread Initial Arm Finish
+13.34.12.	Thread Inserter Finish
+13.34.12.	Thread Inspect Finish
+13.34.12.	Thread IOReadWrite Finish
+13.34.12.	Shut Down Finish
+13.34.46.	Deer Load txt Finish
+13.34.46.	Deer Load Motor Finish
+13.34.47.	Deer LoadFile Finish
+13.34.47.	Deer OnInitDialog
+13.34.47.	Deer OnInitDialog Menu OK
+13.34.52.	Deer Create Thread Finish
+13.34.55.	Servo Off All Finish
+13.34.55.	Close All IO Finish
+13.34.55.	Thread Tester Finish
+13.34.55.	Thread ErrorCtrl Finish
+13.34.55.	Thread Manual Finish
+13.34.55.	Thread Inspect Finish
+13.34.55.	Thread Initial Arm Finish
+13.34.55.	Thread Inserter Finish
+13.34.55.	Thread IOReadWrite Finish
+13.34.55.	Thread Arm Finish
+13.34.55.	Shut Down Finish
+13.35.37.	Deer Load txt Finish
+13.35.37.	Deer Load Motor Finish
+13.35.38.	Deer LoadFile Finish
+13.35.38.	Deer OnInitDialog
+13.35.38.	Deer OnInitDialog Menu OK
+13.35.43.	Deer Create Thread Finish
+13.35.46.	Servo Off All Finish
+13.35.46.	Close All IO Finish
+13.35.46.	Thread Manual Finish
+13.35.46.	Thread Tester Finish
+13.35.46.	Thread Arm Finish
+13.35.46.	Thread ErrorCtrl Finish
+13.35.46.	Thread Inspect Finish
+13.35.46.	Thread Initial Arm Finish
+13.35.46.	Thread Inserter Finish
+13.35.46.	Thread IOReadWrite Finish
+13.35.46.	Shut Down Finish
+13.36.39.	Deer Load txt Finish
+13.36.39.	Deer Load Motor Finish
+13.36.40.	Deer LoadFile Finish
+13.36.40.	Deer OnInitDialog
+13.36.40.	Deer OnInitDialog Menu OK
+13.36.40.	Deer Create Thread Finish
+13.36.53.	Servo Off All Finish
+13.36.53.	Close All IO Finish
+13.36.53.	Thread Manual Finish
+13.36.53.	Thread Inserter Finish
+13.36.53.	Thread Inspect Finish
+13.36.53.	Thread IOReadWrite Finish
+13.36.53.	Thread Initial Arm Finish
+13.36.53.	Thread Arm Finish
+13.36.53.	Thread ErrorCtrl Finish
+13.36.53.	Thread Tester Finish
+13.36.53.	Shut Down Finish
+13.37.17.	Deer Load txt Finish
+13.37.17.	Deer Load Motor Finish
+13.37.18.	Deer LoadFile Finish
+13.37.18.	Deer OnInitDialog
+13.37.18.	Deer OnInitDialog Menu OK
+13.37.23.	Deer Create Thread Finish
+13.37.27.	Servo Off All Finish
+13.37.27.	Close All IO Finish
+13.37.27.	Thread Inspect Finish
+13.37.27.	Thread IOReadWrite Finish
+13.37.27.	Thread Initial Arm Finish
+13.37.27.	Thread Inserter Finish
+13.37.27.	Thread Manual Finish
+13.37.27.	Thread Tester Finish
+13.37.27.	Thread ErrorCtrl Finish
+13.37.27.	Thread Arm Finish
+13.37.27.	Shut Down Finish
+13.42.14.	Deer Load txt Finish
+13.42.14.	Deer Load Motor Finish
+13.42.15.	Deer LoadFile Finish
+13.42.15.	Deer OnInitDialog
+13.42.15.	Deer OnInitDialog Menu OK
+13.42.28.	Deer Load txt Finish
+13.42.28.	Deer Load Motor Finish
+13.42.29.	Deer LoadFile Finish
+13.42.29.	Deer OnInitDialog
+13.42.29.	Deer OnInitDialog Menu OK
+13.42.42.	Deer Load txt Finish
+13.42.42.	Deer Load Motor Finish
+13.42.43.	Deer LoadFile Finish
+13.42.43.	Deer OnInitDialog
+13.42.43.	Deer OnInitDialog Menu OK
+13.42.51.	Deer Load txt Finish
+13.42.51.	Deer Load Motor Finish
+13.42.52.	Deer LoadFile Finish
+13.42.52.	Deer OnInitDialog
+13.42.52.	Deer OnInitDialog Menu OK
+13.42.57.	Deer Create Thread Finish
+13.43.0.	Servo Off All Finish
+13.43.0.	Close All IO Finish
+13.43.0.	Thread Arm Finish
+13.43.0.	Thread Initial Arm Finish
+13.43.0.	Thread Inserter Finish
+13.43.0.	Thread Inspect Finish
+13.43.0.	Thread IOReadWrite Finish
+13.43.0.	Thread ErrorCtrl Finish
+13.43.0.	Thread Manual Finish
+13.43.0.	Thread Tester Finish
+13.43.0.	Shut Down Finish
+13.43.5.	Deer Load txt Finish
+13.43.5.	Deer Load Motor Finish
+13.43.5.	Deer LoadFile Finish
+13.43.6.	Deer OnInitDialog
+13.43.6.	Deer OnInitDialog Menu OK
+13.43.11.	Deer Create Thread Finish
+13.43.22.	Servo Off All Finish
+13.43.22.	Close All IO Finish
+13.43.22.	Thread Tester Finish
+13.43.22.	Thread ErrorCtrl Finish
+13.43.22.	Thread Manual Finish
+13.43.22.	Thread Initial Arm Finish
+13.43.22.	Thread Inserter Finish
+13.43.22.	Thread Inspect Finish
+13.43.22.	Thread IOReadWrite Finish
+13.43.22.	Thread Arm Finish
+13.43.22.	Shut Down Finish
+13.44.14.	Deer Load txt Finish
+13.44.14.	Deer Load Motor Finish
+13.44.15.	Deer LoadFile Finish
+13.44.15.	Deer OnInitDialog
+13.44.15.	Deer OnInitDialog Menu OK
+13.44.20.	Deer Create Thread Finish
+13.44.24.	Servo Off All Finish
+13.44.24.	Close All IO Finish
+13.44.24.	Thread Arm Finish
+13.44.24.	Thread Inspect Finish
+13.44.24.	Thread IOReadWrite Finish
+13.44.24.	Thread ErrorCtrl Finish
+13.44.24.	Thread Initial Arm Finish
+13.44.24.	Thread Inserter Finish
+13.44.24.	Thread Manual Finish
+13.44.24.	Thread Tester Finish
+13.44.24.	Shut Down Finish
+13.44.27.	Deer Load txt Finish
+13.44.27.	Deer Load Motor Finish
+13.44.28.	Deer LoadFile Finish
+13.44.28.	Deer OnInitDialog
+13.44.28.	Deer OnInitDialog Menu OK
+13.44.33.	Deer Create Thread Finish
+13.44.38.	Servo Off All Finish
+13.44.38.	Close All IO Finish
+13.44.39.	Thread ErrorCtrl Finish
+13.44.39.	Thread Tester Finish
+13.44.39.	Thread Manual Finish
+13.44.39.	Thread Arm Finish
+13.44.39.	Thread Inspect Finish
+13.44.39.	Thread Initial Arm Finish
+13.44.39.	Thread Inserter Finish
+13.44.39.	Thread IOReadWrite Finish
+13.44.39.	Shut Down Finish
+13.45.2.	Deer Load txt Finish
+13.45.2.	Deer Load Motor Finish
+13.45.3.	Deer LoadFile Finish
+13.45.3.	Deer OnInitDialog
+13.45.3.	Deer OnInitDialog Menu OK
+13.45.8.	Deer Create Thread Finish
+13.45.14.	Servo Off All Finish
+13.45.14.	Close All IO Finish
+13.45.14.	Thread Arm Finish
+13.45.14.	Thread Inspect Finish
+13.45.14.	Thread Inserter Finish
+13.45.14.	Thread Manual Finish
+13.45.14.	Thread Initial Arm Finish
+13.45.14.	Thread ErrorCtrl Finish
+13.45.14.	Thread Tester Finish
+13.45.14.	Thread IOReadWrite Finish
+13.45.14.	Shut Down Finish
+13.45.21.	Deer Load txt Finish
+13.45.21.	Deer Load Motor Finish
+13.45.21.	Deer LoadFile Finish
+13.45.21.	Deer OnInitDialog
+13.45.21.	Deer OnInitDialog Menu OK
+13.45.27.	Deer Create Thread Finish
+13.45.31.	Servo Off All Finish
+13.45.31.	Close All IO Finish
+13.45.31.	Thread ErrorCtrl Finish
+13.45.31.	Thread Tester Finish
+13.45.31.	Thread Arm Finish
+13.45.31.	Thread Initial Arm Finish
+13.45.31.	Thread Manual Finish
+13.45.31.	Thread Inserter Finish
+13.45.31.	Thread Inspect Finish
+13.45.31.	Thread IOReadWrite Finish
+13.45.31.	Shut Down Finish
+13.58.5.	Deer Load txt Finish
+13.58.5.	Deer Load Motor Finish
+13.58.56.	Deer Load txt Finish
+13.58.56.	Deer Load Motor Finish
+13.58.57.	Deer LoadFile Finish
+13.58.57.	Deer OnInitDialog
+13.58.57.	Deer OnInitDialog Menu OK
+13.59.2.	Deer Create Thread Finish
+13.59.12.	Servo Off All Finish
+13.59.12.	Close All IO Finish
+13.59.12.	Thread Inserter Finish
+13.59.12.	Thread Manual Finish
+13.59.12.	Thread Tester Finish
+13.59.12.	Thread Arm Finish
+13.59.12.	Thread IOReadWrite Finish
+13.59.12.	Thread Inspect Finish
+13.59.12.	Thread Initial Arm Finish
+13.59.12.	Thread ErrorCtrl Finish
+13.59.12.	Shut Down Finish
+13.59.17.	Deer Load txt Finish
+13.59.17.	Deer Load Motor Finish
+14.0.25.	Deer Load txt Finish
+14.0.25.	Deer Load Motor Finish
+14.0.26.	Deer LoadFile Finish
+14.0.26.	Deer OnInitDialog
+14.0.26.	Deer OnInitDialog Menu OK
+14.0.31.	Deer Create Thread Finish
+14.0.34.	Servo Off All Finish
+14.0.34.	Close All IO Finish
+14.0.34.	Thread Tester Finish
+14.0.34.	Thread ErrorCtrl Finish
+14.0.34.	Thread Arm Finish
+14.0.34.	Thread Inserter Finish
+14.0.34.	Thread Manual Finish
+14.0.34.	Thread Initial Arm Finish
+14.0.34.	Thread Inspect Finish
+14.0.34.	Thread IOReadWrite Finish
+14.0.34.	Shut Down Finish
+14.0.41.	Deer Load txt Finish
+14.0.41.	Deer Load Motor Finish
+14.0.42.	Deer LoadFile Finish
+14.0.42.	Deer OnInitDialog
+14.0.42.	Deer OnInitDialog Menu OK
+14.0.47.	Deer Create Thread Finish
+14.0.52.	Servo Off All Finish
+14.0.52.	Close All IO Finish
+14.0.52.	Thread Arm Finish
+14.0.52.	Thread IOReadWrite Finish
+14.0.52.	Thread Inserter Finish
+14.0.53.	Thread Manual Finish
+14.0.53.	Thread ErrorCtrl Finish
+14.0.53.	Thread Tester Finish
+14.0.53.	Thread Initial Arm Finish
+14.0.53.	Thread Inspect Finish
+14.0.53.	Shut Down Finish
+14.3.42.	Deer Load txt Finish
+14.3.42.	Deer Load Motor Finish
+14.3.43.	Deer LoadFile Finish
+14.3.43.	Deer OnInitDialog
+14.3.43.	Deer OnInitDialog Menu OK
+14.3.48.	Deer Create Thread Finish
+14.4.17.	Servo Off All Finish
+14.4.17.	Close All IO Finish
+14.4.17.	Thread Manual Finish
+14.4.17.	Thread Inserter Finish
+14.4.17.	Thread IOReadWrite Finish
+14.4.17.	Thread Inspect Finish
+14.4.17.	Thread Initial Arm Finish
+14.4.17.	Thread ErrorCtrl Finish
+14.4.17.	Thread Tester Finish
+14.4.17.	Thread Arm Finish
+14.4.17.	Shut Down Finish
+14.6.0.	Deer Load txt Finish
+14.6.0.	Deer Load Motor Finish
+14.6.1.	Deer LoadFile Finish
+14.6.1.	Deer OnInitDialog
+14.6.1.	Deer OnInitDialog Menu OK
+14.6.6.	Deer Create Thread Finish
+14.6.36.	Servo Off All Finish
+14.6.36.	Close All IO Finish
+14.6.36.	Thread ErrorCtrl Finish
+14.6.36.	Thread Manual Finish
+14.6.36.	Thread Initial Arm Finish
+14.6.36.	Thread Inserter Finish
+14.6.36.	Thread Inspect Finish
+14.6.36.	Thread IOReadWrite Finish
+14.6.36.	Thread Tester Finish
+14.6.36.	Thread Arm Finish
+14.6.36.	Shut Down Finish
+14.8.5.	Deer Load txt Finish
+14.8.5.	Deer Load Motor Finish
+14.8.6.	Deer LoadFile Finish
+14.8.6.	Deer OnInitDialog
+14.8.6.	Deer OnInitDialog Menu OK
+14.8.12.	Deer Create Thread Finish
+14.8.29.	Servo Off All Finish
+14.8.29.	Close All IO Finish
+14.8.29.	Thread Arm Finish
+14.8.29.	Thread Inserter Finish
+14.8.29.	Thread Inspect Finish
+14.8.29.	Thread Initial Arm Finish
+14.8.29.	Thread Manual Finish
+14.8.29.	Thread IOReadWrite Finish
+14.8.29.	Thread ErrorCtrl Finish
+14.8.29.	Thread Tester Finish
+14.8.29.	Shut Down Finish
+14.8.55.	Deer Load txt Finish
+14.8.55.	Deer Load Motor Finish
+14.8.56.	Deer LoadFile Finish
+14.8.56.	Deer OnInitDialog
+14.8.56.	Deer OnInitDialog Menu OK
+14.9.1.	Deer Create Thread Finish
+14.9.20.	Servo Off All Finish
+14.9.20.	Close All IO Finish
+14.9.20.	Thread Initial Arm Finish
+14.9.20.	Thread Tester Finish
+14.9.20.	Thread Manual Finish
+14.9.20.	Thread Inserter Finish
+14.9.20.	Thread ErrorCtrl Finish
+14.9.20.	Thread Arm Finish
+14.9.20.	Thread Inspect Finish
+14.9.20.	Thread IOReadWrite Finish
+14.9.20.	Shut Down Finish
+14.12.13.	Deer Load txt Finish
+14.12.13.	Deer Load Motor Finish
+14.12.14.	Deer LoadFile Finish
+14.12.14.	Deer OnInitDialog
+14.12.14.	Deer OnInitDialog Menu OK
+14.12.19.	Deer Create Thread Finish
+14.13.18.	Servo Off All Finish
+14.13.18.	Close All IO Finish
+14.13.18.	Thread Manual Finish
+14.13.18.	Thread ErrorCtrl Finish
+14.13.18.	Thread Arm Finish
+14.13.18.	Thread Initial Arm Finish
+14.13.18.	Thread Inserter Finish
+14.13.18.	Thread Inspect Finish
+14.13.18.	Thread IOReadWrite Finish
+14.13.18.	Thread Tester Finish
+14.13.18.	Shut Down Finish
+14.14.10.	Deer Load txt Finish
+14.14.10.	Deer Load Motor Finish
+14.14.11.	Deer LoadFile Finish
+14.14.11.	Deer OnInitDialog
+14.14.11.	Deer OnInitDialog Menu OK
+14.14.16.	Deer Create Thread Finish
+14.14.24.	Servo Off All Finish
+14.14.24.	Close All IO Finish
+14.14.24.	Thread Initial Arm Finish
+14.14.24.	Thread Inserter Finish
+14.14.24.	Thread Inspect Finish
+14.14.24.	Thread IOReadWrite Finish
+14.14.24.	Thread Manual Finish
+14.14.24.	Thread ErrorCtrl Finish
+14.14.24.	Thread Tester Finish
+14.14.24.	Thread Arm Finish
+14.14.24.	Shut Down Finish
+14.17.9.	Deer Load txt Finish
+14.17.9.	Deer Load Motor Finish
+14.17.10.	Deer LoadFile Finish
+14.17.10.	Deer OnInitDialog
+14.17.10.	Deer OnInitDialog Menu OK
+14.17.10.	Deer Create Thread Finish
+14.17.18.	Servo Off All Finish
+14.17.18.	Close All IO Finish
+14.17.18.	Thread ErrorCtrl Finish
+14.17.18.	Thread Inserter Finish
+14.17.18.	Thread Manual Finish
+14.17.18.	Thread Tester Finish
+14.17.18.	Thread Arm Finish
+14.17.18.	Thread Initial Arm Finish
+14.17.18.	Thread Inspect Finish
+14.17.18.	Thread IOReadWrite Finish
+14.17.18.	Shut Down Finish
+16.21.58.	Deer Load txt Finish
+16.21.58.	Deer Load Motor Finish
+16.22.0.	Deer LoadFile Finish
+16.22.0.	Deer OnInitDialog
+16.22.0.	Deer OnInitDialog Menu OK
+16.22.1.	Deer Create Thread Finish
+16.22.12.	Servo Off All Finish
+16.22.12.	Close All IO Finish
+16.22.12.	Thread Inspect Finish
+16.22.12.	Thread Tester Finish
+16.22.12.	Thread Manual Finish
+16.22.12.	Thread Initial Arm Finish
+16.22.12.	Thread Inserter Finish
+16.22.12.	Thread IOReadWrite Finish
+16.22.12.	Thread ErrorCtrl Finish
+16.22.12.	Thread Arm Finish
+16.22.12.	Shut Down Finish
+16.23.47.	Deer Load txt Finish
+16.23.47.	Deer Load Motor Finish
+16.23.49.	Deer LoadFile Finish
+16.23.49.	Deer OnInitDialog
+16.23.49.	Deer OnInitDialog Menu OK
+16.23.50.	Deer Create Thread Finish
+16.23.53.	Servo Off All Finish
+16.23.53.	Close All IO Finish
+16.23.53.	Thread Inspect Finish
+16.23.53.	Thread ErrorCtrl Finish
+16.23.53.	Thread Initial Arm Finish
+16.23.53.	Thread IOReadWrite Finish
+16.23.53.	Thread Manual Finish
+16.23.53.	Thread Tester Finish
+16.23.53.	Thread Arm Finish
+16.23.53.	Thread Inserter Finish
+16.23.53.	Shut Down Finish
+16.24.12.	Deer Load txt Finish
+16.24.12.	Deer Load Motor Finish
+16.24.13.	Deer LoadFile Finish
+16.24.13.	Deer OnInitDialog
+16.24.13.	Deer OnInitDialog Menu OK
+16.24.15.	Deer Create Thread Finish
+16.24.18.	Servo Off All Finish
+16.24.18.	Close All IO Finish
+16.24.18.	Thread Arm Finish
+16.24.18.	Thread Manual Finish
+16.24.18.	Thread ErrorCtrl Finish
+16.24.18.	Thread Initial Arm Finish
+16.24.18.	Thread Inserter Finish
+16.24.18.	Thread Inspect Finish
+16.24.18.	Thread IOReadWrite Finish
+16.24.18.	Thread Tester Finish
+16.24.18.	Shut Down Finish
+16.25.10.	Deer Load txt Finish
+16.25.10.	Deer Load Motor Finish
+16.25.11.	Deer LoadFile Finish
+16.25.11.	Deer OnInitDialog
+16.25.11.	Deer OnInitDialog Menu OK
+16.25.13.	Deer Create Thread Finish
+16.25.17.	Servo Off All Finish
+16.25.17.	Close All IO Finish
+16.25.17.	Thread Manual Finish
+16.25.17.	Thread Inspect Finish
+16.25.17.	Thread Initial Arm Finish
+16.25.17.	Thread Inserter Finish
+16.25.17.	Thread ErrorCtrl Finish
+16.25.17.	Thread Tester Finish
+16.25.17.	Thread Arm Finish
+16.25.17.	Thread IOReadWrite Finish
+16.25.17.	Shut Down Finish
+16.25.30.	Deer Load txt Finish
+16.25.30.	Deer Load Motor Finish
+16.25.30.	Deer LoadFile Finish
+16.25.30.	Deer OnInitDialog
+16.25.30.	Deer OnInitDialog Menu OK
+16.25.32.	Deer Create Thread Finish
+16.25.43.	Deer Load txt Finish
+16.25.43.	Deer Load Motor Finish
+16.25.44.	Deer LoadFile Finish
+16.25.44.	Deer OnInitDialog
+16.25.44.	Deer OnInitDialog Menu OK
+16.25.45.	Deer Create Thread Finish
+16.26.11.	Servo Off All Finish
+16.26.11.	Close All IO Finish
+16.26.11.	Thread Manual Finish
+16.26.11.	Thread Initial Arm Finish
+16.26.11.	Thread Inserter Finish
+16.26.11.	Thread Inspect Finish
+16.26.11.	Thread IOReadWrite Finish
+16.26.11.	Thread ErrorCtrl Finish
+16.26.11.	Thread Tester Finish
+16.26.11.	Thread Arm Finish
+16.26.11.	Shut Down Finish
+16.30.43.	Deer Load txt Finish
+16.30.43.	Deer Load Motor Finish
+16.30.44.	Deer LoadFile Finish
+16.30.44.	Deer OnInitDialog
+16.30.44.	Deer OnInitDialog Menu OK
+16.30.46.	Deer Create Thread Finish
+16.31.21.	Servo Off All Finish
+16.31.21.	Close All IO Finish
+16.31.21.	Thread Inserter Finish
+16.31.21.	Thread ErrorCtrl Finish
+16.31.21.	Thread Tester Finish
+16.31.21.	Thread Manual Finish
+16.31.21.	Thread IOReadWrite Finish
+16.31.21.	Thread Initial Arm Finish
+16.31.21.	Thread Inspect Finish
+16.31.21.	Thread Arm Finish
+16.31.21.	Shut Down Finish
+16.31.42.	Deer Load txt Finish
+16.31.42.	Deer Load Motor Finish
+16.31.43.	Deer LoadFile Finish
+16.31.43.	Deer OnInitDialog
+16.31.43.	Deer OnInitDialog Menu OK
+16.31.45.	Deer Create Thread Finish
+16.35.16.	Servo Off All Finish
+16.35.16.	Close All IO Finish
+16.35.16.	Thread Manual Finish
+16.35.16.	Thread Arm Finish
+16.35.16.	Thread Tester Finish
+16.35.16.	Thread ErrorCtrl Finish
+16.35.16.	Thread Initial Arm Finish
+16.35.16.	Thread Inserter Finish
+16.35.16.	Thread Inspect Finish
+16.35.16.	Thread IOReadWrite Finish
+16.35.16.	Shut Down Finish
+16.36.21.	Deer Load txt Finish
+16.36.21.	Deer Load Motor Finish
+16.36.22.	Deer LoadFile Finish
+16.36.22.	Deer OnInitDialog
+16.36.22.	Deer OnInitDialog Menu OK
+16.36.23.	Deer Create Thread Finish
+16.37.45.	Servo Off All Finish
+16.37.45.	Close All IO Finish
+16.37.45.	Thread Arm Finish
+16.37.45.	Thread Inspect Finish
+16.37.45.	Thread Initial Arm Finish
+16.37.45.	Thread IOReadWrite Finish
+16.37.45.	Thread Manual Finish
+16.37.45.	Thread Inserter Finish
+16.37.45.	Thread ErrorCtrl Finish
+16.37.45.	Thread Tester Finish
+16.37.45.	Shut Down Finish
+16.38.46.	Deer Load txt Finish
+16.38.46.	Deer Load Motor Finish
+16.38.47.	Deer LoadFile Finish
+16.38.47.	Deer OnInitDialog
+16.38.47.	Deer OnInitDialog Menu OK
+16.38.48.	Deer Create Thread Finish
+16.39.4.	Servo Off All Finish
+16.39.4.	Close All IO Finish
+16.39.4.	Thread Initial Arm Finish
+16.39.4.	Thread Manual Finish
+16.39.4.	Thread ErrorCtrl Finish
+16.39.4.	Thread Tester Finish
+16.39.4.	Thread Inserter Finish
+16.39.4.	Thread Inspect Finish
+16.39.4.	Thread IOReadWrite Finish
+16.39.4.	Thread Arm Finish
+16.39.4.	Shut Down Finish
+16.39.45.	Deer Load txt Finish
+16.39.45.	Deer Load Motor Finish
+16.39.46.	Deer LoadFile Finish
+16.39.46.	Deer OnInitDialog
+16.39.46.	Deer OnInitDialog Menu OK
+16.39.48.	Deer Create Thread Finish
+16.40.3.	Servo Off All Finish
+16.40.3.	Close All IO Finish
+16.40.3.	Thread Arm Finish
+16.40.3.	Thread Initial Arm Finish
+16.40.3.	Thread Inspect Finish
+16.40.3.	Thread ErrorCtrl Finish
+16.40.3.	Thread Manual Finish
+16.40.3.	Thread Tester Finish
+16.40.3.	Thread Inserter Finish
+16.40.3.	Thread IOReadWrite Finish
+16.40.3.	Shut Down Finish
+16.41.52.	Deer Load txt Finish
+16.41.52.	Deer Load Motor Finish
+16.41.53.	Deer LoadFile Finish
+16.41.53.	Deer OnInitDialog
+16.41.53.	Deer OnInitDialog Menu OK
+16.41.54.	Deer Create Thread Finish
+16.42.5.	Servo Off All Finish
+16.42.5.	Close All IO Finish
+16.42.5.	Thread Inserter Finish
+16.42.5.	Thread Manual Finish
+16.42.5.	Thread Initial Arm Finish
+16.42.5.	Thread Inspect Finish
+16.42.5.	Thread IOReadWrite Finish
+16.42.5.	Thread ErrorCtrl Finish
+16.42.5.	Thread Tester Finish
+16.42.5.	Thread Arm Finish
+16.42.5.	Shut Down Finish
+16.42.59.	Deer Load txt Finish
+16.42.59.	Deer Load Motor Finish
+16.42.59.	Deer LoadFile Finish
+16.42.59.	Deer OnInitDialog
+16.42.59.	Deer OnInitDialog Menu OK
+16.43.1.	Deer Create Thread Finish
+16.43.29.	Servo Off All Finish
+16.43.29.	Close All IO Finish
+16.43.29.	Thread Tester Finish
+16.43.29.	Thread ErrorCtrl Finish
+16.43.29.	Thread Inserter Finish
+16.43.29.	Thread Manual Finish
+16.43.29.	Thread Arm Finish
+16.43.29.	Thread Initial Arm Finish
+16.43.29.	Thread Inspect Finish
+16.43.29.	Thread IOReadWrite Finish
+16.43.29.	Shut Down Finish
+16.45.11.	Deer Load txt Finish
+16.45.11.	Deer Load Motor Finish
+16.45.12.	Deer LoadFile Finish
+16.45.12.	Deer OnInitDialog
+16.45.12.	Deer OnInitDialog Menu OK
+16.45.13.	Deer Create Thread Finish
+16.47.6.	Servo Off All Finish
+16.47.6.	Close All IO Finish
+16.47.6.	Thread Tester Finish
+16.47.6.	Thread Arm Finish
+16.47.6.	Thread ErrorCtrl Finish
+16.47.6.	Thread Manual Finish
+16.47.6.	Thread Initial Arm Finish
+16.47.6.	Thread Inserter Finish
+16.47.6.	Thread Inspect Finish
+16.47.6.	Thread IOReadWrite Finish
+16.47.6.	Shut Down Finish
+16.50.9.	Deer Load txt Finish
+16.50.9.	Deer Load Motor Finish
+16.50.10.	Deer LoadFile Finish
+16.50.10.	Deer OnInitDialog
+16.50.10.	Deer OnInitDialog Menu OK
+16.50.11.	Deer Create Thread Finish
+16.53.0.	Servo Off All Finish
+16.53.0.	Close All IO Finish
+16.53.0.	Thread Manual Finish
+16.53.0.	Thread Arm Finish
+16.53.0.	Thread Tester Finish
+16.53.0.	Thread ErrorCtrl Finish
+16.53.0.	Thread Initial Arm Finish
+16.53.0.	Thread Inserter Finish
+16.53.0.	Thread Inspect Finish
+16.53.0.	Thread IOReadWrite Finish
+16.53.0.	Shut Down Finish
+16.54.26.	Deer Load txt Finish
+16.54.26.	Deer Load Motor Finish
+16.54.46.	Deer Load txt Finish
+16.54.46.	Deer Load Motor Finish
+16.54.47.	Deer LoadFile Finish
+16.54.47.	Deer OnInitDialog
+16.54.47.	Deer OnInitDialog Menu OK
+16.54.49.	Deer Create Thread Finish
+16.57.2.	Servo Off All Finish
+16.57.2.	Close All IO Finish
+16.57.2.	Thread Manual Finish
+16.57.2.	Thread Tester Finish
+16.57.2.	Thread Arm Finish
+16.57.2.	Thread Initial Arm Finish
+16.57.2.	Thread Inserter Finish
+16.57.2.	Thread Inspect Finish
+16.57.2.	Thread IOReadWrite Finish
+16.57.2.	Thread ErrorCtrl Finish
+16.57.2.	Shut Down Finish
+16.58.0.	Deer Load txt Finish
+16.58.0.	Deer Load Motor Finish
+16.58.1.	Deer LoadFile Finish
+16.58.1.	Deer OnInitDialog
+16.58.1.	Deer OnInitDialog Menu OK
+16.58.2.	Deer Create Thread Finish
+16.59.39.	Servo Off All Finish
+16.59.39.	Close All IO Finish
+16.59.39.	Thread Arm Finish
+16.59.39.	Thread Manual Finish
+16.59.39.	Thread Inserter Finish
+16.59.39.	Thread ErrorCtrl Finish
+16.59.39.	Thread Tester Finish
+16.59.39.	Thread Initial Arm Finish
+16.59.39.	Thread Inspect Finish
+16.59.39.	Thread IOReadWrite Finish
+16.59.39.	Shut Down Finish
+16.59.50.	Deer Load txt Finish
+16.59.50.	Deer Load Motor Finish
+16.59.51.	Deer LoadFile Finish
+16.59.51.	Deer OnInitDialog
+16.59.51.	Deer OnInitDialog Menu OK
+16.59.52.	Deer Create Thread Finish
+17.0.4.	Servo Off All Finish
+17.0.4.	Close All IO Finish
+17.0.4.	Thread Manual Finish
+17.0.4.	Thread Tester Finish
+17.0.5.	Thread Arm Finish
+17.0.5.	Thread IOReadWrite Finish
+17.0.5.	Thread Inserter Finish
+17.0.5.	Thread Initial Arm Finish
+17.0.5.	Thread Inspect Finish
+17.0.5.	Thread ErrorCtrl Finish
+17.0.5.	Shut Down Finish
+17.0.12.	Deer Load txt Finish
+17.0.12.	Deer Load Motor Finish
+17.0.13.	Deer LoadFile Finish
+17.0.13.	Deer OnInitDialog
+17.0.13.	Deer OnInitDialog Menu OK
+17.0.14.	Deer Create Thread Finish
+17.0.23.	Servo Off All Finish
+17.0.23.	Close All IO Finish
+17.0.23.	Thread Tester Finish
+17.0.23.	Thread Arm Finish
+17.0.23.	Thread ErrorCtrl Finish
+17.0.23.	Thread Inserter Finish
+17.0.23.	Thread Inspect Finish
+17.0.23.	Thread Initial Arm Finish
+17.0.23.	Thread IOReadWrite Finish
+17.0.23.	Thread Manual Finish
+17.0.23.	Shut Down Finish
+17.0.41.	Deer Load txt Finish
+17.0.41.	Deer Load Motor Finish
+17.0.41.	Deer LoadFile Finish
+17.0.41.	Deer OnInitDialog
+17.0.41.	Deer OnInitDialog Menu OK
+17.0.43.	Deer Create Thread Finish
+17.2.54.	Servo Off All Finish
+17.2.54.	Close All IO Finish
+17.2.54.	Thread Manual Finish
+17.2.54.	Thread Tester Finish
+17.2.54.	Thread Arm Finish
+17.2.54.	Thread ErrorCtrl Finish
+17.2.54.	Thread Initial Arm Finish
+17.2.54.	Thread Inserter Finish
+17.2.54.	Thread Inspect Finish
+17.2.54.	Thread IOReadWrite Finish
+17.2.54.	Shut Down Finish
+17.7.51.	Deer Load txt Finish
+17.7.51.	Deer Load Motor Finish
+17.7.52.	Deer LoadFile Finish
+17.7.52.	Deer OnInitDialog
+17.7.52.	Deer OnInitDialog Menu OK
+17.7.54.	Deer Create Thread Finish
+17.13.8.	Deer Load txt Finish
+17.13.8.	Deer Load Motor Finish
+17.13.9.	Deer LoadFile Finish
+17.13.9.	Deer OnInitDialog
+17.13.9.	Deer OnInitDialog Menu OK
+17.13.11.	Deer Create Thread Finish
+17.13.16.	Servo Off All Finish
+17.13.16.	Close All IO Finish
+17.13.17.	Thread ErrorCtrl Finish
+17.13.17.	Thread Tester Finish
+17.13.17.	Thread Arm Finish
+17.13.17.	Thread Manual Finish
+17.13.17.	Thread IOReadWrite Finish
+17.13.17.	Thread Initial Arm Finish
+17.13.17.	Thread Inserter Finish
+17.13.17.	Thread Inspect Finish
+17.13.17.	Shut Down Finish
+17.13.37.	Deer Load txt Finish
+17.13.37.	Deer Load Motor Finish
+17.13.38.	Deer LoadFile Finish
+17.13.38.	Deer OnInitDialog
+17.13.38.	Deer OnInitDialog Menu OK
+17.13.40.	Deer Create Thread Finish
+17.13.55.	Servo Off All Finish
+17.13.55.	Close All IO Finish
+17.13.55.	Thread Manual Finish
+17.13.55.	Thread Arm Finish
+17.13.55.	Thread ErrorCtrl Finish
+17.13.55.	Thread Initial Arm Finish
+17.13.55.	Thread Inserter Finish
+17.13.55.	Thread Inspect Finish
+17.13.55.	Thread IOReadWrite Finish
+17.13.55.	Thread Tester Finish
+17.13.55.	Shut Down Finish
+17.14.3.	Deer Load txt Finish
+17.14.3.	Deer Load Motor Finish
+17.14.6.	Deer LoadFile Finish
+17.14.6.	Deer OnInitDialog
+17.14.6.	Deer OnInitDialog Menu OK
+17.14.7.	Deer Create Thread Finish
+17.15.17.	Servo Off All Finish
+17.15.17.	Close All IO Finish
+17.15.17.	Thread Tester Finish
+17.15.17.	Thread Inspect Finish
+17.15.17.	Thread ErrorCtrl Finish
+17.15.17.	Thread Manual Finish
+17.15.17.	Thread Arm Finish
+17.15.17.	Thread IOReadWrite Finish
+17.15.17.	Thread Initial Arm Finish
+17.15.17.	Thread Inserter Finish
+17.15.17.	Shut Down Finish
+17.26.43.	Deer Load txt Finish
+17.26.43.	Deer Load Motor Finish
+17.26.45.	Deer LoadFile Finish
+17.26.45.	Deer OnInitDialog
+17.26.45.	Deer OnInitDialog Menu OK
+17.27.22.	Deer Load txt Finish
+17.27.22.	Deer Load Motor Finish
+17.27.24.	Deer LoadFile Finish
+17.27.24.	Deer OnInitDialog
+17.27.24.	Deer OnInitDialog Menu OK
+17.27.29.	Deer Create Thread Finish
+17.27.48.	Deer Load txt Finish
+17.27.48.	Deer Load Motor Finish
+17.27.50.	Deer LoadFile Finish
+17.27.50.	Deer OnInitDialog
+17.27.50.	Deer OnInitDialog Menu OK
+17.27.55.	Deer Create Thread Finish
+17.28.35.	Deer Load txt Finish
+17.28.35.	Deer Load Motor Finish
+17.28.36.	Deer LoadFile Finish
+17.28.36.	Deer OnInitDialog
+17.28.36.	Deer OnInitDialog Menu OK
+17.28.56.	Deer Load txt Finish
+17.28.56.	Deer Load Motor Finish
+17.28.58.	Deer LoadFile Finish
+17.28.58.	Deer OnInitDialog
+17.28.58.	Deer OnInitDialog Menu OK
+17.29.3.	Deer Create Thread Finish
+17.29.13.	Servo Off All Finish
+17.29.13.	Close All IO Finish
+17.29.13.	Thread Inspect Finish
+17.29.13.	Thread Arm Finish
+17.29.13.	Thread ErrorCtrl Finish
+17.29.13.	Thread Inserter Finish
+17.29.13.	Thread Initial Arm Finish
+17.29.13.	Thread Manual Finish
+17.29.13.	Thread IOReadWrite Finish
+17.29.13.	Thread Tester Finish
+17.29.13.	Shut Down Finish
+17.29.23.	Deer Load txt Finish
+17.29.23.	Deer Load Motor Finish
+17.29.24.	Deer LoadFile Finish
+17.29.24.	Deer OnInitDialog
+17.29.24.	Deer OnInitDialog Menu OK
+17.29.24.	Deer Create Thread Finish
+17.29.27.	Servo Off All Finish
+17.29.27.	Close All IO Finish
+17.29.27.	Thread Manual Finish
+17.29.27.	Thread Arm Finish
+17.29.27.	Thread ErrorCtrl Finish
+17.29.27.	Thread IOReadWrite Finish
+17.29.27.	Thread Initial Arm Finish
+17.29.27.	Thread Inspect Finish
+17.29.27.	Thread Inserter Finish
+17.29.27.	Shut Down Finish
+17.29.29.	Deer Load txt Finish
+17.29.29.	Deer Load Motor Finish
+17.29.31.	Deer LoadFile Finish
+17.29.31.	Deer OnInitDialog
+17.29.31.	Deer OnInitDialog Menu OK
+17.29.37.	Deer Create Thread Finish
+17.29.50.	Servo Off All Finish
+17.29.50.	Close All IO Finish
+17.29.50.	Thread IOReadWrite Finish
+17.29.50.	Thread Inserter Finish
+17.29.50.	Thread Initial Arm Finish
+17.29.50.	Thread Inspect Finish
+17.29.50.	Thread ErrorCtrl Finish
+17.29.50.	Thread Manual Finish
+17.29.50.	Thread Tester Finish
+17.29.50.	Thread Arm Finish
+17.29.50.	Shut Down Finish
+18.30.2.	Deer Load txt Finish
+18.30.2.	Deer Load Motor Finish
+18.30.4.	Deer LoadFile Finish
+18.30.5.	Deer OnInitDialog
+18.30.5.	Deer OnInitDialog Menu OK
+18.30.10.	Deer Create Thread Finish
+18.30.19.	Servo Off All Finish
+18.30.19.	Close All IO Finish
+18.30.19.	Thread Initial Arm Finish
+18.30.19.	Thread Inspect Finish
+18.30.19.	Thread IOReadWrite Finish
+18.30.19.	Thread Tester Finish
+18.30.20.	Thread Inserter Finish
+18.30.20.	Thread ErrorCtrl Finish
+18.30.20.	Thread Manual Finish
+18.30.20.	Thread Arm Finish
+18.30.20.	Shut Down Finish
+18.32.50.	Deer Load txt Finish
+18.32.50.	Deer Load Motor Finish
+18.32.51.	Deer LoadFile Finish
+18.32.51.	Deer OnInitDialog
+18.32.51.	Deer OnInitDialog Menu OK
+18.32.57.	Deer Create Thread Finish
+18.33.12.	Servo Off All Finish
+18.33.12.	Close All IO Finish
+18.33.13.	Thread Inspect Finish
+18.33.13.	Thread Inserter Finish
+18.33.13.	Thread Initial Arm Finish
+18.33.13.	Thread Tester Finish
+18.33.13.	Thread ErrorCtrl Finish
+18.33.13.	Thread IOReadWrite Finish
+18.33.13.	Thread Manual Finish
+18.33.13.	Thread Arm Finish
+18.33.13.	Shut Down Finish
+18.33.39.	Deer Load txt Finish
+18.33.39.	Deer Load Motor Finish
+18.33.41.	Deer LoadFile Finish
+18.33.41.	Deer OnInitDialog
+18.33.41.	Deer OnInitDialog Menu OK
+18.33.46.	Deer Create Thread Finish
+18.34.10.	Servo Off All Finish
+18.34.10.	Close All IO Finish
+18.34.10.	Thread Initial Arm Finish
+18.34.10.	Thread Inspect Finish
+18.34.10.	Thread Inserter Finish
+18.34.10.	Thread IOReadWrite Finish
+18.34.10.	Thread ErrorCtrl Finish
+18.34.10.	Thread Manual Finish
+18.34.10.	Thread Arm Finish
+18.34.10.	Thread Tester Finish
+18.34.10.	Shut Down Finish
+18.35.0.	Deer Load txt Finish
+18.35.0.	Deer Load Motor Finish
+18.35.2.	Deer LoadFile Finish
+18.35.2.	Deer OnInitDialog
+18.35.2.	Deer OnInitDialog Menu OK
+18.35.7.	Deer Create Thread Finish
+18.36.33.	Servo Off All Finish
+18.36.33.	Close All IO Finish
+18.36.33.	Thread Arm Finish
+18.36.34.	Thread Initial Arm Finish
+18.36.34.	Thread Inserter Finish
+18.36.34.	Thread Inspect Finish
+18.36.34.	Thread ErrorCtrl Finish
+18.36.34.	Thread Manual Finish
+18.36.34.	Thread Tester Finish
+18.36.34.	Thread IOReadWrite Finish
+18.36.34.	Shut Down Finish
+18.37.6.	Deer Load txt Finish
+18.37.6.	Deer Load Motor Finish
+18.37.8.	Deer LoadFile Finish
+18.37.8.	Deer OnInitDialog
+18.37.8.	Deer OnInitDialog Menu OK
+18.37.13.	Deer Create Thread Finish
+18.41.56.	Deer Load txt Finish
+18.41.56.	Deer Load Motor Finish
+18.41.58.	Deer LoadFile Finish
+18.41.58.	Deer OnInitDialog
+18.41.58.	Deer OnInitDialog Menu OK
+18.42.3.	Deer Create Thread Finish
+18.43.17.	Deer Load txt Finish
+18.43.17.	Deer Load Motor Finish
+18.43.19.	Deer LoadFile Finish
+18.43.19.	Deer OnInitDialog
+18.43.19.	Deer OnInitDialog Menu OK
+18.43.24.	Deer Create Thread Finish
+18.45.3.	Deer Load txt Finish
+18.45.3.	Deer Load Motor Finish
+18.45.5.	Deer LoadFile Finish
+18.45.5.	Deer OnInitDialog
+18.45.5.	Deer OnInitDialog Menu OK
+18.45.10.	Deer Create Thread Finish
+18.45.41.	Servo Off All Finish
+18.45.41.	Close All IO Finish
+18.45.41.	Thread Inserter Finish
+18.45.41.	Thread Tester Finish
+18.45.41.	Thread Arm Finish
+18.45.41.	Thread ErrorCtrl Finish
+18.45.41.	Thread IOReadWrite Finish
+18.45.41.	Thread Initial Arm Finish
+18.45.41.	Thread Inspect Finish
+18.45.41.	Thread Manual Finish
+18.45.41.	Shut Down Finish
+18.49.49.	Deer Load txt Finish
+18.49.49.	Deer Load Motor Finish
+18.49.51.	Deer LoadFile Finish
+18.49.51.	Deer OnInitDialog
+18.49.51.	Deer OnInitDialog Menu OK
+18.49.56.	Deer Create Thread Finish
+18.50.33.	Deer Load txt Finish
+18.50.33.	Deer Load Motor Finish
+18.50.35.	Deer LoadFile Finish
+18.50.35.	Deer OnInitDialog
+18.50.35.	Deer OnInitDialog Menu OK
+18.50.40.	Deer Create Thread Finish
+18.50.55.	Deer Load txt Finish
+18.50.55.	Deer Load Motor Finish
+18.50.57.	Deer LoadFile Finish
+18.50.57.	Deer OnInitDialog
+18.50.57.	Deer OnInitDialog Menu OK
+18.51.3.	Deer Create Thread Finish
+18.52.35.	Deer Load txt Finish
+18.52.35.	Deer Load Motor Finish
+18.52.36.	Deer LoadFile Finish
+18.52.36.	Deer OnInitDialog
+18.52.36.	Deer OnInitDialog Menu OK
+18.52.41.	Deer Create Thread Finish
+13.11.22.	Deer Load txt Finish
+13.11.22.	Deer Load Motor Finish
+13.14.28.	Deer Load txt Finish
+13.14.28.	Deer Load Motor Finish
+13.15.14.	Deer Load txt Finish
+13.15.14.	Deer Load Motor Finish
+13.22.12.	Deer Load txt Finish
+13.22.12.	Deer Load Motor Finish
+13.25.58.	Deer Load txt Finish
+13.25.58.	Deer Load Motor Finish
+13.28.0.	Deer Load txt Finish
+13.28.0.	Deer Load Motor Finish
+13.30.9.	Deer Load txt Finish
+13.30.9.	Deer Load Motor Finish
+13.30.59.	Deer Load txt Finish
+13.30.59.	Deer Load Motor Finish
+13.33.10.	Deer Load txt Finish
+13.33.10.	Deer Load Motor Finish
+13.39.8.	Deer Load txt Finish
+13.39.8.	Deer Load Motor Finish
+13.39.57.	Deer Load txt Finish
+13.39.57.	Deer Load Motor Finish
+13.40.56.	Deer Load txt Finish
+13.40.56.	Deer Load Motor Finish
+13.41.19.	Deer Load txt Finish
+13.41.19.	Deer Load Motor Finish
+13.42.16.	Deer Load txt Finish
+13.42.16.	Deer Load Motor Finish
+13.42.48.	Deer Load txt Finish
+13.42.48.	Deer Load Motor Finish
+13.43.30.	Deer LoadFile Finish
+13.43.30.	Deer OnInitDialog
+13.43.30.	Deer OnInitDialog Menu OK
+13.43.40.	Deer Load txt Finish
+13.43.40.	Deer Load Motor Finish
+13.44.52.	Deer LoadFile Finish
+13.44.53.	Deer OnInitDialog
+13.44.53.	Deer OnInitDialog Menu OK
+13.44.58.	Deer Create Thread Finish
+13.49.52.	Deer Load txt Finish
+13.49.52.	Deer Load Motor Finish
+13.54.22.	Deer Load txt Finish
+13.54.22.	Deer Load Motor Finish
+13.55.21.	Deer LoadFile Finish
+13.55.21.	Deer OnInitDialog
+13.55.21.	Deer OnInitDialog Menu OK
+13.55.27.	Deer Create Thread Finish
+13.55.48.	Deer Load txt Finish
+13.55.48.	Deer Load Motor Finish
+13.56.3.	Deer Load txt Finish
+13.56.3.	Deer Load Motor Finish
+13.57.0.	Deer Load txt Finish
+13.57.0.	Deer Load Motor Finish
+13.57.10.	Deer LoadFile Finish
+13.57.10.	Deer OnInitDialog
+13.57.10.	Deer OnInitDialog Menu OK
+13.57.12.	Deer Create Thread Finish
+13.57.27.	Deer Load txt Finish
+13.57.27.	Deer Load Motor Finish
+13.57.37.	Deer LoadFile Finish
+13.57.37.	Deer OnInitDialog
+13.57.37.	Deer OnInitDialog Menu OK
+13.57.38.	Deer Create Thread Finish
+14.16.3.	Servo Off All Finish
+14.16.3.	Close All IO Finish
+14.16.3.	Thread ErrorCtrl Finish
+14.16.3.	Thread Inspect Finish
+14.16.3.	Thread Inserter Finish
+14.16.3.	Thread IOReadWrite Finish
+14.16.3.	Thread Initial Arm Finish
+14.16.3.	Thread Tester Finish
+14.16.3.	Thread Manual Finish
+14.16.3.	Thread Arm Finish
+14.16.3.	Shut Down Finish
+14.16.15.	Deer Load txt Finish
+14.16.15.	Deer Load Motor Finish
+14.16.26.	Deer LoadFile Finish
+14.16.26.	Deer OnInitDialog
+14.16.26.	Deer OnInitDialog Menu OK
+14.16.27.	Deer Create Thread Finish
+14.16.43.	Deer Load txt Finish
+14.16.43.	Deer Load Motor Finish
+14.16.53.	Deer LoadFile Finish
+14.16.53.	Deer OnInitDialog
+14.16.53.	Deer OnInitDialog Menu OK
+14.16.54.	Deer Create Thread Finish
+14.17.48.	Deer Load txt Finish
+14.17.48.	Deer Load Motor Finish
+14.18.47.	Deer Load txt Finish
+14.18.47.	Deer Load Motor Finish
+14.18.56.	Deer LoadFile Finish
+14.18.56.	Deer OnInitDialog
+14.18.56.	Deer OnInitDialog Menu OK
+14.18.58.	Deer Create Thread Finish
+14.19.16.	Servo Off All Finish
+14.19.16.	Close All IO Finish
+14.19.16.	Thread ErrorCtrl Finish
+14.19.16.	Thread Initial Arm Finish
+14.19.16.	Thread Inserter Finish
+14.19.16.	Thread Inspect Finish
+14.19.16.	Thread IOReadWrite Finish
+14.19.16.	Thread Manual Finish
+14.19.16.	Thread Tester Finish
+14.19.16.	Thread Arm Finish
+14.19.16.	Shut Down Finish
+14.19.25.	Deer Load txt Finish
+14.19.25.	Deer Load Motor Finish
+14.19.35.	Deer LoadFile Finish
+14.19.35.	Deer OnInitDialog
+14.19.35.	Deer OnInitDialog Menu OK
+14.19.36.	Deer Create Thread Finish
+14.20.10.	Servo Off All Finish
+14.20.10.	Close All IO Finish
+14.20.10.	Thread ErrorCtrl Finish
+14.20.10.	Thread Arm Finish
+14.20.10.	Thread Tester Finish
+14.20.10.	Thread Manual Finish
+14.20.10.	Thread Initial Arm Finish
+14.20.10.	Thread Inserter Finish
+14.20.10.	Thread Inspect Finish
+14.20.10.	Thread IOReadWrite Finish
+14.20.10.	Shut Down Finish
+14.20.15.	Deer Load txt Finish
+14.20.15.	Deer Load Motor Finish
+14.20.17.	Deer LoadFile Finish
+14.20.17.	Deer OnInitDialog
+14.20.17.	Deer OnInitDialog Menu OK
+14.20.17.	Deer Create Thread Finish
+14.21.0.	Servo Off All Finish
+14.21.0.	Close All IO Finish
+14.21.0.	Thread Inspect Finish
+14.21.0.	Thread Initial Arm Finish
+14.21.0.	Thread Inserter Finish
+14.21.0.	Thread IOReadWrite Finish
+14.21.0.	Thread Arm Finish
+14.21.0.	Thread ErrorCtrl Finish
+14.21.0.	Thread Manual Finish
+14.21.0.	Thread Tester Finish
+14.21.0.	Shut Down Finish
+9.40.1.	Deer Load txt Finish
+9.40.1.	Deer Load Motor Finish
+9.40.4.	Deer LoadFile Finish
+9.40.4.	Deer OnInitDialog
+9.40.4.	Deer OnInitDialog Menu OK
+9.40.4.	Deer Create Thread Finish
+9.40.29.	Servo Off All Finish
+9.40.29.	Close All IO Finish
+9.40.29.	Thread Inspect Finish
+9.40.29.	Thread Manual Finish
+9.40.29.	Thread ErrorCtrl Finish
+9.40.29.	Thread Initial Arm Finish
+9.40.29.	Thread Inserter Finish
+9.40.29.	Thread IOReadWrite Finish
+9.40.29.	Thread Tester Finish
+9.40.29.	Thread Arm Finish
+9.40.29.	Shut Down Finish
+9.40.36.	Deer Load txt Finish
+9.40.36.	Deer Load Motor Finish
+9.40.38.	Deer LoadFile Finish
+9.40.38.	Deer OnInitDialog
+9.40.38.	Deer OnInitDialog Menu OK
+9.40.38.	Deer Create Thread Finish
+9.40.41.	Servo Off All Finish
+9.40.41.	Close All IO Finish
+9.40.41.	Thread Manual Finish
+9.40.41.	Thread ErrorCtrl Finish
+9.40.41.	Thread Tester Finish
+9.40.41.	Thread Arm Finish
+9.40.41.	Thread Initial Arm Finish
+9.40.41.	Thread Inserter Finish
+9.40.41.	Thread Inspect Finish
+9.40.41.	Thread IOReadWrite Finish
+9.40.41.	Shut Down Finish
+9.40.46.	Deer Load txt Finish
+9.40.46.	Deer Load Motor Finish
+9.40.47.	Deer LoadFile Finish
+9.40.47.	Deer OnInitDialog
+9.40.47.	Deer OnInitDialog Menu OK
+9.40.47.	Deer Create Thread Finish
+9.40.59.	Servo Off All Finish
+9.40.59.	Close All IO Finish
+9.40.59.	Thread Inspect Finish
+9.40.59.	Thread Inserter Finish
+9.40.59.	Thread ErrorCtrl Finish
+9.40.59.	Thread Manual Finish
+9.40.59.	Thread Tester Finish
+9.40.59.	Thread Arm Finish
+9.40.59.	Thread Initial Arm Finish
+9.40.59.	Thread IOReadWrite Finish
+9.40.59.	Shut Down Finish
+9.41.5.	Deer Load txt Finish
+9.41.5.	Deer Load Motor Finish
+9.41.7.	Deer LoadFile Finish
+9.41.7.	Deer OnInitDialog
+9.41.7.	Deer OnInitDialog Menu OK
+9.41.7.	Deer Create Thread Finish
+9.43.38.	Servo Off All Finish
+9.43.38.	Close All IO Finish
+9.43.38.	Thread ErrorCtrl Finish
+9.43.38.	Thread Tester Finish
+9.43.38.	Thread Inspect Finish
+9.43.38.	Thread Initial Arm Finish
+9.43.38.	Thread IOReadWrite Finish
+9.43.38.	Thread Inserter Finish
+9.43.38.	Thread Manual Finish
+9.43.38.	Thread Arm Finish
+9.43.38.	Shut Down Finish
+9.56.29.	Deer Load txt Finish
+9.56.29.	Deer Load Motor Finish
+9.56.31.	Deer LoadFile Finish
+9.56.31.	Deer OnInitDialog
+9.56.31.	Deer OnInitDialog Menu OK
+9.56.31.	Deer Create Thread Finish
+10.0.25.	Servo Off All Finish
+10.0.25.	Close All IO Finish
+10.0.25.	Thread Tester Finish
+10.0.25.	Thread Manual Finish
+10.0.25.	Thread ErrorCtrl Finish
+10.0.25.	Thread Initial Arm Finish
+10.0.25.	Thread Inserter Finish
+10.0.25.	Thread Inspect Finish
+10.0.25.	Thread IOReadWrite Finish
+10.0.25.	Thread Arm Finish
+10.0.25.	Shut Down Finish
+10.2.15.	Deer Load txt Finish
+10.2.15.	Deer Load Motor Finish
+10.2.18.	Deer LoadFile Finish
+10.2.18.	Deer OnInitDialog
+10.2.18.	Deer OnInitDialog Menu OK
+10.2.19.	Deer Create Thread Finish
+10.2.30.	Servo Off All Finish
+10.2.30.	Close All IO Finish
+10.2.30.	Thread Manual Finish
+10.2.30.	Thread Initial Arm Finish
+10.2.30.	Thread Inserter Finish
+10.2.30.	Thread Inspect Finish
+10.2.30.	Thread IOReadWrite Finish
+10.2.30.	Thread ErrorCtrl Finish
+10.2.30.	Thread Tester Finish
+10.2.30.	Thread Arm Finish
+10.2.30.	Shut Down Finish
+10.6.33.	Deer Load txt Finish
+10.6.33.	Deer Load Motor Finish
+10.6.35.	Deer LoadFile Finish
+10.6.35.	Deer OnInitDialog
+10.6.35.	Deer OnInitDialog Menu OK
+10.6.35.	Deer Create Thread Finish
+10.7.57.	Deer Load txt Finish
+10.7.57.	Deer Load Motor Finish
+10.7.58.	Deer LoadFile Finish
+10.7.58.	Deer OnInitDialog
+10.7.58.	Deer OnInitDialog Menu OK
+10.7.58.	Deer Create Thread Finish
+10.12.27.	Deer Load txt Finish
+10.12.27.	Deer Load Motor Finish
+10.12.29.	Deer LoadFile Finish
+10.12.29.	Deer OnInitDialog
+10.12.29.	Deer OnInitDialog Menu OK
+10.12.29.	Deer Create Thread Finish
+10.14.58.	Deer Load txt Finish
+10.14.58.	Deer Load Motor Finish
+10.14.59.	Deer LoadFile Finish
+10.14.59.	Deer OnInitDialog
+10.14.59.	Deer OnInitDialog Menu OK
+10.15.0.	Deer Create Thread Finish
+10.22.32.	Deer Load txt Finish
+10.22.32.	Deer Load Motor Finish
+10.22.34.	Deer LoadFile Finish
+10.22.34.	Deer OnInitDialog
+10.22.34.	Deer OnInitDialog Menu OK
+10.22.34.	Deer Create Thread Finish
+10.22.54.	Servo Off All Finish
+10.22.54.	Close All IO Finish
+10.22.55.	Thread Arm Finish
+10.22.55.	Thread Tester Finish
+10.22.55.	Thread Inserter Finish
+10.22.55.	Thread ErrorCtrl Finish
+10.22.55.	Thread IOReadWrite Finish
+10.22.55.	Thread Initial Arm Finish
+10.22.55.	Thread Inspect Finish
+10.22.55.	Thread Manual Finish
+10.22.55.	Shut Down Finish
+10.26.59.	Deer Load txt Finish
+10.26.59.	Deer Load Motor Finish
+10.27.1.	Deer LoadFile Finish
+10.27.1.	Deer OnInitDialog
+10.27.1.	Deer OnInitDialog Menu OK
+10.27.2.	Deer Create Thread Finish
+10.27.29.	Servo Off All Finish
+10.27.29.	Close All IO Finish
+10.27.29.	Thread Tester Finish
+10.27.29.	Thread Manual Finish
+10.27.29.	Thread ErrorCtrl Finish
+10.27.29.	Thread Initial Arm Finish
+10.27.29.	Thread Inserter Finish
+10.27.29.	Thread Inspect Finish
+10.27.29.	Thread IOReadWrite Finish
+10.27.29.	Thread Arm Finish
+10.27.29.	Shut Down Finish
+13.45.53.	Deer Load txt Finish
+13.45.53.	Deer Load Motor Finish
+13.45.55.	Deer LoadFile Finish
+13.45.55.	Deer OnInitDialog
+13.45.55.	Deer OnInitDialog Menu OK
+13.45.55.	Deer Create Thread Finish
+13.46.16.	Servo Off All Finish
+13.46.16.	Close All IO Finish
+13.46.17.	Thread Initial Arm Finish
+13.46.17.	Thread ErrorCtrl Finish
+13.46.17.	Thread Arm Finish
+13.46.17.	Thread Inserter Finish
+13.46.17.	Thread Inspect Finish
+13.46.17.	Thread IOReadWrite Finish
+13.46.17.	Thread Manual Finish
+13.46.17.	Thread Tester Finish
+13.46.17.	Shut Down Finish
+13.46.23.	Deer Load txt Finish
+13.46.23.	Deer Load Motor Finish
+13.46.25.	Deer LoadFile Finish
+13.46.25.	Deer OnInitDialog
+13.46.25.	Deer OnInitDialog Menu OK
+13.46.25.	Deer Create Thread Finish
+13.46.46.	Servo Off All Finish
+13.46.46.	Close All IO Finish
+13.46.46.	Thread ErrorCtrl Finish
+13.46.46.	Thread IOReadWrite Finish
+13.46.46.	Thread Inserter Finish
+13.46.46.	Thread Initial Arm Finish
+13.46.46.	Thread Manual Finish
+13.46.46.	Thread Tester Finish
+13.46.46.	Thread Arm Finish
+13.46.46.	Thread Inspect Finish
+13.46.46.	Shut Down Finish
+15.16.40.	Deer Load txt Finish
+15.16.40.	Deer Load Motor Finish
+13.32.40.	Deer Load txt Finish
+13.32.40.	Deer Load Motor Finish
+13.32.42.	Deer LoadFile Finish
+13.32.42.	Deer OnInitDialog
+13.32.42.	Deer OnInitDialog Menu OK
+13.32.44.	Deer Create Thread Finish
+13.33.12.	Servo Off All Finish
+13.33.12.	Close All IO Finish
+13.33.13.	Thread Tester Finish
+13.33.13.	Thread Initial Arm Finish
+13.33.13.	Thread Inserter Finish
+13.33.13.	Thread Inspect Finish
+13.33.13.	Thread IOReadWrite Finish
+13.33.13.	Thread ErrorCtrl Finish
+13.33.13.	Thread Manual Finish
+13.33.13.	Thread Arm Finish
+13.33.13.	Shut Down Finish
+13.34.25.	Deer Load txt Finish
+13.34.25.	Deer Load Motor Finish
+13.34.26.	Deer LoadFile Finish
+13.34.26.	Deer OnInitDialog
+13.34.26.	Deer OnInitDialog Menu OK
+13.34.27.	Deer Create Thread Finish
+13.34.33.	Servo Off All Finish
+13.34.33.	Close All IO Finish
+13.34.33.	Thread Inserter Finish
+13.34.33.	Thread IOReadWrite Finish
+13.34.33.	Thread ErrorCtrl Finish
+13.34.33.	Thread Manual Finish
+13.34.33.	Thread Tester Finish
+13.34.33.	Thread Arm Finish
+13.34.33.	Thread Initial Arm Finish
+13.34.33.	Thread Inspect Finish
+13.34.33.	Shut Down Finish
+13.35.17.	Deer Load txt Finish
+13.35.17.	Deer Load Motor Finish
+13.35.18.	Deer LoadFile Finish
+13.35.18.	Deer OnInitDialog
+13.35.18.	Deer OnInitDialog Menu OK
+13.35.19.	Deer Create Thread Finish
+13.35.22.	Servo Off All Finish
+13.35.22.	Close All IO Finish
+13.35.22.	Thread Inspect Finish
+13.35.22.	Thread Inserter Finish
+13.35.22.	Thread Initial Arm Finish
+13.35.22.	Thread IOReadWrite Finish
+13.35.22.	Thread ErrorCtrl Finish
+13.35.22.	Thread Manual Finish
+13.35.22.	Thread Tester Finish
+13.35.22.	Thread Arm Finish
+13.35.22.	Shut Down Finish
+13.36.32.	Deer Load txt Finish
+13.36.32.	Deer Load Motor Finish
+13.36.34.	Deer LoadFile Finish
+13.36.34.	Deer OnInitDialog
+13.36.34.	Deer OnInitDialog Menu OK
+13.36.35.	Deer Create Thread Finish
+13.36.41.	Servo Off All Finish
+13.36.41.	Close All IO Finish
+13.36.41.	Thread Tester Finish
+13.36.41.	Thread ErrorCtrl Finish
+13.36.41.	Thread Inspect Finish
+13.36.41.	Thread Initial Arm Finish
+13.36.41.	Thread Inserter Finish
+13.36.41.	Thread IOReadWrite Finish
+13.36.41.	Thread Manual Finish
+13.36.41.	Thread Arm Finish
+13.36.41.	Shut Down Finish
+13.36.49.	Deer Load txt Finish
+13.36.49.	Deer Load Motor Finish
+13.36.49.	Deer LoadFile Finish
+13.36.49.	Deer OnInitDialog
+13.36.49.	Deer OnInitDialog Menu OK
+13.36.51.	Deer Create Thread Finish
+13.36.53.	Servo Off All Finish
+13.36.53.	Close All IO Finish
+13.36.53.	Thread ErrorCtrl Finish
+13.36.53.	Thread Arm Finish
+13.36.53.	Thread Manual Finish
+13.36.53.	Thread Tester Finish
+13.36.53.	Thread Initial Arm Finish
+13.36.53.	Thread Inserter Finish
+13.36.53.	Thread Inspect Finish
+13.36.53.	Thread IOReadWrite Finish
+13.36.53.	Shut Down Finish
+13.39.1.	Deer Load txt Finish
+13.39.1.	Deer Load Motor Finish
+13.39.2.	Deer LoadFile Finish
+13.39.2.	Deer OnInitDialog
+13.39.2.	Deer OnInitDialog Menu OK
+13.39.3.	Deer Create Thread Finish
+13.39.11.	Servo Off All Finish
+13.39.11.	Close All IO Finish
+13.39.11.	Thread Tester Finish
+13.39.11.	Thread Initial Arm Finish
+13.39.11.	Thread IOReadWrite Finish
+13.39.11.	Thread Inspect Finish
+13.39.11.	Thread Inserter Finish
+13.39.11.	Thread Arm Finish
+13.39.11.	Thread ErrorCtrl Finish
+13.39.11.	Thread Manual Finish
+13.39.11.	Shut Down Finish
+13.39.15.	Deer Load txt Finish
+13.39.15.	Deer Load Motor Finish
+13.39.17.	Deer LoadFile Finish
+13.39.17.	Deer OnInitDialog
+13.39.17.	Deer OnInitDialog Menu OK
+13.39.18.	Deer Create Thread Finish
+13.39.20.	Servo Off All Finish
+13.39.20.	Close All IO Finish
+13.39.21.	Thread Arm Finish
+13.39.21.	Thread Tester Finish
+13.39.21.	Thread Manual Finish
+13.39.21.	Thread Initial Arm Finish
+13.39.21.	Thread ErrorCtrl Finish
+13.39.21.	Thread Inserter Finish
+13.39.21.	Thread Inspect Finish
+13.39.21.	Thread IOReadWrite Finish
+13.39.21.	Shut Down Finish
+13.40.24.	Deer Load txt Finish
+13.40.24.	Deer Load Motor Finish
+13.40.25.	Deer LoadFile Finish
+13.40.25.	Deer OnInitDialog
+13.40.25.	Deer OnInitDialog Menu OK
+13.40.26.	Deer Create Thread Finish
+13.40.29.	Servo Off All Finish
+13.40.29.	Close All IO Finish
+13.40.29.	Thread Initial Arm Finish
+13.40.29.	Thread Inspect Finish
+13.40.29.	Thread Inserter Finish
+13.40.29.	Thread Manual Finish
+13.40.29.	Thread ErrorCtrl Finish
+13.40.29.	Thread IOReadWrite Finish
+13.40.29.	Thread Tester Finish
+13.40.29.	Thread Arm Finish
+13.40.29.	Shut Down Finish
+13.40.58.	Deer Load txt Finish
+13.40.58.	Deer Load Motor Finish
+13.41.0.	Deer LoadFile Finish
+13.41.0.	Deer OnInitDialog
+13.41.0.	Deer OnInitDialog Menu OK
+13.41.1.	Deer Create Thread Finish
+13.41.19.	Servo Off All Finish
+13.41.19.	Close All IO Finish
+13.41.19.	Thread ErrorCtrl Finish
+13.41.19.	Thread Inserter Finish
+13.41.19.	Thread Inspect Finish
+13.41.19.	Thread Initial Arm Finish
+13.41.19.	Thread IOReadWrite Finish
+13.41.19.	Shut Down Finish
+13.41.19.	Thread Manual Finish
+13.41.20.	Thread Tester Finish
+13.41.20.	Thread Arm Finish
+13.56.17.	Deer Load txt Finish
+13.56.17.	Deer Load Motor Finish
+13.56.31.	Deer LoadFile Finish
+13.56.31.	Deer OnInitDialog
+13.56.31.	Deer OnInitDialog Menu OK
+13.56.32.	Deer Create Thread Finish
+13.56.37.	Servo Off All Finish
+13.56.37.	Close All IO Finish
+13.56.37.	Thread ErrorCtrl Finish
+13.56.37.	Thread Inserter Finish
+13.56.37.	Thread Initial Arm Finish
+13.56.37.	Thread Inspect Finish
+13.56.37.	Thread Arm Finish
+13.56.37.	Thread Manual Finish
+13.56.37.	Thread Tester Finish
+13.56.37.	Shut Down Finish
+13.56.37.	Thread IOReadWrite Finish
+13.56.42.	Deer Load txt Finish
+13.56.42.	Deer Load Motor Finish
+13.56.43.	Deer LoadFile Finish
+13.56.43.	Deer OnInitDialog
+13.56.43.	Deer OnInitDialog Menu OK
+13.56.45.	Deer Create Thread Finish
+13.56.48.	Servo Off All Finish
+13.56.48.	Close All IO Finish
+13.56.48.	Thread ErrorCtrl Finish
+13.56.48.	Thread Inserter Finish
+13.56.48.	Thread Inspect Finish
+13.56.48.	Thread Initial Arm Finish
+13.56.48.	Thread Manual Finish
+13.56.48.	Thread Tester Finish
+13.56.48.	Thread IOReadWrite Finish
+13.56.48.	Thread Arm Finish
+13.56.48.	Shut Down Finish
+18.16.42.	Deer Load txt Finish
+18.16.42.	Deer Load Motor Finish
+18.16.43.	Deer LoadFile Finish
+18.16.43.	Deer OnInitDialog
+18.16.43.	Deer OnInitDialog Menu OK
+18.16.45.	Deer Create Thread Finish
+18.16.50.	Servo Off All Finish
+18.16.50.	Close All IO Finish
+18.16.50.	Thread Manual Finish
+18.16.50.	Thread Arm Finish
+18.16.50.	Thread ErrorCtrl Finish
+18.16.50.	Thread Tester Finish
+18.16.50.	Thread Inspect Finish
+18.16.50.	Thread Initial Arm Finish
+18.16.50.	Thread Inserter Finish
+18.16.50.	Thread IOReadWrite Finish
+18.16.50.	Shut Down Finish
+18.20.17.	Deer Load txt Finish
+18.20.17.	Deer Load Motor Finish
+18.20.18.	Deer LoadFile Finish
+18.20.18.	Deer OnInitDialog
+18.20.18.	Deer OnInitDialog Menu OK
+18.20.20.	Deer Create Thread Finish
+18.20.47.	Servo Off All Finish
+18.20.47.	Close All IO Finish
+18.20.47.	Thread Inserter Finish
+18.20.47.	Thread Arm Finish
+18.20.47.	Thread Tester Finish
+18.20.47.	Thread Manual Finish
+18.20.47.	Thread Initial Arm Finish
+18.20.47.	Thread Inspect Finish
+18.20.47.	Thread IOReadWrite Finish
+18.20.47.	Thread ErrorCtrl Finish
+18.20.47.	Shut Down Finish
+18.22.4.	Deer Load txt Finish
+18.22.4.	Deer Load Motor Finish
+18.22.6.	Deer LoadFile Finish
+18.22.6.	Deer OnInitDialog
+18.22.6.	Deer OnInitDialog Menu OK
+18.22.7.	Deer Create Thread Finish
+18.28.8.	Deer Load txt Finish
+18.28.8.	Deer Load Motor Finish
+18.28.10.	Deer LoadFile Finish
+18.28.10.	Deer OnInitDialog
+18.28.10.	Deer OnInitDialog Menu OK
+18.28.11.	Deer Create Thread Finish
+18.29.4.	Servo Off All Finish
+18.29.4.	Close All IO Finish
+18.29.4.	Thread Arm Finish
+18.29.4.	Thread Manual Finish
+18.29.4.	Thread Tester Finish
+18.29.4.	Thread Inserter Finish
+18.29.4.	Thread Inspect Finish
+18.29.4.	Thread Initial Arm Finish
+18.29.4.	Thread ErrorCtrl Finish
+18.29.4.	Thread IOReadWrite Finish
+18.29.4.	Shut Down Finish
+10.41.12.	Deer Load txt Finish
+10.41.12.	Deer Load Motor Finish
+10.41.55.	Deer LoadFile Finish
+10.41.55.	Deer OnInitDialog
+10.41.55.	Deer OnInitDialog Menu OK
+10.42.1.	Deer Create Thread Finish
+13.41.39.	Deer Load txt Finish
+13.41.39.	Deer Load Motor Finish
+13.42.21.	Deer LoadFile Finish
+13.42.21.	Deer OnInitDialog
+13.42.21.	Deer OnInitDialog Menu OK
+13.42.26.	Deer Create Thread Finish
+13.44.16.	Servo Off All Finish
+13.44.16.	Close All IO Finish
+13.44.16.	Thread Initial Arm Finish
+13.44.16.	Thread Arm Finish
+13.44.16.	Thread ErrorCtrl Finish
+13.44.16.	Thread Manual Finish
+13.44.16.	Thread IOReadWrite Finish
+13.44.16.	Thread Inserter Finish
+13.44.16.	Thread Inspect Finish
+13.44.16.	Thread Tester Finish
+13.44.16.	Shut Down Finish
+13.44.50.	Deer Load txt Finish
+13.44.50.	Deer Load Motor Finish
+13.45.32.	Deer Load txt Finish
+13.45.32.	Deer Load Motor Finish
+13.46.14.	Deer LoadFile Finish
+13.46.14.	Deer OnInitDialog
+13.46.14.	Deer OnInitDialog Menu OK
+13.46.20.	Deer Create Thread Finish
+13.46.44.	Servo Off All Finish
+13.46.44.	Close All IO Finish
+13.46.44.	Thread Manual Finish
+13.46.44.	Thread Tester Finish
+13.46.44.	Thread Arm Finish
+13.46.44.	Thread ErrorCtrl Finish
+13.46.44.	Thread Initial Arm Finish
+13.46.44.	Thread Inserter Finish
+13.46.44.	Thread Inspect Finish
+13.46.44.	Thread IOReadWrite Finish
+13.46.44.	Shut Down Finish
+13.47.15.	Deer Load txt Finish
+13.47.15.	Deer Load Motor Finish
+13.47.57.	Deer LoadFile Finish
+13.47.57.	Deer OnInitDialog
+13.47.57.	Deer OnInitDialog Menu OK
+13.48.2.	Deer Create Thread Finish
+13.52.32.	Servo Off All Finish
+13.52.32.	Close All IO Finish
+13.52.32.	Thread Arm Finish
+13.52.32.	Thread IOReadWrite Finish
+13.52.32.	Thread Manual Finish
+13.52.32.	Thread ErrorCtrl Finish
+13.52.32.	Thread Initial Arm Finish
+13.52.32.	Thread Inserter Finish
+13.52.32.	Thread Inspect Finish
+13.52.32.	Thread Tester Finish
+13.52.32.	Shut Down Finish
+13.58.51.	Deer Load txt Finish
+13.58.51.	Deer Load Motor Finish
+13.59.33.	Deer LoadFile Finish
+13.59.33.	Deer OnInitDialog
+13.59.33.	Deer OnInitDialog Menu OK
+13.59.38.	Deer Create Thread Finish
+14.2.6.	Deer Load txt Finish
+14.2.6.	Deer Load Motor Finish
+14.2.48.	Deer LoadFile Finish
+14.2.48.	Deer OnInitDialog
+14.2.48.	Deer OnInitDialog Menu OK
+14.2.54.	Deer Create Thread Finish
+14.8.23.	Deer Load txt Finish
+14.8.23.	Deer Load Motor Finish
+14.9.5.	Deer LoadFile Finish
+14.9.5.	Deer OnInitDialog
+14.9.5.	Deer OnInitDialog Menu OK
+14.9.10.	Deer Create Thread Finish
+14.9.42.	Servo Off All Finish
+14.9.42.	Close All IO Finish
+14.9.42.	Thread ErrorCtrl Finish
+14.9.42.	Thread Inspect Finish
+14.9.42.	Thread Initial Arm Finish
+14.9.42.	Thread Inserter Finish
+14.9.42.	Thread IOReadWrite Finish
+14.9.42.	Thread Manual Finish
+14.9.42.	Thread Tester Finish
+14.9.42.	Thread Arm Finish
+14.9.42.	Shut Down Finish
+14.10.21.	Deer Load txt Finish
+14.10.21.	Deer Load Motor Finish
+14.11.4.	Deer LoadFile Finish
+14.11.4.	Deer OnInitDialog
+14.11.4.	Deer OnInitDialog Menu OK
+14.11.9.	Deer Create Thread Finish
+14.15.50.	Deer Load txt Finish
+14.15.50.	Deer Load Motor Finish
+14.16.32.	Deer LoadFile Finish
+14.16.32.	Deer OnInitDialog
+14.16.32.	Deer OnInitDialog Menu OK
+14.16.37.	Deer Create Thread Finish
+14.18.38.	Deer Load txt Finish
+14.18.38.	Deer Load Motor Finish
+14.19.20.	Deer LoadFile Finish
+14.19.20.	Deer OnInitDialog
+14.19.20.	Deer OnInitDialog Menu OK
+14.19.25.	Deer Create Thread Finish
+14.21.1.	Deer Load txt Finish
+14.21.1.	Deer Load Motor Finish
+14.21.43.	Deer LoadFile Finish
+14.21.43.	Deer OnInitDialog
+14.21.43.	Deer OnInitDialog Menu OK
+14.21.48.	Deer Create Thread Finish
+14.22.48.	Deer Load txt Finish
+14.22.48.	Deer Load Motor Finish
+14.23.30.	Deer LoadFile Finish
+14.23.30.	Deer OnInitDialog
+14.23.30.	Deer OnInitDialog Menu OK
+14.23.35.	Deer Create Thread Finish
+14.28.44.	Deer Load txt Finish
+14.28.44.	Deer Load Motor Finish
+14.29.26.	Deer LoadFile Finish
+14.29.26.	Deer OnInitDialog
+14.29.26.	Deer OnInitDialog Menu OK
+14.29.32.	Deer Create Thread Finish
+14.34.58.	Deer Load txt Finish
+14.34.58.	Deer Load Motor Finish
+14.35.40.	Deer LoadFile Finish
+14.35.40.	Deer OnInitDialog
+14.35.40.	Deer OnInitDialog Menu OK
+14.35.45.	Deer Create Thread Finish
+16.55.17.	Deer Load txt Finish
+16.55.17.	Deer Load Motor Finish
+16.55.19.	Deer LoadFile Finish
+16.55.19.	Deer OnInitDialog
+16.55.19.	Deer OnInitDialog Menu OK
+16.55.24.	Deer Create Thread Finish
+16.56.34.	Servo Off All Finish
+16.56.34.	Close All IO Finish
+16.56.34.	Thread ErrorCtrl Finish
+16.56.34.	Thread Arm Finish
+16.56.34.	Thread Tester Finish
+16.56.34.	Thread Manual Finish
+16.56.34.	Shut Down Finish
+16.56.34.	Thread Initial Arm Finish
+16.56.34.	Thread Inserter Finish
+16.56.34.	Thread Inspect Finish
+16.56.34.	Thread IOReadWrite Finish
+17.5.27.	Deer Load txt Finish
+17.5.27.	Deer Load Motor Finish
+17.5.28.	Deer LoadFile Finish
+17.5.28.	Deer OnInitDialog
+17.5.28.	Deer OnInitDialog Menu OK
+17.5.33.	Deer Create Thread Finish
+17.9.26.	Servo Off All Finish
+17.9.26.	Close All IO Finish
+17.9.26.	Thread ErrorCtrl Finish
+17.9.26.	Thread Initial Arm Finish
+17.9.26.	Thread Inserter Finish
+17.9.26.	Thread Inspect Finish
+17.9.26.	Thread IOReadWrite Finish
+17.9.26.	Thread Manual Finish
+17.9.26.	Thread Tester Finish
+17.9.26.	Thread Arm Finish
+17.9.26.	Shut Down Finish
+17.33.46.	Deer Load txt Finish
+17.33.46.	Deer Load Motor Finish
+17.33.48.	Deer LoadFile Finish
+17.33.48.	Deer OnInitDialog
+17.33.48.	Deer OnInitDialog Menu OK
+17.33.53.	Deer Create Thread Finish
+17.34.3.	Servo Off All Finish
+17.34.3.	Close All IO Finish
+17.34.4.	Thread IOReadWrite Finish
+17.34.4.	Thread ErrorCtrl Finish
+17.34.4.	Thread Inserter Finish
+17.34.4.	Thread Initial Arm Finish
+17.34.4.	Thread Manual Finish
+17.34.4.	Thread Tester Finish
+17.34.4.	Thread Arm Finish
+17.34.4.	Thread Inspect Finish
+17.34.4.	Shut Down Finish
+17.36.10.	Deer Load txt Finish
+17.36.10.	Deer Load Motor Finish
+17.36.12.	Deer LoadFile Finish
+17.36.12.	Deer OnInitDialog
+17.36.12.	Deer OnInitDialog Menu OK
+17.36.17.	Deer Create Thread Finish
+17.36.38.	Servo Off All Finish
+17.36.39.	Close All IO Finish
+17.36.39.	Thread IOReadWrite Finish
+17.36.39.	Thread ErrorCtrl Finish
+17.36.39.	Thread Arm Finish
+17.36.39.	Thread Initial Arm Finish
+17.36.39.	Thread Inserter Finish
+17.36.39.	Thread Inspect Finish
+17.36.39.	Thread Manual Finish
+17.36.39.	Thread Tester Finish
+17.36.39.	Shut Down Finish
+17.37.30.	Deer Load txt Finish
+17.37.30.	Deer Load Motor Finish
+17.37.31.	Deer LoadFile Finish
+17.37.31.	Deer OnInitDialog
+17.37.31.	Deer OnInitDialog Menu OK
+17.37.37.	Deer Create Thread Finish
+17.38.55.	Servo Off All Finish
+17.38.55.	Close All IO Finish
+17.38.55.	Thread ErrorCtrl Finish
+17.38.55.	Thread Arm Finish
+17.38.55.	Thread Manual Finish
+17.38.55.	Thread Initial Arm Finish
+17.38.55.	Thread Inserter Finish
+17.38.55.	Thread IOReadWrite Finish
+17.38.55.	Thread Inspect Finish
+17.38.55.	Thread Tester Finish
+17.38.55.	Shut Down Finish
+17.39.0.	Deer Load txt Finish
+17.39.0.	Deer Load Motor Finish
+17.39.2.	Deer LoadFile Finish
+17.39.2.	Deer OnInitDialog
+17.39.2.	Deer OnInitDialog Menu OK
+17.39.7.	Deer Create Thread Finish
+17.40.59.	Servo Off All Finish
+17.40.59.	Close All IO Finish
+17.40.59.	Thread Inserter Finish
+17.40.59.	Thread Initial Arm Finish
+17.40.59.	Thread Arm Finish
+17.40.59.	Thread Manual Finish
+17.40.59.	Thread Tester Finish
+17.40.59.	Thread Inspect Finish
+17.40.59.	Thread IOReadWrite Finish
+17.40.59.	Thread ErrorCtrl Finish
+17.40.59.	Shut Down Finish
+17.44.47.	Deer Load txt Finish
+17.44.47.	Deer Load Motor Finish
+17.44.49.	Deer LoadFile Finish
+17.44.49.	Deer OnInitDialog
+17.44.49.	Deer OnInitDialog Menu OK
+17.44.54.	Deer Create Thread Finish
+17.54.17.	Deer Load txt Finish
+17.54.17.	Deer Load Motor Finish
+17.54.18.	Deer LoadFile Finish
+17.54.18.	Deer OnInitDialog
+17.54.18.	Deer OnInitDialog Menu OK
+17.54.24.	Deer Create Thread Finish
+17.56.15.	Deer Load txt Finish
+17.56.15.	Deer Load Motor Finish
+17.56.17.	Deer LoadFile Finish
+17.56.17.	Deer OnInitDialog
+17.56.17.	Deer OnInitDialog Menu OK
+17.56.22.	Deer Create Thread Finish
+18.11.5.	Deer Load txt Finish
+18.11.5.	Deer Load Motor Finish
+18.11.7.	Deer LoadFile Finish
+18.11.7.	Deer OnInitDialog
+18.11.7.	Deer OnInitDialog Menu OK
+18.11.12.	Deer Create Thread Finish
+18.14.12.	Servo Off All Finish
+18.14.12.	Close All IO Finish
+18.14.12.	Thread Arm Finish
+18.14.12.	Thread Inserter Finish
+18.14.12.	Thread IOReadWrite Finish
+18.14.12.	Thread Inspect Finish
+18.14.12.	Thread Initial Arm Finish
+18.14.13.	Thread ErrorCtrl Finish
+18.14.13.	Thread Manual Finish
+18.14.13.	Thread Tester Finish
+18.14.13.	Shut Down Finish
+18.14.21.	Deer Load txt Finish
+18.14.21.	Deer Load Motor Finish
+18.14.23.	Deer LoadFile Finish
+18.14.23.	Deer OnInitDialog
+18.14.23.	Deer OnInitDialog Menu OK
+18.14.28.	Deer Create Thread Finish
+18.15.26.	Servo Off All Finish
+18.15.26.	Close All IO Finish
+18.15.26.	Thread IOReadWrite Finish
+18.15.26.	Thread ErrorCtrl Finish
+18.15.26.	Thread Manual Finish
+18.15.26.	Thread Initial Arm Finish
+18.15.26.	Thread Tester Finish
+18.15.26.	Thread Arm Finish
+18.15.26.	Thread Inserter Finish
+18.15.26.	Thread Inspect Finish
+18.15.26.	Shut Down Finish
+18.15.40.	Deer Load txt Finish
+18.15.40.	Deer Load Motor Finish
+18.15.42.	Deer LoadFile Finish
+18.15.42.	Deer OnInitDialog
+18.15.42.	Deer OnInitDialog Menu OK
+18.15.47.	Deer Create Thread Finish
+18.16.51.	Servo Off All Finish
+18.16.51.	Close All IO Finish
+18.16.51.	Thread Tester Finish
+18.16.51.	Thread Manual Finish
+18.16.51.	Thread Arm Finish
+18.16.51.	Thread Initial Arm Finish
+18.16.51.	Thread Inserter Finish
+18.16.51.	Thread Inspect Finish
+18.16.51.	Thread IOReadWrite Finish
+18.16.51.	Thread ErrorCtrl Finish
+18.16.51.	Shut Down Finish
+18.18.52.	Deer Load txt Finish
+18.18.52.	Deer Load Motor Finish
+18.18.53.	Deer LoadFile Finish
+18.18.53.	Deer OnInitDialog
+18.18.53.	Deer OnInitDialog Menu OK
+18.18.59.	Deer Create Thread Finish
+18.20.32.	Servo Off All Finish
+18.20.32.	Close All IO Finish
+18.20.32.	Thread IOReadWrite Finish
+18.20.32.	Thread Initial Arm Finish
+18.20.32.	Thread Inserter Finish
+18.20.32.	Thread Arm Finish
+18.20.32.	Thread Manual Finish
+18.20.32.	Thread Tester Finish
+18.20.32.	Thread Inspect Finish
+18.20.32.	Thread ErrorCtrl Finish
+18.20.32.	Shut Down Finish
+18.20.53.	Deer Load txt Finish
+18.20.53.	Deer Load Motor Finish
+18.20.55.	Deer LoadFile Finish
+18.20.55.	Deer OnInitDialog
+18.20.55.	Deer OnInitDialog Menu OK
+18.21.0.	Deer Create Thread Finish
+18.22.16.	Servo Off All Finish
+18.22.16.	Close All IO Finish
+18.22.16.	Thread ErrorCtrl Finish
+18.22.16.	Thread Manual Finish
+18.22.16.	Thread Initial Arm Finish
+18.22.16.	Thread Inserter Finish
+18.22.16.	Thread Inspect Finish
+18.22.16.	Thread IOReadWrite Finish
+18.22.16.	Shut Down Finish
+18.22.16.	Thread Tester Finish
+18.22.16.	Thread Arm Finish
+18.22.24.	Deer Load txt Finish
+18.22.24.	Deer Load Motor Finish
+18.22.25.	Deer LoadFile Finish
+18.22.25.	Deer OnInitDialog
+18.22.25.	Deer OnInitDialog Menu OK
+18.22.31.	Deer Create Thread Finish
+18.23.39.	Servo Off All Finish
+18.23.39.	Close All IO Finish
+18.23.39.	Thread Arm Finish
+18.23.39.	Thread Manual Finish
+18.23.39.	Thread IOReadWrite Finish
+18.23.39.	Thread ErrorCtrl Finish
+18.23.39.	Thread Tester Finish
+18.23.39.	Thread Initial Arm Finish
+18.23.39.	Thread Inserter Finish
+18.23.39.	Thread Inspect Finish
+18.23.39.	Shut Down Finish
+18.26.19.	Deer Load txt Finish
+18.26.19.	Deer Load Motor Finish
+18.26.20.	Deer LoadFile Finish
+18.26.20.	Deer OnInitDialog
+18.26.20.	Deer OnInitDialog Menu OK
+18.26.26.	Deer Create Thread Finish
+18.26.46.	Servo Off All Finish
+18.26.46.	Close All IO Finish
+18.26.46.	Thread Manual Finish
+18.26.46.	Thread Initial Arm Finish
+18.26.46.	Thread Inspect Finish
+18.26.46.	Thread Inserter Finish
+18.26.46.	Thread ErrorCtrl Finish
+18.26.46.	Thread Tester Finish
+18.26.46.	Thread Arm Finish
+18.26.46.	Thread IOReadWrite Finish
+18.26.46.	Shut Down Finish
+18.28.22.	Deer Load txt Finish
+18.28.22.	Deer Load Motor Finish
+18.28.23.	Deer LoadFile Finish
+18.28.23.	Deer OnInitDialog
+18.28.23.	Deer OnInitDialog Menu OK
+18.28.29.	Deer Create Thread Finish
+18.30.43.	Servo Off All Finish
+18.30.43.	Close All IO Finish
+18.30.43.	Thread Initial Arm Finish
+18.30.43.	Thread Inspect Finish
+18.30.43.	Thread ErrorCtrl Finish
+18.30.43.	Thread IOReadWrite Finish
+18.30.43.	Thread Inserter Finish
+18.30.43.	Thread Manual Finish
+18.30.43.	Thread Tester Finish
+18.30.43.	Thread Arm Finish
+18.30.43.	Shut Down Finish
+18.31.21.	Deer Load txt Finish
+18.31.21.	Deer Load Motor Finish
+18.31.23.	Deer LoadFile Finish
+18.31.23.	Deer OnInitDialog
+18.31.23.	Deer OnInitDialog Menu OK
+18.31.28.	Deer Create Thread Finish
+18.37.6.	Servo Off All Finish
+18.37.6.	Close All IO Finish
+18.37.6.	Thread Tester Finish
+18.37.6.	Thread ErrorCtrl Finish
+18.37.6.	Thread Manual Finish
+18.37.7.	Thread Initial Arm Finish
+18.37.7.	Thread Inserter Finish
+18.37.7.	Thread Inspect Finish
+18.37.7.	Thread IOReadWrite Finish
+18.37.7.	Thread Arm Finish
+18.37.7.	Shut Down Finish
+9.31.3.	Deer Load txt Finish
+9.31.3.	Deer Load Motor Finish
+9.31.38.	Deer Load txt Finish
+9.31.38.	Deer Load Motor Finish
+9.31.39.	Deer LoadFile Finish
+9.31.39.	Deer OnInitDialog
+9.31.39.	Deer OnInitDialog Menu OK
+9.31.45.	Deer Create Thread Finish
+9.32.50.	Servo Off All Finish
+9.32.50.	Close All IO Finish
+9.32.51.	Thread Inserter Finish
+9.32.51.	Thread Arm Finish
+9.32.51.	Thread ErrorCtrl Finish
+9.32.51.	Thread Manual Finish
+9.32.51.	Shut Down Finish
+9.32.51.	Thread Tester Finish
+9.32.51.	Thread Initial Arm Finish
+9.32.51.	Thread Inspect Finish
+9.32.51.	Thread IOReadWrite Finish
+9.34.37.	Deer Load txt Finish
+9.34.37.	Deer Load Motor Finish
+9.34.38.	Deer LoadFile Finish
+9.34.39.	Deer OnInitDialog
+9.34.39.	Deer OnInitDialog Menu OK
+9.34.44.	Deer Create Thread Finish
+9.34.47.	Servo Off All Finish
+9.34.47.	Close All IO Finish
+9.34.47.	Thread Inspect Finish
+9.34.47.	Thread IOReadWrite Finish
+9.34.47.	Thread Initial Arm Finish
+9.34.47.	Thread Inserter Finish
+9.34.47.	Thread Manual Finish
+9.34.47.	Thread Arm Finish
+9.34.47.	Thread Tester Finish
+9.34.47.	Thread ErrorCtrl Finish
+9.34.47.	Shut Down Finish
+14.53.21.	Deer Load txt Finish
+14.53.21.	Deer Load Motor Finish
+14.53.24.	Deer LoadFile Finish
+14.53.24.	Deer OnInitDialog
+14.53.24.	Deer OnInitDialog Menu OK
+14.53.29.	Deer Create Thread Finish
+14.54.2.	Servo Off All Finish
+14.54.2.	Close All IO Finish
+14.54.2.	Thread Initial Arm Finish
+14.54.2.	Thread Arm Finish
+14.54.2.	Thread ErrorCtrl Finish
+14.54.2.	Thread Inserter Finish
+14.54.2.	Thread Inspect Finish
+14.54.2.	Thread IOReadWrite Finish
+14.54.2.	Thread Manual Finish
+14.54.2.	Thread Tester Finish
+14.54.2.	Shut Down Finish
+14.55.3.	Deer Load txt Finish
+14.55.3.	Deer Load Motor Finish
+14.55.4.	Deer LoadFile Finish
+14.55.4.	Deer OnInitDialog
+14.55.4.	Deer OnInitDialog Menu OK
+14.55.10.	Deer Create Thread Finish
+14.57.6.	Deer Load txt Finish
+14.57.6.	Deer Load Motor Finish
+14.57.7.	Deer LoadFile Finish
+14.57.7.	Deer OnInitDialog
+14.57.7.	Deer OnInitDialog Menu OK
+14.57.12.	Deer Create Thread Finish
+14.57.16.	Servo Off All Finish
+14.57.16.	Close All IO Finish
+14.57.16.	Thread Initial Arm Finish
+14.57.16.	Thread Inspect Finish
+14.57.16.	Thread IOReadWrite Finish
+14.57.16.	Thread Inserter Finish
+14.57.16.	Thread Arm Finish
+14.57.16.	Thread Manual Finish
+14.57.16.	Thread Tester Finish
+14.57.16.	Thread ErrorCtrl Finish
+14.57.16.	Shut Down Finish
+15.19.9.	Deer Load txt Finish
+15.19.9.	Deer Load Motor Finish
+15.19.11.	Deer LoadFile Finish
+15.19.11.	Deer OnInitDialog
+15.19.11.	Deer OnInitDialog Menu OK
+15.19.16.	Deer Create Thread Finish
+15.20.42.	Deer Load txt Finish
+15.20.42.	Deer Load Motor Finish
+15.20.43.	Deer LoadFile Finish
+15.20.43.	Deer OnInitDialog
+15.20.43.	Deer OnInitDialog Menu OK
+15.20.48.	Deer Create Thread Finish
+15.21.20.	Servo Off All Finish
+15.21.20.	Close All IO Finish
+15.21.20.	Thread Tester Finish
+15.21.20.	Thread Inspect Finish
+15.21.20.	Thread IOReadWrite Finish
+15.21.20.	Thread Initial Arm Finish
+15.21.20.	Thread Inserter Finish
+15.21.20.	Thread ErrorCtrl Finish
+15.21.20.	Thread Manual Finish
+15.21.20.	Thread Arm Finish
+15.21.20.	Shut Down Finish
+15.21.36.	Deer Load txt Finish
+15.21.36.	Deer Load Motor Finish
+15.21.37.	Deer LoadFile Finish
+15.21.37.	Deer OnInitDialog
+15.21.37.	Deer OnInitDialog Menu OK
+15.21.43.	Deer Create Thread Finish
+15.24.35.	Deer Load txt Finish
+15.24.35.	Deer Load Motor Finish
+15.24.37.	Deer LoadFile Finish
+15.24.37.	Deer OnInitDialog
+15.24.37.	Deer OnInitDialog Menu OK
+15.33.49.	Deer Load txt Finish
+15.33.49.	Deer Load Motor Finish
+15.33.50.	Deer LoadFile Finish
+15.33.51.	Deer OnInitDialog
+15.33.51.	Deer OnInitDialog Menu OK
+15.33.56.	Deer Create Thread Finish
+15.34.30.	Servo Off All Finish
+15.34.30.	Close All IO Finish
+15.34.30.	Thread ErrorCtrl Finish
+15.34.30.	Thread Inserter Finish
+15.34.30.	Thread IOReadWrite Finish
+15.34.30.	Thread Manual Finish
+15.34.30.	Thread Tester Finish
+15.34.30.	Thread Arm Finish
+15.34.30.	Thread Initial Arm Finish
+15.34.30.	Thread Inspect Finish
+15.34.30.	Shut Down Finish
+15.36.31.	Deer Load txt Finish
+15.36.31.	Deer Load Motor Finish
+15.36.32.	Deer LoadFile Finish
+15.36.32.	Deer OnInitDialog
+15.36.32.	Deer OnInitDialog Menu OK
+15.36.38.	Deer Create Thread Finish
+15.43.31.	Deer Load txt Finish
+15.43.31.	Deer Load Motor Finish
+15.43.33.	Deer LoadFile Finish
+15.43.33.	Deer OnInitDialog
+15.43.33.	Deer OnInitDialog Menu OK
+15.43.38.	Deer Create Thread Finish
+15.43.54.	Servo Off All Finish
+15.43.54.	Close All IO Finish
+15.43.54.	Thread Manual Finish
+15.43.54.	Thread Tester Finish
+15.43.54.	Thread ErrorCtrl Finish
+15.43.54.	Thread Arm Finish
+15.43.54.	Thread Initial Arm Finish
+15.43.54.	Thread Inserter Finish
+15.43.54.	Thread Inspect Finish
+15.43.55.	Thread IOReadWrite Finish
+15.43.55.	Shut Down Finish
+15.44.10.	Deer Load txt Finish
+15.44.10.	Deer Load Motor Finish
+15.44.11.	Deer LoadFile Finish
+15.44.11.	Deer OnInitDialog
+15.44.11.	Deer OnInitDialog Menu OK
+15.44.16.	Deer Create Thread Finish
+15.44.38.	Servo Off All Finish
+15.44.38.	Close All IO Finish
+15.44.38.	Thread Initial Arm Finish
+15.44.38.	Thread Inspect Finish
+15.44.38.	Thread Inserter Finish
+15.44.38.	Thread IOReadWrite Finish
+15.44.38.	Thread Tester Finish
+15.44.38.	Thread ErrorCtrl Finish
+15.44.38.	Thread Manual Finish
+15.44.38.	Thread Arm Finish
+15.44.38.	Shut Down Finish
+15.56.57.	Deer Load txt Finish
+15.56.57.	Deer Load Motor Finish
+15.56.59.	Deer LoadFile Finish
+15.56.59.	Deer OnInitDialog
+15.56.59.	Deer OnInitDialog Menu OK
+15.57.4.	Deer Create Thread Finish
+15.57.19.	Servo Off All Finish
+15.57.19.	Close All IO Finish
+15.57.19.	Thread ErrorCtrl Finish
+15.57.19.	Thread Inserter Finish
+15.57.19.	Thread IOReadWrite Finish
+15.57.19.	Thread Manual Finish
+15.57.19.	Thread Tester Finish
+15.57.19.	Thread Arm Finish
+15.57.19.	Thread Initial Arm Finish
+15.57.19.	Thread Inspect Finish
+15.57.19.	Shut Down Finish
+16.8.52.	Deer Load txt Finish
+16.8.52.	Deer Load Motor Finish
+16.8.54.	Deer LoadFile Finish
+16.8.54.	Deer OnInitDialog
+16.8.54.	Deer OnInitDialog Menu OK
+16.8.59.	Deer Create Thread Finish
+16.9.9.	Servo Off All Finish
+16.9.9.	Close All IO Finish
+16.9.9.	Thread Manual Finish
+16.9.9.	Thread ErrorCtrl Finish
+16.9.9.	Thread IOReadWrite Finish
+16.9.9.	Thread Inspect Finish
+16.9.9.	Thread Inserter Finish
+16.9.9.	Thread Initial Arm Finish
+16.9.9.	Thread Tester Finish
+16.9.9.	Thread Arm Finish
+16.9.9.	Shut Down Finish
+16.9.41.	Deer Load txt Finish
+16.9.41.	Deer Load Motor Finish
+16.9.43.	Deer LoadFile Finish
+16.9.43.	Deer OnInitDialog
+16.9.43.	Deer OnInitDialog Menu OK
+16.9.48.	Deer Create Thread Finish
+16.13.25.	Deer Load txt Finish
+16.13.25.	Deer Load Motor Finish
+16.13.27.	Deer LoadFile Finish
+16.13.27.	Deer OnInitDialog
+16.13.27.	Deer OnInitDialog Menu OK
+16.13.32.	Deer Create Thread Finish
+16.13.37.	Servo Off All Finish
+16.13.37.	Close All IO Finish
+16.13.37.	Thread Arm Finish
+16.13.37.	Thread ErrorCtrl Finish
+16.13.37.	Thread Tester Finish
+16.13.37.	Thread Manual Finish
+16.13.37.	Thread Initial Arm Finish
+16.13.37.	Thread Inserter Finish
+16.13.37.	Thread Inspect Finish
+16.13.37.	Thread IOReadWrite Finish
+16.13.37.	Shut Down Finish
+16.14.2.	Deer Load txt Finish
+16.14.2.	Deer Load Motor Finish
+16.14.4.	Deer LoadFile Finish
+16.14.4.	Deer OnInitDialog
+16.14.4.	Deer OnInitDialog Menu OK
+16.14.9.	Deer Create Thread Finish
+16.15.58.	Deer Load txt Finish
+16.15.58.	Deer Load Motor Finish
+16.15.59.	Deer LoadFile Finish
+16.15.59.	Deer OnInitDialog
+16.15.59.	Deer OnInitDialog Menu OK
+16.16.5.	Deer Create Thread Finish
+16.19.31.	Deer Load txt Finish
+16.19.31.	Deer Load Motor Finish
+16.19.33.	Deer LoadFile Finish
+16.19.33.	Deer OnInitDialog
+16.19.33.	Deer OnInitDialog Menu OK
+16.19.38.	Deer Create Thread Finish
+16.21.59.	Deer Load txt Finish
+16.21.59.	Deer Load Motor Finish
+16.22.1.	Deer LoadFile Finish
+16.22.1.	Deer OnInitDialog
+16.22.1.	Deer OnInitDialog Menu OK
+16.22.6.	Deer Create Thread Finish
+16.22.11.	Servo Off All Finish
+16.22.11.	Close All IO Finish
+16.22.11.	Thread Tester Finish
+16.22.11.	Thread ErrorCtrl Finish
+16.22.11.	Thread Initial Arm Finish
+16.22.11.	Thread Inserter Finish
+16.22.11.	Thread Inspect Finish
+16.22.11.	Thread IOReadWrite Finish
+16.22.11.	Thread Manual Finish
+16.22.11.	Thread Arm Finish
+16.22.11.	Shut Down Finish
+16.23.6.	Deer Load txt Finish
+16.23.6.	Deer Load Motor Finish
+16.23.8.	Deer LoadFile Finish
+16.23.8.	Deer OnInitDialog
+16.23.8.	Deer OnInitDialog Menu OK
+16.23.13.	Deer Create Thread Finish
+16.25.48.	Deer Load txt Finish
+16.25.48.	Deer Load Motor Finish
+16.25.50.	Deer LoadFile Finish
+16.25.50.	Deer OnInitDialog
+16.25.50.	Deer OnInitDialog Menu OK
+16.25.55.	Deer Create Thread Finish
+16.30.23.	Servo Off All Finish
+16.30.23.	Close All IO Finish
+16.30.24.	Thread Inspect Finish
+16.30.24.	Thread IOReadWrite Finish
+16.30.24.	Thread Inserter Finish
+16.30.24.	Thread Initial Arm Finish
+16.30.24.	Thread ErrorCtrl Finish
+16.30.24.	Thread Manual Finish
+16.30.24.	Thread Tester Finish
+16.30.24.	Thread Arm Finish
+16.30.24.	Shut Down Finish
+16.31.0.	Deer Load txt Finish
+16.31.0.	Deer Load Motor Finish
+16.31.2.	Deer LoadFile Finish
+16.31.2.	Deer OnInitDialog
+16.31.2.	Deer OnInitDialog Menu OK
+16.31.7.	Deer Create Thread Finish
+16.39.55.	Deer Load txt Finish
+16.39.55.	Deer Load Motor Finish
+16.39.57.	Deer LoadFile Finish
+16.39.57.	Deer OnInitDialog
+16.39.57.	Deer OnInitDialog Menu OK
+16.40.2.	Deer Create Thread Finish
+18.6.49.	Deer Load txt Finish
+18.6.49.	Deer Load Motor Finish
+18.6.51.	Deer LoadFile Finish
+18.6.51.	Deer OnInitDialog
+18.6.51.	Deer OnInitDialog Menu OK
+18.6.56.	Deer Create Thread Finish
+18.10.5.	Servo Off All Finish
+18.10.5.	Close All IO Finish
+18.10.5.	Thread Arm Finish
+18.10.5.	Thread ErrorCtrl Finish
+18.10.5.	Thread Manual Finish
+18.10.5.	Thread Tester Finish
+18.10.5.	Shut Down Finish
+18.10.5.	Thread Initial Arm Finish
+18.10.5.	Thread Inserter Finish
+18.10.5.	Thread Inspect Finish
+18.10.5.	Thread IOReadWrite Finish
+18.10.46.	Deer Load txt Finish
+18.10.46.	Deer Load Motor Finish
+18.10.47.	Deer LoadFile Finish
+18.10.47.	Deer OnInitDialog
+18.10.47.	Deer OnInitDialog Menu OK
+18.10.53.	Deer Create Thread Finish
+18.12.2.	Deer Load txt Finish
+18.12.2.	Deer Load Motor Finish
+18.12.3.	Deer LoadFile Finish
+18.12.3.	Deer OnInitDialog
+18.12.3.	Deer OnInitDialog Menu OK
+18.12.8.	Deer Create Thread Finish
+18.14.30.	Deer Load txt Finish
+18.14.30.	Deer Load Motor Finish
+18.14.32.	Deer LoadFile Finish
+18.14.32.	Deer OnInitDialog
+18.14.32.	Deer OnInitDialog Menu OK
+18.14.37.	Deer Create Thread Finish
+18.15.13.	Deer Load txt Finish
+18.15.13.	Deer Load Motor Finish
+18.15.15.	Deer LoadFile Finish
+18.15.15.	Deer OnInitDialog
+18.15.15.	Deer OnInitDialog Menu OK
+18.15.20.	Deer Create Thread Finish
+18.16.39.	Deer Load txt Finish
+18.16.39.	Deer Load Motor Finish
+18.16.40.	Deer LoadFile Finish
+18.16.40.	Deer OnInitDialog
+18.16.40.	Deer OnInitDialog Menu OK
+18.16.46.	Deer Create Thread Finish
+18.17.6.	Servo Off All Finish
+18.17.6.	Close All IO Finish
+18.17.6.	Thread Inserter Finish
+18.17.6.	Thread Inspect Finish
+18.17.6.	Thread Initial Arm Finish
+18.17.6.	Thread IOReadWrite Finish
+18.17.7.	Thread Manual Finish
+18.17.7.	Thread ErrorCtrl Finish
+18.17.7.	Thread Tester Finish
+18.17.7.	Thread Arm Finish
+18.17.7.	Shut Down Finish
+18.24.20.	Deer Load txt Finish
+18.24.20.	Deer Load Motor Finish
+18.24.22.	Deer LoadFile Finish
+18.24.22.	Deer OnInitDialog
+18.24.22.	Deer OnInitDialog Menu OK
+18.24.27.	Deer Create Thread Finish
+18.25.37.	Deer Load txt Finish
+18.25.37.	Deer Load Motor Finish
+18.25.38.	Deer LoadFile Finish
+18.25.39.	Deer OnInitDialog
+18.25.39.	Deer OnInitDialog Menu OK
+18.25.44.	Deer Create Thread Finish
+18.27.11.	Deer Load txt Finish
+18.27.11.	Deer Load Motor Finish
+18.27.12.	Deer LoadFile Finish
+18.27.12.	Deer OnInitDialog
+18.27.12.	Deer OnInitDialog Menu OK
+18.27.18.	Deer Create Thread Finish
+18.30.35.	Deer Load txt Finish
+18.30.35.	Deer Load Motor Finish
+18.30.37.	Deer LoadFile Finish
+18.30.37.	Deer OnInitDialog
+18.30.37.	Deer OnInitDialog Menu OK
+18.30.42.	Deer Create Thread Finish
+18.32.13.	Deer Load txt Finish
+18.32.13.	Deer Load Motor Finish
+18.32.15.	Deer LoadFile Finish
+18.32.15.	Deer OnInitDialog
+18.32.15.	Deer OnInitDialog Menu OK
+18.32.20.	Deer Create Thread Finish
+18.50.33.	Deer Load txt Finish
+18.50.33.	Deer Load Motor Finish
+18.50.34.	Deer LoadFile Finish
+18.50.34.	Deer OnInitDialog
+18.50.34.	Deer OnInitDialog Menu OK
+18.50.40.	Deer Create Thread Finish
+18.53.24.	Deer Load txt Finish
+18.53.24.	Deer Load Motor Finish
+18.53.25.	Deer LoadFile Finish
+18.53.25.	Deer OnInitDialog
+18.53.25.	Deer OnInitDialog Menu OK
+18.53.30.	Deer Create Thread Finish
+18.53.34.	Servo Off All Finish
+18.53.34.	Close All IO Finish
+18.53.34.	Thread Tester Finish
+18.53.34.	Thread Initial Arm Finish
+18.53.34.	Thread ErrorCtrl Finish
+18.53.34.	Thread Manual Finish
+18.53.34.	Thread Arm Finish
+18.53.34.	Thread Inserter Finish
+18.53.34.	Thread Inspect Finish
+18.53.34.	Thread IOReadWrite Finish
+18.53.34.	Shut Down Finish
+18.54.8.	Deer Load txt Finish
+18.54.8.	Deer Load Motor Finish
+18.54.10.	Deer LoadFile Finish
+18.54.10.	Deer OnInitDialog
+18.54.10.	Deer OnInitDialog Menu OK
+18.54.15.	Deer Create Thread Finish
+18.56.1.	Deer Load txt Finish
+18.56.1.	Deer Load Motor Finish
+18.56.3.	Deer LoadFile Finish
+18.56.3.	Deer OnInitDialog
+18.56.3.	Deer OnInitDialog Menu OK
+18.56.8.	Deer Create Thread Finish
+18.57.29.	Deer Load txt Finish
+18.57.29.	Deer Load Motor Finish
+18.57.30.	Deer LoadFile Finish
+18.57.30.	Deer OnInitDialog
+18.57.30.	Deer OnInitDialog Menu OK
+18.57.36.	Deer Create Thread Finish
+18.58.28.	Deer Load txt Finish
+18.58.28.	Deer Load Motor Finish
+18.58.29.	Deer LoadFile Finish
+18.58.29.	Deer OnInitDialog
+18.58.29.	Deer OnInitDialog Menu OK
+18.58.35.	Deer Create Thread Finish
+19.4.25.	Deer Load txt Finish
+19.4.25.	Deer Load Motor Finish
+19.4.26.	Deer LoadFile Finish
+19.4.26.	Deer OnInitDialog
+19.4.26.	Deer OnInitDialog Menu OK
+19.4.32.	Deer Create Thread Finish
+19.13.52.	Deer Load txt Finish
+19.13.52.	Deer Load Motor Finish
+19.13.54.	Deer LoadFile Finish
+19.13.54.	Deer OnInitDialog
+19.13.54.	Deer OnInitDialog Menu OK
+19.13.59.	Deer Create Thread Finish
+19.24.32.	Deer Load txt Finish
+19.24.32.	Deer Load Motor Finish
+19.24.34.	Deer LoadFile Finish
+19.24.34.	Deer OnInitDialog
+19.24.34.	Deer OnInitDialog Menu OK
+19.24.39.	Deer Create Thread Finish

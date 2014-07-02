@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Deer.rc
+//
+#define HIDC_IN_TRAY_ON_SINGULATORS     0x80a80486    // IDD_DLG_IOMONITOR

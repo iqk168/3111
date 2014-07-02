@@ -1,0 +1,234 @@
+Handler Remote Commands 
+-----------------------------------------------------------------------
+
+Table of Contents
+
+- General Information
+- General Commands
+  - GetHelp?
+  - GetVersion? 
+  - GetState?
+  - SetState
+  - GetErrorString?
+- Tray Commands
+  - GetTraySpec?
+- Temperature Commands
+  - EnableTemp
+  - SetSiteTemp
+  - GetSiteSetTemp?
+  - GetSiteTemp?
+- Rotator Commands 
+  - EnableRotator
+  - SetRotatorDegree
+  - GetRotatorDegree?
+- Camera Commands
+  - EnableCCDLog
+- Motions Commands
+  - SetCoordinates
+  - GetCoordinates?
+  - SetCoordinatesGo
+  - SetCoordinatesReturn
+- Presure Commands
+  - SetPressure
+  - GetPressure?
+
+
+== General Information =============================================== 
+- All commands set to the handler will reply with some status or 
+requested information.
+- Handler will convert all strings to upper case after they are 
+received from the tester.
+- If a handler error occurs (door is open, part jams or etc...) then 
+using the GetStauts? command can be used to get more detail information.
+- After a command is finished and it executed without error then the 
+GetStatus? command will return "OK".
+- Handler will always send replies in upper case characters
+
+
+== General Commands =================================================== 
+---- GetHelp? ---------------------------------------------------------
+This is will cause this "Handler Remote Command" file to be sent to the 
+tester.
+Tester sends to Handler         <<GetHelp?:>>
+Handler replies to Tester       <<GetHelp?: Handler Remote Commands..>>
+
+---- GetVersion? ------------------------------------------------------
+This is for querying handler's manufacture, hardware model, hardware 
+revision and software revision. 
+Tester sends to Handler         <<GetVersion?:>>
+Handler replies to Tester       <<GetVersion?: CHROMA,3111,REV1,V0.1AJ>>
+
+---- GetState? --------------------------------------------------------
+This is for querying what state the handler is in.
+Tester sends to Handler         <<GetState?:>>
+Handler replies to Tester       <<GetState?: UNINITIAL>>
+                                <<GetState?: READY>>
+                                <<GetState?: STOP>>
+
+---- SetState ---------------------------------------------------------
+This is equivalent to the front panel buttons. This command may take 
+longer than a minute to execute.
+Tester sends to Handler         <<SetState: INITIALIZE>>
+                                <<SetState: STOP>>
+                                <<SetState: RETRY>>
+Handler replies to Tester       <<SetState: DONE>>
+                                <<SetState: ERROR>>
+
+---- GetStatus? -------------------------------------------------------
+This queries the last handler status information.
+Tester sends to Handler         <<GetStatus?:>>
+Handler replies to Tester       <<GetStatus?: DOOR OPENNED>>
+                                <<GetStatus?: PART JAMMED>>
+                                <<GetStatus?: OK>>
+All possible status strings should be listed here
+  
+== Tray Commands ====================================================== 
+---- GetTraySpec? -----------------------------------------------------
+This queries the number of columns and rows for active tray file
+Tester sends to Handler         <<GetTraySpec?:>>
+Handler replies to Tester       <<GetTraySpec?: 10,26>>
+Where 10 is the number of columns and 26 is the number of rows
+
+== Temperature Commands =============================================== 
+---- EnableTemp -------------------------------------------------------
+This enables or disables the temperature system
+Tester sends to Handler         <<EnableTemp: 1>>
+Handler replies to Tester       <<EnableTemp: DONE>>
+                                <<EnableTemp: ERROR>>
+Where 0 = Disable the temperature system and 1 = Enable
+
+---- SetSiteTemp ------------------------------------------------------
+This set the temperature
+Tester sends to Handler         <<SetSiteTemp: 85.0>>
+Handler replies to Tester       <<SetSiteTemp: DONE>>
+                                <<SetSiteTemp: ERROR>>
+Where 85.0 is the temperature in degrees Celsius 
+You must also use the EnableTemp command turn on the temperature 
+system This command does not wait for the temperature to reach the set 
+value. You can use the GetSiteTemp command to see what the measured 
+temperature is.
+
+---- GetSiteSetTemp? --------------------------------------------------
+This queries the temperature that the system is set to.
+Tester sends to Handler         <<GetSiteSetTemp?:>>
+Handler replies to Tester       <<GetSiteSetTemp?: 85.0>>
+Where 85.0 is the temperature in degrees Celsius that the temperature 
+system is set to.
+ 
+---- GetSiteTemp? -----------------------------------------------------
+This queries the measured temperature that the system is at.
+Tester sends to Handler         <<GetSiteTemp?:>>
+Handler replies to Tester       <<GetSiteTemp?: 34.0>>
+Where 34.0 is the measured temperature in degrees Celsius that the 
+temperature system is currently at.
+
+== Rotator Commands =================================================== 
+---- EnableRotator ----------------------------------------------------
+This command can be used to tell the handler if a part should be 
+placed in the rotator.
+Tester sends to Handler         <<EnableRotator: 1>>
+Handler replies to Tester       <<EnableRotator: DONE>>
+                                <<EnableRotator: ERROR>>
+Where 0 = Do not place part in the rotator and 1 = place the part in 
+the rotator.
+
+---- SetRotatorDegree -------------------------------------------------
+This command will tell the system the amount of the rotation.
+Tester sends to Handler         <<SetRotatorDegree: 1>>
+Handler replies to Tester       <<SetRotatorDegree: DONE>>
+                                <<SetRotatorDegree: ERROR>>
+Where 0 = 0 degree rotation
+      1 = 90 degrees clock wise rotation
+      2 = 180 degrees clock wise rotation
+      3 = 270 degree clock wise rotation
+
+---- GetRotatorDegree? ------------------------------------------------
+This command will return the rotation information. 
+Tester sends to Handler         <<GetRotatorDegree?:>>
+Handler replies to Tester       <<GetRotatorDegree?: 1>>
+Where 0 = 0 degree rotation
+      1 = 90 degrees clock wise rotation
+      2 = 180 degrees clock wise rotation
+      3 = -90 or 270 degree clock wise rotation
+
+== Camera Commands ==================================================== 
+---- EnableCCDLog -----------------------------------------------------
+This command will enable or disable the DUT picture logging function.
+When enabled the pick and place camera will take a picture of the DUT 
+when it is placed in the Shuttle. The picture is saved in a folder on 
+the handlers hard drive. 
+Tester sends to Handler         <<EnableCCDLog: 1>>
+Handler replies to Tester       <<EnableCCDLog: DONE>>
+                                <<EnableCCDLog: ERROR>>
+Where 0 = Disable the picture logging and 1 = Enable
+ 
+== Motions Commands =================================================== 
+---- SetCoordinates ---------------------------------------------------
+This command is used to tell the handler which part location will be 
+use to get a part or to return a part. The actual motions is not do 
+until the SetCoordinatesGo command is sent to the handler.  
+Tester sends to Handler         <<SetCoordinates: 0,1,2>>
+Handler replies to Tester       <<SetCoordinates: DONE>>
+                                <<SetCoordinates: ERROR>>
+Where the first number equals the tray number
+      0 = the first tray
+      1 = the second tray 
+The second number is the 0 based column number
+      0 = the first column
+The third number is the 0 based row number
+      0 = the first row
+
+---- GetCoordinates? --------------------------------------------------
+This queries the current part location where a part will be taken from 
+or returned to.
+Tester sends to Handler         <<GetCoordinates?:>>
+Handler replies to Tester       <<GetCoordinates?: 0.1,2>>
+                                <<GetCoordinates?: ERROR>>
+Where the first number equals the tray number
+      0 = the first tray
+      1 = the second tray 
+The second number is the 0 based column number
+      0 = the first column
+The third number is the 0 based row number
+      0 = the first row
+ 
+---- SetCoordinatesGo -------------------------------------------------
+This tells the handler to place the part specified by the 
+SetCoordinates command in the test site. Depending on the speed of the 
+motors, part rotation and picture setting this could take many seconds 
+to finish and reply. If an ERROR is return the GetStatus? command can 
+be used to get more detailed information. 
+Tester sends to Handler         <<SetCoordinatesGo:>>
+Handler replies to Tester       <<SetCoordinatesGo: DONE>>
+                                <<SetCoordinatesGo: ERROR>>
+
+---- SetCoordinatesReturn ---------------------------------------------
+This tells the handler to return the part to the tray, column and row 
+specified by the SetCoordinates command. Note that you can get a part 
+from one tray, column and row and then return the part after testing 
+to a different location by using the SetCoordinates command before 
+using this command. Depending on the speed of the motors, part 
+rotation and picture setting this could take many seconds to finish 
+and reply. If an ERROR is return the GetStatus? command can be used 
+to get more detailed information. 
+Tester sends to Handler         <<SetCoordinatesReturn:>>
+Handler replies to Tester       <<SetCoordinatesReturn: DONE>>
+                                <<SetCoordinatesReturn: ERROR>>
+
+== Pressure Commands ================================================== 
+---- SetPressure ------------------------------------------------------
+This command set the work press pressure to apply to the device under 
+test. This assumes that the work press offset position is properly set.
+Tester sends to Handler         <<SetPressure: 8>>
+Handler replies to Tester       <<SetPressure: DONE>>
+                                <<SetPressure: ERROR>>
+Where 8 is the number of kilograms is the total pressure applied to 
+the DUT.
+
+---- GetPressure? -----------------------------------------------------
+This command return the set pressure value
+Tester send to Handler          <<GetPressur?e:>>
+Handler replies to Tester       <<GetPressure?: 8>>
+                                <<GetPressure?: ERROR>>
+Where the returned value is in Kilograms 
+

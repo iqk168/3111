@@ -1,0 +1,9 @@
+[Repeat Trat Mode]
+Mode(0)None=1
+[Repeat Trat Mode(InOutCtrl)]
+Tray1=2
+Tray2=3
+[Repeat Times]
+Times=0
+[Repeat Temperature Confim]
+Confim=0

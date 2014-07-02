@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Interface - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Release/Interface.res" /d "NDEBUG" "C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\RS232 Tool\Interface_V2.0\Interface.rc"" 
+Creating temporary file "C:\Users\SONY\AppData\Local\Temp\RSPF674.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Interface.pdb" /machine:I386 /out:"Release/Interface.exe" 
+".\Release\BtnST.obj"
+".\Release\ColorBtn.obj"
+".\Release\ComInterface.obj"
+".\Release\Interface.obj"
+".\Release\InterfaceDlg.obj"
+".\Release\Member.obj"
+".\Release\StdAfx.obj"
+".\Release\Interface.res"
+]
+Creating command line "link.exe @C:\Users\SONY\AppData\Local\Temp\RSPF674.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Interface.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

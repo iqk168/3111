@@ -1,0 +1,14 @@
+[Test Type]
+Type=2
+[Test Extend]
+CCD=0
+ROTATOR=1
+Angle=0
+CCD Socket=0
+[Interface]
+GPIB=3X3.GPIB
+RS22=3X3.RS232
+TCP=3X3.TCP
+TTL=3X3.TTL
+[Interface Selected]
+Selected=0

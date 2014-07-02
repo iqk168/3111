@@ -1,0 +1,9 @@
+[Command Format]
+CommandHeader=<<
+CommandTailHeader=>>
+Command Ready=Ready
+Command Start=Start
+Command Go=Go
+Command Bin=Bin=
+Command Timeout=35.000000000000000
+Send Start Delay=308360419759679890000000000000000000000000000000.000000000000000

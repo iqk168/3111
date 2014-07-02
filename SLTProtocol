@@ -1,0 +1,290 @@
+0: Recommand Steps
+-----------------------------------------------------------------------
+@01 Connect
+@02 Version (Make sure the S/W version)
+@03 GetStatus (Make sure the system is ready)
+@04 SetSiteTemp
+@05 GetSiteSetTemp 
+@06 EnableTemp (Enable the temperature controller)
+@07 EnableRotator (Enable the Rotator or not)
+@08 Change Rotator degree (Set rotator degree)
+@09 EnableCCD (Enable Arm Log IC or not)
+
+Loop the steps for test
+@10 SetCoordnation (set the coordnation what ever you want)
+@11 GetCoordnation (verify the coordnation value)
+@12 SetCoordnationGo
+@13 ... Wait for [SetCoordnationDone], After get the [SetCoordnationDone], It mean the part in socket
+
+@14 ... Tester do anything it want, Unitl it want change IC
+@15 SetCoordnationReturn
+@16 ... Wait for [SetCoordnationReturnDone], It mean the part is back to orignal tray position
+@17 System back to "Ready" ststus, wait for next command
+
+1: Connect
+-----------------------------------------------------------------------
+# This mean tester ask the chroma become to remote mode
+Tester send to Chroma		<<*%Connect%*>>
+Chroma reply to Tester		<<*%CONNECT%3111;Chroma1>>
+
+2: Disconnect
+-----------------------------------------------------------------------
+# This mean tester ask the chroma leave the remote mode
+Tester send to Chroma		<<*%Disconnect%*>>
+Chroma reply to Tester		<<*%DISCONNECT%Bye>>
+					
+3: Version
+-----------------------------------------------------------------------
+# This is for tester ask chroma s/w version
+Tester send to Chroma		<<*%GetVersion%*>>
+Chroma reply to Tester		<<*%GETVERSION%;3111 V0.1Aj>>
+
+4: GetSiteTemp
+-----------------------------------------------------------------------
+# This is for tester ask chroma temperature present temperature
+# example: 52.20 is the temperature controller present value(degree)
+Tester send to Chroma		<<1%GetSiteTemp%*>>
+Chroma reply to Tester		<<1%GETSITETEMP%52.20>>
+
+5: SetSiteTemp
+-----------------------------------------------------------------------
+# This is for tester ask chroma change the set point
+# example: 112.00 is the set point
+
+Tester send to Chroma		<<1%SetSiteTemp%112.00>>
+Chroma reply to Tester		<<1%SETSITETEMP%ACK>>
+
+# if set temperature is out of range
+Tester send to Chroma		<<1%SetSiteTemp%175.00>>
+Chroma reply to Tester		<<1%SETSITETEMP%NAK;Set Point Out of Range>>
+
+# if site number out of range
+Tester send to Chroma		<<8%SetSiteTemp%175.00>>
+Chroma reply to Tester		<<8%SETSITETEMP%NAK;Invalid Site Number>>
+
+6: GetSiteSetTemp
+-----------------------------------------------------------------------
+# This is for tester ask chroma temperature set point temperature
+# example: 62.20 is the temperature controller set point value(degree)
+
+Tester send to Chroma		<<1%GetSiteSetTemp%*>>
+Chroma reply to Tester		<<1%GETSITESETTEMP%62.20>>
+
+7: GetStatus
+-----------------------------------------------------------------------
+# This is for get system ststus
+Tester send to Chroma		<<*%GetStatus%*>>
+Chroma reply to Tester		<<*%GETSTATUS%UNINITIAL>>
+
+8: Enable Temp
+-----------------------------------------------------------------------
+# This is for enable temperature or disable
+
+# Enable the heater, set the parameter to "1"
+Tester send to Chroma		<<*%EnableTemp%1>>
+Chroma reply to Tester		<<*%ENABLETEMP%ACK>>
+
+# disable the heater, set the parameter to "0"
+Tester send to Chroma		<<*%EnableTemp%0>>
+Chroma reply to Tester		<<*%ENABLETEMP%ACK>>
+
+# if parameter out of range, it will force disable the heater
+Tester send to Chroma		<<*%EnableTemp%9>>
+Chroma reply to Tester		<<*%ENABLETEMP%NAK;Invalid Parameter>>
+
+9: Enable Rotator
+-----------------------------------------------------------------------
+# This is for enable rotator or disable
+
+# enable rotator
+Tester send to Chroma		<<*%EnableRotator%1>>
+Chroma reply to Tester		<<*%ENABLEROTATOR%ACK>>
+
+# disable rotator
+Tetser send to Chroma		<<*%EnableRotator%0>>
+Chroma reply to Tester		<<*%ENABLEROTATOR%ACK>>
+
+# if parameter out of range, it will force disable the rotator
+Tester send to Chroma		<<*%EnableRotator%9>>
+Chroma reply to Tester		<<*%ENABLEROTATOR%NAK;Invalid Parameter>>
+
+10: Change Rotator degree
+-----------------------------------------------------------------------
+# This is for change the rotator degree
+
+# -90
+Tester send to Chroma		<<*%ChangeRotator%0>>
+Chroma reply to Tester		<<*%CHANGEROTATOR%ACK>>
+
+# +90
+Tester send to Chroma		<<*%ChangeRotator%1>>
+Chroma reply to Tester		<<*%CHANGEROTATOR%ACK>>
+
+# 0
+Tester send to Chroma		<<*%ChangeRotator%2>>
+Chroma reply to Tester		<<*%CHANGEROTATOR%ACK>>
+
+# 180
+Tester send to Chroma		<<*%ChangeRotator%3>>
+Chroma reply to Tester		<<*%CHANGEROTATOR%ACK>>
+
+# if parameter is out of range
+Tester send to Chroma		<<*%ChangeRotator%4>>
+Chroma reply to Tester		<<*%CHANGEROTATOR%NAK;Invalid Parameter>>
+
+11: Arm Log IC
+-----------------------------------------------------------------------
+# This if for enable ccd log ic or disable ccd log ic
+
+# Enable CCD
+Tester send to Chroma		<<*%EnableCCDLogIC%1>>
+Chroma reply to Tester		<<*%ENABLECCDLOGIC%ACK>>
+
+# Disable CCD
+Tester send to Chroma		<<*%EnableCCDLogIC%0>>
+Chroma reply to Tester		<<*%ENABLECCDLOGIC%ACK>>
+
+# if parameter is out of range
+Tester send to Chroma		<<*%EnableCCDLogIC%3>>
+Chroma reply to Tester		<<*%ENABLECCDLOGIC%NAK;Invalid Parameter>>
+
+12: SetCoordnation
+-----------------------------------------------------------------------
+# This is for pick/place setting, and it is zero base
+
+# when tray file, col set to 3, and the row set to 6
+# col = 3, ( 0, 1, 2 ), row = 6, ( 0, 1, 2, 3, 4, 5 ), tray1 = 0, tray2 = 1
+# if you want set to pick tray1, the 6 part(x=1, y=2)
+
+Tester send to Chroma		<<*%SetCoordnation%0,1,2>>
+Chroma reply to Tester		<<*%SETCORDNATION%ACK>>
+
+# if parameter is out of range
+Tester send to Chroma		<<*%SetCoordnation%2,1,2>>
+Chroma reply to Tester		<<*%SETCORDNATION%NAK;Invalid Parameter>>
+
+# if the coordnation is not exist with tray spec
+Tester send to Chroma		<<*%SetCoordnation%0,7,5>>
+Chroma reply to Tester		<<*%SETCORDNATION%NAK;Invalid Parameter>>
+
+13: AutoSkip
+-----------------------------------------------------------------------
+# It is for autoskip
+
+# Enable AutoSkip
+Tester send to Chroma		<<*%AutoSkip%0>>
+Chroma reply to Tester		<<*%AUTOSKIP%ACK>>
+
+# Disable AutoSkip
+Tester send to Chroma		<<*%AutoSkip%1>>
+Chroma reply to Tester		<<*%AUTOSKIP%ACK>>
+
+# if parameter is out of range
+Tester send to Chroma		<<*%AutoSkip%3>>
+Chroma reply to Tester		<<*%AUTOSKIP%NAK;Invalid Parameter>>
+
+14: GetAutoSkip
+-----------------------------------------------------------------------
+# It is for get auto skip status
+
+# if auto skip is enable (It will autoskip)
+Tester send to Chroma		<<*%GetAutoSkip%>>
+Chroma reply to Tester		<<*%GETAUTOSKIP%0>>
+
+# if auto skip is not enable (It will not auto skip)
+Tester send to Chroma		<<*%GetAutoSkip%>>
+Chroma reply to Tester		<<*%GETAUTOSKIP%1>>
+
+15: GetTraySpec
+-----------------------------------------------------------------------
+# It is for get tray col, row status
+#example: tray spec column is 10, row is 26
+
+Tester sned to Chroma		<<*%GetTraySpec%>>
+Chroma reply to Tester		<<*%GETTRAYSPEC%10;26>>
+
+16: GetCoordnation
+-----------------------------------------------------------------------
+# It is for get coordnation status
+
+Tester send to Chroma		<<*%GetCoordnation%>>
+Chroma reply to Tester		<<*%GETCORDNATION%0,1,2>>
+
+# if never set the remote will replay -1
+Tester send to Chroma		<<*%GetCoordnation%>>
+Chroma reply to Tester		<<*%GETCORDNATION%-1,-1,-1>>
+
+# if set wrong parameter, it also force the value to -1
+Tester send to Chroma		<<*%GetCoordnation%>>
+Chroma reply to Tester		<<*%GETCORDNATION%-1,-1,-1>>
+
+17: SetCoordnationGo
+-----------------------------------------------------------------------
+# It is for ask machine excute motion
+Tester send to Chroma		<<*%SetCoordnationGo%>>
+Chroma reply to Tester		<<*%SETCORDNATIONGO%ACK>>
+
+# There have few status, we will not allow excute the command
+# If door is not close
+Tester send to Chroma		<<*%SetCoordnationGo%>>
+Chroma reply to Tester		<<*%SETCORDNATIONGO%NAK;Door Open>>
+
+# If E-Stop be pushed, and not recover yet
+Tester send to Chroma		<<*%SetCoordnationGo%>>
+Chroma reply to Tester		<<*%SETCORDNATIONGO%NAK;E-Stop>>
+
+# If system is not ready
+# ex: system is not complete the initial, you have to initial first
+# ex: system is is cycle, cyclestop, override, overridestop status, you have one cycle unitl cycle finish
+# ex: manual, manualstop status, you have to stop the manual contact
+Tester send to Chroma		<<*%SetCoordnationGo%>>
+Chroma reply to Tester		<<*%SETCORDNATIONGO%NAK;System No Ready>>
+
+# If socket already have a part, or the arm is in mission
+Tester send to Chroma		<<*%SetCoordnationGo%>>
+Chroma reply to Tester		<<*%SETCORDNATIONGO%NAK;System No Ready>>
+
+# If no create lot first
+# you have create the lotinformation first
+Tester send to Chroma		<<*%SetCoordnationGo%>>
+Chroma reply to Tester		<<*%SETCORDNATIONGO%NAK;LoadSetup Is Required>>
+
+# If the last coordnation value is not match current tray file spec
+Tester send to Chroma		<<*%SetCoordnationGo%>>
+Chroma reply to Tester		<<*%SETCORDNATIONGO%NAK;Tray No Match>>
+
+18: SetCoordnationDone
+-----------------------------------------------------------------------
+# It mean IC is in socket, Do anything you want
+# After that, send another command, ask machine return the IC
+Chroma send to Tester		<<*%SETCOORDNATIONDONE%>>
+
+19: SetCoordnationReturn
+-----------------------------------------------------------------------
+# It mean Tester ask return the part back to tray
+Tester send to Chroma		<<*%SetCoordnationReturn%>>
+Chroma reply to Tester		<<*%SETCORDNATIONRETURN%ACK>>
+
+After part back to tray and Arm back to standby position
+Chroma send to Tester		<<*%SETCOORDNATIONRETURNDONE%>>
+
+21: SetCoordnationClearGo
+# It mean Tester adk to clear go command
+Tester send to Chroma		<<*%SetCoordnationClearGo%>>
+Chroma reply to Tester		<<*%SETCOORDNATIONCLEARGO%ACK>>
+
+# When the handler error (ex: Jam, or pick part fail), if you press "Skip" button, 
+# Please call the [SetCoordnationClearGo] to clear go command 
+# Or it will go to the orignal position pick again.
+
+21: ErrorMessage
+-----------------------------------------------------------------------
+# This for sned the machine event to Tester
+# example: When arm pick fail
+Chroma send to Tester		<<*%ERRORMESSAGE%Arm Z Pick IC Fail>>
+
+after user repair the error, like push the retry button
+Chroma send to Tester		<<*%ERRORMESSAGE%Button Retry Pushed>>
+
+#example: When user shutdown the machine s/w
+Chroma send to Tester		<<*%ERRORMESSAGE%System ShutDown>>

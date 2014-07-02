@@ -1,0 +1,14 @@
+[Test Extend]
+CCD Socket=0
+CCD=0
+ROTATOR=0
+Angle=0
+[Interface]
+GPIB=14X20Loop.GPIB
+RS22=14X20Loop.RS232
+TCP=14X20Loop.TCP
+TTL=14X20Loop.TTL
+[Interface Selected]
+Selected=0
+[Test Type]
+Type=2

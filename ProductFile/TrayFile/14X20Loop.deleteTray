@@ -1,0 +1,95 @@
+[Tray Spec]
+A=15.359999999999999
+B=22.530000000000001
+C=21.010000000000002
+D=27.030000000000001
+Column=2
+Row=2
+Thick Tray=0
+Tray Height=4.000000000000000
+[Preheater Spec]
+Plate A=12.000000000000000
+Plate B=17.000000000000000
+Plate C=13.199999999999999
+Plate D=13.000000000000000
+Plate Column=6
+Plate Row=13
+[Temperature]
+High Temperature Enable=1
+Cooling=0
+Sort Mode=0
+Set Point=30
+Soak Time=600
+Stable Time=5
+Tolerance=3
+[Vision Pattern]
+File=7X7.IMG
+OCR File=
+[Mapping]
+MappingFile=14X20Loop.mapping
+[Testing]
+TestFile=14X20Loop.set
+[Yield]
+Yield Control Enable=0
+Continue Fail Enable=0
+Fail Count=10
+Retest Count=0
+Yield Limitation=90.000000000000000
+Yield Window=200
+Drop Mode=0
+Drop High=2.000000000000000
+Drop Timer=1.000000000000000
+Torque Setting=6
+[Speed Parameter]
+ArmX=100
+ArmY=100
+ArmZ=100
+Inserter=100
+Shuttle=10
+[Timer]
+AC Motor Reverse Time=0.500000000000000
+Clamper Stable Time=0.500000000000000
+Seesaw Stable Time=1.000000000000000
+Tray Gap Time=2.000000000000000
+InsertPuff=0.300000000000000
+InsertPick=0.500000000000000
+Pick=0.300000000000000
+Place=0.500000000000000
+Tray Down=1.000000000000000
+Tray Down Stable=1.000000000000000
+Tray Puff=0.500000000000000
+Tray Up=1.000000000000000
+Tray Up Stable=1.000000000000000
+Tray Vacc=1.000000000000000
+Cold Chamber KITYP=0.000000000000000
+Cold Chamber KITYN=0.000000000000000
+Cold Chamber KITXP=0.000000000000000
+Cold Chamber KITXN=0.000000000000000
+Cold Chamber PRESSYP=0.000000000000000
+Cold Chamber PRESSYN=0.000000000000000
+Cold Chamber PRESSZN=0.000000000000000
+Cooling Wait Time=0.000000000000000
+[Site Setting]
+Demo Test Time=2.000000000000000
+Dummy Bin=0
+Dummy Bin For Catorgy=2
+Site Setting=1
+Dummy Bin For Catorgy2=W
+[Sub Tray]
+Sub Tray Column=2
+Sub Tray Row=5
+Sub Tray A=3.000000000000000
+Sub Tray B=3.000000000000000
+Sub Tray C=3.000000000000000
+Sub Tray D=3.000000000000000
+[Chip Tray]
+Chip Tray Column=12
+Chip Tray Row=13
+Chip Tray A=2.000000000000000
+Chip Tray B=2.000000000000000
+Chip Tray C=2.000000000000000
+Chip Tray D=2.000000000000000
+[Chip Tray Enable]
+Chip Tray Input Enable=0
+Chip Tray Output ENable=0
+Chip Tray Fix Enable=0

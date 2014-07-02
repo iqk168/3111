@@ -1,0 +1,12 @@
+[Test Extend]
+CCD Socket=0
+CCD=0
+ROTATOR=0
+Angle=0
+[Interface]
+GPIB=Rohm 7x7-2.GPIB
+RS22=Rohm 7x7-2.RS232
+TCP=Rohm 7x7-2.TCP
+TTL=Rohm 7x7-2.TTL
+[Interface Selected]
+Selected=0

@@ -1,0 +1,12 @@
+[SMTP]
+Content1=3111 Test Mail
+Content2=
+Mail From=ken.liang@chroma.com.tw
+Login Name=ken.liang
+Login Pwd=rita20130702
+Port=587
+Server=ms1.chroma.com.tw
+Subject=3111 Mail Alarm
+Mail To1=kikiella@gmail.com
+Mail To2=mis433@yahoo.com.tw
+Mail Name=3111

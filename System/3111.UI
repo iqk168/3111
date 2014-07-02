@@ -1,0 +1,78 @@
+[UI]
+Language=0
+MAPPING=3X3.mapping
+TRAY FILE=3X3.Tray
+MAPPING BASE FILE=
+TRAY BASE FILE=3X3.Tray
+Machine ID=Chroma1
+TEST FILE=3X3.set
+TEST BASE FILE=
+SOCKET PATTERN FILE=Setting1
+ATC Module MultiSV File=
+[Lot Info]
+Lot Number=
+Lot Operater=
+Lot Device ID=
+Lot Program ID=
+Lot Machine ID=
+Lot Is Start=0
+Lot Is Start Time=
+Old Lot Number=LotNo
+Old Lot Operater=Operator
+Old Lot Device ID=DeviceID
+Old Lot Program ID=ProgramID
+Old Lot Machine ID=Macine
+Test Mode=0
+Test Item=0
+[Count]
+Output 1=0
+Output 2=0
+Output 3=0
+Output 4=0
+[Interface Testing]
+T1=
+T2=
+T3=
+T4=
+N1=0
+N2=0
+N3=0
+N4=0
+[Arm Z Auto Retry]
+Retry Counter=0
+[Run Page Color]
+R=0
+G=255
+B=0
+[Interface Enable]
+Tcp=1
+Rs232=1
+Gpib=0
+TTL=0
+[Ts Floating Convert]
+Kg to Volt=0.111000000000000
+[Torque UI]
+UI Max Limit(kg)=50
+UI Min Limit(kg)=2
+[TrayFile Color]
+Ambient=65280
+ATC Module=65535
+Heater=255
+PTC Module=65535
+Tri-Temerature=16731212
+[Repeat Tray Confim Command]
+Book=Book=
+Soak=SoakTime=
+Stable=StableTime=
+SV=SV=
+Tolerance=Tolerance=
+Timeout=2.000000000000000
+[Auro TrayFile Data]
+FileName=3X3.Tray
+Mapping=3X3.mapping
+TestSet=3X3.set
+OcrPattern=
+Pattern=7X7.IMG
+[Ttile Extend Note]
+Tray=
+Machine=

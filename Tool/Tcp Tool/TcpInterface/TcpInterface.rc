@@ -1,0 +1,278 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TcpInterface.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.cht\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ONLINE              ICON    DISCARDABLE     "res\\connect.ico"
+IDI_CLEAR               ICON    DISCARDABLE     "res\\Delete.ico"
+IDI_QUIT                ICON    DISCARDABLE     "res\\Exit.ico"
+IDI_SENT                ICON    DISCARDABLE     "res\\ico00010.ico"
+IDI_OFFLINE             ICON    DISCARDABLE     "res\\off_line.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 TcpInterface"
+FONT 9, "新細明體"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TcpInterface Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "確定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TCPINTERFACE_DIALOG DIALOGEX 0, 0, 320, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TCP/IP Client Interface V1.1"
+FONT 12, "Times New Roman"
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,263,200,50,23
+    CONTROL         "IPAddress1",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,
+                    62,17,71,12
+    RTEXT           "IP Address :",IDC_STATIC,12,19,45,8
+    LISTBOX         IDC_DISPLAY,7,151,247,72,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Port :",IDC_STATIC,12,33,45,8
+    EDITTEXT        IDC_PORT,62,32,40,12,ES_AUTOHSCROLL
+    RTEXT           "Send Text :",IDC_STATIC,12,80,45,8
+    EDITTEXT        IDC_SEND_TEXT2,62,79,192,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_SEND2,263,74,50,23
+    PUSHBUTTON      "Connect",IDC_CONNECT_SERVER,263,10,50,23
+    PUSHBUTTON      "Clear",IDC_CLEAR,263,105,50,23
+    RTEXT           "Message Display :",IDC_STATIC,7,141,50,8
+    RTEXT           "Send Text :",IDC_STATIC,12,53,45,8
+    EDITTEXT        IDC_SEND_TEXT1,62,52,192,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_SEND1,263,47,50,23
+    PUSHBUTTON      "Auto Test Connect",IDC_AUTO_TEST_CONNECT,200,10,50,23,
+                    BS_MULTILINE | NOT WS_VISIBLE
+    CTEXT           "Static",IDC_SITE1,16,102,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE2,46,102,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE3,76,102,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE4,106,102,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE5,136,102,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE6,166,102,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE7,196,102,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE8,226,102,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE9,16,125,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE10,46,125,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE11,76,125,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE12,106,125,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE13,136,125,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE14,166,125,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE15,196,125,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    CTEXT           "Static",IDC_SITE16,226,125,28,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "Site 1",IDC_STATIC,22,94,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 2",IDC_STATIC,52,94,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 3",IDC_STATIC,82,94,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 4",IDC_STATIC,112,94,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 5",IDC_STATIC,142,94,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 6",IDC_STATIC,172,94,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 7",IDC_STATIC,202,94,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 8",IDC_STATIC,232,94,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 9",IDC_STATIC,22,117,17,8,NOT WS_VISIBLE
+    LTEXT           "Site 10",IDC_STATIC,51,117,20,8,NOT WS_VISIBLE
+    LTEXT           "Site 11",IDC_STATIC,81,117,20,8,NOT WS_VISIBLE
+    LTEXT           "Site 12",IDC_STATIC,111,117,20,8,NOT WS_VISIBLE
+    LTEXT           "Site 13",IDC_STATIC,141,117,20,8,NOT WS_VISIBLE
+    LTEXT           "Site 14",IDC_STATIC,171,117,20,8,NOT WS_VISIBLE
+    LTEXT           "Site 15",IDC_STATIC,201,117,20,8,NOT WS_VISIBLE
+    LTEXT           "Site 16",IDC_STATIC,231,117,20,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Server Start",IDC_SERVER_START,137,10,50,23,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Send",IDC_SEND3,263,136,50,22
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TcpInterface MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TcpInterface\0"
+            VALUE "LegalCopyright", "Copyright (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TcpInterface.EXE\0"
+            VALUE "ProductName", "TcpInterface Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TCPINTERFACE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "關於 TcpInterface(&A)..."
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE 4, 1
+#pragma code_page(950)
+#endif //_WIN32
+#include "res\TcpInterface.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.cht\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,50 @@
+0  *Regenerating brake select   0000                   0000-1005h   
+1  *Function selection 1        0002                   0000-3112h   
+2  Auto tuning                  0205                   0001-1215h   
+3  Com. pulse multiply numer.   2                      1-32767      
+4  Com. pulse multiply denom.   1                      1-32767      
+5  In-position range            10      pulse          0-10000      
+6  Position control gain 1      120     rad/sec        4-1000       
+7  Pos. com. acc/dec time cons. 20      msec           0-20000      
+8  Internal speed command 1     100     r/min          0-5175       
+9  Internal speed command 2     500     r/min          0-5175       
+10 Internal speed command 3     1000    r/min          0-5175       
+11 Acceleration time constant   0       msec           0-20000      
+12 Deceleration time constant   0       msec           0-20000      
+13 S-pattern time constant      0       msec           0-1000       
+14 Torque command time constant 0       msec           0-20000      
+15 *RS-422 station select       0                      0-31         
+16 *Communicat baud rate select 0000                   0000-1212h   
+17 Spare                        0                      0-0          
+18 *Status display selection    0000                   0000-001Ch   
+19 *Parameter write disable     000C                   0000-FFFFh   
+20 *Function selection 2        0000                   0000-1111h   
+21 *Function selection 3        0001                   0000-0212h   
+22 *Function selection 4        0000                   0000-7301h   
+23 Feed forward gain            0       %              0-100        
+24 Zero speed                   50      r/min          0-10000      
+25 Ana. speed com. rotate speed 0       r/min          0-10000      
+26 Analog torque command output 100     %              0-1000       
+27 *Encoder output pulse        4096    pulse          5-16384      
+28 Internal torque limit value 1100     %              0-100        
+29 Analog speed command offset  -6      mv             -999-999     
+30 Analog torque command offset 0       mv             -999-999     
+31 Spare                        0                      0-0          
+32 Spare                        0                      0-0          
+33 Electromagnetic brake seq.   0       msec           0-1000       
+34 Ratio of load inertia        8.0     times          0.0-100.0    
+35 Position control gain 2      80      rad/sec        1-500        
+36 Speed control gain 1         800     rad/sec        20-5000      
+37 Speed control gain 2         1600    rad/sec        20-8000      
+38 Speed integral compensation  28      msec           1-1000       
+39 Speed differential compen.   980                    0-1000       
+40 Alarm detection type change  0000                   0000-0001h   
+41 *Input signal automatic ON   0110                   0000-0111h   
+42 *Input signal selection 1    0003                   0000-1115h   
+43 *Input signal selection 2    0111                   0000-0FFFh   
+44 *Input signal selection 3    0222                   0000-0FFFh   
+45 *Input signal selection 4    0665                   0000-0FFFh   
+46 *Input signal selection 5    0770                   0000-0FFFh   
+47 *Input signal selection 6    0883                   0000-0FFFh   
+48 *Input signal selection 7    0994                   0000-0FFFh   
+49 *Output signal selection 1   0000                   0000-0551h   

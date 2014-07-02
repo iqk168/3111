@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TcpInterface - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Release/TcpInterface.res" /d "NDEBUG" "C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\TcpInterface.rc"" 
+Creating temporary file "C:\Users\SONY\AppData\Local\Temp\RSP45D7.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/TcpInterface.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\BtnST.cpp"
+"C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\ColorFontStatic.cpp"
+"C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\NetInterface.cpp"
+"C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\TcpInterface.cpp"
+"C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\TcpInterfaceDlg.cpp"
+"C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\ThTesting.cpp"
+]
+Creating command line "cl.exe @C:\Users\SONY\AppData\Local\Temp\RSP45D7.tmp" 
+Creating temporary file "C:\Users\SONY\AppData\Local\Temp\RSP45E8.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/TcpInterface.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\SONY\AppData\Local\Temp\RSP45E8.tmp" 
+Creating temporary file "C:\Users\SONY\AppData\Local\Temp\RSP45E9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/TcpInterface.pdb" /machine:I386 /out:"Release/TcpInterface.exe" 
+".\Release\BtnST.obj"
+".\Release\ColorFontStatic.obj"
+".\Release\NetInterface.obj"
+".\Release\StdAfx.obj"
+".\Release\TcpInterface.obj"
+".\Release\TcpInterfaceDlg.obj"
+".\Release\ThTesting.obj"
+".\Release\TcpInterface.res"
+]
+Creating command line "link.exe @C:\Users\SONY\AppData\Local\Temp\RSP45E9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BtnST.cpp
+ColorFontStatic.cpp
+NetInterface.cpp
+TcpInterface.cpp
+TcpInterfaceDlg.cpp
+ThTesting.cpp
+Generating Code...
+C:\Users\SONY\Desktop\Chroma\Chroma_3111\Deer\Tool\Tcp Tool\TcpInterface\ThTesting.cpp(83) : warning C4700: local variable 'color' used without having been initialized
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/TcpInterface.bsc"  ".\Release\StdAfx.sbr" ".\Release\BtnST.sbr" ".\Release\ColorFontStatic.sbr" ".\Release\NetInterface.sbr" ".\Release\TcpInterface.sbr" ".\Release\TcpInterfaceDlg.sbr" ".\Release\ThTesting.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TcpInterface.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
