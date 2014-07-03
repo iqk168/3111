@@ -1507,7 +1507,12 @@ void CThInserter::NextStatus()
 		f.CWinMessage( "TestSiteS:enTestSiteUpForPlace", theApp.enDTestSite );
 		{
 			m_TSZWithIC = CheckTSZVaccSensor();
-			if( m_TSZWithIC )
+			if(m.m_TestInterface.m_bRemoteRetest > 0)
+			{
+				m_bStatus = enTestSiteDownForContact;
+				m.m_TestInterface.m_bRemoteRetest--;
+			}
+			else if( m_TSZWithIC )
 			{
 				m.InterLock.ShuttleHome = false;
 				m_bStatus = enShuttleOutput;

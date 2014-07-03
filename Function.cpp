@@ -8654,13 +8654,7 @@ void CFunction::RemoteMessage(int iCode)
 	if(m.m_TestInterface.m_bRemoteMode)
 	{
 		if(m.m_TestInterface.m_bRemoteSendEvent)		
-		{
-			if(e.Alarm)
-				m.m_TestInterface.SetErrorMessage(iCode, e.Eng);
-			else
-				m.m_TestInterface.SetErrorMessage(iCode, e.Eng);
-		}
-		
+			m.m_TestInterface.SetErrorMessage(iCode, e.Eng);
 	}
 }
 void CFunction::RemoteSeCoordnationInitial()

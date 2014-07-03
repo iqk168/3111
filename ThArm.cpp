@@ -4993,7 +4993,7 @@ void CThArm::NextStatus()
 	case enRepeatInToHomeEndEnd:
 		f.CWinMessage( "Arm:enRepeatInToHomeEnd", theApp.enDArm );
 		{
-			m_ZWithIC = CheckArmZVaccSensor();
+			m_ZWithIC = CheckArmZVaccSensor();	
 			if( m_ZWithIC )
 			{
 				m_lArmRetryCounter = 0;

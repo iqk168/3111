@@ -184,7 +184,7 @@ void CDriverTestInterfaceTCP::OnReceive(int nErrorCode)
 		tagTestProtocol Re = m.m_TestInterface.GetProtocol(cs);
 		if(Re.site == 0)
 			break;
-		
+
 		//³B²z©R¥O
 		CString Reply = m.m_TestInterface.CommandRun(Re);
 		Send(Reply.GetBuffer(0),Reply.GetLength());

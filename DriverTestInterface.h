@@ -299,13 +299,14 @@ public:
 
 	// 是否要傳送 Event
 	bool m_bRemoteSendEvent;
-	bool GetSendEventEnable();
-	void SetSendEventEnable(bool bEnable);
+
 
 	// 是否在 PurgeDevice
 	bool m_bRemotePurgeDevices;
-	bool GetRemotePurgeDevices();
-	void SetRemotePurgeDevices(bool bPurgeDevices);
+
+
+	// 是否要重測 //可以設定次數
+	int m_bRemoteRetest;
 
 public:
 

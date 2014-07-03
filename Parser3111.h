@@ -25,10 +25,10 @@ public:
 	CString GetTimeOut();
 	CString SetRunMode(CString mode);
 	CString GetRunMode();
-	CString SendEventEnable();
-	CString AutoSkip();
+	CString SendEventEnable(bool Enable);
+	CString AutoSkip(bool enable);
 	CString PurgeDevices();
-	CString Retest();
+	CString Retest(CString count);
 	CString SetTestResult(CString msg, bool bReady = false);
 	CString GetTestResult(CString &msg);
 	CString OneCycle();

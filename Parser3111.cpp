@@ -131,7 +131,7 @@ CString CParser3111::Start()
 CString CParser3111::Stop()
 {
 	CString csResult = _T("");
-	if(m.m_TestInterface.GetButtonInitialStatus())
+	if(m.m_TestInterface.GetButtonStopStatus())
 	{
 		m.PanelButton.BtnStopPushed = false;
 		m.RemoteOutSet.BtnStopOn = false;
@@ -145,7 +145,7 @@ CString CParser3111::Stop()
 CString CParser3111::Retry()
 {
 	CString csResult = _T("");
-	if(m.m_TestInterface.GetButtonInitialStatus())
+	if(m.m_TestInterface.GetButtonRetryStatus())
 	{
 		m.PanelButton.BtnRetryPushed = false;
 		m.RemoteOutSet.BtnRetryOn = false;
@@ -160,7 +160,7 @@ CString CParser3111::Retry()
 CString CParser3111::Skip()
 {
 	CString csResult = _T("");
-	if(m.m_TestInterface.GetButtonInitialStatus())
+	if(m.m_TestInterface.GetButtonSkipStatus())
 	{
 		m.PanelButton.BtnSkipPushed = false;
 		m.RemoteOutSet.BtnSkipOn = false;
@@ -187,7 +187,7 @@ CString CParser3111::StackUnload()
 CString CParser3111::Reset()
 {
 	CString csResult = _T("");
-	if(m.m_TestInterface.GetButtonInitialStatus())
+	if(m.m_TestInterface.GetButtonResetStatus())
 	{
 		m.PanelButton.BtnResetPushed = false;
 		m.RemoteOutSet.BtnResetOn = false;
@@ -217,7 +217,7 @@ CString CParser3111::Initial()
 CString CParser3111::OneCycle()
 {
 	CString csResult = _T("");
-	if(m.m_TestInterface.GetButtonOneCycleStatus() && !m.m_TestInterface.GetButtonStartStatus())
+	if(m.m_TestInterface.GetButtonOneCycleStatus())
 	{
 		m.PanelButton.BtnOneCyclePushed = false;
 		m.RemoteOutSet.BtnOneCycleOn = false;
@@ -225,7 +225,7 @@ CString CParser3111::OneCycle()
 		csResult.Format("<<*%%ONECYCLE%%ACK>>");
 		return csResult;
 	}
-	csResult.Format("<<*%%START%%NAK>>");
+	csResult.Format("<<*%%ONECYCLE%%NAK>>");
 	return csResult;
 }
 
@@ -246,9 +246,13 @@ CString CParser3111::GetTestResult(CString &msg)
 
 	return csResult;
 }
-CString CParser3111::Retest()
+CString CParser3111::Retest(CString count)
 {
 	CString csResult = _T("");
+	if(count == "*" || count == "")//沒有命令 預設 1 次
+		m.m_TestInterface.m_bRemoteRetest = 1;
+	else
+		m.m_TestInterface.m_bRemoteRetest = atoi(count);
 	csResult.Format("<<*%%RETEST%%ACK>>");
 	//更改 Reset Flag
 	return csResult;
@@ -257,34 +261,46 @@ CString CParser3111::Retest()
 CString CParser3111::PurgeDevices()
 {
 	CString csResult = _T("");
-	if(m.m_TestInterface.m_bRemotePurgeDevices)
+	if(!m.m_TestInterface.m_bRemotePurgeDevices)
+	{
 		csResult.Format("<<*%%AUTOSKIP%%ACK>>");
+		//強制OneCycle
+		f.ButtonOneCycle();
+	}
 	else
 		csResult.Format("<<*%%AUTOSKIP%%NAK>>");
 	return csResult;
 }
 
-CString CParser3111::AutoSkip()
+CString CParser3111::AutoSkip(bool enable)
 {
 	CString csResult = _T("");
-	if(m.TraySkip.AutoSkip == 1)
+	if(enable == 1)
 	{
 		csResult.Format("<<*%%AUTOSKIP%%ACK;1>>");
+		m.TraySkip.AutoSkip = 1;
 		return csResult;
 	}
 	else
 		csResult.Format("<<*%%AUTOSKIP%%NAK;0>>");
+		m.TraySkip.AutoSkip = 0;
 		return csResult;
 	
 }
 
-CString CParser3111::SendEventEnable()
+CString CParser3111::SendEventEnable(bool Enable)
 {
 	CString csResult = _T("");
-	if(m.m_TestInterface.m_bRemoteSendEvent)
+	if(Enable)
+	{
+		m.m_TestInterface.m_bRemoteSendEvent = true;
 		csResult.Format("<<*%%SENDEVENTENABLE%%ACK;0>>");
+	}
 	else
-		csResult.Format("<<*%%SENDEVENTENABLE%%ACK;0>>");
+	{
+		m.m_TestInterface.m_bRemoteSendEvent = false;
+		csResult.Format("<<*%%SENDEVENTENABLE%%NAK;0>>");
+	}
 	return csResult;
 }
 

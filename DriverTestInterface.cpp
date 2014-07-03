@@ -1971,7 +1971,7 @@ bool CDriverTestInterface::GetButtonOneCycleStatus()
 	bool bButtonOneCycle = true;
 	if( GetIOMonitorOpen() )
 		bButtonOneCycle = false;
-	if( m.RemoteOutSet.BtnOneCycleOn == 0 )
+	if( m.RemoteOutSet.BtnOneCycleOn == 0)
 		bButtonOneCycle = false;
 
 	return bButtonOneCycle;
@@ -3203,27 +3203,7 @@ void CDriverTestInterface::RequestCoordnationMissionGo()
 	// Make sure the system be start
 	f.ButtonStart();
 }
-//////////////////////////////////////////////////////////////////////////////
-// Send Event
-//
-bool CDriverTestInterface::GetSendEventEnable()
-{
-	return m_bRemoteSendEvent;
-}
-void CDriverTestInterface::SetSendEventEnable(bool bEnable)
-{
-	m_bRemoteSendEvent = bEnable;
-}
-//////////////////////////////////////////////////////////////////////////////
-// Remote Purge Device
-bool CDriverTestInterface::GetRemotePurgeDevices()
-{
-	return m_bRemotePurgeDevices;
-}
-void CDriverTestInterface::SetRemotePurgeDevices(bool bPurgeDevices)
-{
-	m_bRemotePurgeDevices = bPurgeDevices;
-}
+
 
 
 CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
@@ -3294,7 +3274,7 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 	}
 	else if(telegram.cmd == "RETEST")
 	{
-		csResult = ps.Retest();
+		csResult = ps.Retest(telegram.parameter);
 	}
 	else if(telegram.cmd == "PURGEDEVICES")
 	{
@@ -3302,7 +3282,10 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 	}
 	else if(telegram.cmd == "AUTOSKIP")
 	{
-		csResult = ps.AutoSkip();
+		bool bEnableAutoSkip = false;
+		int iEnableAutoSkip = atoi(telegram.parameter);
+		bEnableAutoSkip = iEnableAutoSkip == 1 ?true:false;
+		csResult = ps.AutoSkip(bEnableAutoSkip);
 	}
 	else if(telegram.cmd == "SENDEVENTENABLE")
 	{	
@@ -3312,9 +3295,7 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 			bEnableEvent = true;
 		else
 			bEnableEvent = false;
-
-		SetSendEventEnable(bEnableEvent);
-		csResult = ps.SendEventEnable();
+		csResult = ps.SendEventEnable(bEnableEvent);
 	}
 	else if(telegram.cmd == "GETRUNMODE")
 	{
@@ -3328,10 +3309,10 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 	else if(telegram.cmd == "GETTIMEOUT")
 	{
 		csResult = ps.GetTimeOut();
-	}
+	}					
 	else if(telegram.cmd == "SETTIMEOUT")
 	{
-		//csResult = ps.SetTimeOut();
+		csResult = ps.SetTimeOut(telegram.parameter);
 	}
 	else if(telegram.cmd == "GETSITETEMP")
 	{

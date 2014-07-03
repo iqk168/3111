@@ -735,7 +735,6 @@ CString CThTester::RS232Testing()
 				}
 				else	
 				{
-					
 					// 收到 Bin Code = 
 					// 處理 Bin Code
 					CString c = "";

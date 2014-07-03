@@ -7,7 +7,7 @@
 </h3>
 <h3>Command Lines</h3>
 Creating command line "rc.exe /l 0x404 /fo"Release/Deer.res" /d "NDEBUG" /d "_AFXDLL" "D:\Ken\3111\Deer.rc"" 
-Creating temporary file "C:\Users\harper\AppData\Local\Temp\RSP321D.tmp" with contents
+Creating temporary file "C:\Users\harper\AppData\Local\Temp\RSP4AE6.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/Deer.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /Zm200 /c 
 "D:\Ken\3111\AlignRectTracker.cpp"
@@ -218,14 +218,14 @@ Creating temporary file "C:\Users\harper\AppData\Local\Temp\RSP321D.tmp" with co
 "D:\Ken\3111\ViewTrayMotor.cpp"
 "D:\Ken\3111\YieldControl.cpp"
 ]
-Creating command line "cl.exe @C:\Users\harper\AppData\Local\Temp\RSP321D.tmp" 
-Creating temporary file "C:\Users\harper\AppData\Local\Temp\RSP322E.tmp" with contents
+Creating command line "cl.exe @C:\Users\harper\AppData\Local\Temp\RSP4AE6.tmp" 
+Creating temporary file "C:\Users\harper\AppData\Local\Temp\RSP4AE7.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/Deer.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /Zm200 /c 
 "D:\Ken\3111\StdAfx.cpp"
 ]
-Creating command line "cl.exe @C:\Users\harper\AppData\Local\Temp\RSP322E.tmp" 
-Creating temporary file "C:\Users\harper\AppData\Local\Temp\RSP322F.tmp" with contents
+Creating command line "cl.exe @C:\Users\harper\AppData\Local\Temp\RSP4AE7.tmp" 
+Creating temporary file "C:\Users\harper\AppData\Local\Temp\RSP4AE8.tmp" with contents
 [
 MC8141P.lib version.lib ml.lib PCI-Dask.lib matrix_gpio.lib Shlwapi.lib Dll6.lib GdiPlus.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/3111.pdb" /machine:I386 /out:"Release/3111.exe" 
 .\Release\AlignRectTracker.obj
@@ -438,7 +438,7 @@ MC8141P.lib version.lib ml.lib PCI-Dask.lib matrix_gpio.lib Shlwapi.lib Dll6.lib
 .\Release\YieldControl.obj
 .\Release\Deer.res
 ]
-Creating command line "link.exe @C:\Users\harper\AppData\Local\Temp\RSP322F.tmp"
+Creating command line "link.exe @C:\Users\harper\AppData\Local\Temp\RSP4AE8.tmp"
 <h3>Output Window</h3>
 Compiling resources...
 Compiling...
