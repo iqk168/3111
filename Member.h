@@ -918,11 +918,8 @@ public:
 	CDriverTestInterfaceTCP *m_singleSocket;
 
 public:
-
-	struct tagRemoteTestResult{
-		CString m_TestResult;
-		bool m_bResultReady;
-	} m_rTestResilt;
+	CString m_RemoteTestResult;
+	
 };	
 
 #endif // !defined(AFX_MEMBER_H__9F8F057C_6810_4EE9_97B3_F33DB2394AE8__INCLUDED_)

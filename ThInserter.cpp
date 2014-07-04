@@ -1061,11 +1061,13 @@ void CThInserter::NextStatus()
 	switch(m_bStatus)
 	{
 	case enInitialize:
+		m_lRemoteStatus = enNoDevice;
 		f.CWinMessage( "TestSiteS:enInitialize", theApp.enDTestSite );
 		m_bStatus = enIdle;
 		break;
 	case enIdle:	
 		{
+			m_lRemoteStatus = enNoDevice;
 			if( ( m.Info.iStatus == theApp.enCycle 
 				|| m.Info.iStatus == theApp.enOneCycle 
 				|| m.Info.iStatus == theApp.enOverride ) 
@@ -1081,6 +1083,7 @@ void CThInserter::NextStatus()
 	case enShuttleHome:
 		f.CWinMessage( "TestSiteS:enShuttleHome", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enNoDevice;
 			if( CheckShuttleHomeOK() )
 			{
 				m.InterLock.ShuttleHome = true;
@@ -1091,12 +1094,14 @@ void CThInserter::NextStatus()
 				// Ops: Shuttle Move to Home Fail.
 				m.Err.Inserter.Code = enCodeShuttleMoveToHomeFail;
 				m_bStatus = enShuttleHomeError;
+				m_lRemoteStatus = enError;
 			}
 		}
 		break;
 	case enShuttleHomeStandy:			// Shuttle move to home standy
 		f.CWinMessage( "TestSiteS:enShuttleHomeStandy", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enNoDevice;
 			if( m.InterLock.ShuttleInputICOK && m.InterLock.ShuttleWithIC )
 			{
 				m.InterLock.ShuttleInputICOK = false;
@@ -1111,6 +1116,7 @@ void CThInserter::NextStatus()
 	case enShuttleRestart:				// Test Pick From Socket Fail. Re-set it, ask Arm move to input again
 		f.CWinMessage( "TestSiteS:enShuttleRestart", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enNoDevice;
 			m.InterLock.ShuttleResetInput = true;
 			m_bStatus = enShuttleHomeStandy;
 		}
@@ -1118,6 +1124,7 @@ void CThInserter::NextStatus()
 	case enShuttleRestartDrop:			// Test Down Place to Socket. But IC Missing
 		f.CWinMessage( "TestSiteS:enShuttleRestartDrop", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enNoDevice;
 			m.InterLock.ShuttleResetInput = true;
 			m_bStatus = enShuttleHomeStandy;
 		}
@@ -1126,6 +1133,7 @@ void CThInserter::NextStatus()
 	case enShuttleInput:				// Shuttle move to input 
 		f.CWinMessage( "TestSiteS:enShuttleInput", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enNoDevice;
 			if( CheckShuttlePickPlaceOK() )
 			{
 //				m_bStatus = enShutlleInputEnd;
@@ -1136,12 +1144,14 @@ void CThInserter::NextStatus()
 				// Ops: Shuttle Move to Pick Fail
 				m.Err.Inserter.Code = enCodeShuttleMoveToPickFail;
 				m_bStatus = enShuttleInputError;
+				m_lRemoteStatus = enError;
 			}
 		}
 		break;
 	case enShuttleInputJam:				// Shuttle move to input, and check jam again
 		f.CWinMessage( "TestSiteS:enShuttleInputJam", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enNoDevice;
 			if( CheckShuttleInputJam() )
 			{
 				if( m.Setting.m_bByPassShuttleAlarm )
@@ -1154,6 +1164,7 @@ void CThInserter::NextStatus()
 					// Ops: Shuttle Move to input(under test site)
 					m.Err.Inserter.Code = enCodeShuttleInputJamFail;
 					m_bStatus = enShuttleInputJamError;
+					m_lRemoteStatus = enError;
 				}
 			}
 			else
@@ -1165,6 +1176,7 @@ void CThInserter::NextStatus()
 	case enShutlleInputEnd:				// Shuttle move to input end
 		f.CWinMessage( "TestSiteS:enShutlleInputEnd", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enNoDevice;
 			m_bStatus = enTestSitePickForVacc;
 		}
 		break;
@@ -1172,6 +1184,7 @@ void CThInserter::NextStatus()
 	case enTestSitePickForVacc:			// Test site down to pick
 		f.CWinMessage( "TestSiteS:enTestSitePickForVacc", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enNoDevice;
 			m_bStatus = enTestSiteVaccForUp;
 		}
 		break;
@@ -1180,7 +1193,7 @@ void CThInserter::NextStatus()
 		{
 			if( m_TSZWithIC )
 				UPHTSDataAdd();
-
+		m_lRemoteStatus = enNoDevice;
 			m_bStatus = enTestSiteUpForContact;
 		}
 		break;
@@ -1188,7 +1201,7 @@ void CThInserter::NextStatus()
 		f.CWinMessage( "TestSiteS:enTestSiteUpForContact", theApp.enDTestSite );
 		{
 			m_TSZWithIC = CheckTSZVaccSensor();
-
+			m_lRemoteStatus = enDeviceInTestsite;
 			if( m_TSZWithIC )
 			{
 				// §l¨ì IC «á.!
@@ -1208,6 +1221,7 @@ void CThInserter::NextStatus()
 					// Ops: Test Site Pick IC from shuttle input
 					m.Err.Inserter.Code = enCodeTestPickICFromSHFail;
 					m_bStatus = enTestSiteUpForContactError;
+					m_lRemoteStatus = enError;
 				}
 			}
 		}
@@ -1215,6 +1229,7 @@ void CThInserter::NextStatus()
 	case enShuttleHomeForContact:		// Shuttle move to home
 		f.CWinMessage( "TestSiteS:enShuttleHomeForContact", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enDeviceInTestsite;
 			if( CheckShuttleHomeOK() )
 			{		
 				m.InterLock.ShuttleHome = true;
@@ -1227,7 +1242,8 @@ void CThInserter::NextStatus()
 			{
 				// Ops: Shuttle Move to Home Fail.
 				m.Err.Inserter.Code = enCodeShuttleMoveToHomeFail;
-				m_bStatus = enShuttleHomeForContactError;	
+				m_bStatus = enShuttleHomeForContactError;
+				m_lRemoteStatus = enError;
 			}
 		}
 		break;
@@ -1238,6 +1254,7 @@ void CThInserter::NextStatus()
 				m_bStatus = enTestSiteToDrop;
 			else
 				m_bStatus = enTestSiteContact;
+				m_lRemoteStatus = enDeviceInTestsite;
 		}
 		break;
 	// 1.0Ah
@@ -1263,12 +1280,15 @@ void CThInserter::NextStatus()
 			}
 			else
 				m_bStatus = enTestSiteDropDevice;
+
+			m_lRemoteStatus = enDeviceInTestsite;
 		}
 		break;
 	case enTestSiteDropDevice:
 		f.CWinMessage( "TestSiteS:enTestSiteDropDevice", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteContact;
+			m_lRemoteStatus = enDeviceInTestsite;
 		}
 		break;
 	// 1.0Ah
@@ -1322,6 +1342,7 @@ void CThInserter::NextStatus()
 					m_bStatus = enTestStteContactEnd;
 				}
 			}
+			m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 	case enTestStteContactEnd:
@@ -1331,7 +1352,9 @@ void CThInserter::NextStatus()
 			if( f.HeaterOnNeed() )
 				m_bStatus = enTestSiteHeaterStart;
 			else
-				m_bStatus = enTestSiteTestStart;			
+				m_bStatus = enTestSiteTestStart;
+
+				m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 	case enTestSiteRemoteSendMsg:
@@ -1339,6 +1362,7 @@ void CThInserter::NextStatus()
 		{
 			f.RemoteSetCoordnationDone();
 			m_bStatus = enTestSiteRemoteWaitCmd;
+			m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 	case enTestSiteRemoteWaitCmd:
@@ -1347,6 +1371,7 @@ void CThInserter::NextStatus()
 			// Wait..
 			if( !GetRemoteCoordRequest() )
 				m_bStatus = enTestSiteVaccStart;
+			m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 
@@ -1356,6 +1381,7 @@ void CThInserter::NextStatus()
 		f.CWinMessage( "TestSiteS:enTestSiteICDropBackHome", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteICDropAlarm;
+			m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 	case enTestSiteICDropAlarm:			// Test site back home, alarm it
@@ -1363,9 +1389,10 @@ void CThInserter::NextStatus()
 		{
 			m.Err.Inserter.Code = enCodeTestSiteMoveICMissing;
 			m_bStatus = enTestSiteICDropError;
+			m_lRemoteStatus = enError;
 		}
 		break;
-
+		
 
 	///////////////////////////////
 	// Test Site / Remote Control
@@ -1373,6 +1400,7 @@ void CThInserter::NextStatus()
 		f.CWinMessage( "TestSiteS:enTestSiteRemoteCtrl", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteRemoteStandy;
+			m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 	case enTestSiteRemoteStandy:		//Test site in remote control standby
@@ -1380,16 +1408,19 @@ void CThInserter::NextStatus()
 		{
 			if( m.RemoteInterlock.ReleaseIC )
 				m_bStatus = enTestSiteRemoteRelease;
+
 			else
 			{
 				// Wait here for release IC...
 			}
+			m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 	case enTestSiteRemoteRelease:		// Test site in remote control Release
 		f.CWinMessage( "TestSiteS:enTestSiteRemoteRelease", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteVaccStart;
+			m_lRemoteStatus = enDeviceInSocket;
 			// Remote Control... byPass Testing...
 		}
 		break;
@@ -1401,6 +1432,7 @@ void CThInserter::NextStatus()
 		{
 			SetHeaterStart();
 			m_bStatus = enTestSiteHeaterWait;
+			m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 	case enTestSiteHeaterWait:			// Test Site Wait 
@@ -1409,6 +1441,7 @@ void CThInserter::NextStatus()
 			if( WaitHeaterSoakOK() )
 			{
 				m_bStatus = enTestSiteHeaterEnd;
+				m_lRemoteStatus = enDeviceInSocket;
 			}
 			else
 			{
@@ -1421,6 +1454,7 @@ void CThInserter::NextStatus()
 		{
 			ClearHeaterValue();
 			m_bStatus = enTestSiteTestStart;
+			m_lRemoteStatus = enDeviceInSocket;
 		}
 		break;
 
@@ -1437,6 +1471,7 @@ void CThInserter::NextStatus()
 			m.InterLock.TestingOK	= false;
 
 			m_bStatus = enTestSiteTesting;
+			m_lRemoteStatus = enTesting;
 		}
 		break;
 	case enTestSiteTesting:				// Testing 
@@ -1446,6 +1481,7 @@ void CThInserter::NextStatus()
 			{
 				m.InterLock.TestingOK = false;
 				m_bStatus = enTestSiteTestEnd;
+				m_lRemoteStatus = enTesting;
 			}
 			else
 				;	// Wait for testing complete
@@ -1455,6 +1491,7 @@ void CThInserter::NextStatus()
 		f.CWinMessage( "TestSiteS:enTestSiteTestEnd", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteYield;
+			m_lRemoteStatus = enTesting;
 		}
 		break;
 	case enTestSiteYield:				// Test Yield Control
@@ -1481,6 +1518,7 @@ void CThInserter::NextStatus()
 				theApp.m_tTester.FTSetWaitSendStartDelay( false );
 				m_bStatus = enTestSiteVaccStart;
 			}
+			m_lRemoteStatus = enTesting;
 		}
 		break;
 	///////////////////////////////
@@ -1489,28 +1527,33 @@ void CThInserter::NextStatus()
 		f.CWinMessage( "TestSiteS:enTestSiteVaccStart", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteVacc;
+			m_lRemoteStatus = enDeviceOutSocket;
 		}
 		break;
 	case enTestSiteVacc:				// Test Site turn on the vacc
 		f.CWinMessage( "TestSiteS:enTestSiteVacc", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteVaccEnd;
+			m_lRemoteStatus = enDeviceOutSocket;
 		}	
 		break;
 	case enTestSiteVaccEnd:				// Test Site turn on the vacc end 
 		f.CWinMessage( "TestSiteS:enTestSiteVaccEnd", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteUpForPlace;
+			m_lRemoteStatus = enDeviceOutSocket;
 		}
 		break;
 	case enTestSiteUpForPlace:			// Test Site up for place ic to shuttle output 
 		f.CWinMessage( "TestSiteS:enTestSiteUpForPlace", theApp.enDTestSite );
 		{
 			m_TSZWithIC = CheckTSZVaccSensor();
+			m_lRemoteStatus = enDeviceOutSocket;
 			if(m.m_TestInterface.m_bRemoteRetest > 0)
 			{
 				m_bStatus = enTestSiteDownForContact;
 				m.m_TestInterface.m_bRemoteRetest--;
+			
 			}
 			else if( m_TSZWithIC )
 			{
@@ -1529,6 +1572,7 @@ void CThInserter::NextStatus()
 					// Ops: Test Site Pick IC fail from socket 
 					m.Err.Inserter.Code = m.Err.Inserter.Code = enCodeTestPickICFromSocketFail;
 					m_bStatus = enTestSiteUpForPlaceError;
+					m_lRemoteStatus = enError;
 				}
 			}
 		}
@@ -1536,6 +1580,7 @@ void CThInserter::NextStatus()
 	case enShuttleOutput:				// Shuttle move to pick, test site can put ic to shuttle 
 		f.CWinMessage( "TestSiteS:enShuttleOutput", theApp.enDTestSite );
 		{
+			m_lRemoteStatus = enDeviceOutSocket;
 			if( CheckShuttlePickPlaceOK() )
 			{
 				m_bStatus = enTestSitePlace;
@@ -1545,6 +1590,7 @@ void CThInserter::NextStatus()
 				// Ops: Shuttle Move to place fail.
 				m.Err.Inserter.Code = enCodeShuttleMoveToPlaceFail;
 				m_bStatus = enShuttleOutputError;
+				m_lRemoteStatus = enError;
 			}
 		}	
 		break;
@@ -1552,18 +1598,21 @@ void CThInserter::NextStatus()
 		f.CWinMessage( "TestSiteS:enTestSitePlace", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSitePlaceBlow;
+			m_lRemoteStatus = enDeviceOutSocket;
 		}
 		break;
 	case enTestSitePlaceBlow:			// Test Site turn on the blow 
 		f.CWinMessage( "TestSiteS:enTestSitePlaceBlow", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteUpForOut;
+			m_lRemoteStatus = enDeviceOutSocket;
 		}
 		break;
 	case enTestSiteUpForOut:			// Test Up for shuttle move home, Arm can pick ic from shuttle
 		f.CWinMessage( "TestSiteS:enTestSiteUpForOut", theApp.enDTestSite );
 		{
 			m_bStatus = enShuttleHomeForOutput;
+			m_lRemoteStatus = enDeviceOutSocket;
 		}
 		break;
 	case enShuttleHomeForOutput:		// Shuttle move to home
@@ -1574,48 +1623,56 @@ void CThInserter::NextStatus()
 				m.InterLock.ShuttleHome = true;
 				m.InterLock.ShuttleOutputICOK = true;
 				m_bStatus = enShuttleHome;
+				m_lRemoteStatus = enNoDevice;
 			}
 			else
 			{
 				// Ops: Shuttle Move to Home 
 				m.Err.Inserter.Code = enCodeShuttleMoveToPlaceFail;
 				m_bStatus = enShuttleHomeForOutputError;
+				m_lRemoteStatus = enError;
 			}
 		}	
 		break;
 
-	///////////////////////////////
-	// Test Site CCD Socket 
+		///////////////////////////////
+		// Test Site CCD Socket 
 	case enTestSiteCCDSocketStart:		// CCD Socket Start
 		f.CWinMessage( "TestSiteS:enTestSiteCCDSocketStart", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteCCDSocketGrab;
+			m_lRemoteStatus = enDeviceInTestsite;
 		}
 		break;
 	case enTestSiteCCDSocketGrab:		// CCD Grab
 		f.CWinMessage( "TestSiteS:enTestSiteCCDSocketGrab", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteCCDSocketMatch;
+			m_lRemoteStatus = enDeviceInTestsite;
 		}
 		break;
 	case enTestSiteCCDSocketMatch:		// CCD Match
 		f.CWinMessage( "TestSiteS:enTestSiteCCDSocketMatch", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteCCDSocketMatchEnd;
+			m_lRemoteStatus = enDeviceInTestsite;
 		}
 		break;
 	case enTestSiteCCDSocketMatchEnd:	// CCD Match End (Check Error or not )
 		f.CWinMessage( "TestSiteS:enTestSiteCCDSocketMatchEnd", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteCCDSocketEnd;
+			m_lRemoteStatus = enDeviceInTestsite;
 		}
 		break;
 	case enTestSiteCCDSocketEnd:		// CCD Socket End
 		f.CWinMessage( "TestSiteS:enTestSiteCCDSocketEnd", theApp.enDTestSite );
 		{
 			m_bStatus = enTestSiteDownForContact;
+			m_lRemoteStatus = enDeviceInTestsite;
 		}
 		break;
+
 	///////////////////////////////	
 	// Error status
 	case enShuttleHomeError:			// Shuttle move to home fail	
@@ -1859,6 +1916,9 @@ void CThInserter::NextStatus()
 		break;
 
 	}// switch..
+
+
+	f.RemoteSendTestSiteStatus(m_lRemoteStatus);
 
 	if(f.IsPause())
 	{

@@ -285,6 +285,23 @@ enum enErrorCode
 	enCodeManualShuttleJamFail				= 0x705, //	1797 // Manual Shuttle Jam Fail
 };
 
+enum enRemoteInsertStatus
+{
+	enError = 1,
+	enManual = 2,
+	enTesting = 3,
+	enDeviceInTestsite = 4,
+	enDeviceInSocket = 5,
+	enDeviceOutSocket = 6,
+	enNoDevice = 7,
+};
+enum enRemoteTestEvent
+{
+	enSOT = 1,
+	enLotStart = 2,
+	enLotDone = 3,
+
+};
 
 
 

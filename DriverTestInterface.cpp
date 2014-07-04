@@ -3270,7 +3270,7 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 	}
 	else if(telegram.cmd == "SETTESTRESULT")
 	{
-		csResult = ps.SetTestResult(telegram.parameter, true);
+		csResult = ps.SetTestResult(telegram.parameter);
 	}
 	else if(telegram.cmd == "RETEST")
 	{
@@ -3303,7 +3303,6 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 	}
 	else if(telegram.cmd == "SETRUNMODE")
 	{
-	
 		csResult = ps.SetRunMode(telegram.parameter);
 	}
 	else if(telegram.cmd == "GETTIMEOUT")
@@ -3330,6 +3329,8 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 	{
 		csResult = ps.GetStatus();
 	}
+
+	//以下屬於主動傳送
 	else if(telegram.cmd == "GETSITESTATUS")
 	{
 		csResult = ps.GetSiteStatus();
@@ -3340,7 +3341,6 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 	}
 	else if(telegram.cmd == "ERRORMESSAGE")
 	{
-	
 		csResult = ps.ErrorMessage();
 	}
 	else if(telegram.cmd == "LOCATION")

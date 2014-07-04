@@ -229,22 +229,17 @@ CString CParser3111::OneCycle()
 	return csResult;
 }
 
-CString CParser3111::SetTestResult(CString msg, bool bReady)
+CString CParser3111::SetTestResult(CString msg)
 {
 	CString csResult = _T("");
-
-	m.m_rTestResilt.m_TestResult = msg;
-	m.m_rTestResilt.m_bResultReady = bReady;	
-	
+	m.m_RemoteTestResult = msg;
 	return csResult;
 }
-CString CParser3111::GetTestResult(CString &msg)
+void CParser3111::GetTestResult(CString &msg)
 {
 	CString csResult = _T("");
+	msg = m.m_RemoteTestResult;
 
-	msg = m.m_rTestResilt.m_TestResult;
-
-	return csResult;
 }
 CString CParser3111::Retest(CString count)
 {
@@ -326,17 +321,28 @@ CString CParser3111::GetRunMode()
 CString CParser3111::SetRunMode(CString mode)
 {
 	CString csResult = _T("");
-	long lMode =  atoi(mode);
-	if(lMode == theApp.enOnLine || lMode == theApp.enOffLine || lMode == theApp.enDemo )
+	mode.MakeUpper();
+	if(mode == "ONLINE")
 	{
-		//更改機台模式
-		m.Site.iRunMode  = lMode;
 		csResult.Format("<<*%%SETRUNMODE%%ACK>>");
+		m.Site.iRunMode = theApp.enOnLine;
 		return csResult;
-	}	
-	csResult.Format("<<*%%SETRUNMODE%%NAK>>");
+	}
+	else if(mode == "OFFLINE")
+	{
+		csResult.Format("<<*%%SETRUNMODE%%ACK>>");
+		m.Site.iRunMode = theApp.enOffLine;
+		return csResult;
+	}
+	else if(mode == "DEMO")
+	{
+		csResult.Format("<<*%%SETRUNMODE%%ACK>>");
+		m.Site.iRunMode = theApp.enDemo;
+		return csResult;
+	}
+	else
+		csResult.Format("<<*%%SETRUNMODE%%NAK>>");
 	return csResult;
-
 }
 
 CString CParser3111::GetTimeOut()

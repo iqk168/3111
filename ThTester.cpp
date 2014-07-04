@@ -409,7 +409,6 @@ void CThTester::FTTesting()
 	{	
 		// Demo Test Time
 		WaitForDummyTest( m.Site.dDemoTestTime * 1000. );
-
 		//
 		csCode.Format("%d", m.Site.iSiteDummyBinForCatorgy );
 		TesterLog.csCode = csCode;
@@ -1729,33 +1728,41 @@ END_MESSAGE_MAP()
 
 void CThTester::FTTestingRemoteMode()
 {
-	
-
 	//SOT
 	ps.SendEvent();
-
 	// Clear TestResult
 	ps.SetTestResult("");
-
 	CString csCode = _T("");
 	//TESTRESULT
-	while(1)
+	if(m.Site.iRunMode == theApp.enOnLine )
 	{
-		if(m.m_rTestResilt.m_bResultReady)
+		while(1)
 		{
 			ps.GetTestResult(csCode);
-				break;
-
-			//
 			if( csCode != "" )
 				break;
+			
+			if(!m.Info.bRunning)
+				break;
+			
+			Sleep(1);
 		}
-
-
-		if(!m.Info.bRunning)
-			break;
-		
-		Sleep(1);
+	}
+	else if( m.Site.iRunMode == theApp.enOffLine )
+	{
+		// Demo Test Time
+		WaitForDummyTest( m.Site.dDemoTestTime * 1000. );
+		//
+		csCode.Format("%d", m.Site.iSiteDummyBinForCatorgy );
+	//	TesterLog.csCode = csCode;
+	}
+	else if( m.Site.iRunMode == theApp.enDemo )
+	{	
+		// Demo Test Time
+		WaitForDummyTest( m.Site.dDemoTestTime * 1000. );
+		//
+		csCode.Format("%d", m.Site.iSiteDummyBinForCatorgy );
+	//	TesterLog.csCode = csCode;
 	}
 
 	TesterLog.csCode = csCode;

@@ -214,6 +214,9 @@ public:
 	// Debug
 	int GetThreadMotionStatus();
 
+	// 1.0 Av
+	long m_lRemoteStatus;	//»·ºÝ»»±±Insertª¬ºA¥Î
+
 protected:
 
 // Attributes

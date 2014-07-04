@@ -688,6 +688,7 @@ public:
 
 public:
 
+
 	void LoadTitleExtend();
 	void SetTitleExtend(LPVOID p, int nType);
 
@@ -720,6 +721,9 @@ public:
 	// 1.0Ao
 	void InitSLTProtocolHelp();
 	bool GetSLTProtocolHelp();	
+
+	// 1.0Av
+	void RemoteSendTestSiteStatus(long InsertStatus);
 	
 protected:
 

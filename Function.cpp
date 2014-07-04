@@ -8650,11 +8650,12 @@ bool CFunction::GetSLTProtocolHelp()
 void CFunction::RemoteMessage(int iCode)
 {
 	tagErrorMsg e = GetErrorMsg(iCode);
-
 	if(m.m_TestInterface.m_bRemoteMode)
 	{
 		if(m.m_TestInterface.m_bRemoteSendEvent)		
+		{
 			m.m_TestInterface.SetErrorMessage(iCode, e.Eng);
+		}
 	}
 }
 void CFunction::RemoteSeCoordnationInitial()
@@ -8704,4 +8705,30 @@ void CFunction::RemoteSetStateError()
 void CFunction::RemoteSetStatus(int iStatus, int iCode)
 {
 	m.m_TestInterface.SetStatus(iStatus, iCode);
+}
+
+void CFunction::RemoteSendTestSiteStatus(long InsertStatus)
+{
+	
+	CString csMsg = _T("");
+	if(m.m_singleSocket != NULL)
+	{
+		//ª¬ºAÂà¦r¦ê
+		if(InsertStatus == enError)
+			csMsg.Format("<<*%%GETSITESTATUS%%ERROR>>");
+		else if(InsertStatus == enManual)
+			csMsg.Format("<<*%%GETSITESTATUS%%MANUAL>>");
+		else if(InsertStatus == enTesting)
+			csMsg.Format("<<*%%GETSITESTATUS%%TESTING>>");
+		else if(InsertStatus == enDeviceInTestsite)
+			csMsg.Format("<<*%%GETSITESTATUS%%DEVICEINTESTSITE>>");
+		else if(InsertStatus == enDeviceInSocket)
+			csMsg.Format("<<*%%GETSITESTATUS%%DEVICEINSOCKET>>");
+		else if(InsertStatus == enDeviceOutSocket)
+			csMsg.Format("<<*%%GETSITESTATUS%%DEVICEOUTSOCKET>>");
+		else if(InsertStatus == enNoDevice)
+			csMsg.Format("<<*%%GETSITESTATUS%%NODEVICE>>");
+		//Àx¦s¨ìArray 
+		m.m_TestInterface.AddReplyCmd(csMsg);
+	}
 }

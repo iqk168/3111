@@ -19,8 +19,8 @@ static char THIS_FILE[]=__FILE__;
 CMember::CMember()
 {
 	//
-	m.m_rTestResilt.m_TestResult					= _T("");
-	m.m_rTestResilt.m_bResultReady					= false;
+	m.m_RemoteTestResult							= _T("");
+
 
 	//
 	m.m_RemoteCtrlFun.m_iAutoReplayEvent			= 0;

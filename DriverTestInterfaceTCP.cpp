@@ -45,18 +45,14 @@ void CDriverTestInterfaceTCP::SetBuffer(CString csRecvBuffer)
 {
 	CSingleLock Lock(&MutexAccessBuffer);
 	Lock.Lock();
-
 	csBuffer = csRecvBuffer;
-
 	Lock.Unlock();
 }
 void CDriverTestInterfaceTCP::GetBufferData(CString &csRecvBuffer)
 {
 	CSingleLock Lock(&MutexAccessBuffer);
 	Lock.Lock();
-	
 	csRecvBuffer = csBuffer;
-	
 	csBuffer.Empty();
 	Lock.Unlock();
 }
@@ -104,6 +100,8 @@ void CDriverTestInterfaceTCP::OnAccept(int nErrorCode)
 		return;
 	m.m_singleSocket = new CDriverTestInterfaceTCP;
 	BOOL bRect = Accept(*m.m_singleSocket);
+	m.m_singleSocket->AsyncSelect(FD_READ | FD_WRITE | FD_CLOSE);
+	m.m_singleSocket->SetConnected();
 
 #else 
 	TRACE("OnAccept\n");
@@ -266,27 +264,36 @@ bool CDriverTestInterfaceTCP::SendToClient(CString csMessage)
 	csMessage.TrimLeft(); csMessage.TrimRight();
 	if( csMessage == "" )
 		return false;
-
-	//
-	if( m_bOverRange )
-	{
-		for(int i=0;i<10;i++)
+	
+#if 1 
+	if( m.m_singleSocket != NULL )
+	{			
+		if( m.m_singleSocket->GetConnected() )
+			send( m.m_singleSocket->m_hSocket, csMessage.GetBuffer(0), csMessage.GetLength(), 0 );
+	}	
+				
+#else
+				if( m_bOverRange )
 		{
-			if( m_Socket[i] != NULL )
-				send( m_Socket[i]->m_hSocket, csMessage.GetBuffer(0), csMessage.GetLength(), 0 );			
+			for(int i=0;i<10;i++)
+			{
+				if( m_Socket[i] != NULL )
+					send( m_Socket[i]->m_hSocket, csMessage.GetBuffer(0), csMessage.GetLength(), 0 );			
+			}
 		}
-	}
-	else
-	{
-		for(int i=0;i<(int)iConnectedNumber;i++)
+		else
 		{
-			if( m_Socket[i] != NULL )
-			{			
-				if( m_Socket[i]->GetConnected() )
-					send( m_Socket[i]->m_hSocket, csMessage.GetBuffer(0), csMessage.GetLength(), 0 );
-			}	
+			
+			for(int i=0;i<(int)iConnectedNumber;i++)
+			{
+				if( m_Socket[i] != NULL )
+				{			
+					if( m_Socket[i]->GetConnected() )
+						send( m_Socket[i]->m_hSocket, csMessage.GetBuffer(0), csMessage.GetLength(), 0 );
+				}	
+			}
 		}
-	}
+#endif
 	//
 
 	return true;

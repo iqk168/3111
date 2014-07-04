@@ -4184,7 +4184,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,1,1,22
+ FILEVERSION 0,1,1,23
  PRODUCTVERSION 1,0,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -4203,7 +4203,7 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", " \0"
             VALUE "FileDescription", "3111\0"
-            VALUE "FileVersion", "0, 1, 1, 22\0"
+            VALUE "FileVersion", "0, 1, 1, 23\0"
             VALUE "InternalName", "3111\0"
             VALUE "LegalCopyright", "Copyright c 2011\0"
             VALUE "LegalTrademarks", "\0"
@@ -4218,7 +4218,7 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "chroma\0"
             VALUE "FileDescription", "Deer MFC Application\0"
-            VALUE "FileVersion", "0, 1, 1, 22\0"
+            VALUE "FileVersion", "0, 1, 1, 23\0"
             VALUE "InternalName", "Deer\0"
             VALUE "LegalCopyright", "Copyright (C) 2010\0"
             VALUE "LegalTrademarks", "\0"
@@ -4233,7 +4233,7 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", " \0"
             VALUE "FileDescription", "3110Demo\0"
-            VALUE "FileVersion", "0, 1, 1, 22\0"
+            VALUE "FileVersion", "0, 1, 1, 23\0"
             VALUE "InternalName", "3110Demo\0"
             VALUE "LegalCopyright", "Copyright c 2011\0"
             VALUE "LegalTrademarks", "\0"

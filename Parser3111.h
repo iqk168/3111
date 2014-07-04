@@ -29,8 +29,7 @@ public:
 	CString AutoSkip(bool enable);
 	CString PurgeDevices();
 	CString Retest(CString count);
-	CString SetTestResult(CString msg, bool bReady = false);
-	CString GetTestResult(CString &msg);
+	CString SetTestResult(CString msg);
 	CString OneCycle();
 	CString Initial();
 	CString Reset();
@@ -44,6 +43,7 @@ public:
 	CString Disconnect();
 	CString Start();
 	CString Connect();
+	void GetTestResult(CString &msg);		//這個不是命令
 	CParser3111();
 	virtual ~CParser3111();
 
