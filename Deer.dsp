@@ -39,8 +39,8 @@ RSC=rc.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 6
 # PROP Use_Debug_Libraries 0
-# PROP Output_Dir "Release"
-# PROP Intermediate_Dir "Release"
+# PROP Output_Dir "d:\bin\3111\bin\Release"
+# PROP Intermediate_Dir "d:\bin\3111\bin\Release"
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
@@ -65,8 +65,8 @@ LINK32=link.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 6
 # PROP Use_Debug_Libraries 1
-# PROP Output_Dir "Debug"
-# PROP Intermediate_Dir "Debug"
+# PROP Output_Dir "d:\bin\3111\bin\Debug"
+# PROP Intermediate_Dir "d:\bin\3111\bin\Debug"
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ /c
@@ -91,8 +91,8 @@ LINK32=link.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 5
 # PROP Use_Debug_Libraries 1
-# PROP Output_Dir "Demo"
-# PROP Intermediate_Dir "Demo"
+# PROP Output_Dir "d:\bin\3111\bin\Demo"
+# PROP Intermediate_Dir "d:\bin\3111\bin\Demo"
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Yu"stdafx.h" /FD /GZ /c
@@ -2587,111 +2587,6 @@ SOURCE=.\SLTProtocol_Marvell
 # End Source File
 # End Target
 # End Project
-# Section Deer : {DA5CC0E2-4550-4106-99D4-22D88F29EC9F}
-# 	2:12:GridCtrl.cpp:GridCtrl.cpp
-# 	2:21:CLASS: tagGV_DISPINFO:tagGV_DISPINFO
-# 	2:21:TYPEDEF: GRIDCALLBACK:GRIDCALLBACK
-# 	2:10:GridCtrl.h:GridCtrl.h
-# 	2:16:CLASS: CGridCtrl:CGridCtrl
-# 	2:21:TYPEDEF: GV_CACHEHINT:GV_CACHEHINT
-# 	2:20:TYPEDEF: NM_GRIDVIEW:NM_GRIDVIEW
-# 	2:22:CLASS: tagGV_CACHEHINT:tagGV_CACHEHINT
-# 	2:20:TYPEDEF: GV_DISPINFO:GV_DISPINFO
-# 	2:19:Application Include:deer.h
-# 	2:17:TYPEDEF: GRID_ROW:GRID_ROW
-# 	2:21:CLASS: tagNM_GRIDVIEW:tagNM_GRIDVIEW
-# End Section
-# Section Deer : {D5C5CD72-94FB-444D-ACD3-3CC91C8A01FB}
-# 	2:15:TrayMapCtrl.cpp:TrayMapCtrl.cpp
-# 	2:19:CLASS: CTrayMapCtrl:CTrayMapCtrl
-# 	2:19:Application Include:deer.h
-# 	2:13:TrayMapCtrl.h:TrayMapCtrl.h
-# End Section
-# Section Deer : {78442DF1-FB85-40C7-8502-EB4160D70E31}
-# 	2:5:Class:CTrayMap
-# 	2:10:HeaderFile:traymap.h
-# 	2:8:ImplFile:traymap.cpp
-# End Section
-# Section Deer : {B71582DE-D98B-4CAE-B6FB-36F8A544C839}
-# 	2:13:Interface.cpp:Interface.cpp
-# 	2:11:Interface.h:Interface.h
-# 	2:17:CLASS: CInterface:CInterface
-# 	2:19:Application Include:deer.h
-# End Section
-# Section Deer : {3274C5FE-9EE9-44EF-9BB6-9512FA9CB908}
-# 	2:19:CLASS: lImageStruct:lImageStruct
-# 	2:10:CameraDS.h:CameraDS.h
-# 	2:16:CLASS: CCameraDS:CCameraDS
-# 	2:12:CameraDS.cpp:CameraDS.cpp
-# 	2:16:CLASS: ImageSize:ImageSize
-# 	2:19:Application Include:deer.h
-# End Section
-# Section Deer : {A8A6BBDD-9E4F-4A3E-9612-4D25EA71F86F}
-# 	2:20:CLASS: CYieldControl:CYieldControl
-# 	2:14:YieldControl.h:YieldControl.h
-# 	2:19:Application Include:Deer.h
-# 	2:16:YieldControl.cpp:YieldControl.cpp
-# End Section
-# Section Deer : {7EC4CD83-56CD-447F-ADD8-1E90153ACE55}
-# 	2:14:GroupControl.h:GroupControl.h
-# 	2:31:TYPEDEF: GROUPCONTROLACTIONFUNC:GROUPCONTROLACTIONFUNC
-# 	2:20:CLASS: CGroupControl:CGroupControl
-# 	2:19:Application Include:Deer.h
-# 	2:16:GroupControl.cpp:GroupControl.cpp
-# End Section
-# Section Deer : {3BFFDA47-3B33-43E8-B77C-7D8DED52CEFF}
-# 	2:23:CLASS: CGridDefaultCell:CGridDefaultCell
-# 	2:12:GridCell.cpp:GridCell.cpp
-# 	2:10:GridCell.h:GridCell.h
-# 	2:16:CLASS: CGridCell:CGridCell
-# 	2:19:Application Include:deer.h
-# End Section
-# Section Deer : {C94A7E75-56DF-4458-8F57-2C0E268AF78F}
-# 	2:14:SocketVision.h:SocketVision.h
-# 	2:20:CLASS: CSocketVision:CSocketVision
-# 	2:16:SocketVision.cpp:SocketVision.cpp
-# 	2:15:CLASS: tagMatch:tagMatch
-# 	2:19:Application Include:deer.h
-# End Section
-# Section Deer : {29195922-6864-484A-BDE8-E1D0A370FC0F}
-# 	2:16:CLASS: CEventLog:CEventLog
-# 	2:10:EventLog.h:EventLog.h
-# 	2:12:EventLog.cpp:EventLog.cpp
-# 	2:19:Application Include:deer.h
-# End Section
-# Section Deer : {FB357CDA-226F-475A-8DDE-6A06402F0427}
-# 	2:18:GridDropTarget.cpp:GridDropTarget.cpp
-# 	2:16:GridDropTarget.h:GridDropTarget.h
-# 	2:22:CLASS: CGridDropTarget:CGridDropTarget
-# 	2:19:Application Include:deer.h
-# End Section
-# Section Deer : {28B794DD-9DFD-46E6-9C8E-92986475F55C}
-# 	2:19:CLASS: lImageStruct:lImageStruct
-# 	2:10:CameraDS.h:CameraDS.h
-# 	2:16:CLASS: CCameraDS:CCameraDS
-# 	2:12:CameraDS.cpp:CameraDS.cpp
-# 	2:16:CLASS: ImageSize:ImageSize
-# 	2:19:Application Include:deer.h
-# End Section
-# Section Deer : {D1FF3584-6D6F-4AB8-8610-7B9A907FCCD3}
-# 	2:10:ENUM: enum:enum
-# 	2:16:CLASS: CButtonST:CButtonST
-# 	2:9:BtnST.cpp:BtnST.cpp
-# 	2:19:Application Include:Deer.h
-# 	2:7:BtnST.h:BtnST.h
-# End Section
-# Section Deer : {EB16713D-6B36-4624-9219-86C5441DBEF7}
-# 	2:24:CLASS: CContinueFailCtrl:CContinueFailCtrl
-# 	2:20:ContinueFailCtrl.cpp:ContinueFailCtrl.cpp
-# 	2:19:Application Include:deer.h
-# 	2:18:ContinueFailCtrl.h:ContinueFailCtrl.h
-# End Section
-# Section Deer : {88D3E60F-057C-431B-8B4A-43E7C3B3A272}
-# 	2:10:TrayFile.h:TrayFile.h
-# 	2:12:TrayFile.cpp:TrayFile.cpp
-# 	2:16:CLASS: CTrayFile:CTrayFile
-# 	2:19:Application Include:Deer.h
-# End Section
 # Section Deer : {B32C41F2-94B7-453A-B3F8-036D408031A0}
 # 	2:12:ListReport.h:ListReport.h
 # 	2:14:ENUM: ItemType:ItemType
@@ -2711,6 +2606,12 @@ SOURCE=.\SLTProtocol_Marvell
 # 	2:16:CLASS: CColorBtn:CColorBtn
 # 	2:19:Application Include:Deer.h
 # End Section
+# Section Deer : {BE6DE805-5791-4BC5-9C2C-3E895D07712E}
+# 	2:19:CLASS: CInPlaceEdit:CInPlaceEdit
+# 	2:15:InPlaceEdit.cpp:InPlaceEdit.cpp
+# 	2:19:Application Include:Deer.h
+# 	2:13:InPlaceEdit.h:InPlaceEdit.h
+# End Section
 # Section Deer : {5A3E5297-7E21-406F-98D1-2F3F994CA9FD}
 # 	2:14:GridCellBase.h:GridCellBase.h
 # 	2:16:GridCellBase.cpp:GridCellBase.cpp
@@ -2719,22 +2620,6 @@ SOURCE=.\SLTProtocol_Marvell
 # 	2:19:Application Include:deer.h
 # 	2:20:CLASS: CGridCellBase:CGridCellBase
 # End Section
-# Section Deer : {BE6DE805-5791-4BC5-9C2C-3E895D07712E}
-# 	2:19:CLASS: CInPlaceEdit:CInPlaceEdit
-# 	2:15:InPlaceEdit.cpp:InPlaceEdit.cpp
-# 	2:19:Application Include:Deer.h
-# 	2:13:InPlaceEdit.h:InPlaceEdit.h
-# End Section
-# Section Deer : {DD6147A2-2D6E-49A3-8DDF-9361FF22BD60}
-# 	2:10:TitleTip.h:TitleTip.h
-# 	2:16:CLASS: CTitleTip:CTitleTip
-# 	2:12:TitleTip.cpp:TitleTip.cpp
-# 	2:19:Application Include:Deer.h
-# End Section
-# Section Deer : {D3C0D228-17A2-499A-A2D7-42AF3E8E9C30}
-# 	2:21:DefaultSinkHeaderFile:traymap.h
-# 	2:16:DefaultSinkClass:CTrayMap
-# End Section
 # Section Deer : {79B1DB88-0BE5-42B6-8F30-E11F0B5382CB}
 # 	2:7:Led.cpp:Led.cpp
 # 	2:11:CLASS: CLed:CLed
@@ -2742,10 +2627,125 @@ SOURCE=.\SLTProtocol_Marvell
 # 	2:19:Application Include:deer.h
 # 	2:5:Led.h:Led.h
 # End Section
+# Section Deer : {D3C0D228-17A2-499A-A2D7-42AF3E8E9C30}
+# 	2:21:DefaultSinkHeaderFile:traymap.h
+# 	2:16:DefaultSinkClass:CTrayMap
+# End Section
+# Section Deer : {DD6147A2-2D6E-49A3-8DDF-9361FF22BD60}
+# 	2:10:TitleTip.h:TitleTip.h
+# 	2:16:CLASS: CTitleTip:CTitleTip
+# 	2:12:TitleTip.cpp:TitleTip.cpp
+# 	2:19:Application Include:Deer.h
+# End Section
 # Section Deer : {829502F2-0A77-4856-94EF-8C460180E1FA}
 # 	2:16:CLASS: CAutoLock:CAutoLock
 # 	2:17:TorqueControl.cpp:TorqueControl.cpp
 # 	2:21:CLASS: CTorqueControl:CTorqueControl
 # 	2:15:TorqueControl.h:TorqueControl.h
 # 	2:19:Application Include:deer.h
+# End Section
+# Section Deer : {D5C5CD72-94FB-444D-ACD3-3CC91C8A01FB}
+# 	2:15:TrayMapCtrl.cpp:TrayMapCtrl.cpp
+# 	2:19:CLASS: CTrayMapCtrl:CTrayMapCtrl
+# 	2:19:Application Include:deer.h
+# 	2:13:TrayMapCtrl.h:TrayMapCtrl.h
+# End Section
+# Section Deer : {DA5CC0E2-4550-4106-99D4-22D88F29EC9F}
+# 	2:12:GridCtrl.cpp:GridCtrl.cpp
+# 	2:21:CLASS: tagGV_DISPINFO:tagGV_DISPINFO
+# 	2:21:TYPEDEF: GRIDCALLBACK:GRIDCALLBACK
+# 	2:10:GridCtrl.h:GridCtrl.h
+# 	2:16:CLASS: CGridCtrl:CGridCtrl
+# 	2:21:TYPEDEF: GV_CACHEHINT:GV_CACHEHINT
+# 	2:20:TYPEDEF: NM_GRIDVIEW:NM_GRIDVIEW
+# 	2:22:CLASS: tagGV_CACHEHINT:tagGV_CACHEHINT
+# 	2:20:TYPEDEF: GV_DISPINFO:GV_DISPINFO
+# 	2:19:Application Include:deer.h
+# 	2:17:TYPEDEF: GRID_ROW:GRID_ROW
+# 	2:21:CLASS: tagNM_GRIDVIEW:tagNM_GRIDVIEW
+# End Section
+# Section Deer : {78442DF1-FB85-40C7-8502-EB4160D70E31}
+# 	2:5:Class:CTrayMap
+# 	2:10:HeaderFile:traymap.h
+# 	2:8:ImplFile:traymap.cpp
+# End Section
+# Section Deer : {3BFFDA47-3B33-43E8-B77C-7D8DED52CEFF}
+# 	2:23:CLASS: CGridDefaultCell:CGridDefaultCell
+# 	2:12:GridCell.cpp:GridCell.cpp
+# 	2:10:GridCell.h:GridCell.h
+# 	2:16:CLASS: CGridCell:CGridCell
+# 	2:19:Application Include:deer.h
+# End Section
+# Section Deer : {7EC4CD83-56CD-447F-ADD8-1E90153ACE55}
+# 	2:14:GroupControl.h:GroupControl.h
+# 	2:31:TYPEDEF: GROUPCONTROLACTIONFUNC:GROUPCONTROLACTIONFUNC
+# 	2:20:CLASS: CGroupControl:CGroupControl
+# 	2:19:Application Include:Deer.h
+# 	2:16:GroupControl.cpp:GroupControl.cpp
+# End Section
+# Section Deer : {A8A6BBDD-9E4F-4A3E-9612-4D25EA71F86F}
+# 	2:20:CLASS: CYieldControl:CYieldControl
+# 	2:14:YieldControl.h:YieldControl.h
+# 	2:19:Application Include:Deer.h
+# 	2:16:YieldControl.cpp:YieldControl.cpp
+# End Section
+# Section Deer : {3274C5FE-9EE9-44EF-9BB6-9512FA9CB908}
+# 	2:19:CLASS: lImageStruct:lImageStruct
+# 	2:10:CameraDS.h:CameraDS.h
+# 	2:16:CLASS: CCameraDS:CCameraDS
+# 	2:12:CameraDS.cpp:CameraDS.cpp
+# 	2:16:CLASS: ImageSize:ImageSize
+# 	2:19:Application Include:deer.h
+# End Section
+# Section Deer : {B71582DE-D98B-4CAE-B6FB-36F8A544C839}
+# 	2:13:Interface.cpp:Interface.cpp
+# 	2:11:Interface.h:Interface.h
+# 	2:17:CLASS: CInterface:CInterface
+# 	2:19:Application Include:deer.h
+# End Section
+# Section Deer : {29195922-6864-484A-BDE8-E1D0A370FC0F}
+# 	2:16:CLASS: CEventLog:CEventLog
+# 	2:10:EventLog.h:EventLog.h
+# 	2:12:EventLog.cpp:EventLog.cpp
+# 	2:19:Application Include:deer.h
+# End Section
+# Section Deer : {C94A7E75-56DF-4458-8F57-2C0E268AF78F}
+# 	2:14:SocketVision.h:SocketVision.h
+# 	2:20:CLASS: CSocketVision:CSocketVision
+# 	2:16:SocketVision.cpp:SocketVision.cpp
+# 	2:15:CLASS: tagMatch:tagMatch
+# 	2:19:Application Include:deer.h
+# End Section
+# Section Deer : {FB357CDA-226F-475A-8DDE-6A06402F0427}
+# 	2:18:GridDropTarget.cpp:GridDropTarget.cpp
+# 	2:16:GridDropTarget.h:GridDropTarget.h
+# 	2:22:CLASS: CGridDropTarget:CGridDropTarget
+# 	2:19:Application Include:deer.h
+# End Section
+# Section Deer : {EB16713D-6B36-4624-9219-86C5441DBEF7}
+# 	2:24:CLASS: CContinueFailCtrl:CContinueFailCtrl
+# 	2:20:ContinueFailCtrl.cpp:ContinueFailCtrl.cpp
+# 	2:19:Application Include:deer.h
+# 	2:18:ContinueFailCtrl.h:ContinueFailCtrl.h
+# End Section
+# Section Deer : {D1FF3584-6D6F-4AB8-8610-7B9A907FCCD3}
+# 	2:10:ENUM: enum:enum
+# 	2:16:CLASS: CButtonST:CButtonST
+# 	2:9:BtnST.cpp:BtnST.cpp
+# 	2:19:Application Include:Deer.h
+# 	2:7:BtnST.h:BtnST.h
+# End Section
+# Section Deer : {28B794DD-9DFD-46E6-9C8E-92986475F55C}
+# 	2:19:CLASS: lImageStruct:lImageStruct
+# 	2:10:CameraDS.h:CameraDS.h
+# 	2:16:CLASS: CCameraDS:CCameraDS
+# 	2:12:CameraDS.cpp:CameraDS.cpp
+# 	2:16:CLASS: ImageSize:ImageSize
+# 	2:19:Application Include:deer.h
+# End Section
+# Section Deer : {88D3E60F-057C-431B-8B4A-43E7C3B3A272}
+# 	2:10:TrayFile.h:TrayFile.h
+# 	2:12:TrayFile.cpp:TrayFile.cpp
+# 	2:16:CLASS: CTrayFile:CTrayFile
+# 	2:19:Application Include:Deer.h
 # End Section
