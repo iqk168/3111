@@ -1,5 +1,5 @@
-#if !defined(AFX_DLGSOCKETVISIONCAM_H__C09E669D_AC95_4541_8F45_39675AEB4D5F__INCLUDED_)
-#define AFX_DLGSOCKETVISIONCAM_H__C09E669D_AC95_4541_8F45_39675AEB4D5F__INCLUDED_
+#if !defined(AFX_DLGSOCKETVISIONCAM_H__95957D1A_8423_471D_8B08_08EC8BCE3A19__INCLUDED_)
+#define AFX_DLGSOCKETVISIONCAM_H__95957D1A_8423_471D_8B08_08EC8BCE3A19__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
@@ -42,8 +42,9 @@ protected:
 	// Generated message map functions
 	//{{AFX_MSG(CDlgSocketVisionCam)
 	virtual BOOL OnInitDialog();
-	virtual void OnOK();
 	virtual void OnCancel();
+	virtual void OnOK();
+
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
@@ -51,4 +52,4 @@ protected:
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
-#endif // !defined(AFX_DLGSOCKETVISIONCAM_H__C09E669D_AC95_4541_8F45_39675AEB4D5F__INCLUDED_)
+#endif // !defined(AFX_DLGSOCKETVISIONCAM_H__95957D1A_8423_471D_8B08_08EC8BCE3A19__INCLUDED_)

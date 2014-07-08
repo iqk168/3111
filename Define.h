@@ -392,6 +392,8 @@
 
 // DB
 #define _InsertCount			5
+// Vision Device In, Pick Dut Position
+#define		_Dut						0
 
 #endif // _DEFINE_H
 
@@ -592,6 +594,11 @@ typedef struct tagTraySpec{
 ////////////////////////////////////////////////
 // «Å§i Software Setting µ²ºc
 typedef struct tagSetting{
+
+	int	  m_bA4P;		// if true application will use A4P Pansonic Driver.!
+	int	  m_bCCD;							// if true application will use CCD
+	int	  m_bSocketCCDDoubleDetect;				// if true application will user CCD Double Device Detect
+	int	  m_bPin1CCDDoubleDetect;	
 
 	int	  m_iRepeatMaxiumValue;				// if Repeat Maxium
 	//
@@ -843,6 +850,11 @@ typedef struct tagArm{
 // GearRation = 1 mm  = 200 pulse. Or 0.5 mm = 100 pulse.
 // For example : 1000 pulse + ( 3 mm * 200 pulse ) = Current Position.
 // Refer : theApp.m_Align.TestSite[m_ID].pick + m.Offset.TestSite[m_ID].pick * theApp.m_Ratio.TestSite
+typedef struct tagShuttle{
+	double exchange;	// store motor shuttle home RCount
+	double output;		// store motor shuttle output RCount
+	double input;		// store motor shuttle input RCount
+} tagShuttle;
 
 typedef struct tagAlignment{
 	tagTestSite TestSite;	// Test site position
@@ -851,6 +863,8 @@ typedef struct tagAlignment{
 	tagXYZ Rotator;			// Arm in Rotator position
 	tagXYZ Socket;			// Arm in Rotator position
 	tagXYZ Shuttle;			// Arm in Rotator position
+	
+	tagShuttle Shuttle2;		// Shuttle work position
 
 	// calc
 	tagXYZ StandyBy;		// Arm in StandBy position

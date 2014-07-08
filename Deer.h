@@ -59,6 +59,10 @@
 // Initial Arm 
 #include "ThInitialArm.h"
 
+// Socket CCD Sensor
+#include "DlgGrabShow.h"
+#include "DlgSocketVisionLive.h"
+#include "DlgSocketVisionSetting.h"
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -343,6 +347,13 @@ public:
 	// It is for Bin color.
 	// Note: effect in Run Page. and Tray Map.
 
+	enum enShuttlePosition{
+		enPositionNone	= -1,
+			enShuttleIn		= 0,
+			enShuttleOut	= 1,
+			enShuttleHome	= 2,
+	};
+
 	void InitialStatus();
 	void InitialParameter();
 	void InitialIOStatus();
@@ -390,6 +401,8 @@ public:
 
 	// Program Start Initial
 	CDlgProgramStart			*m_DlgProgramStartInitial;
+	// Debug Dlg	
+	CDlgGrabShow						m_DlgGrabShow;
 
 
 	CWnd	*m_pWndMotor;		// This is for Verify dialog updata message. Motor	

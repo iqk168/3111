@@ -1,14 +1,16 @@
-#if !defined(AFX_DLGSOCKETMATCH_H__F43B09EC_A7B3_4F5F_B82F_43F2F2D34640__INCLUDED_)
-#define AFX_DLGSOCKETMATCH_H__F43B09EC_A7B3_4F5F_B82F_43F2F2D34640__INCLUDED_
+#if !defined(AFX_DLGSOCKETMATCH_H__32CC5651_17B1_472B_9FFC_0679889BFF4C__INCLUDED_)
+#define AFX_DLGSOCKETMATCH_H__32CC5651_17B1_472B_9FFC_0679889BFF4C__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
+
+// Socket CCD Sensor
+#include "DlgSocketVisionLive.h"
+#include "DlgSocketVisionSetting.h"
+
 // DlgSocketMatch.h : header file
 //
-
-#include "DlgSocketVisionCtrlLive.h"
-#include "DlgSocketVisionCtrlSetting.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // CDlgSocketMatch dialog
@@ -18,16 +20,24 @@ class CDlgSocketMatch : public CDialog
 // Construction
 public:
 	CDlgSocketMatch(CWnd* pParent = NULL);   // standard constructor
-	
+
 	void InitTabControl();
+	void InitValue();
+
+	//
+	void ChangeTab();
+
+	//
+	void ExitPage();
 
 public:
+	
 	/////////////////////////////////////////////////////
-	//  IO 计秖(Page)挡篶跋
+	//  CCD Socket 计秖(Page)挡篶跋
 	struct tagDlgPage
 	{
-		CDlgSocketVisionCtrlLive		m_DlgSocketLive;
-		CDlgSocketVisionCtrlSetting		m_DlgSocketSetting;
+		CDlgSocketVisionSetting m_DlgSocketMatch;
+		CDlgSocketVisionLive	m_DlgLive;
 		
 		TCITEM				m_Page; //纗把计ノ
 	} DlgPage;
@@ -35,7 +45,7 @@ public:
 // Dialog Data
 	//{{AFX_DATA(CDlgSocketMatch)
 	enum { IDD = IDD_DLG_SOCKETVISION };
-	CTabCtrl	m_tabSocketCCD;
+	CTabCtrl	m_tabSocketVision;
 	CButtonST	m_btnCancel;
 	CButtonST	m_btnOK;
 	//}}AFX_DATA
@@ -53,12 +63,16 @@ public:
 // Implementation
 protected:
 	HICON m_hIcon;
+
 	// Generated message map functions
 	//{{AFX_MSG(CDlgSocketMatch)
-	virtual void OnCancel();
 	virtual void OnOK();
+	virtual void OnCancel();
 	virtual BOOL OnInitDialog();
+	afx_msg void OnTimer(UINT nIDEvent);
 	afx_msg void OnSelchangeTabSocketvision(NMHDR* pNMHDR, LRESULT* pResult);
+	afx_msg void OnPaint();
+	afx_msg HCURSOR OnQueryDragIcon();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
@@ -66,4 +80,4 @@ protected:
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
-#endif // !defined(AFX_DLGSOCKETMATCH_H__F43B09EC_A7B3_4F5F_B82F_43F2F2D34640__INCLUDED_)
+#endif // !defined(AFX_DLGSOCKETMATCH_H__32CC5651_17B1_472B_9FFC_0679889BFF4C__INCLUDED_)

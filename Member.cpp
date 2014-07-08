@@ -504,3 +504,4 @@ CMember::~CMember()
 {
 	m_DriveMotorTorque.Close();
 }
+

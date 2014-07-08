@@ -326,7 +326,9 @@ void CDlgLotInformation::OnOK()
 	m.LotInfo.LotInfoProgramerID	= LotInfoProgramerID;
 
 	m.LotInfo.LotInfoIsLotStart		= 1;
-
+	m.m_RemoteTestEvent = enLotStart;
+	if(m.m_TestInterface.m_bRemoteMode)
+		f.RemoteSendTestEvent(m.m_RemoteTestEvent);
 	m.LotInfo.TestItem				= m_iTestItem;  
 
 	// 儲存 Lot 的開始時間

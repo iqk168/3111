@@ -23,6 +23,7 @@
 #include "DlgDeviceSetup.h"
 #include "DlgRepeatTray.h"
 #include "DlgContactCounter.h"
+#include "DlgGrabShow.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

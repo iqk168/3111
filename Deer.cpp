@@ -139,7 +139,7 @@ BOOL CDeerApp::InitInstance()
 	f.LoadErrorCode();							TRACE("# Open ErrorCode\n");		// Load ErrorCode
 	f.LoadLanguage();							TRACE("# Open Language\n");			// Load Language
 	f.SetTrayData();							TRACE("# SetTrayData\n");			// Set Tray Data
-	f.InitCCD();								TRACE("# InitCCD\n");				// Initial CCD
+//	f.InitCCD();								TRACE("# InitCCD\n");				// Initial CCD
 	f.InitRemoteInputTrayData();				TRACE("# InitRemoteInputTray\n");	// Initial Remote Input Tray Data
 	f.InitMail();								TRACE("# InitMail\n");				// Initial Alarm Mail
 	f.InitWest();								TRACE("# InitWest\n");				// Initial West
@@ -235,8 +235,13 @@ void CDeerApp::InitialStatus()
 	// CCD Group
 	m.FilePath.CCDImageProfilePath	= CurrentPath + "\\Image\\Profiles\\";
 	m.FilePath.CCDImageBackPath		= CurrentPath + "\\Image\\BackupProfiles\\";
-	m.FilePath.CCDImagePath			= CurrentPath + "\\Image\\Images\\";
+//	m.FilePath.CCDImagePath			= CurrentPath + "\\Image\\Images\\";
 	m.FilePath.SocketImagePath		= CurrentPath + "\\Image\\Socket\\";
+
+	m.FilePath.CCDImagePath			= CurrentPath + "\\Image\\Pin1\\";
+	m.FilePath.CCDImageBmpPath		= CurrentPath + "\\Image\\Images\\";	
+	m.FilePath.ImagePath			= CurrentPath + "\\Image\\";									// Image
+//	m.FilePath.Pin1ImagePath		= CurrentPath + "\\Image\\Pin1\\";
 
 	//
 	m.FilePath.SystemPath			= CurrentPath + "\\System\\";

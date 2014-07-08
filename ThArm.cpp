@@ -3749,9 +3749,19 @@ void CThArm::NextStatus()
 		f.CWinMessage( "Arm:enToHomeEnd", theApp.enDArm );
 		{
 			m_ZWithIC = CheckArmZVaccSensor();
-			
+			int iStart = ::GetTickCount();
+		
 			if( m_ZWithIC )
 			{
+				//
+				COleDateTime time = COleDateTime::GetCurrentTime();
+				m.m_DeviceInfo.csDeviceID.Format("%d%02d%02d%02d%02d%02d",
+					time.GetYear(),
+					time.GetMonth(),
+					time.GetDay(),
+					time.GetHour(),
+					time.GetMinute(),
+					time.GetSecond());
 				m_lArmRetryCounter = 0;
 				theApp.m_InputTray.LocationDone();			// Pick OK
 				m_bStatus = enRotatorInCheckSetting;
@@ -4631,7 +4641,8 @@ void CThArm::NextStatus()
 			{
 				theApp.m_tArm.ArmLog = theApp.m_tInserter.TestSiteLog;
 				theApp.m_tInserter.ClearTestSiteLog();
-
+				m.m_DeviceInfo.csDeviceID = _T("");
+				m_lArmRetryCounter = 0;
 				// Shuttle Pick IC OK..
 				m_bStatus = enRotatorOutCheckSetting;
 			}
@@ -4990,12 +5001,20 @@ void CThArm::NextStatus()
 			m_bStatus = enRepeatInToHomeEndEnd;
 		}
 		break;
-	case enRepeatInToHomeEndEnd:
+	case enRepeatInToHomeEndEnd: 
 		f.CWinMessage( "Arm:enRepeatInToHomeEnd", theApp.enDArm );
 		{
 			m_ZWithIC = CheckArmZVaccSensor();	
 			if( m_ZWithIC )
 			{
+				COleDateTime time = COleDateTime::GetCurrentTime();
+				m.m_DeviceInfo.csDeviceID.Format("%d%02d%02d%02d%02d%02d",
+					time.GetYear(),
+					time.GetMonth(),
+					time.GetDay(),
+					time.GetHour(),
+					time.GetMinute(),
+					time.GetSecond());
 				m_lArmRetryCounter = 0;
 				RepeatMationInputDone();
 				m_bStatus = enRotatorInCheckSetting;

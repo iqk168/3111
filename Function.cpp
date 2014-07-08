@@ -1827,6 +1827,9 @@ void CFunction::LotDoneClearInfo()
 	m.LotInfo.LotInfoOperator		= "";
 	m.LotInfo.LotInfoProgramerID	= "";
 	m.LotInfo.LotInfoIsLotStart 	= 0;
+	m.m_RemoteTestEvent = enLotDone;
+	if(m.m_TestInterface.m_bRemoteMode)
+		f.RemoteSendTestEvent(m.m_RemoteTestEvent);
 }
 void CFunction::LotDoneClearSetting()
 {
@@ -2804,6 +2807,10 @@ void CFunction::LoadSystemSetting()
 	GetSetting(csFile, "Setting", "Enable CCD Pin1",					m.Setting.m_bEnableCCDPin1 );
 	GetSetting(csFile, "Setting", "Enable CCD Socket",					m.Setting.m_bEnableCCDSocket );
 	GetSetting(csFile, "Setting", "Enable CCD Log IC",					m.Setting.m_bEnableCCDLogICImage );
+	//3111.System 的Setting新增Enable Socket CCD Detect Double=1
+	//	與Enable Pin1 CCD Detect Double = 1
+	GetSetting(csFile, "Setting", "Enable Socket CCD Detect Double",			m.Setting.m_bSocketCCDDoubleDetect );	
+	GetSetting(csFile, "Setting", "Enable Pin1 CCD Detect Double",			m.Setting.m_bPin1CCDDoubleDetect );	
 
 	// Remote Control
 	GetSetting(csFile, "Setting", "Enable Remote Control",				m.Setting.m_bEnableRemoteControl );
@@ -6151,102 +6158,102 @@ void CFunction::SendAlarmMail(int iCode, CString csDesc)
 }
 ///////////////////////////////////////////////////////////
 // CCD Function
-void CFunction::InitCCD()
-{	
-	// Create Backup Folder
-	f.AutoCreateFolder( m.FilePath.CCDImageBackPath );
-
-	// Init CCD Device
-	bool bInitCCDOK			= true;	
-	bool bInitSocketCCDOK	= true;
-	bool bInitPin1CCDOK		= true;
-	if( m.Setting.m_bEnableCCDPin1 == 1 || m.Setting.m_bEnableCCDSocket == 1 || m.Setting.m_bEnableCCDLogICImage == 1 )
-	{
-		int iCCDCount = 0;
-		iCCDCount = m.m_Vision.UpdateCameraList();
-
-		if( iCCDCount > 0 )
-		{
-			// CCD Pin1 
-			if( m.Setting.m_bEnableCCDPin1 == 1 || m.Setting.m_bEnableCCDLogICImage == 1 )
-			{
-				if( m.m_Vision.Open( m.m_CCDPin1Control.iCCDUse ) )
-				{
-					// Open OK
-					CString csMsg = _T("");
-					csMsg.Format("CCD Pin1 Open Success");
-					f.DMsg.DMsg( csMsg );					
-				}		
-				else
-				{
-					// Open Fail
-					CString csMsg = _T("");
-					csMsg.Format("Open Pin1 CCD Fail.");
-					f.DMsg.DMsg( csMsg + _DMsgMark, false );
-					bInitPin1CCDOK = false;
-#ifdef _Demo
-#else				
-					if( m.Setting.m_bEnableProgramInitialStart == 1 )
-					{
-					}
-					else
-						AfxMessageBox( csMsg );
-#endif
-				}//ccd pin1 open fail
-			}
-
-			// CCD Socket
-			if( m.Setting.m_bEnableCCDSocket == 1 )
-			{
-				if( m.m_Vision.Open( m.m_CCDSocketControl.iCCDUse ) )
-				{
-					// Open OK
-					CString csMsg = _T("");
-					csMsg.Format("CCD Socket Open Success");
-					f.DMsg.DMsg( csMsg );					
-				}		
-				else
-				{
-					// Open Fail
-					CString csMsg = _T("");
-					csMsg.Format("Open Socket CCD Fail.");
-					bInitSocketCCDOK = false;
-					f.DMsg.DMsg( csMsg + _DMsgMark, false );
-#ifdef _Demo
-#else
-					if( m.Setting.m_bEnableProgramInitialStart == 1 )
-					{
-					
-					}
-					else
-						AfxMessageBox( csMsg );
-#endif
-				}// ccd socket open fail
-			}
-		}
-		else
-		{
-			// 找不到任何一支 CCD
-			CString csMsg = _T("");
-			csMsg.Format("Can not find any CCD, Please re-install CCD and re-open 3111 S/W.!.");
-			bInitCCDOK = false;
-			f.DMsg.DMsg( csMsg + _DMsgMark, false );
-#ifdef _Demo
-#else
-			if( m.Setting.m_bEnableProgramInitialStart == 1 )
-			{
-				
-			}
-			else
-				AfxMessageBox( csMsg );
-#endif
-		}// no ccd
-	}
-	else
-	{
-		// No Enable CCD Function
-	}
-}
+// void CFunction::InitCCD()
+// {	
+// 	// Create Backup Folder
+// 	f.AutoCreateFolder( m.FilePath.CCDImageBackPath );
+// 
+// 	// Init CCD Device
+// 	bool bInitCCDOK			= true;	
+// 	bool bInitSocketCCDOK	= true;
+// 	bool bInitPin1CCDOK		= true;
+// 	if( m.Setting.m_bEnableCCDPin1 == 1 || m.Setting.m_bEnableCCDSocket == 1 || m.Setting.m_bEnableCCDLogICImage == 1 )
+// 	{
+// 		int iCCDCount = 0;
+// 		iCCDCount = m.m_Vision.UpdateCameraList();
+// 
+// 		if( iCCDCount > 0 )
+// 		{
+// 			// CCD Pin1 
+// 			if( m.Setting.m_bEnableCCDPin1 == 1 || m.Setting.m_bEnableCCDLogICImage == 1 )
+// 			{
+// 				if( m.m_Vision.Open( m.m_CCDPin1Control.iCCDUse ) )
+// 				{
+// 					// Open OK
+// 					CString csMsg = _T("");
+// 					csMsg.Format("CCD Pin1 Open Success");
+// 					f.DMsg.DMsg( csMsg );					
+// 				}		
+// 				else
+// 				{
+// 					// Open Fail
+// 					CString csMsg = _T("");
+// 					csMsg.Format("Open Pin1 CCD Fail.");
+// 					f.DMsg.DMsg( csMsg + _DMsgMark, false );
+// 					bInitPin1CCDOK = false;
+// #ifdef _Demo
+// #else				
+// 					if( m.Setting.m_bEnableProgramInitialStart == 1 )
+// 					{
+// 					}
+// 					else
+// 						AfxMessageBox( csMsg );
+// #endif
+// 				}//ccd pin1 open fail
+// 			}
+// 
+// 			// CCD Socket
+// 			if( m.Setting.m_bEnableCCDSocket == 1 )
+// 			{
+// 				if( m.m_Vision.Open( m.m_CCDSocketControl.iCCDUse ) )
+// 				{
+// 					// Open OK
+// 					CString csMsg = _T("");
+// 					csMsg.Format("CCD Socket Open Success");
+// 					f.DMsg.DMsg( csMsg );					
+// 				}		
+// 				else
+// 				{
+// 					// Open Fail
+// 					CString csMsg = _T("");
+// 					csMsg.Format("Open Socket CCD Fail.");
+// 					bInitSocketCCDOK = false;
+// 					f.DMsg.DMsg( csMsg + _DMsgMark, false );
+// #ifdef _Demo
+// #else
+// 					if( m.Setting.m_bEnableProgramInitialStart == 1 )
+// 					{
+// 					
+// 					}
+// 					else
+// 						AfxMessageBox( csMsg );
+// #endif
+// 				}// ccd socket open fail
+// 			}
+// 		}
+// 		else
+// 		{
+// 			// 找不到任何一支 CCD
+// 			CString csMsg = _T("");
+// 			csMsg.Format("Can not find any CCD, Please re-install CCD and re-open 3111 S/W.!.");
+// 			bInitCCDOK = false;
+// 			f.DMsg.DMsg( csMsg + _DMsgMark, false );
+// #ifdef _Demo
+// #else
+// 			if( m.Setting.m_bEnableProgramInitialStart == 1 )
+// 			{
+// 				
+// 			}
+// 			else
+// 				AfxMessageBox( csMsg );
+// #endif
+// 		}// no ccd
+// 	}
+// 	else
+// 	{
+// 		// No Enable CCD Function
+// 	}
+// }
 bool CFunction::ManualVacc(unsigned char* Vacc, unsigned char* pSensor, double dTimeout )
 {
 	// Note : This function for Pick IC.
@@ -8707,28 +8714,174 @@ void CFunction::RemoteSetStatus(int iStatus, int iCode)
 	m.m_TestInterface.SetStatus(iStatus, iCode);
 }
 
-void CFunction::RemoteSendTestSiteStatus(long InsertStatus)
+void CFunction::RemoteSendTestEvent(long TestEvent)
 {
-	
 	CString csMsg = _T("");
-	if(m.m_singleSocket != NULL)
+	if(m.m_TestInterface.m_bRemoteMode) // 有連線才傳資訊
 	{
-		//狀態轉字串
-		if(InsertStatus == enError)
-			csMsg.Format("<<*%%GETSITESTATUS%%ERROR>>");
-		else if(InsertStatus == enManual)
-			csMsg.Format("<<*%%GETSITESTATUS%%MANUAL>>");
-		else if(InsertStatus == enTesting)
-			csMsg.Format("<<*%%GETSITESTATUS%%TESTING>>");
-		else if(InsertStatus == enDeviceInTestsite)
-			csMsg.Format("<<*%%GETSITESTATUS%%DEVICEINTESTSITE>>");
-		else if(InsertStatus == enDeviceInSocket)
-			csMsg.Format("<<*%%GETSITESTATUS%%DEVICEINSOCKET>>");
-		else if(InsertStatus == enDeviceOutSocket)
-			csMsg.Format("<<*%%GETSITESTATUS%%DEVICEOUTSOCKET>>");
-		else if(InsertStatus == enNoDevice)
-			csMsg.Format("<<*%%GETSITESTATUS%%NODEVICE>>");
+		if(TestEvent == enSOT)
+			csMsg.Format("<<*%%TESTEVENT%%%s>>",m.m_DeviceInfo.csDeviceID);
+		else if(TestEvent == enLotStart)
+			csMsg.Format("<<*%%TESTEVENT%%LOTSTART>>");
+		else if(TestEvent == enLotDone)
+			csMsg.Format("<<*%%TESTEVENT%%LOTDONE>>");
+		else//Test Event Idle
+			csMsg.Format("<<*%%TESTEVENT%%NAK>>");
 		//儲存到Array 
 		m.m_TestInterface.AddReplyCmd(csMsg);
 	}
+}
+
+void CFunction::LiveReflash()
+{
+	if( theApp.m_pWndVisionSetup == NULL )
+		return;
+	
+	CString live = "";
+	
+	// 將功能切給 CCD 一般模式的表單, 與 CCD Orc 模式的表單
+	if( theApp.m_pWndVisionSetup->GetSafeHwnd() != NULL )
+	{
+		::SendMessage(theApp.m_pWndVisionSetup->GetSafeHwnd(), 
+			WM_CCD_LIVE, (WPARAM)&live , (LPARAM)&live );
+	}
+	
+	if( theApp.m_pWndVisionOrcSetup->GetSafeHwnd() != NULL )
+	{
+		::SendMessage(theApp.m_pWndVisionOrcSetup->GetSafeHwnd(), 
+			WM_CCD_LIVE, (WPARAM)&live , (LPARAM)&live );
+	}
+}
+
+static CMutex CCDMutexLog;
+void CFunction::CCDLog(CString csLog)
+{
+	CSingleLock Lock(&CCDMutexLog);
+	Lock.Lock();
+	
+	CString cs;
+	CString cstime;
+	CTime time = CTime::GetCurrentTime();
+	cs.Format("%s, %s\r\n", time.Format("%m/%d %H:%M:%S"), csLog);
+	cstime.Format("cs %s",time.Format("%y-%m-%d"));
+	
+	CFile file;
+	
+	file.Open(".\\Log\\CCD_"+cstime+".txt", CFile::modeCreate | CFile::modeWrite
+		| CFile::modeNoTruncate | CFile::shareDenyNone, NULL);
+	
+	file.SeekToEnd();
+	
+	file.Write(cs.GetBuffer(0), cs.GetLength());
+	file.Close();
+	
+	Lock.Unlock();
+}
+
+void CFunction::LoadSocketPatternSetting()
+{
+	CString csFile;
+	csFile = m.FilePath.SocketImagePath + m.UI.SocketPatternName + "\\" + _ScoketSettingInfo;
+	
+	f.GetSetting(csFile, "Source Image", "X",			m.CSC.iMatchROIX );
+	f.GetSetting(csFile, "Source Image", "Y",			m.CSC.iMatchROIY );
+	f.GetSetting(csFile, "Source Image", "Width",		m.CSC.iMatchWidth );
+	f.GetSetting(csFile, "Source Image", "Height",		m.CSC.iMatchHeight );
+	f.GetSetting(csFile, "Source Image", "Score",		m.CSC.dMatchMinScore );
+}
+void CFunction::LoadVisionProfile()
+{
+	if( m.Setting.m_bCCD == 1 && m.TraySpec.VisionPatternName != "" )
+		m.CCD.Load(m.TraySpec.VisionPatternName);
+	else
+		; // No Enable CCD
+}
+bool CFunction::InitCCDSocket()
+{
+	// 建立相關目錄
+	AutoCreateFolder( m.FilePath.ImagePath );
+	AutoCreateFolder( m.FilePath.SocketImagePath );
+	
+	//
+	bool bInitCCDSocketOK = true;
+	
+	//
+	int iCCDCount = 0;
+	iCCDCount = m.m_VisionMatch.UpdateCameraList();
+	if( iCCDCount > 0 )
+	{
+		if( m.m_VisionMatch.Open(m.m_CCDSocketControl.iCCDUse) )
+		{
+			CString csMsg = _T("");
+			csMsg = "Open Socket CCD Success";
+			f.DMsg.DMsg( csMsg );
+		}
+		else
+		{
+			// 
+			CString csMsg = _T("");
+			csMsg.Format("Open Socket CCD Fail.");
+			bInitCCDSocketOK = false;
+			
+			//
+			f.DMsg.DMsg( csMsg + _DMsgMark, false );
+			if( m.Setting.m_bEnableProgramInitialStart == 0 )
+				AfxMessageBox( csMsg );
+		}
+	}
+	else
+	{
+		// 找不到任何一支 CCD
+		CString csMsg = _T("");
+		csMsg.Format("Can not Find Any Socket CCD, Please re-install Socket CCD and Re-Open 3111 S/W.!.");
+		bInitCCDSocketOK = false;
+		
+		//
+		f.DMsg.DMsg( csMsg + _DMsgMark, false );
+		if( m.Setting.m_bEnableProgramInitialStart == 0 )
+			AfxMessageBox( csMsg );
+	}
+	
+	return bInitCCDSocketOK;
+}
+
+bool CFunction::InitCCDPin1()
+{
+	// 建立相關目錄
+	AutoCreateFolder( m.FilePath.ImagePath );
+	AutoCreateFolder( m.FilePath.SocketImagePath );
+	//
+	bool bInitCCDPin1OK = true;
+	//
+//	int iCCDCount = 0;
+// 	iCCDCount = m.m_VisionMatch.UpdateCameraList();
+// 	if( iCCDCount > 0 ){
+		if( m.m_VisionMatch.Open(m.m_CCDPin1Control.iCCDUse) ){
+			CString csMsg = _T("");
+			csMsg = "Open Pin1 CCD Success";
+			f.DMsg.DMsg( csMsg );
+		}
+		else{
+			// 
+			CString csMsg = _T("");
+			csMsg.Format("Open Pin1 CCD Fail.");
+			bInitCCDPin1OK = false;
+			//
+			f.DMsg.DMsg( csMsg + _DMsgMark, false );
+			if( m.Setting.m_bEnableProgramInitialStart == 0 )
+				AfxMessageBox( csMsg );
+		}
+//	}
+// 	else{
+// 		// 找不到任何一支 CCD
+// 		CString csMsg = _T("");
+// 		csMsg.Format("Can not Find Any Pin1 CCD, Please re-install Pin1 CCD and Re-Open 3111 S/W.!.");
+// 		bInitCCDPin1OK = false;
+// 		
+// 		//
+// 		f.DMsg.DMsg( csMsg + _DMsgMark, false );
+// 		if( m.Setting.m_bEnableProgramInitialStart == 0 )
+// 			AfxMessageBox( csMsg );
+// 	}	
+	return bInitCCDPin1OK;
 }

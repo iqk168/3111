@@ -201,6 +201,23 @@ BOOL CDeerDlg::OnInitDialog()
 	SetIcon(m_hIcon, TRUE);			// Set big icon
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
+	// Socket CCD
+	if( m.Setting.m_bSocketCCDDoubleDetect == 1 )
+	{
+		if( !f.InitCCDSocket() )
+			m.Setting.m_bSocketCCDDoubleDetect = 0;			
+		// 如果 CCD 啟動失敗, 那麼就關掉 CCD Socket 的功能
+		TRACE("# InitSokcetCCD\n");
+	}
+	// Pin1 CCD
+	if( m.Setting.m_bPin1CCDDoubleDetect == 1 )
+	{
+		if( !f.InitCCDPin1() )
+			m.Setting.m_bPin1CCDDoubleDetect = 0;			
+		// 如果 CCD 啟動失敗, 那麼就關掉 CCD Socket 的功能
+		TRACE("# InitPin1CCD\n");
+	}
+
 	// Create Thread
 	theApp.m_tArm.CreateThread();							TRACE("# m_tArm\n");
 	theApp.m_tInspect.CreateThread();						TRACE("# m_tInspect\n");

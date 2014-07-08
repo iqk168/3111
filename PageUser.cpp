@@ -717,10 +717,12 @@ void CPageUser::OnSummaryReport()
 {
 	CDlgSummaryReport dlg;
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeUserPageSummaryReport);	// Add Event
 }
 
 void CPageUser::OnManualContact() 
 {
+	f.m_Log.AddEvent(enCodeUserPageManualContact);	// Add Event
 	// 1.0Ah
 #ifdef _Demo
 	CDlgManualContact dlg;
@@ -746,13 +748,15 @@ void CPageUser::OnInterfaceTesting()
 {
 	CDlgTestTesting dlg;
 	theApp.m_DlgTesting = &dlg;
-	dlg.DoModal();	
+	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeUserPageInterfaceTest);	// Add Event
 }
 
 void CPageUser::OnTrayMapReport() 
 {
 	CDlgTrayMapReport dlg;
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeUserPageTrayMapReport);	// Add Event
 }
 
 void CPageUser::OnTsVacc() 
@@ -772,6 +776,7 @@ void CPageUser::OnTsVacc()
 
 	// Note: m.TraySkip.TestSiteVacc == 0 表示會 Direct Contact, 要先關掉 
 	// 如果 m.TraySkip.TestSiteVacc == 1 表示會 Driect Contact 要持續開 Vacc
+	f.m_Log.AddEvent(enCodeUserPageTestSiteVcc);	// Add Event
 }
 
 void CPageUser::OnTestResult() 
@@ -820,4 +825,5 @@ void CPageUser::OnSltProtocol()
 	CDlgSLTProtocol dlg;
 	theApp.m_DlgSLTProtocol = &dlg;
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeUserPageSLTProtocol);	// Add Event
 }

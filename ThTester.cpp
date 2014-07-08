@@ -566,6 +566,8 @@ void CThTester::RepeatTrayCurrentTestICClear()
 {
 	CString csCurrentTestIC = _T("");
 	csCurrentTestIC = "--";
+	m.m_DeviceInfo.pICLoaction.x = 0; 
+	m.m_DeviceInfo.pICLoaction.y = 0; 	
 	m.Page.Run.m_wndCurrentRepeatTrayStatus.SetWindowText( csCurrentTestIC );
 }
 void CThTester::RepeatTrayCurrentTestIC()
@@ -578,7 +580,6 @@ void CThTester::RepeatTrayCurrentTestIC()
 		csTray = "Tray1";
 	else
 		csTray = "Tray2";
-
 	// IC
 	CString csICLocation = _T("");
 	int iBooking = TesterLog.iBooking;
@@ -591,6 +592,10 @@ void CThTester::RepeatTrayCurrentTestIC()
 	// Show Information
 	csCurrentTestIC.Format("%s, %s", csTray, csICLocation );
 	m.Page.Run.m_wndCurrentRepeatTrayStatus.SetWindowText( csCurrentTestIC );
+	m.m_DeviceInfo.iTrayNo = TesterLog.iTray;
+	m.m_DeviceInfo.pICLoaction.x = iX; 
+	m.m_DeviceInfo.pICLoaction.y = iY; 	
+	
 }
 int CThTester::GetPassFailValue(CString csBin)
 {
@@ -1519,8 +1524,8 @@ void CThTester::NextStatus()
 				m.InterLock.TestingGo	= false;
 				m.InterLock.TestingOK	= false;
 				m.InterLock.Testing		= true;
-
 				m_bStatus = enTestStart;
+			
 			}
 			else
 				m_bStatus = enIdle;
@@ -1580,13 +1585,12 @@ void CThTester::NextStatus()
 		f.CWinMessage( "Arm:enFTTestEnd", theApp.enDTester );
 		{
 			m_bStatus = enIdle;
-
 			//
 			theApp.m_tInserter.TestSiteLog = theApp.m_tTester.TesterLog;
 			theApp.m_tTester.ClearTesterLog();
-
 			// Testi OK
-			m.InterLock.TestingOK = true;		
+			m.InterLock.TestingOK = true;	
+
 		}
 		break;
 	}
@@ -1728,14 +1732,17 @@ END_MESSAGE_MAP()
 
 void CThTester::FTTestingRemoteMode()
 {
-	//SOT
-	ps.SendEvent();
-	// Clear TestResult
-	ps.SetTestResult("");
 	CString csCode = _T("");
-	//TESTRESULT
 	if(m.Site.iRunMode == theApp.enOnLine )
 	{
+	
+
+		// Clear TestResult
+		ps.SetTestResult("");
+	
+		//SOT
+		ps.TestEvent();
+
 		while(1)
 		{
 			ps.GetTestResult(csCode);

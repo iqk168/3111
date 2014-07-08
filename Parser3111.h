@@ -12,10 +12,8 @@
 class CParser3111  
 {
 public:
-	CString TestEvent();
-	CString Location();
-	CString ErrorMessage();
-	CString SendEvent();
+
+	CString SaveSetup(CString msg);
 	CString GetSiteStatus();
 	CString GetStatus();
 	CString GetSiteSetTemp();
@@ -43,6 +41,7 @@ public:
 	CString Disconnect();
 	CString Start();
 	CString Connect();
+	void TestEvent();		//由Handler 發送
 	void GetTestResult(CString &msg);		//這個不是命令
 	CParser3111();
 	virtual ~CParser3111();

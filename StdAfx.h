@@ -104,6 +104,12 @@ enum enErrorCode
 	enCodeUserPageDeviceSetup				= 0xe0,  // 224
 	enCodeUserPageManualContact				= 0xe1,  // 225
 	enCodeUserPageCategorySetup				= 0xe2,  // 226
+	enCodeUserPageSummaryReport				= 0xe3,	 // 227
+	enCodeUserPageInterfaceTest				= 0xe4,	 // 228
+	enCodeUserPageTrayMapReport				= 0xe5,	 // 229
+	enCodeUserPageTestSiteVcc				= 0xe6,	 // 230
+	enCodeUserPageSLTProtocol				= 0xe7,	 // 231	
+
 	
 	// #2: Setup Page
 	enCodeSetupPageOffset					= 0xf0,	 // 240	
@@ -118,7 +124,7 @@ enum enErrorCode
 	enCodeSetupPageSLTProgram				= 0xf9,	 // 249
 	enCodeSetupPageSiteSetting				= 0xfa,	 // 250
 	enCodeSetupPageTrayFile					= 0xfb,  // 251
-	enCodeSetupPageCCDSetup					= 0xfc,  // 252
+	enCodeSetupPagePin1CCD					= 0xfc,  // 252
 	enCodeSetupPageATCMoudle				= 0xfd,  // 253
 	enCodeSetupPageFunction					= 0xfe,  // 254
 	enCodeSetupPageInputTray				= 0xff,  // 255
@@ -126,6 +132,14 @@ enum enErrorCode
 	enCodeSetupPageLoopTest					= 0x101, // 257
 	enCodeSetupPageLoopTestMap				= 0x102, // 258
 	enCodeSetupPageCategorySetup			= 0x103, // 259
+	enCodeSetupPageSocketCCD				= 0x104,
+	enCodeSetupPageIntetfaceTest			= 0x105,
+	enCodeSetupPageRemoteInput				= 0x106,
+	enCodeSetupPageTemperature				= 0x107,
+	enCodeSetupPageAtcModule				= 0x108,
+	enCodeSetupPageRepeatTray				= 0x109,
+	enCodeSetupPageTowerSetting				= 0x10a,
+	enCodeSetupPageInterfaceSetting			= 0x10b,
 	
 	// #3: Engineer Page
 	enCodeEngPageSpeed						= 0x118, // 280
@@ -300,7 +314,6 @@ enum enRemoteTestEvent
 	enSOT = 1,
 	enLotStart = 2,
 	enLotDone = 3,
-
 };
 
 

@@ -28,15 +28,16 @@ void CDlgSocketVisionCam::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
 	//{{AFX_DATA_MAP(CDlgSocketVisionCam)
-	DDX_Control(pDX, IDOK, m_btnOK);
-	DDX_Control(pDX, IDCANCEL, m_btnCancel);
-	DDX_Control(pDX, IDC_CAM_LIST, m_listCam);
+	DDX_Control(pDX, IDOK,			m_btnOK);
+	DDX_Control(pDX, IDCANCEL,		m_btnCancel);
+	DDX_Control(pDX, IDC_CAM_LIST,	m_listCam);
 	//}}AFX_DATA_MAP
 }
 
 
 BEGIN_MESSAGE_MAP(CDlgSocketVisionCam, CDialog)
 	//{{AFX_MSG_MAP(CDlgSocketVisionCam)
+
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -45,7 +46,6 @@ END_MESSAGE_MAP()
 
 BOOL CDlgSocketVisionCam::PreTranslateMessage(MSG* pMsg) 
 {
-	// z avoid ESC / Enter to crash the software
 	if(pMsg->message  == WM_KEYDOWN)   
 	{
 		int nVirtKey = (int)pMsg->wParam;    
@@ -53,7 +53,7 @@ BOOL CDlgSocketVisionCam::PreTranslateMessage(MSG* pMsg)
 			return   TRUE;   
 		if( nVirtKey == VK_RETURN )   
 			return   TRUE;   
-	}		
+	}	
 	return CDialog::PreTranslateMessage(pMsg);
 }
 
@@ -62,12 +62,11 @@ BOOL CDlgSocketVisionCam::OnInitDialog()
 	CDialog::OnInitDialog();
 	
 	// init button 
-	m_btnOK.SetIcon(IDI_OK);
-
-	m_btnOK.SetAlign(CButtonST::ST_ALIGN_VERT);
+	m_btnOK.SetIcon(IDI_OK);;
+	m_btnOK.SetAlign(CButtonST::ST_ALIGN_VERT);;
 	m_btnOK.SetFlat(FALSE);
-
-	m_btnCancel.SetIcon(IDI_CANCEL);;
+	
+	m_btnCancel.SetIcon(IDI_CANCEL);
 	m_btnCancel.SetAlign(CButtonST::ST_ALIGN_VERT);
 	m_btnCancel.SetFlat(FALSE);
 
@@ -77,7 +76,7 @@ BOOL CDlgSocketVisionCam::OnInitDialog()
 	return TRUE;  // return TRUE unless you set the focus to a control
 	              // EXCEPTION: OCX Property Pages should return FALSE
 }
-void CDlgSocketVisionCam::UpdataCamList()
+void CDlgSocketVisionCam::UpdataCamList() 
 {
 	//
 	m_listCam.ResetContent();
@@ -87,7 +86,7 @@ void CDlgSocketVisionCam::UpdataCamList()
 	m_DeviceList.RemoveAll();
 
 	// Get Data from Class
-	m.m_Vision.GetCameraList( m_DeviceList );
+	m.m_VisionMatch.GetCameraList( m_DeviceList );
 
 	//
 	int iDeviceSize = m_DeviceList.GetSize();
@@ -98,14 +97,16 @@ void CDlgSocketVisionCam::UpdataCamList()
 		m_listCam.AddString( cs );
 	}
 }
+void CDlgSocketVisionCam::OnCancel() 
+{
+	
+	CDialog::OnCancel();
+}
+
 void CDlgSocketVisionCam::OnOK() 
 {
 	
 	CDialog::OnOK();
 }
 
-void CDlgSocketVisionCam::OnCancel() 
-{
-	
-	CDialog::OnCancel();
-}
+

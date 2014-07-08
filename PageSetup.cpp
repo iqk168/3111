@@ -25,8 +25,8 @@
 #include "DlgRemoteControl.h"
 #include "DlgRemoteControlCustom.h"
 #include "DlgCategory.h"
-#include "DlgSocketMatch.h"
-#include "DlgVisionSetup.h"
+
+//#include "DlgVisionSetup.h"
 #include "DlgATCModuleCalibration.h"
 #include "DlgTestSetting.h"
 #include "DlgTestTesting.h"
@@ -38,6 +38,9 @@
 #include "DlgTemperature.h"
 #include "DlgRepeatTray.h"
 #include "DlgTowerSetting.h"
+
+#include "DlgPin1Match.h"
+#include "DlgSocketMatch.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -365,6 +368,8 @@ void CPageSetup::OnYieldCtrl()
 
 void CPageSetup::OnInterfaceTesting() 
 {
+	f.m_Log.AddEvent(enCodeSetupPageIntetfaceTest);	// Add Event
+
 	CDlgTestTesting dlg;
 	theApp.m_DlgTesting = &dlg;
 	dlg.DoModal();
@@ -1161,18 +1166,24 @@ void CPageSetup::OnCatoregy()
 
 	CDlgCategory dlg;
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeSetupPageCategorySetup);	// Add Event
 }
 
 void CPageSetup::OnCcdSocket() 
 {
 	CDlgSocketMatch dlg;
 	dlg.DoModal();
+		f.m_Log.AddEvent(enCodeSetupPageSocketCCD);	// Add Event
 }
 
 void CPageSetup::OnCcdSetup() 
 {
-	CDlgVisionSetup dlg;
-	dlg.DoModal();
+// 	CDlgVisionSetup dlg;
+// 	dlg.DoModal();
+	CDlgPin1Match dlg;
+ 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeSetupPagePin1CCD);	// Add Event
+
 }
 
 void CPageSetup::OnAtcCalibration() 
@@ -1197,6 +1208,8 @@ void CPageSetup::OnInterfaceSetting()
 	//
 	CDlgTestSetting dlg( csFile );
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeSetupPageInterfaceSetting);	// Add Event
+	
 }
 
 void CPageSetup::OnRemoteInput() 
@@ -1204,18 +1217,21 @@ void CPageSetup::OnRemoteInput()
 	CDlgRemoteControlCustomInput dlg(m.TraySpec.Column, m.TraySpec.Row );
 //	CDlgRemoteControlCustomInput dlg;
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeSetupPageRemoteInput);	// Add Event
 }
 
 void CPageSetup::OnAtcModule() 
 {
 	CDlgATCModuleFile dlg;
 	dlg.DoModal();
+f.m_Log.AddEvent(enCodeSetupPageAtcModule);	// Add Event
 }
 
 void CPageSetup::OnTemperature() 
 {
 	CDlgTemperature dlg;
 	dlg.DoModal();
+f.m_Log.AddEvent(enCodeSetupPageTemperature);	// Add Event
 }
 
 void CPageSetup::OnOutputTray() 
@@ -1450,10 +1466,12 @@ void CPageSetup::OnRepeatTray()
 {
 	CDlgRepeatTray dlg;
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeSetupPageRepeatTray);	// Add Event
 }
 
 void CPageSetup::OnTowerSetting() 
 {
 	CDlgTowerSetting dlg;
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeSetupPageTowerSetting);	// Add Event
 }

@@ -94,6 +94,18 @@ CString CParser3111::LoadSetup(CString msg)
 	csResult.Format("<<*%%LOADSETUP%%NAK:File extension incorrect>>");
 	return csResult;
 }
+
+CString CParser3111::SaveSetup(CString msg)
+{
+	CString csResult = _T("");
+	//將數值寫到檔案中
+	f.SaveTimer();
+	f.SaveSpeed();
+	f.SaveOffset();
+	csResult.Format("<<*%%SAVESETUP%%ACK>>");
+	return csResult;
+}
+
 CString CParser3111::Start()
 {
 	CString csResult = _T("");
@@ -496,30 +508,27 @@ CString CParser3111::GetStatus()
 CString CParser3111::GetSiteStatus()
 {
 	CString csResult = _T("");
-	csResult.Format("<<*%%GETSITESTATUS%%NODEVICE>>");
+	//狀態轉字串
+	if(theApp.m_tInserter.m_lRemoteStatus == enError)
+		csResult.Format("<<*%%GETSITESTATUS%%ERROR>>");
+	else if(theApp.m_tInserter.m_lRemoteStatus == enManual)
+		csResult.Format("<<*%%GETSITESTATUS%%MANUAL>>");
+	else if(theApp.m_tInserter.m_lRemoteStatus == enTesting)
+		csResult.Format("<<*%%GETSITESTATUS%%TESTING>>");
+	else if(theApp.m_tInserter.m_lRemoteStatus == enDeviceInTestsite)
+		csResult.Format("<<*%%GETSITESTATUS%%DEVICEINTESTSITE>>");
+	else if(theApp.m_tInserter.m_lRemoteStatus == enDeviceInSocket)
+		csResult.Format("<<*%%GETSITESTATUS%%DEVICEINSOCKET>>");
+	else if(theApp.m_tInserter.m_lRemoteStatus == enDeviceOutSocket)
+		csResult.Format("<<*%%GETSITESTATUS%%DEVICEOUTSOCKET>>");
+	else if(theApp.m_tInserter.m_lRemoteStatus == enNoDevice)
+		csResult.Format("<<*%%GETSITESTATUS%%NODEVICE>>");
 	return csResult;
 }
-
-CString CParser3111::SendEvent()
+void CParser3111::TestEvent()
 {
 	CString csResult = _T("");
-	return csResult;
-}
+	m.m_RemoteTestEvent = enSOT;
+	f.RemoteSendTestEvent(m.m_RemoteTestEvent);
 
-CString CParser3111::ErrorMessage()
-{
-	CString csResult = _T("");
-	return csResult;
-}
-
-CString CParser3111::Location()
-{
-	CString csResult = _T("");
-	return csResult;
-}
-
-CString CParser3111::TestEvent()
-{
-	CString csResult = _T("");
-	return csResult;
 }

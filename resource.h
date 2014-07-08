@@ -450,6 +450,9 @@
 #define IDD_DLG_SLT_PROTOCOL_SETTING    646
 #define IDD_DLG_SLT_PROTOCOL_MONITOR    647
 #define IDD_DLG_SLT_PROTOCOL_HELP       648
+#define IDD_DLG_PIN1VISION              649
+#define IDD_DLG_PIN1VISION_LIVE         651
+#define IDD_DLG_PIN1VISION_SETTING      652
 #define IDC_VIEW_TABLE                  1000
 #define IDC_MOTOR_MONTIOR               1001
 #define IDC_USER                        1002

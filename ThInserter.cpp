@@ -1918,8 +1918,6 @@ void CThInserter::NextStatus()
 	}// switch..
 
 
-	f.RemoteSendTestSiteStatus(m_lRemoteStatus);
-
 	if(f.IsPause())
 	{
 		if(m_bStatus != enIdle)

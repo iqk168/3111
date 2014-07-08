@@ -1,4 +1,8 @@
 [Setting]
+Enable CCD Pin1=1
+Enable CCD Socket=1
+Enable Socket CCD Detect Double = 1
+Enable Pin1 CCD Detect Double = 1
 Enavle Door Sensor=1
 Enable Alarm=1
 EnalbeIOMonitorRecovery=0
@@ -50,8 +54,6 @@ Enable Input Tray Tips=1
 Auto Skip=0
 Enable Remote IO=1
 Enable ATC Module=0
-Enable CCD Pin1=0
-Enable CCD Socket=0
 Enable Heater Module=1
 Enable TriTemp Module=0
 Enable Remote Control=1
@@ -78,7 +80,7 @@ Enable Torque Status=1
 Enable Double Check=1
 Enable Show Handler Status=1
 Repeat Tray Maxium=50
-Test Site Vacc=0
+Test Site Vacc=1
 Program Start Initial=1
 Enable CCD Log IC=0
 Enable Remote Module=1

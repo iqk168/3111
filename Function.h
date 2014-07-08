@@ -413,7 +413,7 @@ public:
 	bool InitDMsg();
 
 	// CCD Function
-	void InitCCD();
+//	void InitCCD();
 
 	// Mail Function
 	void InitMail();
@@ -689,6 +689,7 @@ public:
 public:
 
 
+
 	void LoadTitleExtend();
 	void SetTitleExtend(LPVOID p, int nType);
 
@@ -722,8 +723,17 @@ public:
 	void InitSLTProtocolHelp();
 	bool GetSLTProtocolHelp();	
 
-	// 1.0Av
-	void RemoteSendTestSiteStatus(long InsertStatus);
+	// 1.0Aw
+	void RemoteSendTestEvent(long TestEvent);
+
+public:
+	// CCD
+	void LiveReflash();
+	void CCDLog(CString csLog);
+	void LoadSocketPatternSetting();
+	void LoadVisionProfile();
+	bool InitCCDSocket();
+	bool InitCCDPin1();
 	
 protected:
 

@@ -3329,27 +3329,9 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 	{
 		csResult = ps.GetStatus();
 	}
-
-	//以下屬於主動傳送
 	else if(telegram.cmd == "GETSITESTATUS")
 	{
 		csResult = ps.GetSiteStatus();
-	}
-	else if(telegram.cmd == "SENDEVENT")
-	{
-		csResult = ps.SendEvent();
-	}
-	else if(telegram.cmd == "ERRORMESSAGE")
-	{
-		csResult = ps.ErrorMessage();
-	}
-	else if(telegram.cmd == "LOCATION")
-	{
-		csResult = ps.Location();
-	}
-	else if(telegram.cmd == "TESTEVENT")
-	{
-		csResult = ps.TestEvent();
 	}
 	return csResult;
 }

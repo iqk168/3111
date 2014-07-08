@@ -67,6 +67,9 @@
 // Remote Mode
 #include "DriverTestInterface.h"
 
+// CCD Socket Sensor
+#include "SocketVision.h"
+
 class CMember  
 {
 public:
@@ -154,7 +157,11 @@ public:
 		CString CCDImageProfilePath;		// CCD Pin1 Path
 		CString CCDImagePath;				// CCD Pin1 Image Path
 		CString CCDImageBackPath;			// CCD Pin1 Image Backup Path;
-		CString SocketImagePath;			// CCS Socket Setting file and Image Pattent				
+		CString SocketImagePath;			// CCS Socket Setting file and Image Pattent
+		//ÂX¥R·sªº¸ô®|
+		CString CCDImageBmpPath;	
+		CString CCDSocketPath;				// CCD Socket Sensor Path
+		CString ImagePath;					// CCD Socket Sensor Main Image folder
 		//
 		CString TorqueCtrlPath;				// Torque Control..
 		CString InputCustomInputPath;		// Input Tray Data File Path
@@ -207,6 +214,7 @@ public:
 		double Y_GearRation;
 		double Z_GearRation;	
 		double Inserter_GearRation;
+		double Shuttle_GearRation;	
 	} m_Ratio;
 	//////////////////////////////////////////////////////
 
@@ -788,7 +796,30 @@ public:
 
 	//
 	CCtrlVision	m_Vision;
-
+	CCtrlVision CCD;
+	// CCD Debug
+	struct tagCCDDebugValue{
+		int m_iXx;
+		int m_iYy;
+		int	m_iWidthh;
+		int m_iHeightt;
+		double m_dMinMatchScore;
+	} m_CCDDebugValue;
+	// CCD Debug
+	long lFailCount;
+	long lMatchCount;
+	bool bMatchTest;
+	// CCD Socket 
+	typedef struct tagCCDSocketParameter{
+		int	iMatchROIX;
+		int iMatchROIY;
+		int iMatchWidth;
+		int iMatchHeight;
+		double dMatchMinScore;
+	} tagCCDSocketParameter;
+	// CCD Socket Sensor
+	CSocketVision m_VisionMatch;
+	tagCCDSocketParameter CSC;
 	//
 //	CCtrlVisionMatch m_VisionMatch;
 
@@ -919,6 +950,20 @@ public:
 
 public:
 	CString m_RemoteTestResult;
+
+public:
+	long m_RemoteTestEvent;
+
+	
+	// 1.0Aw
+	struct tagDeviceInfo{
+		CString csDeviceID;
+		int		iOutTray;
+		int		iTrayNo;
+		CPoint	pICLoaction;
+	} m_DeviceInfo;
+	
+
 	
 };	
 
