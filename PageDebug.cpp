@@ -422,94 +422,109 @@ void CPageDebug::OnChangeFile()
 void CPageDebug::OnTorqueSetup() 
 {
 //	CDlgTorqueControl dlg;
+	f.m_Log.AddEvent(enCodeDebugPageTorqueSetup);	// Add Event
 	CDlgTorqueTool dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnTestProgram() 
 {
-
+	f.m_Log.AddEvent(enCodeDebugPageTestProgram);	// Add Event
 }
 
 void CPageDebug::OnMail() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageMail);	// Add Event
 	CDlgMail dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnInputTrayChip() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageInputTrayChip);	// Add Event
 
 }
 
 void CPageDebug::OnAlignment() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageAlignment);	// Add Event
 	CDlgAlignmentCheck dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnUph() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageUph);	// Add Event
 	CDlgUPHTool dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnBasicSetting() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageBasicSetting);	// Add Event
 	CDlgBasicSetting dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnCommunication() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageCommunication);	// Add Event
 	CDlgCommunication	dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnFilePath() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageFilePath);	// Add Event
 	CDlgFilePath dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnHandlerComSetting() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageHandlerComSetting);	// Add Event
 	CDlgHandlerComPort dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnTrayUi() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageTrayUi);	// Add Event
 	CDlgTrayMapUI dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnCcdCamera() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageCcdCamera);	// Add Event
 	CDlgCameraSetting dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnHotKey() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageHotKey);	// Add Event
 	CDlgHotKey dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnPw() 
 {
+	f.m_Log.AddEvent(enCodeDebugPagePw);	// Add Event
 	CDlgPasswordRead dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnAtcMonitor() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageAtcMonitor);	// Add Event
 	CDlgATCMonitor dlg;
 	dlg.DoModal();	
 }
 
 void CPageDebug::OnPidControl() 
 {
+	f.m_Log.AddEvent(enCodeDebugPagePidControl);	// Add Event
 	CDlgTorqueControl dlg;
 	dlg.DoModal();	
 }
@@ -1072,30 +1087,35 @@ void CPageDebug::OnShowWindow(BOOL bShow, UINT nStatus)
 
 void CPageDebug::OnPageFunction() 
 {
+f.m_Log.AddEvent(enCodeDebugPageFunction);	// Add Event
 	CDlgCustomPageFunction dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnManualEnable() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageManualEnable);	// Add Event
 	CDlgCustomMCFunction dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnRepeatTrayEnable() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageTrayEnable);	// Add Event
 	CDlgRepeatTrayEnable dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnTrayColor() 
 {
+	f.m_Log.AddEvent(enCodeDebugPageTrayColor);	// Add Event
 	CDlgTrayDef dlg;
 	dlg.DoModal();
 }
 
 void CPageDebug::OnArmLogic() 
 {
+		f.m_Log.AddEvent(enCodeDebugPageArmLogic);	// Add Event
 	CDlgArmLogICImage dlg;
 	dlg.DoModal();
 }

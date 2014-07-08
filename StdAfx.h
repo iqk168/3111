@@ -149,7 +149,9 @@ enum enErrorCode
 	enCodeEngPageAlignment					= 0x11c, // 284
 	enCodeEngPageEventLog					= 0x11d, // 285
 	enCodeEngPageCCDSetup					= 0x11e, // 286
-
+	enCodeEngPageContactCounter				= 0x11f, // 287
+	enCodeEngPageLoopTest					= 0x120, // 288
+	enCodeEngPageAlarmMail					= 0x121, // 289
 	// #4: Debug
 	enCodeDebugPageGearRation				= 0x12d, // 301
 	enCodeDebugPageLanguage					= 0x12e, // 302
@@ -161,6 +163,25 @@ enum enErrorCode
 	enCodeDebugPageAlignment				= 0x134, // 308
 	enCodeDebugPageTrayFile					= 0x135, // 309
 	enCodeDebugPageATCMonitor				= 0x136, // 310
+	enCodeDebugPageTorqueSetup				= 0x137,				
+	enCodeDebugPageTestProgram				= 0x138,
+	enCodeDebugPageMail						= 0x139,
+	enCodeDebugPageInputTrayChip			= 0x13a,
+	enCodeDebugPageUph						= 0x13b,
+	enCodeDebugPageBasicSetting				= 0x13c,
+	enCodeDebugPageCommunication			= 0x13d,
+	enCodeDebugPageFilePath					= 0x13e,
+	enCodeDebugPageHandlerComSetting		= 0x13f,
+	enCodeDebugPageTrayUi					= 0x140,
+	enCodeDebugPageCcdCamera				= 0x141,
+	enCodeDebugPageHotKey					= 0x142,
+	enCodeDebugPagePw						= 0x143,
+	enCodeDebugPageAtcMonitor				= 0x144,
+	enCodeDebugPagePidControl				= 0x145,
+	enCodeDebugPageManualEnable				= 0x146,
+	enCodeDebugPageTrayEnable				= 0x147,
+	enCodeDebugPageTrayColor				= 0x148,				
+	enCodeDebugPageArmLogic					= 0x149,
 /*
 	Timeout Base = 299
 	X	= 299 + 1 = 300

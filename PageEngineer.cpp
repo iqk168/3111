@@ -239,6 +239,7 @@ void CPageEngineer::OnContactCounter2()
 {
 	// 如果 dlg 設定 false, 那麼打開表單後, 就無法 Clear
 	// 如果 dlg 設定為 true, 那麼打開表單後, 就可以 Clear
+	f.m_Log.AddEvent(enCodeEngPageContactCounter);		// Add Event
 	CDlgContactCounter dlg(true);
 	dlg.DoModal();
 }
@@ -466,6 +467,7 @@ void CPageEngineer::ReDrawUI()
 
 void CPageEngineer::OnCcdDoubleDetect() 
 {
+	f.m_Log.AddEvent(enCodeEngPageCCDSetup);	// Add Event
 
 }
 
@@ -479,11 +481,12 @@ void CPageEngineer::OnShowWindow(BOOL bShow, UINT nStatus)
 
 void CPageEngineer::OnLoopTest() 
 {
-
+	f.m_Log.AddEvent(enCodeEngPageLoopTest);	// Add Event
 }
 
 void CPageEngineer::OnAlarmMail() 
 {
 	CDlgMail dlg;
 	dlg.DoModal();
+	f.m_Log.AddEvent(enCodeEngPageAlarmMail);	// Add Event
 }

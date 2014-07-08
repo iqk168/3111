@@ -550,3 +550,9 @@
 14.26.24.	Deer OnInitDialog
 14.26.24.	Deer OnInitDialog Menu OK
 14.26.26.	Deer Create Thread Finish
+15.45.36.	Deer Load txt Finish
+15.45.36.	Deer Load Motor Finish
+15.45.38.	Deer LoadFile Finish
+15.45.38.	Deer OnInitDialog
+15.45.38.	Deer OnInitDialog Menu OK
+15.45.41.	Deer Create Thread Finish
