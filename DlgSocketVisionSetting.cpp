@@ -441,6 +441,7 @@ void CDlgSocketVisionSetting::OnSocketvisionDelete()
 
 	// 整個資料夾砍掉
 	CString csOldF = GetSettingFileName();
+	m_listFileFolder.DeleteString(m_listFileFolder.GetCurSel());
 	DeleteOldFolder( csOldF );
 
 	// 更新列表
@@ -465,6 +466,8 @@ void CDlgSocketVisionSetting::DeleteOldFolder( CString csFileFolder)
 
 	// 刪除目錄	
 	RemoveDirectory( csFileFolderPath );
+
+
 }
 
 void CDlgSocketVisionSetting::CreateNewFolder(CString csFileFolder)

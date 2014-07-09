@@ -1,13 +1,13 @@
 //Current Pin1
 [CCD Control]
-Use ID=0
+Use ID=1
 Def ROI X=160
 Def ROI Y=120
 Def ROI W=320
 Def ROI H=240
 //Current Socket
 [CCD Control Socket]
-Use ID=1
+Use ID=0
 Def ROI X=160
 Def ROI Y=120
 Def ROI W=320

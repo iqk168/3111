@@ -133,8 +133,8 @@ BOOL CDlgPin1VisionSetting::OnInitDialog()
 	//
 	UpdataSettingList();
 
-	//
-	SetectDefault( m.UI.SocketPatternName );
+	//Jerome Change 20140709
+	SetectDefault( m.UI.Pin1PatternName );
 
 	return TRUE;  // return TRUE unless you set the focus to a control
 	              // EXCEPTION: OCX Property Pages should return FALSE
@@ -428,8 +428,8 @@ void CDlgPin1VisionSetting::OnSocketvisionDelete()
 		return;
 
 	// 
-	// 確認是否在使用中..
-	if( m.UI.SocketPatternName == GetSettingFileName() )
+	// 確認是否在使用中..//Jerome Change 20140709
+	if( m.UI.Pin1PatternName == GetSettingFileName() )
 	{
 		// 
 		CString csF = GetSettingFileName();
@@ -441,13 +441,14 @@ void CDlgPin1VisionSetting::OnSocketvisionDelete()
 
 	// 整個資料夾砍掉
 	CString csOldF = GetSettingFileName();
+	m_listFileFolder.DeleteString(m_listFileFolder.GetCurSel());
 	DeleteOldFolder( csOldF );
 
 	// 更新列表
 	UpdataSettingList();
 
-	// 重新選回第一個
-	SetectDefault( m.UI.SocketPatternName );	
+	// 重新選回第一個//Jerome Change 20140709
+	SetectDefault( m.UI.Pin1PatternName );	
 }
 
 void CDlgPin1VisionSetting::DeleteOldFolder( CString csFileFolder)

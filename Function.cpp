@@ -5691,6 +5691,8 @@ void CFunction::LoadSocketPattern()
 	CString csFile = _T("");
 	csFile = m.FilePath.UIPath;
 	GetSetting(csFile, "UI", "SOCKET PATTERN FILE",				m.UI.SocketPatternName );
+//Jerome Add 20140709
+	GetSetting(csFile, "UI", "PIN1 PATTERN FILE",				m.UI.Pin1PatternName );
 }
 //
 void CFunction::LoadMCEnable()
@@ -5838,6 +5840,9 @@ void CFunction::SaveSocketPattern()
 	CString csFile = _T("");
 	csFile = m.FilePath.UIPath;
 	SaveSetting(csFile, "UI", "SOCKET PATTERN FILE",			m.UI.SocketPatternName );
+//Jerome add 20140709
+	SaveSetting(csFile, "UI", "PIN1 PATTERN FILE",			m.UI.Pin1PatternName );
+
 }
 void CFunction::LoadContactForce()
 {
@@ -8788,6 +8793,14 @@ void CFunction::LoadSocketPatternSetting()
 	f.GetSetting(csFile, "Source Image", "Width",		m.CSC.iMatchWidth );
 	f.GetSetting(csFile, "Source Image", "Height",		m.CSC.iMatchHeight );
 	f.GetSetting(csFile, "Source Image", "Score",		m.CSC.dMatchMinScore );
+//Jerome Add 20140709
+	csFile = m.FilePath.CCDImagePath + m.UI.Pin1PatternName + "\\" + _ScoketSettingInfo;
+	f.GetSetting(csFile, "Source Image", "X",			m.CCDPin1.iMatchROIX );
+	f.GetSetting(csFile, "Source Image", "Y",			m.CCDPin1.iMatchROIY );
+	f.GetSetting(csFile, "Source Image", "Width",		m.CCDPin1.iMatchWidth );
+	f.GetSetting(csFile, "Source Image", "Height",		m.CCDPin1.iMatchHeight );
+	f.GetSetting(csFile, "Source Image", "Score",		m.CCDPin1.dMatchMinScore );
+	
 }
 void CFunction::LoadVisionProfile()
 {
@@ -8849,7 +8862,7 @@ bool CFunction::InitCCDPin1()
 {
 	// 建立相關目錄
 	AutoCreateFolder( m.FilePath.ImagePath );
-	AutoCreateFolder( m.FilePath.SocketImagePath );
+	AutoCreateFolder( m.FilePath.CCDImagePath);
 	//
 	bool bInitCCDPin1OK = true;
 	//

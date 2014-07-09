@@ -1,0 +1,6 @@
+[Source Image]
+X=160
+Y=75
+Width=465
+Height=367
+Score=0.700000000000000

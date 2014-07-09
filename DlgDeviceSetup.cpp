@@ -107,8 +107,9 @@ BOOL CDlgDeviceSetup::OnInitDialog()
 	// UpdataCurrent File
 	UpdataCurrentFile();
 
+//Jerome Add 20140709
 	// UpdataCurrent CCD Pin1 File (Profile)
-	UpdataCurrentFileCCD();
+//	UpdataCurrentFileCCD();
 
 	// If No use ccd pin1, disable it
 	LockUIForCCDPin1();
@@ -160,11 +161,10 @@ void CDlgDeviceSetup::UpdataCurrentFile()
 		m_cbxMappingFileList.SetWindowText(m.UI.FileMainMapping);
 		m_cbxTestSettingFileList.SetWindowText(m.UI.FileMainTestSetting);
 		m_cbxCCDSocketSettingFileList.SetWindowText(m.UI.SocketPatternName);
+//Jerome Add 20140709
+		m_cbxCCDSettingFileList.SetWindowText(m.UI.Pin1PatternName);
 	}
-	else
-	{
-
-	}
+	else{}
 }
 void CDlgDeviceSetup::UpdataCurrentFileCCD()
 {
@@ -253,7 +253,9 @@ void CDlgDeviceSetup::UpdateCCDSettingFileList()
 
 	//
 	CFileFind finder;											//建立搜尋用的CFileFind物件
-	BOOL bResult = finder.FindFile( csFilePath  + "*.*" );		//尋找第一個檔案
+//	BOOL bResult = finder.FindFile( csFilePath  + "*.*" );		//尋找第一個檔案
+//Jerome Add 20140709
+	BOOL bResult = finder.FindFile( m.FilePath.CCDImagePath + "*.*" );	//尋找第一個檔案
 	while(bResult)
 	{
 		bResult = finder.FindNextFile();						//尋找下一個檔案
@@ -328,9 +330,12 @@ void CDlgDeviceSetup::SaveTrayVision(CString csTrayFile, CString csVisiionPatter
 	f.SaveSetting(csFile, "Vision Pattern", "File",	csVisiionPattern);
 }
 void CDlgDeviceSetup::OnModifyParameter() 
-{
+{	
+//Jerome Change 20140709
+#ifndef _Demo 
 	if( !f.CheckEnaleChange() )
 		return;
+#endif
 
 	UpdateData();
 
@@ -351,31 +356,53 @@ void CDlgDeviceSetup::OnModifyParameter()
 	//////////////////////////////////////////////////////////
 
 	//////////////////////////////////////////////////////////
-	// CCD Pin1
-	CString csCCDPin1Profile = _T("");
-	int iCCDSel = m_cbxCCDSettingFileList.GetCurSel();
+	// CCD Pin1	Jerome Add 20140709
+	CString csCCDPin1 = _T("");
+	m_cbxCCDSettingFileList.GetWindowText( csCCDPin1 );
 	if( m.Setting.m_bEnableCCDPin1 == 1 )
 	{
-		if( m.m_TestSetting.m_CCDUse == 1 )
+		csCCDPin1.TrimLeft();
+		csCCDPin1.TrimRight();
+		if( csCCDPin1 != "" )
 		{
-			if(m_cbxCCDSettingFileList.GetCurSel() < 0)
-			{
-				CString csMsg = _T("");
-				csMsg.Format("Please select CCD Pin1 Profile");
-				AfxMessageBox( csMsg );
-				return;
-			}
-			else
-			{
-				m_cbxCCDSettingFileList.GetLBText( iCCDSel, csCCDPin1Profile );
-				CString csTrayFileName = _T("");
-				m_cbxFileList.GetWindowText(csTrayFileName);
-				// 儲存檔案到 TrayFile..
-				m.TraySpec.VisionPatternName = csCCDPin1Profile;
-				SaveTrayVision( csTrayFileName, csCCDPin1Profile );
-			}
+			// 儲存
+			m.UI.Pin1PatternName = csCCDPin1;
+			f.SaveSocketPattern();
+		}	
+		else
+		{
+			CString csMsg = _T("");
+			csMsg.Format("Please select CCD Pin1 File");
+			AfxMessageBox( csMsg );
+			return;
 		}
 	}
+
+//舊寫法
+// 	CString csCCDPin1Profile = _T("");
+// 	int iCCDSel = m_cbxCCDSettingFileList.GetCurSel();
+// 	if( m.Setting.m_bEnableCCDPin1 == 1 )
+// 	{
+// 		if( m.m_TestSetting.m_CCDUse == 1 )
+// 		{
+// 			if(m_cbxCCDSettingFileList.GetCurSel() < 0)
+// 			{
+// 				CString csMsg = _T("");
+// 				csMsg.Format("Please select CCD Pin1 Profile");
+// 				AfxMessageBox( csMsg );
+// 				return;
+// 			}
+// 			else
+// 			{
+// 				m_cbxCCDSettingFileList.GetLBText( iCCDSel, csCCDPin1Profile );
+// 				CString csTrayFileName = _T("");
+// 				m_cbxFileList.GetWindowText(csTrayFileName);
+// 				// 儲存檔案到 TrayFile..
+// 				m.TraySpec.VisionPatternName = csCCDPin1Profile;
+// 				SaveTrayVision( csTrayFileName, csCCDPin1Profile );
+// 			}
+// 		}
+// 	}
 	//////////////////////////////////////////////////////////
 
 	//////////////////////////////////////////////////////////
@@ -606,26 +633,32 @@ void CDlgDeviceSetup::ReDrawUI()
 }
 void CDlgDeviceSetup::LockUIForCCDPin1()
 {
+//Jerome Add 20140709
 	if( m.Setting.m_bEnableCCDPin1 == 1 )
-	{		
-		int iCCDUse = 0;
-		CString csFile = _T("");
-		int iSel = 0;
-		CString csTrayFile = _T("");
-		iSel = m_cbxFileList.GetCurSel();
-		if( iSel >= 0 )
-		{
-			m_cbxFileList.GetLBText( iSel, csTrayFile );
-			csTrayFile.Replace( _SubFileName2, "");
-			csTrayFile = csTrayFile + _SubTestSettingName2;
-			csFile = m.FilePath.TestSettingPath + csTrayFile;
-			f.GetSetting(csFile, "Test Extend", "CCD", iCCDUse );
-			if( iCCDUse == 1 )
-				m_cbxCCDSettingFileList.EnableWindow( TRUE );
-			else
-				m_cbxCCDSettingFileList.EnableWindow( FALSE );
-		}
-	}
+		m_cbxCCDSocketSettingFileList.EnableWindow( TRUE );
+	else
+		m_cbxCCDSocketSettingFileList.EnableWindow( FALSE );
+
+// 	if( m.Setting.m_bEnableCCDPin1 == 1 )
+// 	{		
+// 		int iCCDUse = 0;
+// 		CString csFile = _T("");
+// 		int iSel = 0;
+// 		CString csTrayFile = _T("");
+// 		iSel = m_cbxFileList.GetCurSel();
+// 		if( iSel >= 0 )
+// 		{
+// 			m_cbxFileList.GetLBText( iSel, csTrayFile );
+// 			csTrayFile.Replace( _SubFileName2, "");
+// 			csTrayFile = csTrayFile + _SubTestSettingName2;
+// 			csFile = m.FilePath.TestSettingPath + csTrayFile;
+// 			f.GetSetting(csFile, "Test Extend", "CCD", iCCDUse );
+// 			if( iCCDUse == 1 )
+// 				m_cbxCCDSettingFileList.EnableWindow( TRUE );
+// 			else
+// 				m_cbxCCDSettingFileList.EnableWindow( FALSE );
+// 		}
+// 	}
 }
 void CDlgDeviceSetup::LockUIForCCDSocket()
 {

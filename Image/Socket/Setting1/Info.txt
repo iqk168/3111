@@ -1,6 +1,6 @@
 [Source Image]
-X=60
-Y=26
-Width=162
-Height=122
+X=134
+Y=46
+Width=320
+Height=240
 Score=0.700000000000000

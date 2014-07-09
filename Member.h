@@ -335,6 +335,8 @@ public:
 		CString FileMainInterFaceTtl;				//目前的 Ttl 檔案
 		// CCD Socket 
 		CString SocketPatternName;					//目前使用的 CCD Socket 檔案
+		// CCD Pin1	Jerome Add 20140709
+		CString Pin1PatternName;					//目前使用的 CCD Pin1 檔案
 		// ATC Module 
 		CString ATCModuleMultiSV;					//目前使用的 ATC Module Multi SV檔案
 	} UI;
@@ -820,6 +822,9 @@ public:
 	// CCD Socket Sensor
 	CSocketVision m_VisionMatch;
 	tagCCDSocketParameter CSC;
+//Jerome Add 20140709
+	tagCCDSocketParameter CCDPin1;
+	
 	//
 //	CCtrlVisionMatch m_VisionMatch;
 

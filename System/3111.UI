@@ -9,6 +9,7 @@ TEST FILE=3X3.set
 TEST BASE FILE=
 SOCKET PATTERN FILE=Setting1
 ATC Module MultiSV File=
+PIN1 PATTERN FILE=12345
 [Lot Info]
 Lot Number=LotNo
 Lot Operater=Operator
