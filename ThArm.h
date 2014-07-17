@@ -83,6 +83,11 @@ public:
 		enHeaterWaitStable						= 0x530,	// Heater Wait Stable
 		enHeaterWaitStableEnd					= 0x540,	// Heater Wait Stable end
 
+		// Semi Auto 0x600
+		
+		
+		
+		
 		///////////////////////////////
 		// Rotator Output
 		enRotatorOutCheckSetting				= 0x710,	// Rotator check rotator setting.

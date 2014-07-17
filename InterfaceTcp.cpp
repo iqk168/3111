@@ -65,6 +65,7 @@ void CInterfaceTcp::OnAccept(int nErrorCode)
 	{
 		// Accept Fail
 	}
+	CAsyncSocket::OnAccept(nErrorCode);
 }
 
 void CInterfaceTcp::OnReceive(int nErrorCode) 

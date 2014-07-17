@@ -593,8 +593,8 @@ typedef struct tagTraySpec{
 
 ////////////////////////////////////////////////
 // 宣告 Software Setting 結構
-typedef struct tagSetting{
-
+typedef struct tagSetting
+{
 	int	  m_bA4P;		// if true application will use A4P Pansonic Driver.!
 	int	  m_bCCD;							// if true application will use CCD
 	int	  m_bSocketCCDDoubleDetect;				// if true application will user CCD Double Device Detect
@@ -714,7 +714,11 @@ typedef struct tagSetting{
 	int		m_bEnableRepeatTrayStatus;		// Show Repeat Tray Status
 	int		m_bEnableAutoSelLastTrayFile;	// Enable Auto Select TrayFile After Lot Done
 	int		m_bEnableAutoCopyLastLotInfo;	// Enable Auto Copy Last Information
-} tagSetting;
+	bool	m_bEnableSemiAuto;				// Enable SemiAuto
+	int		m_iSemiAutoIndex;				// SemiAuto IC Index
+	CString	m_csSemiAutoFileName;			// SemiAuto File Name
+
+}tagSetting;
 
 ////////////////////////////////////////////////
 // 宣告 Software Setting 結構
@@ -1354,6 +1358,8 @@ typedef struct tagTitleExtendNote{
 typedef struct tagRemoteCtrlFun{
 	int m_iAutoReplayEvent;
 } tagRemoteCtrlFun;
+
+
 
 
 

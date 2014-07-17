@@ -1011,6 +1011,7 @@
 #define IDC_O0_BIN15                    1139
 #define IDC_F_ATC_WITH_HEATER           1139
 #define IDC_M_SITE1                     1139
+#define IDC_RUN_MODE4                   1139
 #define IDC_MACHINE                     1140
 #define IDC_O1_BIN10                    1140
 #define IDC_F_ENABLE_PRE_HEATER         1140
@@ -3564,6 +3565,7 @@
 #define IDC_F_SET_LOT_DOWN              3022
 #define IDC_E_ETHERNET_PORT             3022
 #define IDC_STATIC_SERIAL_GRP           3023
+#define IDC_COMBO1                      3024
 #define IDC_T_RED                       3038
 #define IDC_T_YELLOW                    3039
 #define IDC_T_GREEN                     3040
@@ -3803,7 +3805,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        649
 #define _APS_NEXT_COMMAND_VALUE         32840
-#define _APS_NEXT_CONTROL_VALUE         3024
+#define _APS_NEXT_CONTROL_VALUE         3025
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

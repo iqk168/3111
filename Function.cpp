@@ -728,6 +728,11 @@ void CFunction::UpdateButtonState()
 		m.RemoteOutSet.BtnOneCycleOn	= false;	// 15	Set Panel One Cycel light on
 		m.OutSet.TestSiteSkip			= false;
 	}
+	CString csSemi = _T("");
+	if(m.Setting.m_bEnableSemiAuto)
+		csSemi	 = _T("(Semi)");
+	else
+		csSemi = _T("");
 
 	switch(m.Info.iStatus)
 	{
@@ -751,32 +756,32 @@ void CFunction::UpdateButtonState()
 	case theApp.enCycle:
 		m.Page.Run.m_wndRunStatus.SetNewBkColor(ST_GREEN);
 		m.Page.Run.m_wndRunStatus.SetNewTextColor(ST_BLACK);
-		m.Page.Run.m_wndRunStatus.SetNewText("Cycle");
+		m.Page.Run.m_wndRunStatus.SetNewText("Cycle" + csSemi);
 		break;
 	case theApp.enOneCycle:
 		m.Page.Run.m_wndRunStatus.SetNewBkColor(ST_YELLOW);
 		m.Page.Run.m_wndRunStatus.SetNewTextColor(ST_BLACK);
-		m.Page.Run.m_wndRunStatus.SetNewText("One Cycle");
+		m.Page.Run.m_wndRunStatus.SetNewText("One Cycle" + csSemi);
 		break;
 	case theApp.enCycleStop:
 		m.Page.Run.m_wndRunStatus.SetNewBkColor(ST_YELLOW);
 		m.Page.Run.m_wndRunStatus.SetNewTextColor(ST_BLACK);
-		m.Page.Run.m_wndRunStatus.SetNewText("Cycle Stop");
+		m.Page.Run.m_wndRunStatus.SetNewText("Cycle Stop" + csSemi);
 		break;
 	case theApp.enOverride:
 		m.Page.Run.m_wndRunStatus.SetNewBkColor(ST_YELLOW);
 		m.Page.Run.m_wndRunStatus.SetNewTextColor(ST_BLACK);
-		m.Page.Run.m_wndRunStatus.SetNewText("Override");
+		m.Page.Run.m_wndRunStatus.SetNewText("Override" + csSemi);
 		break;
 	case theApp.enOverrideStop:
 		m.Page.Run.m_wndRunStatus.SetNewBkColor(ST_YELLOW);
 		m.Page.Run.m_wndRunStatus.SetNewTextColor(ST_BLACK);
-		m.Page.Run.m_wndRunStatus.SetNewText("Override Stop");
+		m.Page.Run.m_wndRunStatus.SetNewText("Override Stop" + csSemi);
 		break;
 	case theApp.enOneCycleStop:
 		m.Page.Run.m_wndRunStatus.SetNewBkColor(ST_YELLOW);
 		m.Page.Run.m_wndRunStatus.SetNewTextColor(ST_BLACK);
-		m.Page.Run.m_wndRunStatus.SetNewText("Cycle Stop");
+		m.Page.Run.m_wndRunStatus.SetNewText("Cycle Stop" + csSemi);
 		break;
 	case theApp.enManual:
 		m.Page.Run.m_wndRunStatus.SetNewBkColor(ST_YELLOW);
@@ -791,7 +796,7 @@ void CFunction::UpdateButtonState()
 	default:
 		m.Page.Run.m_wndRunStatus.SetNewBkColor(ST_RED);
 		m.Page.Run.m_wndRunStatus.SetNewTextColor(ST_WHITE);
-		m.Page.Run.m_wndRunStatus.SetNewText("STOP");
+		m.Page.Run.m_wndRunStatus.SetNewText("STOP" + csSemi);
 		break;
 	}
 }
@@ -3005,6 +3010,9 @@ void CFunction::LoadUI()
 	GetSetting(csFile, "UI", "TEST BASE FILE",			m.UI.FileMainBaseTestSetting);			//目前的測試 BASE 檔案	
 	GetSetting(csFile, "UI", "MAPPING BASE FILE",		m.UI.FileMainBaseMapping );				//目前的 MAPPING BASE FILE 檔案 
 	GetSetting(csFile, "UI", "TRAY BASE FILE",			m.UI.FileBaseFile);						//目前的 TRAYTFILE BASE FILE 檔案 
+
+	GetSetting(csFile, "UI", "Semi Auto",				m.Setting.m_bEnableSemiAuto = false);						//目前的 TRAYTFILE BASE FILE 檔案 
+
 }
 void CFunction::SaveUI()
 {
@@ -3021,6 +3029,9 @@ void CFunction::SaveUI()
 	SaveSetting(csFile, "UI", "TEST BASE FILE",		m.UI.FileMainBaseTestSetting);				//目前的測試 BASE 檔案	
 	SaveSetting(csFile, "UI", "MAPPING BASE FILE",	m.UI.FileMainBaseMapping );					//目前的 MAPPING BASE FILE 檔案 
 	SaveSetting(csFile, "UI", "TRAY BASE FILE",		m.UI.FileBaseFile);							//目前的 TRAYTFILE BASE FILE 檔案 
+
+	SaveSetting(csFile, "UI", "Semi Auto",			m.Setting.m_bEnableSemiAuto );		
+
 }
 /////////////////////////////////////////////////////
 // LoadFile Function.

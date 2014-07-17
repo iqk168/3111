@@ -2353,7 +2353,13 @@ void CThArm::Running()
 	///////////////////////////////
 	// Input Get IC
 	case enToInput:							// Arm XY move to Input stack
+		if(m.Setting.m_bEnableSemiAuto)//Semi Auto
 		{
+		
+		}
+		else
+		{
+
 			m_bInTrayMissingError = false;
 			m_bTSRemainICEnable = false;
 
@@ -2787,7 +2793,7 @@ void CThArm::Running()
 		}
 		NextStatus();
 		break;
-	case enArmLogImageEnd:				// Image Log Arm, Save the Image
+	case enArmLogImageEnd:					// Image Log Arm, Save the Image
 		{
 		
 		}
@@ -5909,15 +5915,15 @@ void CThArm::CameraCapture()
 		csCurrentTray + "_" + 
 		csCurrentRepeatTime + csExtendImage + _ArmLogICImageJpg;
 		
-	// Grab image
-	if(m.m_Vision.CameraGrabSave(m.m_CCDPin1Control.iCCDUse, csImagePath))
-	{
-		
-	}
-	else
-	{
-		TRACE("Grab Error\n");
-	}
+	// Grab image ºI¹Ï
+// 	if(m.m_Vision.CameraGrabSave(m.m_CCDPin1Control.iCCDUse, csImagePath))
+// 	{
+// 		
+// 	}
+// 	else
+// 	{
+// 		TRACE("Grab Error\n");
+// 	}
 		
 	// Convert Bitmap to Jpeg
 	f.ConvertFile(csImagePath, csImageJpgPath);

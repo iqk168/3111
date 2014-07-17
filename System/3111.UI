@@ -10,6 +10,7 @@ TEST BASE FILE=
 SOCKET PATTERN FILE=Setting1
 ATC Module MultiSV File=
 PIN1 PATTERN FILE=12345
+Semi Auto=0
 [Lot Info]
 Lot Number=LotNo
 Lot Operater=Operator
@@ -26,7 +27,7 @@ Old Lot Machine ID=Macine
 Test Mode=0
 Test Item=0
 [Count]
-Output 1=878
+Output 1=884
 Output 2=0
 Output 3=0
 Output 4=0

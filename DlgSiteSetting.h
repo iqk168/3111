@@ -59,6 +59,7 @@ protected:
 	afx_msg void OnRunMode1();
 	afx_msg void OnRunMode2();
 	afx_msg void OnRunMode3();
+	afx_msg void OnRunMode4();
 	afx_msg void OnSave();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()

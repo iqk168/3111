@@ -40,6 +40,7 @@ void CDlgSiteSetting::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_RUN_MODE1,			m_btnRunMode[0]);
 	DDX_Control(pDX, IDC_RUN_MODE2,			m_btnRunMode[1]);
 	DDX_Control(pDX, IDC_RUN_MODE3,			m_btnRunMode[2]);	
+	DDX_Control(pDX, IDC_RUN_MODE4,			m_btnRunMode[3]);	
 
 	DDX_Text(pDX, IDC_DEMO_TEST_TIME,		m_Site.dDemoTestTime );
 	DDX_Text(pDX, IDC_BIN_FOR_CATORGY,		m_Site.iSiteDummyBinForCatorgy );	
@@ -54,6 +55,7 @@ BEGIN_MESSAGE_MAP(CDlgSiteSetting, CDialog)
 	ON_BN_CLICKED(IDC_RUN_MODE1, OnRunMode1)
 	ON_BN_CLICKED(IDC_RUN_MODE2, OnRunMode2)
 	ON_BN_CLICKED(IDC_RUN_MODE3, OnRunMode3)
+	ON_BN_CLICKED(IDC_RUN_MODE4, OnRunMode4)
 	ON_BN_CLICKED(IDC_SAVE,		 OnSave)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
@@ -219,6 +221,11 @@ void CDlgSiteSetting::OnRunMode2()
 		CheckUIForRunMode(m_Site.iRunMode);
 	}
 }
+void CDlgSiteSetting::OnRunMode4()
+{
+
+}
+
 void CDlgSiteSetting::OnRunMode3() 
 {
 	if( !f.CheckEnaleChange() )
