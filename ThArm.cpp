@@ -569,6 +569,7 @@ void CThArm::RepeatTrayMap()
 }
 void CThArm::RepeatTrayReport()
 {
+
 	if( f.GetRepeatTrayModeMoation() == theApp.enRepeatTray1AndDisable )
 	{
 		f.Report.InsertBinLog( theApp.m_tArm.ArmLog );
@@ -586,6 +587,8 @@ void CThArm::RepeatTrayReport()
 	}
 	else
 	{
+		f.Report.InsertBinLog( theApp.m_tArm.ArmLog );
+		theApp.m_tArm.ClearArmLog();
 	}
 }
 int CThArm::GetTestLogPassFail(tagTestLog ttLog)
@@ -2362,7 +2365,6 @@ void CThArm::Running()
 
 			m_bInTrayMissingError = false;
 			m_bTSRemainICEnable = false;
-
 			//
 			if( GetRemoteCoordRequest() )
 			{
@@ -2716,7 +2718,7 @@ void CThArm::Running()
 		break;
 	case enShuttleCCDPin1Grab:				// CCD Grab
 		{
-		
+			//取像 Jerome
 		}
 		NextStatus();
 		break;
@@ -3686,7 +3688,7 @@ void CThArm::NextStatus()
 			{
 				m_bStatus = enCycleStandy;
 			}
-			else if( m_bHeaterStableNeed )
+			else if( m_bHeaterStableNeed ) //高溫模式
 			{
 				m_bHeaterStableNeed = false;
 				m_bStatus = enHeaterWaitStableStart;
@@ -3710,11 +3712,6 @@ void CThArm::NextStatus()
 				m.Err.Arm.Code = enCodeArmInputTrayMissing;
 				m_bStatus = enInputTrayMissingError;
 			}
-//			else if( m_bTSRemainICEnable )
-//			{
-//				m_bTSRemainICEnable = false;
-//				m_bStatus = enTSRemainICStart;
-//			}
 			else
 			{
 				m_bStatus = enPickIC; 
@@ -3757,7 +3754,7 @@ void CThArm::NextStatus()
 			m_ZWithIC = CheckArmZVaccSensor();
 			int iStart = ::GetTickCount();
 		
-			if( m_ZWithIC )
+			if( m_ZWithIC ) //吸到IC
 			{
 				//
 				COleDateTime time = COleDateTime::GetCurrentTime();
@@ -3789,7 +3786,7 @@ void CThArm::NextStatus()
 						theApp.m_InputTray.LocationDone();			// Pick OK
 						m_bStatus = enRotatorInCheckSetting;
 					}
-					else if( m.TraySkip.AutoSkip == 0 )
+					else if( m.TraySkip.AutoSkip == 1 )
 					{
 						// Ops; Pick IC Fail. But AutoSkip
 						m_lArmRetryCounter = 0;
@@ -4193,12 +4190,14 @@ void CThArm::NextStatus()
 	case enShuttleCCDPin1Grab:				// CCD Grab
 		f.CWinMessage( "Arm:enShuttleCCDPin1Grab", theApp.enDArm );
 		{
+			
 			m_bStatus = enShuttleCCDMatch;
 		}
 		break;
 	case enShuttleCCDMatch:					// CCD Grab Match
 		f.CWinMessage( "Arm:enShuttleCCDMatch", theApp.enDArm );
 		{
+			//比對Jerome
 			if( bCCDPin1MatchOK )
 				m_bStatus = enShuttleCCDMatchEnd;
 			else
@@ -5042,7 +5041,7 @@ void CThArm::NextStatus()
 						m_bStatus = enRepeatToInput;
 					}
 					// Auto Skip
-					else if( m.TraySkip.AutoSkip == 0 )
+					else if( m.TraySkip.AutoSkip == 1 )
 					{
 						m_lArmRetryCounter = 0;
 						RepeatMationInputDone();

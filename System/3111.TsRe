@@ -1,4 +1,4 @@
 [TS Remain IC Condition]
 Vacc On=3.000000000000000
-Speed=40
-Vacc On Condition=1
+Speed=3
+Vacc On Condition=0

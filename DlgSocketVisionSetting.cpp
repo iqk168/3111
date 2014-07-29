@@ -146,7 +146,7 @@ void CDlgSocketVisionSetting::GetSettingFolder()
 
 	//
 	CFileFind finder;														//建立搜尋用的CFileFind物件
-	BOOL bResult = finder.FindFile( m.FilePath.SocketImagePath + "*.*" );	//尋找第一個檔案
+	BOOL bResult = finder.FindFile( m.FilePath.CCDSocketImagePath	 + "*.*" );	//尋找第一個檔案
 	while(bResult)
 	{
 		bResult = finder.FindNextFile();									//尋找下一個檔案
@@ -323,11 +323,11 @@ void CDlgSocketVisionSetting::CopyGrabImage(CString csFileFolder)
 {
 	//
 	CString csFile; // Destion Image
-	csFile = m.FilePath.SocketImagePath + csFileFolder + "\\" + _SocketSettingImage;
+	csFile = m.FilePath.CCDSocketImagePath	 + csFileFolder + "\\" + _SocketSettingImage;
 	
 	//
 	CString csSourceFile;
-	csSourceFile = m.FilePath.SocketImagePath + _SocketGrab;
+	csSourceFile = m.FilePath.CCDSocketImagePath	 + _SocketGrab;
 
 	if(::CopyFile(csSourceFile, csFile, FALSE ) == 0 )
 	{
@@ -342,7 +342,7 @@ void CDlgSocketVisionSetting::CopyGrabImage(CString csFileFolder)
 void CDlgSocketVisionSetting::LoadSettingImage(CString csFileFolder)
 {
 	CString csFile = _T("");
-	csFile.Format( "%s", m.FilePath.SocketImagePath + csFileFolder + "\\" + _SocketSettingImage );
+	csFile.Format( "%s", m.FilePath.CCDSocketImagePath	 + csFileFolder + "\\" + _SocketSettingImage );
 
 	//
 	SourceImage.Load( csFile );
@@ -361,7 +361,7 @@ void CDlgSocketVisionSetting::LoadSettingInfo(CString csFileFolder)
 {
 	//
 	CString csFile;
-	csFile = m.FilePath.SocketImagePath + csFileFolder + "\\" + _ScoketSettingInfo;
+	csFile = m.FilePath.CCDSocketImagePath	 + csFileFolder + "\\" + _ScoketSettingInfo;
 
 	f.GetSetting(csFile, "Source Image", "X",			m_iMatchROIX );
 	f.GetSetting(csFile, "Source Image", "Y",			m_iMatchROIY );
@@ -378,7 +378,7 @@ void CDlgSocketVisionSetting::SaveSettingInfo(CString csFileFolder)
 
 	//
 	CString csFile;
-	csFile = m.FilePath.SocketImagePath + csFileFolder + "\\" + _ScoketSettingInfo;
+	csFile = m.FilePath.CCDSocketImagePath	 + csFileFolder + "\\" + _ScoketSettingInfo;
 
 	f.SaveSetting(csFile, "Source Image", "X",			m_iMatchROIX );
 	f.SaveSetting(csFile, "Source Image", "Y",			m_iMatchROIY );
@@ -454,7 +454,7 @@ void CDlgSocketVisionSetting::OnSocketvisionDelete()
 void CDlgSocketVisionSetting::DeleteOldFolder( CString csFileFolder)
 {
 	CString csFileFolderPath = _T("");
-	csFileFolderPath = m.FilePath.SocketImagePath + csFileFolder;
+	csFileFolderPath = m.FilePath.CCDSocketImagePath	 + csFileFolder;
 
 	// 刪除檔案
 	CString csInfoFile = csFileFolderPath + "\\" + _ScoketSettingInfo;
@@ -474,7 +474,7 @@ void CDlgSocketVisionSetting::CreateNewFolder(CString csFileFolder)
 {
 	// 建立資料夾
 	CString csFileFolderPath = _T("");
-	csFileFolderPath = m.FilePath.SocketImagePath + csFileFolder;
+	csFileFolderPath = m.FilePath.CCDSocketImagePath	 + csFileFolder;
 
 	BOOL bCreateResult = FALSE;
 	bCreateResult = CreateDirectory(csFileFolderPath, NULL);	
@@ -550,11 +550,11 @@ void CDlgSocketVisionSetting::OnSocketvisionCapture()
 	/////////////////////////////////////////////////////////////////////////////////////////
 // 	m.m_VisionMatch.CameraGrab(m.m_VisionMatch.m_iCameraUseID);
 // 	m.m_VisionMatch.GetGrabImage(m.m_VisionMatch.m_iCameraUseID).Save( m.FilePath.SocketImagePath + _SocketGrab , E_FILE_FORMAT_COLOR_BMP);
-//Jerome Add 20140707
+//	Jerome Add 20140707
 	m.m_VisionMatch.CameraGrab(m.m_CCDSocketControl.iCCDUse);
-	m.m_VisionMatch.GetGrabImage(m.m_CCDSocketControl.iCCDUse).Save( m.FilePath.SocketImagePath + _SocketGrab , E_FILE_FORMAT_COLOR_BMP);
+	m.m_VisionMatch.GetGrabImage(m.m_CCDSocketControl.iCCDUse).Save( m.FilePath.CCDSocketImagePath	 + _SocketGrab , E_FILE_FORMAT_COLOR_BMP);
 	
-	SourceImage.Load( m.FilePath.SocketImagePath + _SocketGrab );
+	SourceImage.Load( m.FilePath.CCDSocketImagePath	 + _SocketGrab );
 	SourceROI.Detach();
 	SourceROI.Attach(&SourceImage);
 	SourceROI.SetPlacement( m.m_CCDSocketControl.RoiX, m.m_CCDSocketControl.RoiY, m.m_CCDSocketControl.RoiW, m.m_CCDSocketControl.RoiH);
@@ -593,19 +593,21 @@ void CDlgSocketVisionSetting::OnSocketvisionTest()
 
 	// Learn
 	CString csFileFolderPath = _T("");
-	csFileFolderPath = m.FilePath.SocketImagePath + csFileFolderName + "\\" + _SocketSettingImage;
+	csFileFolderPath = m.FilePath.CCDSocketImagePath	 + csFileFolderName + "\\" + _SocketSettingImage;
 	m.m_VisionMatch.SetMatchPattern(
-//		m.m_VisionMatch.m_iCameraUseID,
 //Jerome Add 20140707
 		m.m_CCDSocketControl.iCCDUse,
-
 		csFileFolderPath,
 		CRect(m_iMatchROIX, m_iMatchROIY, m_iMatchWidth+m_iMatchROIX, m_iMatchHeight + m_iMatchROIY),
 		m_dMatchMinScore);
 
+//Jerome add 140724 保留原圖
+	m.m_VisionMatch.SetMatchPattern(
+		m.m_CCDSocketControl.iCCDUse+3,
+		csFileFolderPath,
+		CRect(0, 0, 640, 480),
+		m_dMatchMinScore);
 	// Match
-// 	m_fMatchTestScore =	m.m_VisionMatch.GrabMatch( m.m_VisionMatch.m_iCameraUseID );
-// 	SourceImage = m.m_VisionMatch.GetGrabImage(m.m_VisionMatch.m_iCameraUseID);
 //Jerome Add 20140707
 	m_fMatchTestScore =	m.m_VisionMatch.GrabMatch( m.m_CCDSocketControl.iCCDUse );
 	SourceImage = m.m_VisionMatch.GetGrabImage(m.m_CCDSocketControl.iCCDUse);
@@ -709,11 +711,16 @@ void CDlgSocketVisionSetting::OnPaint()
 		bGrabed = false;
 
 		// Main Image
+// 		double	WindowRatioW = m_WindowWidth/(double)SourceImage.GetWidth();
+// 		double	WindowRatioH = m_WindowHeight/(double)SourceImage.GetHeight();	
+// 		CDC *Grabdc = GetDlgItem(IDC_SOCKETVISION_SHOWWINDOW)->GetDC(); // device context for painting
+// 		SourceImage.Draw(Grabdc->GetSafeHdc(), WindowRatioW, WindowRatioH);
+//Jerome add 140724 呈現原圖
 		double	WindowRatioW = m_WindowWidth/(double)SourceImage.GetWidth();
 		double	WindowRatioH = m_WindowHeight/(double)SourceImage.GetHeight();	
 		CDC *Grabdc = GetDlgItem(IDC_SOCKETVISION_SHOWWINDOW)->GetDC(); // device context for painting
-		SourceImage.Draw(Grabdc->GetSafeHdc(), WindowRatioW, WindowRatioH);
-		
+		m.m_VisionMatch.m_Match[m.m_CCDSocketControl.iCCDUse+3].PatternROIColor.Draw(Grabdc->GetSafeHdc(),WindowRatioW,WindowRatioH);
+
 		// Sub Image
 		double	SubWindowRatioW = m_SubWindowWidth/(double)SourceImage.GetWidth();
 		double	SubWindowRatioH = m_SubWindowHeight/(double)SourceImage.GetHeight();	
@@ -784,10 +791,16 @@ void CDlgSocketVisionSetting::OnPaint()
 	if(bRoied)
 	{
 		bRoied = false;
+// 		double	WindowRatioW = m_WindowWidth/(double)SourceImage.GetWidth();
+// 		double	WindowRatioH = m_WindowHeight/(double)SourceImage.GetHeight();	
+// 		CDC *Grabdc = GetDlgItem(IDC_SOCKETVISION_SHOWWINDOW)->GetDC(); // device context for painting
+// 		SourceImage.Draw(Grabdc->GetSafeHdc(), WindowRatioW, WindowRatioH);
+//Jerome add 140724 呈現原圖
 		double	WindowRatioW = m_WindowWidth/(double)SourceImage.GetWidth();
 		double	WindowRatioH = m_WindowHeight/(double)SourceImage.GetHeight();	
 		CDC *Grabdc = GetDlgItem(IDC_SOCKETVISION_SHOWWINDOW)->GetDC(); // device context for painting
-		SourceImage.Draw(Grabdc->GetSafeHdc(), WindowRatioW, WindowRatioH);
+		m.m_VisionMatch.m_Match[m.m_CCDSocketControl.iCCDUse+3].PatternROIColor.Draw(Grabdc->GetSafeHdc(),WindowRatioW,WindowRatioH);
+
 		Grabdc->SelectObject(&sourcePen);
 		SourceROI.DrawFrame(Grabdc->GetSafeHdc(), E_FRAME_ON, FALSE,WindowRatioW,WindowRatioH);
 		ReleaseDC(Grabdc);		

@@ -474,7 +474,7 @@ void CMotor::LoadSearchSpeed(tagMotorParam *pAxis)
 	if( Lr != ERROR_SUCCESS )
 	{
 		CString c = _T("");
-		c.Format("LoadSearchSpeed = %d", Lr );
+ 		c.Format("LoadSearchSpeed = %d", Lr );
 		AfxMessageBox( c );
 	}
 #endif
@@ -939,7 +939,7 @@ long CMotor::ManualMotorRunLine(tagMotorParam *pAxis1, double dPos1,
 	GetMotorStatus(pAxis2);
 	while(1)
 	{
-		if(!pAxis1->DRV && !pAxis2->DRV) break;
+	
 
 		iPass = ::GetTickCount() - iStart;
 		if(!m.Info.bRunning)
@@ -952,6 +952,8 @@ long CMotor::ManualMotorRunLine(tagMotorParam *pAxis1, double dPos1,
 			return enCodeMotorBaseOverheat + GetMotorID(pAxis1);
 		else if(pAxis2->Alarm || pAxis2->EMG || pAxis2->ERRR)
 			return enCodeMotorBaseOverheat + GetMotorID(pAxis2);
+
+		if(!pAxis1->DRV && !pAxis2->DRV) break;
 
 		GetMotorStatus(pAxis1);
 		GetMotorStatus(pAxis2);
@@ -986,17 +988,7 @@ long CMotor::ManualMotorRunLine(tagMotorParam *pAxis1, double dPos1,
 	{
 		GetMotorStatus(pAxis1);
 		GetMotorStatus(pAxis2);
-		if(PreMove)
-		{
-			if(!pAxis1->DRV && !pAxis2->DRV)
-				break;	
-		}
-		else
-		{	
-			if(pAxis1->InPosReal && pAxis2->InPosReal 
-				&& !pAxis1->DRV && !pAxis2->DRV )
-				break;
-		}
+		
 		
 		iPass = ::GetTickCount() - iStart;
 		if(!m.Info.bRunning)
@@ -1028,6 +1020,17 @@ long CMotor::ManualMotorRunLine(tagMotorParam *pAxis1, double dPos1,
 			MC8141PMotStop(pAxis1->BoardID, pAxis1->AxisNo, pAxis1->AxisNo);
 			MC8141PMotStop(pAxis2->BoardID, pAxis2->AxisNo, pAxis2->AxisNo);
 			return enCodeMotorBaseOverheat + GetMotorID(pAxis2);
+		}
+		if(PreMove)
+		{
+			if(!pAxis1->DRV && !pAxis2->DRV)
+				break;	
+		}
+		else
+		{	
+			if(pAxis1->InPosReal && pAxis2->InPosReal 
+				&& !pAxis1->DRV && !pAxis2->DRV )
+				break;
 		}
 		Sleep(_Wait);
 	}

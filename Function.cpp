@@ -2561,7 +2561,7 @@ void CFunction::LoadSetting()
 	CString csFile = _T("");
 	csFile = m.FilePath.SystemSettingPath;
 
-	GetSetting(csFile, "Setting", "Auto Skip",	m.TraySkip.AutoSkip );
+	GetSetting(csFile, "Setting", "Auto Skip",	m.TraySkip.AutoSkip  = false );
 	GetSetting(csFile, "Setting", "Test Site Vacc",	m.TraySkip.TestSiteVacc );
 }
 
@@ -6943,7 +6943,8 @@ bool CFunction::InitRemoteCtrl()
 	m.m_TestInterface.InitTestInterfaceTCP();
 
 	// 1.0Ap
-	m.m_TestInterface.InitTestInterfaceExcute();
+	m.m_TestInterface.InitTestInterfaceExcute(); 
+
 
 	//
 	return bOK;
@@ -8670,10 +8671,10 @@ bool CFunction::GetSLTProtocolHelp()
 
 	return false;
 }
-void CFunction::RemoteMessage(int iCode)
+void CFunction::RemoteSendEvent(int iCode)
 {
 	tagErrorMsg e = GetErrorMsg(iCode);
-	if(m.m_TestInterface.m_bRemoteMode)
+	if(m.m_TestInterface.m_bRemoteMode) 
 	{
 		if(m.m_TestInterface.m_bRemoteSendEvent)		
 		{
@@ -8681,6 +8682,20 @@ void CFunction::RemoteMessage(int iCode)
 		}
 	}
 }
+
+void CFunction::RemoteErrorMessage(int iCode)
+{
+	tagErrorMsg e = GetErrorMsg(iCode);
+	if(m.m_TestInterface.m_bRemoteMode) 
+	{
+		//加入組合字<< >>
+		CString csErrorMessage = _T("");	
+		csErrorMessage.Format("%sERRORMESSAGE%s%s%s", _STX, _MTX, e.Eng, _ETX );
+		//主動回傳Error訊息丟到陣列
+		m.m_TestInterface.AddReplyCmd(csErrorMessage);
+	}
+}
+
 void CFunction::RemoteSeCoordnationInitial()
 {
 	m.m_TestInterface.RequestCoordnationMissionInitial();
@@ -8729,6 +8744,7 @@ void CFunction::RemoteSetStatus(int iStatus, int iCode)
 {
 	m.m_TestInterface.SetStatus(iStatus, iCode);
 }
+
 
 void CFunction::RemoteSendTestEvent(long TestEvent)
 {
@@ -8797,15 +8813,15 @@ void CFunction::CCDLog(CString csLog)
 void CFunction::LoadSocketPatternSetting()
 {
 	CString csFile;
-	csFile = m.FilePath.SocketImagePath + m.UI.SocketPatternName + "\\" + _ScoketSettingInfo;
+	csFile = m.FilePath.CCDSocketImagePath	 + m.UI.SocketPatternName + "\\" + _ScoketSettingInfo;
 	
-	f.GetSetting(csFile, "Source Image", "X",			m.CSC.iMatchROIX );
-	f.GetSetting(csFile, "Source Image", "Y",			m.CSC.iMatchROIY );
-	f.GetSetting(csFile, "Source Image", "Width",		m.CSC.iMatchWidth );
-	f.GetSetting(csFile, "Source Image", "Height",		m.CSC.iMatchHeight );
-	f.GetSetting(csFile, "Source Image", "Score",		m.CSC.dMatchMinScore );
+	f.GetSetting(csFile, "Source Image", "X",			m.CCDSocket.iMatchROIX );
+	f.GetSetting(csFile, "Source Image", "Y",			m.CCDSocket.iMatchROIY );
+	f.GetSetting(csFile, "Source Image", "Width",		m.CCDSocket.iMatchWidth );
+	f.GetSetting(csFile, "Source Image", "Height",		m.CCDSocket.iMatchHeight );
+	f.GetSetting(csFile, "Source Image", "Score",		m.CCDSocket.dMatchMinScore );
 //Jerome Add 20140709
-	csFile = m.FilePath.CCDImagePath + m.UI.Pin1PatternName + "\\" + _ScoketSettingInfo;
+	csFile = m.FilePath.CCDPin1ImagePath + m.UI.Pin1PatternName + "\\" + _ScoketSettingInfo;
 	f.GetSetting(csFile, "Source Image", "X",			m.CCDPin1.iMatchROIX );
 	f.GetSetting(csFile, "Source Image", "Y",			m.CCDPin1.iMatchROIY );
 	f.GetSetting(csFile, "Source Image", "Width",		m.CCDPin1.iMatchWidth );
@@ -8824,7 +8840,7 @@ bool CFunction::InitCCDSocket()
 {
 	// 建立相關目錄
 	AutoCreateFolder( m.FilePath.ImagePath );
-	AutoCreateFolder( m.FilePath.SocketImagePath );
+	AutoCreateFolder( m.FilePath.CCDSocketImagePath	 );
 	
 	//
 	bool bInitCCDSocketOK = true;
@@ -8873,7 +8889,7 @@ bool CFunction::InitCCDPin1()
 {
 	// 建立相關目錄
 	AutoCreateFolder( m.FilePath.ImagePath );
-	AutoCreateFolder( m.FilePath.CCDImagePath);
+	AutoCreateFolder( m.FilePath.CCDPin1ImagePath);
 	//
 	bool bInitCCDPin1OK = true;
 	//
@@ -8908,4 +8924,19 @@ bool CFunction::InitCCDPin1()
 // 			AfxMessageBox( csMsg );
 // 	}	
 	return bInitCCDPin1OK;
+}
+
+
+double CFunction::CCDMatch(CString CCDFilePath, CString csPatternName, int iCCDUse, int iMatchROIX, int iMatchROIY
+						 , int iMatchWidth, int iMatchHeight, double dMatchMinScore)
+{
+	CString csFileFolderPath = _T("");
+	csFileFolderPath = CCDFilePath + csPatternName + "\\" + _SocketSettingImage;
+	m.m_VisionMatch.SetMatchPattern(
+		iCCDUse,
+		csFileFolderPath,
+		CRect(iMatchROIX, iMatchROIY, iMatchWidth+iMatchROIX, iMatchHeight + iMatchROIY),
+		dMatchMinScore);
+	double dMatchTestScore = m.m_VisionMatch.GrabMatch( iCCDUse );
+	return dMatchTestScore;
 }

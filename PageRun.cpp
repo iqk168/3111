@@ -284,7 +284,7 @@ void CPageRun::InitStatus()
 	}
 
 	// 設定 AutoSkip 顯示狀態.
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 		m_btnAutoSkip.SetIcon(IDI_TRAY_AUTO_SKIP);
 	else
 		m_btnAutoSkip.SetIcon(IDI_TRAY_NOT_AUTO_SKIP);
@@ -811,26 +811,26 @@ void CPageRun::OnTrayAutoSkip()
 	if( m.TraySkip.AutoSkip == 0 )
 	{		
 		f.m_Log.AddEvent(enCodeUserPageTrayNoSkip);	// Add Event
-		m.TraySkip.AutoSkip = 1;
+		m.TraySkip.AutoSkip = 0;
 		// Ebable the function of Input Stack Auto Skip
 	}
 	else
 	{
 		f.m_Log.AddEvent(enCodeUserPageTrayAutoSkip);	// Add Event		
-		m.TraySkip.AutoSkip = 0;
+		m.TraySkip.AutoSkip = 1;
 		// Disable the function of Input Stack Auto Skip
 	}
 	// Note: Reset the setting
 
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 		m_btnAutoSkip.SetIcon(IDI_TRAY_AUTO_SKIP);
 	else
 		m_btnAutoSkip.SetIcon(IDI_TRAY_NOT_AUTO_SKIP);
 	// Note: Change the icon image
 
 	f.SaveSetting();
-	// Note: m.TraySkip.AutoSkip == 0 表示會 Auto Skip, 
-	// 如果 m.TraySkip.AutoSkip == 1 表示會 Alarm
+	// Note: m.TraySkip.AutoSkip == 1 表示會 Auto Skip, 
+	// 如果 m.TraySkip.AutoSkip == 0 表示會 Alarm
 }
 
 void CPageRun::OnCCD()
@@ -1408,7 +1408,7 @@ void CPageRun::UpdataTsVaccOffStatusInformation()
 }
 void CPageRun::UpdateAutoSkipStatusInformation()
 {
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 		m_btnAutoSkip.SetIcon(IDI_TRAY_AUTO_SKIP);
 	else
 		m_btnAutoSkip.SetIcon(IDI_TRAY_NOT_AUTO_SKIP);
@@ -1682,13 +1682,19 @@ void CPageRun::UpdateCatoregyStatus()
 }
 void CPageRun::UpdateCCDPin1Status()
 {
+
 	if( m.Setting.m_bEnableCCDPin1 == 1 )
 	{
 		m_btnCCD.ShowWindow( TRUE );
+	//	m.m_TestSetting.m_CCDUse = !m.m_TestSetting.m_CCDUse;
 		if( m.m_TestSetting.m_CCDUse == 1 )
+		{
 			m_btnCCD.SetIcon(IDI_RT_IMAGE);
+		}
 		else
+		{
 			m_btnCCD.SetIcon(IDI_RT_IMAGE_DISABLE);
+		}
 	}
 	else
 	{
@@ -1701,6 +1707,7 @@ void CPageRun::UpdataCCDSocketStatus()
 	if( m.Setting.m_bEnableCCDSocket == 1 )
 	{
 		m_btnCCDSocket.ShowWindow( TRUE );
+	//	m.m_TestSetting.m_CCDSocketUse =	!m.m_TestSetting.m_CCDSocketUse;
 		if( m.m_TestSetting.m_CCDSocketUse == 1 )
 			m_btnCCDSocket.SetIcon( IDI_CCD_SOCKET_SETUP );
 		else

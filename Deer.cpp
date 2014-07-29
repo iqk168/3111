@@ -236,9 +236,9 @@ void CDeerApp::InitialStatus()
 	m.FilePath.CCDImageProfilePath	= CurrentPath + "\\Image\\Profiles\\";
 	m.FilePath.CCDImageBackPath		= CurrentPath + "\\Image\\BackupProfiles\\";
 //	m.FilePath.CCDImagePath			= CurrentPath + "\\Image\\Images\\";
-	m.FilePath.SocketImagePath		= CurrentPath + "\\Image\\Socket\\";
+	m.FilePath.CCDSocketImagePath			= CurrentPath + "\\Image\\Socket\\";
 
-	m.FilePath.CCDImagePath			= CurrentPath + "\\Image\\Pin1\\";
+	m.FilePath.CCDPin1ImagePath		= CurrentPath + "\\Image\\Pin1\\";
 	m.FilePath.CCDImageBmpPath		= CurrentPath + "\\Image\\Images\\";	
 	m.FilePath.ImagePath			= CurrentPath + "\\Image\\";									// Image
 //	m.FilePath.Pin1ImagePath		= CurrentPath + "\\Image\\Pin1\\";

@@ -704,8 +704,11 @@ public:
 
 	// 1.0Aj
 	// SLT Protocol
-	void RemoteMessage(int iCode);
-	void RemoteSetCoordnationDone();
+	void RemoteSendEvent(int iCode);		//主動回傳
+	void RemoteErrorMessage(int iCode);		//主動回傳
+	void RemoteSetStatus(int iStatus, int iCode);
+
+	void RemoteSetCoordnationDone();		
 	void RemoteSetCoordnationReturnDone();
 	// 1.0Al
 	void RemoteSeCoordnationInitial();
@@ -717,7 +720,7 @@ public:
 	void RemoteSetStateResetDone();
 	void RemoteSetStateErrorCtrl();
 	void RemoteSetStateError();
-	void RemoteSetStatus(int iStatus, int iCode);
+
 
 	// 1.0Ao
 	void InitSLTProtocolHelp();
@@ -735,6 +738,10 @@ public:
 	bool InitCCDSocket();
 	bool InitCCDPin1();
 	
+	double CCDMatch( CString CCDFilePath, CString csPatternName, int iCCDUse, int iMatchROIX, int iMatchROIY
+		, int iMatchWidth, int iMatchHeight, double dMatchMinScore);
+
+
 protected:
 
 };

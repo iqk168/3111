@@ -202,7 +202,6 @@ void CDriverTestInterfaceTCP::OnReceive(int nErrorCode)
 		CString csMsg = _T("");
 		csMsg.Format("%s\n", cs ); TRACE(csMsg);
 		SendMessageToMain( cs );
-		
 		//
 		SetBuffer(cs);
 	}

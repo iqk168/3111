@@ -62,7 +62,7 @@ bool  CThTester::CloseRs232()
 	return bRs232CloseOK;
 }
 bool CThTester::InitRs232()
-{
+{ 
 	bool bRs232InitOK = false;
 	bool bRun = false;
 	if( m.m_InterfaceEnable.m_bEnableRs232 == 1 )
@@ -128,7 +128,7 @@ bool CThTester::Init()
 	bRs232InitOK = InitRs232();
 	bTcpipInitOK = InitTcpip();
 
-	if( bRs232InitOK && bTcpipInitOK )
+	if( bRs232InitOK && bTcpipInitOK)
 		bInitOK = true;
 	else
 		bInitOK = false;
@@ -404,6 +404,7 @@ void CThTester::FTTesting()
 		//
 		csCode.Format("%d", m.Site.iSiteDummyBinForCatorgy );
 		TesterLog.csCode = csCode;
+		TesterLog.iPF = GetPassFailValue( csCode );
 	}
 	else if( m.Site.iRunMode == theApp.enDemo )
 	{	
@@ -412,6 +413,7 @@ void CThTester::FTTesting()
 		//
 		csCode.Format("%d", m.Site.iSiteDummyBinForCatorgy );
 		TesterLog.csCode = csCode;
+		TesterLog.iPF = GetPassFailValue( csCode );
 	}
 	else
 		; // Never be here.

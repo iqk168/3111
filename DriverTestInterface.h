@@ -173,8 +173,8 @@ private:
 
 public:
 
-	// 建立處理命令
-	void InitTestInterfaceExcute();
+	void InitTestInterfaceExcute(); //RS232 執行緒將處理命令送到 CArray 準備送出
+
 
 	// 1.0Ao
 	// TCP/IP
@@ -239,7 +239,9 @@ public:
 	
 	//
 	CArray< tagTestProtocol, tagTestProtocol > m_ReviceCmd;
+
 	CArray< CString, CString > m_SendCmd;
+	CArray< CString, CString > m_PreSendCmd;
 
 	// 建立 Link
 	bool Open(int iPort, int iBaudRate = 9600); // 115200

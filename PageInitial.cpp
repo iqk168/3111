@@ -127,7 +127,7 @@ void CPageInitial::UpdateInitialStatus()
 		 m.MotorStatus.ArmYInitialed == true && 
 		 m.MotorStatus.ArmZInitialed == true && 		 
 		 m.MotorStatus.InserterInitialed == true && 
-		 m.MotorStatus.TesterInitialed == true && 
+		 /*m.MotorStatus.TesterInitialed == true && *///Tester ª¬ºA¤£¥Î
 		 m.MotorStatus.InspectInitialed == true &&
 		 m.MotorStatus.ManualCtrlInitialed == true )
 	{		

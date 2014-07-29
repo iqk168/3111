@@ -254,8 +254,8 @@ void CDlgDeviceSetup::UpdateCCDSettingFileList()
 	//
 	CFileFind finder;											//建立搜尋用的CFileFind物件
 //	BOOL bResult = finder.FindFile( csFilePath  + "*.*" );		//尋找第一個檔案
-//Jerome Add 20140709
-	BOOL bResult = finder.FindFile( m.FilePath.CCDImagePath + "*.*" );	//尋找第一個檔案
+//	Jerome Add 20140709
+	BOOL bResult = finder.FindFile( m.FilePath.CCDPin1ImagePath + "*.*" );	//尋找第一個檔案
 	while(bResult)
 	{
 		bResult = finder.FindNextFile();						//尋找下一個檔案
@@ -273,7 +273,7 @@ void CDlgDeviceSetup::UpdateCCDSocketSettingFileList()
 	CFileFind finder;														
 	//建立搜尋用的CFileFind物件
 	
-	BOOL bResult = finder.FindFile( m.FilePath.SocketImagePath + "*.*" );	//尋找第一個檔案
+	BOOL bResult = finder.FindFile( m.FilePath.CCDSocketImagePath	 + "*.*" );	//尋找第一個檔案
 	while(bResult)
 	{
 		bResult = finder.FindNextFile();									//尋找下一個檔案
@@ -491,6 +491,8 @@ void CDlgDeviceSetup::OnModifyParameter()
 
 	// 紀錄本次所選 TrayFile
 	f.SaveLastTrayFile();
+
+	f.LoadSocketPatternSetting();
 
 	//
 	CDialog::OnOK();

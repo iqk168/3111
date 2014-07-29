@@ -270,17 +270,17 @@ bool CThErrorCtrl::CheckError(tagErrorParam &err)
 	//
 	f.InsertJamRateCounter(err.Code);
 
-	//
+	///主動回傳
 	f.m_Log.AddEvent(err.Code);
 
 	//
 	f.ErrorRateControl(err.Code);
 
 	//
-	f.RemoteSetStateError();
+//	f.RemoteSetStateError();
 
-	//
-	f.RemoteSetStatus( enRemoteCommandStatusError, err.Code);
+	//回傳錯誤加在AddEvent
+//	f.RemoteSetStatus( enRemoteCommandStatusError, err.Code);
 
 	//
 	if( m.RemoteInterlock.IsRemoteControlMode == true )
@@ -450,11 +450,11 @@ bool CThErrorCtrl::CheckError(tagErrorParam &err)
 	::SendMessage(theApp.m_pMainWnd->GetSafeHwnd(), WM_ERROR_CLOSE, NULL, NULL);
 	f.UpdateButtonState();
 
-	//
-	f.RemoteSetStatus( enRemoteCommandStatusOK, err.Code);
+	// 回傳錯誤加在AddEvent
+//	f.RemoteSetStatus( enRemoteCommandStatusOK, err.Code);
 
 	//
-	f.RemoteSetStateErrorCtrl();
+//	f.RemoteSetStateErrorCtrl();
 
 	return false;
 }

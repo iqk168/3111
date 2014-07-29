@@ -155,9 +155,9 @@ public:
 		CString UPHPath;					// UPH Infomation
 		// CCD
 		CString CCDImageProfilePath;		// CCD Pin1 Path
-		CString CCDImagePath;				// CCD Pin1 Image Path
+		CString CCDPin1ImagePath;				// CCD Pin1 Image Path
 		CString CCDImageBackPath;			// CCD Pin1 Image Backup Path;
-		CString SocketImagePath;			// CCS Socket Setting file and Image Pattent
+		CString CCDSocketImagePath;			// CCS Socket Setting file and Image Pattent
 		//ÂX¥R·sªº¸ô®|
 		CString CCDImageBmpPath;	
 		CString CCDSocketPath;				// CCD Socket Sensor Path
@@ -797,7 +797,7 @@ public:
 	tagContactForce	m_ContactForce;
 
 	//
-	CCtrlVision	m_Vision;
+//	CCtrlVision	m_Vision;
 	CCtrlVision CCD;
 	// CCD Debug
 	struct tagCCDDebugValue{
@@ -812,18 +812,18 @@ public:
 	long lMatchCount;
 	bool bMatchTest;
 	// CCD Socket 
-	typedef struct tagCCDSocketParameter{
+	typedef struct tagCCDParameter{
 		int	iMatchROIX;
 		int iMatchROIY;
 		int iMatchWidth;
 		int iMatchHeight;
 		double dMatchMinScore;
-	} tagCCDSocketParameter;
+	} tagCCDParameter;
 	// CCD Socket Sensor
 	CSocketVision m_VisionMatch;
-	tagCCDSocketParameter CSC;
+	tagCCDParameter CCDSocket;
 //Jerome Add 20140709
-	tagCCDSocketParameter CCDPin1;
+	tagCCDParameter CCDPin1;
 	
 	//
 //	CCtrlVisionMatch m_VisionMatch;

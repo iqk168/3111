@@ -78,7 +78,13 @@ void CEventLog::AddEvent(long Code)
 
 	// 1.0Ah
 	// Send Event Report to tester
-	f.RemoteMessage(Code);
+	tagErrorMsg e = f.GetErrorMsg(Code);
+	// 分層級不會Alarm
+	if(e.Alarm)
+	f.RemoteErrorMessage(Code);
+		else
+	f.RemoteSendEvent(Code);
+	// 會Alarm
 }
 // 讀取 Event log, 可由 iShowMonth 來控制顯示, 最大值為本月與前月份 Event Log
 int CEventLog::ReadEvent(tagErrorParam *Log, int iShowMonth)

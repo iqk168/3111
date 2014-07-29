@@ -7,9 +7,9 @@ TRAY BASE FILE=3X3.Tray
 Machine ID=Chroma1
 TEST FILE=3X3.set
 TEST BASE FILE=
-SOCKET PATTERN FILE=Setting1
+SOCKET PATTERN FILE=1111
 ATC Module MultiSV File=
-PIN1 PATTERN FILE=12345
+PIN1 PATTERN FILE=32424
 Semi Auto=0
 [Lot Info]
 Lot Number=LotNo
@@ -27,7 +27,7 @@ Old Lot Machine ID=Macine
 Test Mode=0
 Test Item=0
 [Count]
-Output 1=884
+Output 1=955
 Output 2=0
 Output 3=0
 Output 4=0

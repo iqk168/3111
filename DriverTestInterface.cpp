@@ -1132,6 +1132,18 @@ void CDriverTestInterface::GetReturnCommand(tagTestProtocol msg, CString &csRetu
 }
 void CDriverTestInterface::ProcessCommand()
 {
+#if 1
+
+	if(m_PreSendCmd.GetSize() > 0)
+	{
+	CString	csCmd = _T("");
+	csCmd = m_PreSendCmd.GetAt(0);
+	bool bNeedReturn = true;
+	AddReplyCmd( csCmd, bNeedReturn );
+	m_PreSendCmd.RemoveAt(0);
+	}
+
+#else 
 	if( m_ReviceCmd.GetSize() > 0 )
 	{	
 		tagTestProtocol tagCmd = m_ReviceCmd.GetAt(0);
@@ -1141,7 +1153,10 @@ void CDriverTestInterface::ProcessCommand()
 		// 執行命令命令
 		CString csCmd = _T("");
 		csCmd.Format("%s", tagCmd.cmd );
-		tagCmd.cmd.MakeUpper(); tagCmd.cmd.TrimLeft(); tagCmd.cmd.TrimRight();
+	
+		tagCmd.cmd.MakeUpper();
+		tagCmd.cmd.TrimLeft(); 
+		tagCmd.cmd.TrimRight();
 
 		CString csReply = _T("");
 		int iReply = 0;
@@ -1150,7 +1165,8 @@ void CDriverTestInterface::ProcessCommand()
 
 		///////////////////////////////////////////////////////////
 		// 回復命令
-		AddReplyCmd( csReply, bNeedReturn );
+		AddReplyCmd( csCmd, bNeedReturn );
+//		AddReplyCmd( csReply, bNeedReturn );
 	
 		///////////////////////////////////////////////////////////
 		// 記錄命令
@@ -1162,6 +1178,7 @@ void CDriverTestInterface::ProcessCommand()
 		// Remove command
 		m_ReviceCmd.RemoveAt(0);
 	}
+#endif
 }
 
 tagTestProtocol CDriverTestInterface::GetProtocol(CString &csTelegram)
@@ -1320,10 +1337,20 @@ void CDriverTestInterface::Read()
 			Log( csTelegram );
 			// 記錄讀取成功的字串
 			
+			CString csResult = _T("");
+			//先分解字串
 			tagTestProtocol result = GetProtocol(csTelegram);
-			AddReadCmd(result);
-			// 新增 Command 到 Queue
 
+
+			//交給新版Parser3111 處理
+			csResult = CommandRun(result);
+
+			//直接加到 CString 陣列
+			m_PreSendCmd.Add( csResult );
+		
+			//AddReadCmd(result); //Ken 寫法
+				
+			// 新增 Command 到 Queue
 			iStart = csBuffer.Find( _STX );
 			// 繼續下一個 message
 		}
@@ -1352,7 +1379,6 @@ void CDriverTestInterface::AddReplyCmd(CString csReplyCmd, bool bAddCommand)
 {
 	csReplyCmd.TrimLeft();
 	csReplyCmd.TrimRight();
-
 	//
 	if( csReplyCmd != "" && bAddCommand )
 	{
@@ -2583,9 +2609,9 @@ CString CDriverTestInterface::SetAutoSkip(bool bEnable)
 	CString csSetAutoSkip = _T("");
 
 	if( bEnable )
-		m.TraySkip.AutoSkip = 0;	// auto skip
+		m.TraySkip.AutoSkip = 1;	// auto skip
 	else
-		m.TraySkip.AutoSkip = 1;	// no auto skip
+		m.TraySkip.AutoSkip = 0;	// no auto skip
 
 	return csSetAutoSkip;
 }
@@ -2594,15 +2620,15 @@ CString CDriverTestInterface::GetAutoSkip(bool &bEnable)
 	// 取得 Auto Skip 狀態
 	CString csSetAutoSkip = _T("");
 
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 		bEnable = true;		// auto skip
 	else
 		bEnable = false;	// no auto skip
 	//
 	if( bEnable )
-		csSetAutoSkip = "0";
-	else
 		csSetAutoSkip = "1";
+	else
+		csSetAutoSkip = "0";
 
 	return csSetAutoSkip;
 }
@@ -2757,7 +2783,9 @@ CString CDriverTestInterface::SetErrorMessage(int iCode, CString csMsg)
 
 #ifdef _Demo
 #else
-	if(m_hComm == NULL)
+// 	if(m_hComm == NULL)
+// 		return _T("");
+	if(m.m_singleSocket== NULL)
 		return _T("");
 #endif
 
@@ -3215,7 +3243,7 @@ CString CDriverTestInterface::CommandRun(tagTestProtocol telegram)
 		csResult = ps.Connect();
 		SetRemoteMode(true);
 	}
-	else if(telegram.cmd == "DISCONNET")
+	else if(telegram.cmd == "DISCONNECT")
 	{
 		csResult = ps.Disconnect();
 		SetRemoteMode(false);

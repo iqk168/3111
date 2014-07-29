@@ -88,6 +88,7 @@ BEGIN_MESSAGE_MAP(CPageUser, CDialog)
 	ON_BN_CLICKED(IDC_ARM_LOG_IMAGE,			OnArmLogImage)
 	ON_BN_CLICKED(IDC_ARM_LOG_IC_LIST,			OnArmLogIcList)
 	ON_BN_CLICKED(IDC_SLT_PROTOCOL,				OnSltProtocol)
+	ON_BN_CLICKED(IDC_DEBUG, OnDebug)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -198,7 +199,7 @@ BOOL CPageUser::OnInitDialog()
 void CPageUser::InitICON()
 {
 	// Auto Skip
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 		m_btnAutoSkip.SetIcon(IDI_TRAY_AUTO_SKIP);
 	else
 		m_btnAutoSkip.SetIcon(IDI_TRAY_NOT_AUTO_SKIP);
@@ -273,33 +274,33 @@ void CPageUser::OnYieldCtrl()
 
 void CPageUser::ResetUserPageAutoSkip()
 {
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 		m_btnAutoSkip.SetIcon(IDI_TRAY_AUTO_SKIP);
 	else
 		m_btnAutoSkip.SetIcon(IDI_TRAY_NOT_AUTO_SKIP);
 	// Note: Change the icon image
 
 	f.SaveSetting();
-	// Note: m.TraySkip.AutoSkip == 0 表示會 Auto Skip, 
-	// 如果 m.TraySkip.AutoSkip == 1 表示會 Alarm
+	// Note: m.TraySkip.AutoSkip == 1 表示會 Auto Skip, 
+	// 如果 m.TraySkip.AutoSkip == 0 表示會 Alarm
 }
 void CPageUser::OnTrayAutoSkip() 
 {
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 	{		
 		f.m_Log.AddEvent(enCodeUserPageTrayNoSkip);	// Add Event
-		m.TraySkip.AutoSkip = 1;
+		m.TraySkip.AutoSkip = 0;
 		// Ebable the function of Input Stack Auto Skip
 	}
 	else
 	{
 		f.m_Log.AddEvent(enCodeUserPageTrayAutoSkip);	// Add Event		
-		m.TraySkip.AutoSkip = 0;
+		m.TraySkip.AutoSkip = 1;
 		// Disable the function of Input Stack Auto Skip
 	}
 	// Note: Reset the setting
 
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 		m_btnAutoSkip.SetIcon(IDI_TRAY_AUTO_SKIP);
 	else
 		m_btnAutoSkip.SetIcon(IDI_TRAY_NOT_AUTO_SKIP);
@@ -380,7 +381,7 @@ void CPageUser::ReDrawTestSiteVaccOff()
 }
 void CPageUser::ReDrawAutoSkip()
 {
-	if( m.TraySkip.AutoSkip == 0 )
+	if( m.TraySkip.AutoSkip == 1 )
 		m_btnAutoSkip.SetIcon(IDI_TRAY_AUTO_SKIP);
 	else
 		m_btnAutoSkip.SetIcon(IDI_TRAY_NOT_AUTO_SKIP);
@@ -826,4 +827,16 @@ void CPageUser::OnSltProtocol()
 	theApp.m_DlgSLTProtocol = &dlg;
 	dlg.DoModal();
 	f.m_Log.AddEvent(enCodeUserPageSLTProtocol);	// Add Event
+}
+
+void CPageUser::OnDebug() 
+{
+	// TODO: Add your control notification handler code here
+
+	double score = f.CCDMatch(m.FilePath.CCDPin1ImagePath,m.UI.Pin1PatternName, m.m_CCDPin1Control.iCCDUse
+		, m.CCDPin1.iMatchROIX, m.CCDPin1.iMatchROIY, m.CCDPin1.iMatchWidth
+		, m.CCDPin1.iMatchHeight, m.CCDPin1.dMatchMinScore);
+	double score1 = f.CCDMatch(m.FilePath.CCDSocketImagePath,m.UI.SocketPatternName, m.m_CCDSocketControl.iCCDUse
+		, m.CCDSocket.iMatchROIX, m.CCDSocket.iMatchROIY, m.CCDSocket.iMatchWidth
+		 , m.CCDSocket.iMatchHeight, m.CCDSocket.dMatchMinScore);
 }

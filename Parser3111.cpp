@@ -39,8 +39,12 @@ CString CParser3111::GetVersion()
 	CString csResult = _T("");
 	TCHAR szTemp[_MAX_PATH];
 	TCHAR szVersion[16]; 
-	f.MyGetVersion(szTemp, szVersion, sizeof(szVersion) / sizeof(szVersion[0]));
-	_stprintf(szTemp, "V%s", szVersion);
+	if (GetModuleFileName(NULL, szTemp, _MAX_PATH))
+	{
+		// 利用取得的 exe 檔案的路徑名稱來取得它的版本
+		f.MyGetVersion(szTemp, szVersion, sizeof(szVersion) / sizeof(szVersion[0]));
+		_stprintf(szTemp, "3111 V%s", szVersion);
+	}
 	csResult.Format("<<*%%GETVERSION%%%s>>",szTemp);
 	return csResult;
 }
@@ -301,7 +305,7 @@ CString CParser3111::SendEventEnable(bool Enable)
 	if(Enable)
 	{
 		m.m_TestInterface.m_bRemoteSendEvent = true;
-		csResult.Format("<<*%%SENDEVENTENABLE%%ACK;0>>");
+		csResult.Format("<<*%%SENDEVENTENABLE%%ACK;1>>");
 	}
 	else
 	{

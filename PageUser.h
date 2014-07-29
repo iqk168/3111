@@ -86,6 +86,7 @@ protected:
 	afx_msg void OnArmLogImage();
 	afx_msg void OnArmLogIcList();
 	afx_msg void OnSltProtocol();
+	afx_msg void OnDebug();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
