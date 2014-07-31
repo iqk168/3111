@@ -1,0 +1,16 @@
+7.30.17.54.18.24, Arm, Arm:enInitialize R
+7.30.17.54.18.24, Tester, Tester:enInitialize R
+7.30.17.54.18.24, Manual, Manual:enInitialize R
+7.30.17.54.18.24, Ts, TestSite:enInitialize R
+7.30.17.54.18.24, Arm, Arm:enInitialize
+7.30.17.54.18.24, Ts, TestSiteS:enInitialize
+7.30.17.54.19.19, Arm, Arm:enToInput
+7.30.17.54.19.20, Arm, Arm:enTSRemainICStart
+7.30.17.54.19.22, Arm, Arm:enTSRemainICContactHome
+7.30.17.54.19.23, Arm, Arm:enTSRemainICDryHome
+7.30.17.54.19.25, Arm, Arm:enTSRemainICTSDown
+7.30.17.54.19.27, Arm, Arm:enTSRemainICTSVaccOn
+7.30.17.54.19.28, Arm, Arm:enTSRemainICTSVaccEnd
+7.30.17.54.19.30, Arm, Arm:enTSRemainICTSUp
+7.30.17.54.19.31, Arm, Arm:enTSRemainICCheck
+7.30.17.54.19.33, Arm, Arm:enTSRemainICEnd

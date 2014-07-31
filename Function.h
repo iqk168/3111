@@ -730,6 +730,7 @@ public:
 	void RemoteSendTestEvent(long TestEvent);
 
 public:
+	bool ReadSemiAutoCommand(CString data_in,tagCmd &Command_out);
 	// CCD
 	void LiveReflash();
 	void CCDLog(CString csLog);

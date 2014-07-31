@@ -22,6 +22,7 @@
 #include "DlgTrayDef.h"
 #include "DlgArmLogICImage.h"
 #include "DlgSLTProtocol.h"
+#include "DlgSemiAutoFile.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -833,10 +834,42 @@ void CPageUser::OnDebug()
 {
 	// TODO: Add your control notification handler code here
 
-	double score = f.CCDMatch(m.FilePath.CCDPin1ImagePath,m.UI.Pin1PatternName, m.m_CCDPin1Control.iCCDUse
-		, m.CCDPin1.iMatchROIX, m.CCDPin1.iMatchROIY, m.CCDPin1.iMatchWidth
-		, m.CCDPin1.iMatchHeight, m.CCDPin1.dMatchMinScore);
-	double score1 = f.CCDMatch(m.FilePath.CCDSocketImagePath,m.UI.SocketPatternName, m.m_CCDSocketControl.iCCDUse
-		, m.CCDSocket.iMatchROIX, m.CCDSocket.iMatchROIY, m.CCDSocket.iMatchWidth
-		 , m.CCDSocket.iMatchHeight, m.CCDSocket.dMatchMinScore);
+// 	double score = f.CCDMatch(m.FilePath.CCDPin1ImagePath,m.UI.Pin1PatternName, m.m_CCDPin1Control.iCCDUse
+// 		, m.CCDPin1.iMatchROIX, m.CCDPin1.iMatchROIY, m.CCDPin1.iMatchWidth
+// 		, m.CCDPin1.iMatchHeight, m.CCDPin1.dMatchMinScore);
+// 	double score1 = f.CCDMatch(m.FilePath.CCDSocketImagePath,m.UI.SocketPatternName, m.m_CCDSocketControl.iCCDUse
+// 		, m.CCDSocket.iMatchROIX, m.CCDSocket.iMatchROIY, m.CCDSocket.iMatchWidth
+// 		 , m.CCDSocket.iMatchHeight, m.CCDSocket.dMatchMinScore);
+
+	
+	CString csfile;
+	m.FilePath.SemiAutoPath = ".\\SemiAuto\\a.log";
+	m.CmdSet.RemoveAll();
+	CString FileName = m.FilePath.SemiAutoPath;
+	CStdioFile CSVFile;
+	CFileException FileException;
+	tagCmd tmp;	//暫存結構
+	if(CSVFile.Open(FileName,CFile::typeText|CFile::modeRead),&FileException)//unicode使用typeBinary
+	{
+		CSVFile.SeekToBegin();
+		CString str1,strSubString;
+		while(CSVFile.ReadString(str1)!=0)
+		{
+			bool flag = false;
+			flag = f.ReadSemiAutoCommand(str1,tmp);
+			m.CmdSet.Add(tmp);	//依序加入CmdSet
+			int numTemper = tmp.Temper.size();
+			tmp.Temper.clear();		//清除所有暫存的溫度值
+		}
+	}
+	else
+	{
+		AfxMessageBox(_T("Can't open file"));
+	}
+	CSVFile.Close();
+
+	theApp.m_InputTray.ChangeTray();
+
+// 	CDlgSemiAutoFile dlg;
+// 	dlg.DoModal();
 }

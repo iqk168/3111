@@ -23,7 +23,7 @@
 #endif // _AFX_NO_AFXCMN_SUPPORT
 
 #include "BtnST.h"
-
+#include <deque>
 // GDIPlus
 #define ULONG_PTR unsigned long
 #include <Gdiplus.h>

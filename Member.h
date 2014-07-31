@@ -188,6 +188,7 @@ public:
 		CString ArmLogICImagePath;			// Arm Log IC Image Path
 		CString MContactNotePath;			// Manual Contact Note
 		CString SLTProtocolNotePath;		// SLTProtocol Path Note
+		CString SemiAutoPath;				// Semi Auto Path
 	}FilePath;
 
 	struct tagReleaseNote{
@@ -968,8 +969,9 @@ public:
 		CPoint	pICLoaction;
 	} m_DeviceInfo;
 	
-
+CArray <tagCmd ,tagCmd> CmdSet;
 	
 };	
+
 
 #endif // !defined(AFX_MEMBER_H__9F8F057C_6810_4EE9_97B3_F33DB2394AE8__INCLUDED_)

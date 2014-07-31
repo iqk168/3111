@@ -8940,3 +8940,71 @@ double CFunction::CCDMatch(CString CCDFilePath, CString csPatternName, int iCCDU
 	double dMatchTestScore = m.m_VisionMatch.GrabMatch( iCCDUse );
 	return dMatchTestScore;
 }
+
+bool CFunction::ReadSemiAutoCommand(CString data_in, tagCmd &Command_out)
+{
+	//先找#字號
+	if(data_in.Find("#") == -1)
+		return false;
+	
+	//在確認有沒有六個逗點
+	int indexSentence = 0;
+	TCHAR spliter = ',' ;
+	TCHAR EndSign = '#';
+	CString csPosition [11]= {""};
+	CString strSubString;
+	int numEndSigh = 0;
+	bool flag = false;
+	CString str2;
+	
+	//擷取#前的資訊
+	AfxExtractSubString (strSubString, (LPCTSTR)data_in, numEndSigh, EndSign);	
+	str2 = strSubString;
+	//最少要有6個字
+	while(indexSentence < 7)
+	{
+		AfxExtractSubString (strSubString, (LPCTSTR)str2, indexSentence, spliter);	
+		if ( (indexSentence<6&&strSubString=="") || (indexSentence>5&&strSubString!="")  )
+		{
+			return false;
+		}
+		csPosition [indexSentence] = strSubString;
+		indexSentence++;
+		flag = true;
+	}
+
+	if (flag == true)
+	{
+		//輸入座標資訊
+		indexSentence = 0;
+		numEndSigh++;
+		Command_out.From.StackNum = _ttoi(csPosition[0]);
+		Command_out.From.x = _ttoi(csPosition[1]);
+		Command_out.From.y = _ttoi(csPosition[2]);
+		Command_out.To.StackNum = _ttoi(csPosition[3]);
+		Command_out.To.x = _ttoi(csPosition[4]);
+		Command_out.To.y = _ttoi(csPosition[5]);
+
+	
+		AfxExtractSubString (strSubString, (LPCTSTR)data_in, numEndSigh, EndSign);	//擷取#號 有無資訊
+		if (strSubString=="")
+			return true; //這裡就算OK
+		//加入溫度資訊
+		str2 = strSubString+_T(",#");
+		while(1)
+		{
+			AfxExtractSubString (strSubString,(LPCTSTR)str2,indexSentence,spliter);	
+			if (strSubString =="#")
+			{
+				break;
+			}
+			if (strSubString==""){
+				strSubString = _T("25");	//常溫25度C
+			}
+			Command_out.Temper.push_back(_tcstod(strSubString,NULL) ) ;
+			indexSentence++;
+		}
+	}
+	
+	return true;
+}

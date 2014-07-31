@@ -1,5 +1,5 @@
 [Repeat Trat Mode]
-Mode(0)None=1
+Mode(0)None=0
 [Repeat Trat Mode(InOutCtrl)]
 Tray1=2
 Tray2=3

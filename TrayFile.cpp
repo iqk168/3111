@@ -531,6 +531,13 @@ BOOL CTrayFile::LocationQuery()
 	return m_iNext;
 }
 
+BOOL CTrayFile::SemiAuto(int Coord)
+{
+	m_iNext = Coord;
+	return m_iNext;
+}
+
+
 int	CTrayFile::LocationBooking()
 {
 	m_iNow = m_iNext;
@@ -805,3 +812,4 @@ int CTrayFile::GetChipTrayPosition( int iBooking )
 
 	return m_iIndex;
 }
+

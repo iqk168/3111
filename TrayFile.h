@@ -26,6 +26,7 @@ typedef struct tagTray{
 class CTrayFile  
 {
 public:
+	BOOL SemiAuto(int Coord);
 	CTrayFile();
 	virtual ~CTrayFile();
 

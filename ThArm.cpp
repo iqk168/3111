@@ -2358,7 +2358,36 @@ void CThArm::Running()
 	case enToInput:							// Arm XY move to Input stack
 		if(m.Setting.m_bEnableSemiAuto)//Semi Auto
 		{
-		
+			//取出CArray 資料
+			tagCmd temp;
+			temp = m.CmdSet.GetAt(0);
+			m.CmdSet.RemoveAt(0);
+			
+			
+			// Normal Mode
+			int iBooking = -1;
+			CPoint px;
+			theApp.m_InputTray.SemiAuto(4); //自行給位置
+			iBooking = theApp.m_InputTray.LocationBooking();
+	
+			px = theApp.m_InputTray.GetCoordinate( iBooking );
+			theApp.m_InputTray.LocationMove();
+			
+			//
+			CString csNormalMsg = _T("");
+			csNormalMsg.Format("Arm:enToInput Position: %d", iBooking );
+			f.CWinMessage( csNormalMsg, theApp.enDArm );
+			
+			// 
+			theApp.m_tArm.ClearArmLog();
+			ArmLog.iBooking = iBooking;
+			
+			//
+			m_iRunError = f.Motor.MotorRunLine(
+				m.m_Motor.ArmX, px.x + ( m.m_Offset.Input.x * m.m_Ratio.X_GearRation ),
+				m.m_Motor.ArmY, px.y + ( m.m_Offset.Input.y * m.m_Ratio.Y_GearRation ),
+					true, m.TimerSetting.iMotorRunlineTimeout );
+
 		}
 		else
 		{
@@ -4103,6 +4132,7 @@ void CThArm::NextStatus()
 			{
 				m_bStatus = enShuttleCCDPin1Start;
 			}
+			//永遠進不來
 			else if ( m.Setting.m_bEnableCCDLogICImage == 1 && 
 				m.m_ArmLogICImage.bEnableArmLogICImage == 1  )
 			{
@@ -4211,6 +4241,7 @@ void CThArm::NextStatus()
 	case enShuttleCCDMatchEnd:				// CCD Grab Match complete.
 		f.CWinMessage( "Arm:enShuttleCCDMatchEnd", theApp.enDArm );
 		{
+			//永遠進不去
 			if( m.Setting.m_bEnableCCDLogICImage == 1 && 
 				m.m_ArmLogICImage.bEnableArmLogICImage == 1 )
 			{
@@ -4303,7 +4334,7 @@ void CThArm::NextStatus()
 				m.InterLock.ShuttleOutputICOK = false;
 				m_bStatus = enToShuttleOutput;
 			}
-			else if( m.InterLock.ShuttleResetInput )
+			else if( m.InterLock.ShuttleResetInput ) //IC 不見了
 			{
 				m.InterLock.ShuttleResetInput = false;
 				m_bStatus = enToInput;

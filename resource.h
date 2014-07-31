@@ -9,6 +9,7 @@
 #define IDD_ABOUTBOX                    100
 #define IDS_ABOUTBOX                    101
 #define IDD_DEER_DIALOG                 102
+#define IDD_DLG_SEMIAUTOFILE_DIALOG     103
 #define IDR_MAINFRAME                   128
 #define IDD_PAGE_USER                   129
 #define IDD_PAGE_SETUP                  130
@@ -627,6 +628,7 @@
 #define IDC_E_OUTPUT_POS                1034
 #define IDC_E_LOOP_TEST_SETTING         1034
 #define IDC_S_A                         1034
+#define IDC_E_FORM_TRAY                 1034
 #define IDC_MODIFY_PARAMETER            1035
 #define IDC_TEMPERATURE                 1035
 #define IDC_SITE2                       1035
@@ -651,6 +653,7 @@
 #define IDC_E_OUTPUT_B                  1035
 #define IDC_E_B                         1035
 #define IDC_S_B                         1035
+#define IDC_E_FORM_X                    1035
 #define IDC_SET_AS_BASE_FILE            1036
 #define IDC_OFFSET                      1036
 #define IDC_SITE3                       1036
@@ -666,6 +669,7 @@
 #define IDC_ROI_W                       1036
 #define IDC_ALIGNMENT_OUTPUT_ARM_X      1036
 #define IDC_E_PORT_ATC_MODULE           1036
+#define IDC_E_FORM_Y                    1036
 #define IDC_INTERFACE_TESTING           1037
 #define IDC_SITE4                       1037
 #define IDC_ALIGNMENT_SHUTTLE_HOME      1037
@@ -711,6 +715,7 @@
 #define IDC_ALIGNMENT_ROTATOR_ARM_Y     1040
 #define IDC_ROI_Y_SOCKET                1040
 #define IDC_E_PORT_REMOTE_IO3           1040
+#define IDC_E_TO_TRAY                   1040
 #define IDC_COLD_CHAMBER_TEMPERATURE    1041
 #define IDC_ALIGNMENT_ARM_FIX1_X        1041
 #define IDC_SITE8                       1041
@@ -721,6 +726,7 @@
 #define IDC_ALIGNMENT_ROTATOR_ARM_Z     1041
 #define IDC_ROI_W_SOCKET                1041
 #define IDC_E_PORT_WEST_HEAT_ID         1041
+#define IDC_E_TO_X                      1041
 #define IDC_CHANGE_GBIP_FILE            1042
 #define IDC_ALIGNMENT_ARM_FIX1_Y        1042
 #define IDC_BIN14                       1042
@@ -729,6 +735,7 @@
 #define IDC_ALIGNMENT_SOCKET_ARM_X      1042
 #define IDC_ROI_H_SOCKET                1042
 #define IDC_E_PORT_TORQUE_STATUS        1042
+#define IDC_E_TO_Y                      1042
 #define IDC_GBIP_CTRL                   1043
 #define IDC_ALIGNMENT_ARM_FIX1_Z        1043
 #define IDC_INPUT_TRAY                  1043
@@ -2850,6 +2857,7 @@
 #define IDC_E_ITEM                      2422
 #define IDC_E_PV                        2423
 #define IDC_E_SW_NUMBER                 2423
+#define IDC_E_TESTINFO                  2423
 #define IDC_E_SOAKING_TIME              2424
 #define IDC_E_RETEST                    2425
 #define IDC_E_CODE                      2425
@@ -3566,6 +3574,11 @@
 #define IDC_E_ETHERNET_PORT             3022
 #define IDC_STATIC_SERIAL_GRP           3023
 #define IDC_COMBO1                      3024
+#define IDC_B_SET                       3026
+#define IDC_B_ADD                       3027
+#define IDC_B_DELETE                    3028
+#define IDC_B_UP                        3029
+#define IDC_B_DOWN                      3030
 #define IDC_T_RED                       3038
 #define IDC_T_YELLOW                    3039
 #define IDC_T_GREEN                     3040
@@ -3803,9 +3816,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        649
+#define _APS_NEXT_RESOURCE_VALUE        651
 #define _APS_NEXT_COMMAND_VALUE         32840
-#define _APS_NEXT_CONTROL_VALUE         3026
-#define _APS_NEXT_SYMED_VALUE           101
+#define _APS_NEXT_CONTROL_VALUE         3027
+#define _APS_NEXT_SYMED_VALUE           104
 #endif
 #endif

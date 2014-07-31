@@ -3,6 +3,7 @@
 #define _DEFINE_H
 
 #include <afxtempl.h>
+
 // This is for CArray
 
 #define _AlignmentShuttle	18.0 //mm
@@ -1359,6 +1360,20 @@ typedef struct tagRemoteCtrlFun{
 	int m_iAutoReplayEvent;
 } tagRemoteCtrlFun;
 
+//Semi Auto 參數定義
+typedef struct tagLoaction
+{
+	int StackNum;
+	int x;
+	int y;
+}tagLoaction;
+
+typedef struct tagCmd
+{
+	tagLoaction From;
+	tagLoaction To;
+	std::deque <double> Temper;
+}tagCmd;
 
 
 

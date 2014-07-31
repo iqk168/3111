@@ -158,7 +158,7 @@ Ready Red=0
 Ready Yellow=1
 Ready Green=0
 [Arm Log IC Image]
-Enable=0
+Enable=1
 Path=
 [Last TrayFile]
 FileName=3X3.Tray
